@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>알레르기클리닉 | 비염·감기·콧물·코막힘 | 아산 배방 솔솔한의원</title>
+
+<meta name="description"
+      content="아산 배방 솔솔한의원 알레르기클리닉. 알레르기 비염의 맑은 콧물, 코막힘, 재채기, 가려움과 감기 증상을 살펴봅니다. 증상에 따라 침, 한약, 보험한약 등 진료를 상담합니다.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://solsolclinic.github.io/allergy-clinic.html">
+
+<link rel="icon"
+      href="logo.jpg"
+      type="image/jpeg">
+
+
+<!-- SNS 공유 -->
+
+<meta property="og:type"
+      content="website">
+
+<meta property="og:site_name"
+      content="솔솔한의원">
+
+<meta property="og:title"
+      content="알레르기클리닉 | 아산 배방 솔솔한의원">
+
+<meta property="og:description"
+      content="알레르기 비염, 반복되는 콧물·재채기·코막힘과 감기 등 호흡기 증상을 살펴봅니다.">
+
+<meta property="og:url"
+      content="https://solsolclinic.github.io/allergy-clinic.html">
+
+<meta property="og:image"
+      content="https://solsolclinic.github.io/allergy-clinic-rhinitis.jpg">
+
+<meta property="og:image:alt"
+      content="알레르기 비염으로 코가 불편한 모습">
+
+
+<!-- 구조화 데이터 -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "솔솔한의원 알레르기클리닉",
+  "url": "https://solsolclinic.github.io/allergy-clinic.html",
+  "description": "알레르기 비염과 감기 등 호흡기 증상에 관한 진료 안내",
+  "publisher": {
+    "@type": "MedicalClinic",
+    "name": "솔솔한의원",
+    "url": "https://solsolclinic.github.io/",
+    "telephone": "+82-41-534-3100",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "배방읍 모산로 91, 1층",
+      "addressLocality": "아산시",
+      "addressRegion": "충청남도",
+      "addressCountry": "KR"
+    }
+  }
+}
+</script>
+
+
+<style>
+
+:root {
+    --green-deep:#527e5e;
+    --green-main:#6ca67b;
+    --green-soft:#eef6f0;
+    --green-pale:#f7faf7;
+    --cream:#fbfaf6;
+    --white:#ffffff;
+    --text:#303530;
+    --sub:#687169;
+    --line:#e1e9e3;
+    --warm:#f7f2ea;
+    --shadow:0 14px 38px rgba(55,85,62,.08);
+}
+
+* {
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin:0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Noto Sans KR",
+        "Malgun Gothic",
+        sans-serif;
+    color:var(--text);
+    background:var(--cream);
+    line-height:1.8;
+    word-break:keep-all;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+img {
+    display:block;
+    max-width:100%;
+}
+
+button {
+    font:inherit;
+}
+
+.container {
+    width:min(1080px, calc(100% - 40px));
+    margin:0 auto;
+}
+
+
+/* HEADER */
+
+header {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);
+    backdrop-filter:blur(10px);
+}
+
+.nav {
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+.brand img {
+    width:140px;
+}
+
+.nav-menu {
+    display:flex;
+    align-items:center;
+    gap:22px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.nav-menu a:hover {
+    color:var(--green-deep);
+}
+
+
+/* MOBILE MENU */
+
+.mobile-menu-button {
+    display:none;
+    width:44px;
+    height:44px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:white;
+    cursor:pointer;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:5px;
+}
+
+.mobile-menu-button span {
+    width:20px;
+    height:2px;
+    background:var(--text);
+}
+
+.mobile-menu {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    padding:10px 20px 18px;
+    background:white;
+    border-bottom:1px solid var(--line);
+    box-shadow:0 14px 30px rgba(45,70,50,.09);
+}
+
+.mobile-menu.open {
+    display:block;
+}
+
+.mobile-menu a {
+    display:block;
+    padding:14px 8px;
+    border-bottom:1px solid var(--line);
+    font-size:15px;
+    font-weight:700;
+}
+
+.mobile-menu a:last-child {
+    border-bottom:0;
+}
+
+
+/* BUTTON */
+
+.button {
+    min-height:49px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 22px;
+    border-radius:999px;
+    background:var(--green-deep);
+    border:1px solid var(--green-deep);
+    color:white;
+    font-size:14px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.button.light {
+    background:white;
+    color:var(--text);
+    border-color:var(--line);
+}
+
+.button:hover {
+    transform:translateY(-2px);
+    opacity:.9;
+}
+
+
+/* COMMON */
+
+section {
+    padding:84px 0;
+    scroll-margin-top:85px;
+}
+
+.section-head {
+    margin-bottom:36px;
+}
+
+.section-kicker {
+    margin-bottom:7px;
+    color:var(--green-deep);
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.08em;
+}
+
+.section-head h2 {
+    margin:0 0 10px;
+    font-size:clamp(29px,4vw,40px);
+    line-height:1.4;
+    letter-spacing:-2px;
+}
+
+.section-head p {
+    margin:0;
+    color:var(--sub);
+}
+
+
+/* HERO */
+
+.hero {
+    padding:58px 0 75px;
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcf9 0%,
+            #edf6ef 100%
+        );
+}
+
+.breadcrumb {
+    margin-bottom:28px;
+    color:var(--sub);
+    font-size:13px;
+}
+
+.breadcrumb a {
+    color:var(--green-deep);
+    font-weight:700;
+}
+
+.hero-grid {
+    display:grid;
+    grid-template-columns:.95fr 1.05fr;
+    background:white;
+    border:1px solid #e1eae3;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.hero-copy {
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-kicker {
+    margin-bottom:10px;
+    color:var(--green-deep);
+    font-size:14px;
+    font-weight:800;
+}
+
+.hero h1 {
+    margin:0 0 22px;
+    font-size:clamp(38px,5vw,56px);
+    line-height:1.28;
+    letter-spacing:-3px;
+}
+
+.hero-lead {
+    margin:0;
+    color:#58625b;
+    font-size:17px;
+}
+
+.hero-note {
+    margin-top:23px;
+    padding:18px 20px;
+    background:var(--green-soft);
+    border-radius:15px;
+    color:#576159;
+    font-size:14px;
+}
+
+.hero-image {
+    min-height:520px;
+}
+
+.hero-image img {
+    width:100%;
+    height:100%;
+    min-height:520px;
+    object-fit:cover;
+}
+
+
+/* SYMPTOMS */
+
+.symptoms {
+    background:white;
+}
+
+.symptom-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.symptom-card {
+    padding:27px 24px;
+    background:var(--green-pale);
+    border:1px solid var(--line);
+    border-radius:18px;
+}
+
+.symptom-card h3 {
+    margin:0 0 8px;
+    font-size:19px;
+}
+
+.symptom-card p {
+    margin:0;
+    color:var(--sub);
+    font-size:14px;
+}
+
+
+/* SPLIT */
+
+.split {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.photo {
+    width:100%;
+    border-radius:22px;
+    box-shadow:var(--shadow);
+}
+
+.text-box {
+    padding:36px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:22px;
+}
+
+.text-box h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:25px;
+}
+
+.text-box p {
+    color:#566058;
+}
+
+
+/* COLD */
+
+.cold-section {
+    background:var(--green-soft);
+}
+
+.cold-box {
+    padding:40px;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:23px;
+}
+
+.cold-box h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:26px;
+}
+
+.cold-box p {
+    color:#566058;
+}
+
+.cold-compare {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin-top:25px;
+}
+
+.compare-card {
+    padding:23px;
+    background:var(--green-pale);
+    border:1px solid var(--line);
+    border-radius:16px;
+}
+
+.compare-card h4 {
+    margin:0 0 8px;
+    font-size:18px;
+}
+
+.compare-card p {
+    margin:0;
+    font-size:14px;
+}
+
+
+/* INSURANCE */
+
+.insurance {
+    background:var(--cream);
+}
+
+.insurance-box {
+    padding:38px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:22px;
+}
+
+.insurance-box h3 {
+    margin:0 0 13px;
+    color:var(--green-deep);
+    font-size:25px;
+}
+
+.insurance-box p {
+    color:#566058;
+}
+
+
+/* TREATMENT */
+
+.treatment {
+    background:white;
+}
+
+.treatment-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.treatment-card {
+    padding:27px;
+    background:var(--green-pale);
+    border:1px solid var(--line);
+    border-radius:18px;
+}
+
+.treatment-card h3 {
+    margin:0 0 9px;
+    font-size:19px;
+}
+
+.treatment-card p {
+    margin:0;
+    color:var(--sub);
+    font-size:14px;
+}
+
+
+/* LIFESTYLE */
+
+.lifestyle {
+    background:var(--green-soft);
+}
+
+.life-grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.life-card {
+    padding:24px;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:17px;
+}
+
+.life-card h3 {
+    margin:0 0 7px;
+    font-size:18px;
+}
+
+.life-card p {
+    margin:0;
+    color:var(--sub);
+    font-size:14px;
+}
+
+
+/* ACUPRESSURE */
+
+.pressure {
+    background:white;
+}
+
+.pressure-box {
+    padding:38px;
+    background:var(--warm);
+    border:1px solid #ebe4d9;
+    border-radius:22px;
+}
+
+.pressure-box h3 {
+    margin-top:0;
+    color:#5f725f;
+    font-size:25px;
+}
+
+.pressure-grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:20px;
+}
+
+.pressure-item {
+    padding:19px;
+    background:white;
+    border:1px solid #ece6dc;
+    border-radius:15px;
+}
+
+.pressure-item strong {
+    color:var(--green-deep);
+}
+
+
+/* FAQ */
+
+.faq-section {
+    background:var(--cream);
+}
+
+.faq-list {
+    padding:5px 30px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:22px;
+}
+
+.faq-list details {
+    padding:22px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.faq-list details:last-child {
+    border-bottom:0;
+}
+
+.faq-list summary {
+    cursor:pointer;
+    font-weight:750;
+}
+
+.faq-list p {
+    margin-bottom:0;
+    color:var(--sub);
+}
+
+
+/* CONTACT */
+
+.contact {
+    background:var(--green-soft);
+}
+
+.contact-box {
+    padding:48px 30px;
+    text-align:center;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:24px;
+}
+
+.contact-box h2 {
+    margin:0 0 10px;
+}
+
+.contact-box p {
+    color:var(--sub);
+}
+
+.contact-buttons {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding:48px 0;
+    background:#f2f6f2;
+    border-top:1px solid var(--line);
+    color:#5b645e;
+    font-size:13px;
+}
+
+.footer-logo {
+    width:120px;
+    margin-bottom:17px;
+}
+
+footer p {
+    margin:5px 0;
+}
+
+.notice {
+    max-width:790px;
+    margin-top:23px;
+    color:#89918b;
+    font-size:12px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px) {
+
+    .nav-menu {
+        display:none;
+    }
+
+    .mobile-menu-button {
+        display:flex;
+    }
+
+    .brand img {
+        width:110px;
+    }
+
+    .hero-grid,
+    .split,
+    .cold-compare {
+        grid-template-columns:1fr;
+    }
+
+    .hero-copy {
+        padding:37px 25px;
+    }
+
+    .hero h1 {
+        font-size:38px;
+        letter-spacing:-2px;
+    }
+
+    .hero-lead {
+        font-size:15px;
+    }
+
+    .hero-image,
+    .hero-image img {
+        min-height:300px;
+        height:300px;
+    }
+
+    section {
+        padding:64px 0;
+        scroll-margin-top:76px;
+    }
+
+    .symptom-grid,
+    .treatment-grid,
+    .life-grid,
+    .pressure-grid {
+        grid-template-columns:1fr;
+    }
+
+    .text-box,
+    .cold-box,
+    .insurance-box,
+    .pressure-box {
+        padding:27px 23px;
+    }
+
+    .contact-buttons {
+        display:grid;
+    }
+
+    .contact-buttons .button {
+        width:100%;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container nav">
+
+<a href="index.html"
+   class="brand"
+   aria-label="솔솔한의원 홈페이지">
+
+<img src="logo.jpg"
+     alt="솔솔한의원 로고">
+
+</a>
+
+
+<nav class="nav-menu">
+
+<a href="#rhinitis">알레르기 비염</a>
+<a href="#cold">감기</a>
+<a href="#treatment">진료방법</a>
+<a href="#lifestyle">생활관리</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">예약·문의</a>
+
+</nav>
+
+
+<button class="mobile-menu-button"
+        id="mobileMenuButton"
+        type="button"
+        aria-label="메뉴 열기"
+        aria-expanded="false">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+<div class="mobile-menu"
+     id="mobileMenu">
+
+<a href="#rhinitis">알레르기 비염</a>
+<a href="#cold">감기</a>
+<a href="#treatment">진료방법</a>
+<a href="#lifestyle">생활관리</a>
+<a href="#faq">자주 묻는 질문</a>
+<a href="#contact">예약·문의</a>
+<a href="index.html">솔솔한의원 홈</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="index.html">
+솔솔한의원
+</a>
+
+&nbsp;›&nbsp;
+
+알레르기클리닉
+
+</div>
+
+
+<div class="hero-grid">
+
+<div class="hero-copy">
+
+<div class="hero-kicker">
+아산 배방 · 알레르기클리닉
+</div>
+
+<h1>
+계절이 바뀔 때마다<br>
+콧물과 재채기가<br>
+반복되시나요?
+</h1>
+
+<p class="hero-lead">
+
+맑은 콧물, 코막힘, 반복적인 재채기,
+코와 눈의 가려움 등은
+알레르기 비염에서 흔히 나타날 수 있는 증상입니다.
+
+</p>
+
+<div class="hero-note">
+
+콧물과 코막힘이 있다고 모두 알레르기 비염은 아닙니다.
+감기 등 다른 호흡기 증상과 구분해
+현재의 상태와 경과를 함께 살펴봅니다.
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<img src="allergy-clinic-rhinitis.jpg"
+     alt="알레르기 비염으로 코가 불편한 모습">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- RHINITIS -->
+
+<section id="rhinitis"
+         class="symptoms">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+ALLERGIC RHINITIS
+</div>
+
+<h2>
+알레르기 비염에서 흔히 나타나는 증상
+</h2>
+
+<p>
+증상의 정도와 나타나는 시기는 사람마다 다를 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="symptom-grid">
+
+<div class="symptom-card">
+
+<h3>맑은 콧물</h3>
+
+<p>
+물이 흐르듯 맑은 콧물이
+반복적으로 나타날 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="symptom-card">
+
+<h3>코막힘</h3>
+
+<p>
+한쪽 또는 양쪽 코가 막히면서
+숨쉬기가 답답하게 느껴질 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="symptom-card">
+
+<h3>반복적인 재채기</h3>
+
+<p>
+특정 계절이나 환경에서
+여러 번 연속해서 재채기가 나기도 합니다.
+</p>
+
+</div>
+
+
+<div class="symptom-card">
+
+<h3>코·눈의 가려움</h3>
+
+<p>
+코 안이나 눈 주변이
+가렵게 느껴지는 경우도 있습니다.
+</p>
+
+</div>
+
+
+<div class="symptom-card">
+
+<h3>아침에 심한 증상</h3>
+
+<p>
+기상 직후 콧물이나 재채기가
+더 심하게 느껴지는 분도 있습니다.
+</p>
+
+</div>
+
+
+<div class="symptom-card">
+
+<h3>계절에 따라 반복</h3>
+
+<p>
+환절기나 특정 계절에
+증상이 반복적으로 심해질 수 있습니다.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SNEEZING IMAGE -->
+
+<section>
+
+<div class="container">
+
+<div class="split">
+
+<div>
+
+<img src="allergy-clinic-sneezing.jpg"
+     alt="아침에 재채기와 콧물이 반복되는 모습"
+     class="photo">
+
+</div>
+
+
+<div class="text-box">
+
+<div class="section-kicker">
+ALLERGENS
+</div>
+
+<h3>
+어떤 환경에서 심해지는지도 중요합니다
+</h3>
+
+<p>
+알레르기 비염은
+꽃가루, 집먼지진드기, 곰팡이,
+동물 유래 알레르겐 등
+여러 환경적 요인과 관련될 수 있습니다.
+</p>
+
+<p>
+계절이 바뀔 때 증상이 심해지는지,
+청소나 이불 정리 후 재채기가 심한지,
+특정 환경에서 콧물이나 가려움이 반복되는지 등을
+진료 시 함께 말씀해주시면 좋습니다.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- COLD -->
+
+<section id="cold"
+         class="cold-section">
+
+<div class="container">
+
+<div class="cold-box">
+
+<div class="section-kicker">
+COMMON COLD
+</div>
+
+<h3>
+감기 증상도 함께 진료합니다
+</h3>
+
+<p>
+콧물과 코막힘이 있다고
+모두 알레르기 비염인 것은 아닙니다.
+</p>
+
+<p>
+감기에서는 콧물·코막힘과 함께
+목의 불편감, 기침, 가래,
+몸살감이나 발열 등이 동반될 수 있습니다.
+</p>
+
+<p>
+증상이 시작된 시점과 변화,
+동반 증상 등을 살펴
+현재의 호흡기 상태를 함께 확인합니다.
+</p>
+
+
+<div class="cold-compare">
+
+
+<div class="compare-card">
+
+<h4>
+알레르기 비염
+</h4>
+
+<p>
+맑은 콧물, 반복적인 재채기,
+코·눈 가려움 등이 나타날 수 있으며
+특정 계절이나 환경에서 반복되기도 합니다.
+</p>
+
+</div>
+
+
+<div class="compare-card">
+
+<h4>
+감기
+</h4>
+
+<p>
+콧물·코막힘과 함께
+인후 불편, 기침, 가래,
+몸살감이나 발열 등이 동반될 수 있습니다.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- INSURANCE HERBAL -->
+
+<section class="insurance">
+
+<div class="container">
+
+<div class="insurance-box">
+
+<div class="section-kicker">
+INSURANCE HERBAL MEDICINE
+</div>
+
+<h3>
+증상에 따라 건강보험 한약제제를 처방하기도 합니다
+</h3>
+
+<p>
+감기나 비염 등 호흡기 증상을 진료한 뒤
+현재의 상태에 따라
+건강보험이 적용되는 한약제제를 처방할 수 있습니다.
+</p>
+
+<p>
+가루 형태의 제제뿐 아니라
+복용하기 편한 연조엑스제 등
+여러 형태의 보험한약을 활용하는 경우도 있습니다.
+</p>
+
+<p>
+구체적인 처방과 건강보험 적용 여부,
+본인부담금은 진료 내용과 처방에 따라 달라질 수 있습니다.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TREATMENT -->
+
+<section id="treatment"
+         class="treatment">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+TREATMENT
+</div>
+
+<h2>
+현재 증상에 따라 진료 방법을 선택합니다
+</h2>
+
+<p>
+모든 치료를 모든 환자에게 동일하게 시행하지 않습니다.
+</p>
+
+</div>
+
+
+<div class="treatment-grid">
+
+
+<div class="treatment-card">
+
+<h3>
+침 치료
+</h3>
+
+<p>
+코 주변과 전신의 상태를 살펴
+필요한 경우 침 치료를 활용할 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="treatment-card">
+
+<h3>
+한약 · 보험한약
+</h3>
+
+<p>
+콧물, 코막힘, 재채기,
+인후 불편이나 기침 등 현재 증상에 따라
+한약 처방을 상담할 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="treatment-card">
+
+<h3>
+외용제
+</h3>
+
+<p>
+코 점막의 건조함이나 불편 등
+현재 상태에 따라
+외용제 사용을 상담하는 경우도 있습니다.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div style="margin-top:38px;">
+
+<img src="allergy-clinic-acupuncture.jpg"
+     alt="비염 증상과 관련해 코 주변에 침 치료를 하는 모습"
+     class="photo">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- LIFESTYLE -->
+
+<section id="lifestyle"
+         class="lifestyle">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+LIFESTYLE
+</div>
+
+<h2>
+비염은 생활환경도 함께 살펴보세요
+</h2>
+
+</div>
+
+
+<div class="life-grid">
+
+
+<div class="life-card">
+
+<h3>
+외출 후 손 씻기
+</h3>
+
+<p>
+감염성 호흡기 질환 예방을 위해
+기본적인 손 위생을 지키는 것이 중요합니다.
+</p>
+
+</div>
+
+
+<div class="life-card">
+
+<h3>
+침구류 관리
+</h3>
+
+<p>
+침구류와 실내 환경을 청결하게 관리하고
+먼지가 많이 쌓이지 않도록 해주세요.
+</p>
+
+</div>
+
+
+<div class="life-card">
+
+<h3>
+환기와 실내환경
+</h3>
+
+<p>
+실내 공기가 지나치게 건조하거나
+답답하지 않도록
+적절히 환기하고 관리해주세요.
+</p>
+
+</div>
+
+
+<div class="life-card">
+
+<h3>
+알레르겐 노출 확인
+</h3>
+
+<p>
+본인에게 증상을 유발하는
+꽃가루, 집먼지진드기 등
+알레르겐이 확인되어 있다면 노출을 줄이는 것이 중요합니다.
+</p>
+
+</div>
+
+
+<div class="life-card">
+
+<h3>
+따뜻한 물 마시기
+</h3>
+
+<p>
+목과 코가 건조하게 느껴질 때는
+물을 충분히 마셔
+수분을 유지하는 것이 좋습니다.
+</p>
+
+</div>
+
+
+<div class="life-card">
+
+<h3>
+증상 기록하기
+</h3>
+
+<p>
+아침, 외출 후, 청소 후 등
+언제 증상이 심해지는지 기록하면
+진료 시 도움이 될 수 있습니다.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div style="margin-top:38px;">
+
+<img src="allergy-clinic-lifestyle.jpg"
+     alt="비염 관리를 위해 침구류와 실내 환경을 관리하는 모습"
+     class="photo">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PRESSURE POINT -->
+
+<section class="pressure">
+
+<div class="container">
+
+<div class="pressure-box">
+
+<div class="section-kicker">
+ACUPRESSURE
+</div>
+
+<h3>
+집에서 가볍게 눌러볼 수 있는 부위
+</h3>
+
+<p>
+지압은 통증이 생길 정도로 강하게 누르기보다
+편안한 정도의 자극으로 가볍게 시행해주세요.
+</p>
+
+
+<div class="pressure-grid">
+
+
+<div class="pressure-item">
+
+<strong>
+영향혈
+</strong>
+
+<br>
+
+콧방울 옆과 팔자주름이 만나는 주변을
+부드럽게 눌러볼 수 있습니다.
+
+</div>
+
+
+<div class="pressure-item">
+
+<strong>
+상영향혈
+</strong>
+
+<br>
+
+영향혈보다 위쪽,
+코 옆 부위를 편안한 정도로 눌러볼 수 있습니다.
+
+</div>
+
+
+<div class="pressure-item">
+
+<strong>
+상성혈
+</strong>
+
+<br>
+
+이마 중앙에서 머리카락이 시작되는 부위보다
+조금 위쪽을 가볍게 눌러볼 수 있습니다.
+
+</div>
+
+
+<div class="pressure-item">
+
+<strong>
+곡지혈
+</strong>
+
+<br>
+
+팔꿈치를 구부렸을 때 생기는
+주름 바깥쪽 끝 주변을 눌러볼 수 있습니다.
+
+</div>
+
+
+</div>
+
+
+<p style="margin-top:20px;color:#777;">
+
+지압은 비염의 진단이나 치료를 대신하지 않습니다.
+증상이 심하거나 지속되면 의료기관에서 진료받으시기 바랍니다.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FAQ -->
+
+<section id="faq"
+         class="faq-section">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+FAQ
+</div>
+
+<h2>
+비염·감기 진료에서 자주 듣는 질문
+</h2>
+
+</div>
+
+
+<div class="faq-list">
+
+
+<details>
+
+<summary>
+비염인지 감기인지 잘 모르겠어요.
+</summary>
+
+<p>
+알레르기 비염은 맑은 콧물,
+반복적인 재채기와 가려움 등이 특징적으로 나타날 수 있습니다.
+반면 감기에서는 목의 불편, 기침, 몸살감이나 발열 등이
+함께 나타나는 경우가 있습니다.
+실제 증상은 겹칠 수 있어 경과와 동반 증상을 함께 살펴봅니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+왜 아침에 일어나면 재채기와 콧물이 심한가요?
+</summary>
+
+<p>
+수면 중 접촉한 침구류나 실내환경,
+기상 후의 환경 변화 등에 따라
+아침에 증상이 두드러지는 분도 있습니다.
+언제 증상이 심해지는지를 함께 확인하는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+집먼지진드기나 꽃가루가 원인이 될 수 있나요?
+</summary>
+
+<p>
+네.
+꽃가루, 집먼지진드기, 곰팡이,
+동물 유래 물질 등은
+알레르기 증상을 유발할 수 있는 대표적인 알레르겐입니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+비염이 있으면 눈도 가려울 수 있나요?
+</summary>
+
+<p>
+알레르기 증상이 있는 분들 가운데
+코 증상과 함께 눈의 가려움이나 불편을
+호소하는 경우도 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+감기에도 한약 처방을 받을 수 있나요?
+</summary>
+
+<p>
+네.
+현재의 콧물, 코막힘,
+목의 불편, 기침 등의 증상과 상태를 확인하여
+한약제제를 처방할 수 있습니다.
+진료 내용에 따라 건강보험이 적용되는 한약제제를
+사용하는 경우도 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+보험한약은 일반 한약과 다른가요?
+</summary>
+
+<p>
+건강보험 한약제제는
+정해진 한약제제 중 현재의 증상과 진료 내용에 따라
+처방할 수 있는 제제입니다.
+구체적인 처방과 건강보험 적용 여부는 진료 후 결정됩니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+침 치료도 함께 하나요?
+</summary>
+
+<p>
+현재의 비염 증상과 전반적인 상태에 따라
+침 치료를 한약 등 다른 진료방법과
+함께 고려할 수 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+아이도 비염이나 감기 증상이 반복될 수 있나요?
+</summary>
+
+<p>
+아이도 콧물, 코막힘,
+재채기 등 비염이나 감기와 관련된 증상이 나타날 수 있습니다.
+연령과 상태를 고려하여 진료방법을 결정합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+생활관리에서 가장 중요한 것은 무엇인가요?
+</summary>
+
+<p>
+본인에게 증상을 유발하는 환경을 파악하고
+가능한 범위에서 노출을 줄이는 것이 중요합니다.
+침구류와 실내환경 관리,
+손 위생과 충분한 수분 섭취 등
+기본적인 생활관리도 함께 신경 써주세요.
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact"
+         class="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>
+알레르기·감기 진료 예약 및 문의
+</h2>
+
+<p>
+네이버 예약 또는 전화로 진료 예약이 가능합니다.
+</p>
+
+
+<div class="contact-buttons">
+
+<a class="button"
+   href="tel:0415343100">
+전화하기
+</a>
+
+<a class="button light"
+   href="https://booking.naver.com/booking/13/bizes/250311"
+   target="_blank"
+   rel="noopener">
+네이버 예약
+</a>
+
+<a class="button light"
+   href="http://pf.kakao.com/_xjTGtj"
+   target="_blank"
+   rel="noopener">
+카카오톡 상담
+</a>
+
+<a class="button light"
+   href="https://naver.me/52RVqgJs"
+   target="_blank"
+   rel="noopener">
+네이버지도 길찾기
+</a>
+
+</div>
+
+
+<div style="margin-top:30px;">
+
+<a href="index.html"
+   style="color:#527e5e;font-weight:700;">
+
+← 솔솔한의원 메인 홈페이지로 돌아가기
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<div class="container">
+
+<img src="logo.jpg"
+     alt="솔솔한의원"
+     class="footer-logo">
+
+<p>
+<strong>솔솔한의원</strong>
+</p>
+
+<p>
+충청남도 아산시 배방읍 모산로 91, 1층
+</p>
+
+<p>
+041-534-3100
+</p>
+
+<p>
+평일 09:00 ~ 19:30 · 점심시간 13:00 ~ 14:00
+</p>
+
+<p>
+토요일 09:00 ~ 13:00 · 일요일 및 공휴일 휴진
+</p>
+
+
+<div class="notice">
+
+본 페이지는 알레르기 비염과 감기 등
+호흡기 증상에 관한 일반적인 정보를 제공하기 위한 것입니다.
+증상의 원인과 진료 내용은 개인에 따라 다를 수 있으며
+구체적인 사항은 진료를 통해 상담하시기 바랍니다.
+
+</div>
+
+
+<p style="margin-top:24px;">
+© Solsol Korean Medicine Clinic. All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+const menuButton =
+    document.getElementById("mobileMenuButton");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+menuButton.addEventListener(
+    "click",
+    function () {
+
+        const isOpen =
+            mobileMenu.classList.toggle("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "메뉴 닫기" : "메뉴 열기"
+        );
+
+    }
+);
+
+
+mobileMenu.querySelectorAll("a").forEach(
+    function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                mobileMenu.classList.remove("open");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    "메뉴 열기"
+                );
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
