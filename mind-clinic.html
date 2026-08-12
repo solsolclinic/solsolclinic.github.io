@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>심신클리닉 | 불면·불안·공황·화병 | 아산 배방 솔솔한의원</title>
+
+<meta name="description"
+      content="아산 배방 솔솔한의원 심신클리닉. 불면, 불안, 공황 증상, 화병, 우울감과 함께 나타날 수 있는 두근거림, 가슴 답답함, 두통, 어지럼, 소화불량 등 몸과 마음의 변화를 함께 살펴봅니다.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://solsolclinic.github.io/mind-clinic.html">
+
+<link rel="icon"
+      href="logo.jpg"
+      type="image/jpeg">
+
+
+<!-- SNS 공유 -->
+
+<meta property="og:type"
+      content="website">
+
+<meta property="og:site_name"
+      content="솔솔한의원">
+
+<meta property="og:title"
+      content="심신클리닉 | 아산 배방 솔솔한의원">
+
+<meta property="og:description"
+      content="불면·불안·공황 증상과 함께 나타나는 몸과 마음의 변화를 함께 살펴봅니다.">
+
+<meta property="og:url"
+      content="https://solsolclinic.github.io/mind-clinic.html">
+
+<meta property="og:image"
+      content="https://solsolclinic.github.io/mind-clinic-consultation.jpg">
+
+<meta property="og:image:alt"
+      content="심신의 불편과 생활 상태를 의료진과 상담하는 모습">
+
+
+<!-- 구조화 데이터 -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "솔솔한의원 심신클리닉",
+  "url": "https://solsolclinic.github.io/mind-clinic.html",
+  "description": "불면, 불안, 공황 증상, 화병, 우울감 등 심신의 불편에 관한 진료 안내",
+  "publisher": {
+    "@type": "MedicalClinic",
+    "name": "솔솔한의원",
+    "url": "https://solsolclinic.github.io/",
+    "telephone": "+82-41-534-3100",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "배방읍 모산로 91, 1층",
+      "addressLocality": "아산시",
+      "addressRegion": "충청남도",
+      "addressCountry": "KR"
+    }
+  }
+}
+</script>
+
+
+<style>
+
+:root {
+    --green-deep:#527e5e;
+    --green-main:#6ca67b;
+    --green-soft:#eef6f0;
+    --green-pale:#f7faf7;
+    --cream:#fbfaf6;
+    --white:#ffffff;
+    --text:#303530;
+    --sub:#687169;
+    --line:#e1e9e3;
+    --warm:#f7f2ea;
+    --shadow:0 14px 38px rgba(55,85,62,.08);
+}
+
+* {
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin:0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Noto Sans KR",
+        "Malgun Gothic",
+        sans-serif;
+    color:var(--text);
+    background:var(--cream);
+    line-height:1.8;
+    word-break:keep-all;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+img {
+    display:block;
+    max-width:100%;
+}
+
+button {
+    font:inherit;
+}
+
+.container {
+    width:min(1080px, calc(100% - 40px));
+    margin:0 auto;
+}
+
+
+/* HEADER */
+
+header {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);
+    backdrop-filter:blur(10px);
+}
+
+.nav {
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+.brand img {
+    width:140px;
+}
+
+.nav-menu {
+    display:flex;
+    align-items:center;
+    gap:22px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.nav-menu a:hover {
+    color:var(--green-deep);
+}
+
+
+/* MOBILE MENU */
+
+.mobile-menu-button {
+    display:none;
+    width:44px;
+    height:44px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:white;
+    cursor:pointer;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:5px;
+}
+
+.mobile-menu-button span {
+    width:20px;
+    height:2px;
+    background:var(--text);
+}
+
+.mobile-menu {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    padding:10px 20px 18px;
+    background:white;
+    border-bottom:1px solid var(--line);
+    box-shadow:0 14px 30px rgba(45,70,50,.09);
+}
+
+.mobile-menu.open {
+    display:block;
+}
+
+.mobile-menu a {
+    display:block;
+    padding:14px 8px;
+    border-bottom:1px solid var(--line);
+    font-size:15px;
+    font-weight:700;
+}
+
+.mobile-menu a:last-child {
+    border-bottom:0;
+}
+
+
+/* BUTTON */
+
+.button {
+    min-height:49px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 22px;
+    border-radius:999px;
+    background:var(--green-deep);
+    border:1px solid var(--green-deep);
+    color:white;
+    font-size:14px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.button.light {
+    background:white;
+    color:var(--text);
+    border-color:var(--line);
+}
+
+.button:hover {
+    transform:translateY(-2px);
+    opacity:.9;
+}
+
+
+/* COMMON */
+
+section {
+    padding:85px 0;
+    scroll-margin-top:85px;
+}
+
+.section-head {
+    margin-bottom:38px;
+}
+
+.section-kicker {
+    margin-bottom:7px;
+    color:var(--green-deep);
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.08em;
+}
+
+.section-head h2 {
+    margin:0 0 11px;
+    font-size:clamp(29px,4vw,40px);
+    line-height:1.4;
+    letter-spacing:-2px;
+}
+
+.section-head p {
+    margin:0;
+    color:var(--sub);
+}
+
+
+/* HERO */
+
+.hero {
+    padding:58px 0 75px;
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcf9 0%,
+            #edf6ef 100%
+        );
+}
+
+.breadcrumb {
+    margin-bottom:28px;
+    color:var(--sub);
+    font-size:13px;
+}
+
+.breadcrumb a {
+    color:var(--green-deep);
+    font-weight:700;
+}
+
+.hero-grid {
+    display:grid;
+    grid-template-columns:.95fr 1.05fr;
+    background:white;
+    border:1px solid #e1eae3;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.hero-copy {
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-kicker {
+    margin-bottom:10px;
+    color:var(--green-deep);
+    font-size:14px;
+    font-weight:800;
+}
+
+.hero h1 {
+    margin:0 0 22px;
+    font-size:clamp(38px,5vw,56px);
+    line-height:1.28;
+    letter-spacing:-3px;
+}
+
+.hero-lead {
+    margin:0;
+    color:#58625b;
+    font-size:17px;
+}
+
+.hero-note {
+    margin-top:23px;
+    padding:18px 20px;
+    background:var(--green-soft);
+    border-radius:15px;
+    color:#576159;
+    font-size:14px;
+}
+
+.hero-image {
+    min-height:520px;
+}
+
+.hero-image img {
+    width:100%;
+    height:100%;
+    min-height:520px;
+    object-fit:cover;
+}
+
+
+/* DOCTOR */
+
+.doctor-section {
+    background:white;
+}
+
+.doctor-box {
+    padding:37px 40px;
+    border:1px solid var(--line);
+    border-radius:22px;
+    background:var(--green-pale);
+}
+
+.doctor-box .label {
+    color:var(--green-deep);
+    font-weight:800;
+    font-size:14px;
+}
+
+.doctor-box h2 {
+    margin:8px 0 12px;
+    font-size:30px;
+    letter-spacing:-1.5px;
+}
+
+.doctor-box p {
+    margin:0;
+    color:var(--sub);
+}
+
+
+/* AREAS */
+
+.areas {
+    background:var(--cream);
+}
+
+.area-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.area-card {
+    padding:28px 25px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:18px;
+}
+
+.area-card h3 {
+    margin:0 0 8px;
+    font-size:19px;
+}
+
+.area-card p {
+    margin:0;
+    color:var(--sub);
+    font-size:14px;
+}
+
+
+/* BODY SYMPTOMS */
+
+.body-symptoms {
+    background:var(--green-soft);
+}
+
+.split {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.photo {
+    width:100%;
+    border-radius:22px;
+    box-shadow:var(--shadow);
+}
+
+.body-card {
+    padding:36px;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:22px;
+}
+
+.body-card h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:25px;
+}
+
+.body-card p {
+    color:#566058;
+}
+
+.symptom-tags {
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-top:20px;
+}
+
+.symptom-tags span {
+    padding:8px 13px;
+    background:var(--green-pale);
+    border:1px solid var(--line);
+    border-radius:999px;
+    font-size:13px;
+}
+
+
+/* PANIC ANALOGY */
+
+.panic {
+    background:white;
+}
+
+.analogy-box {
+    padding:42px;
+    background:
+        linear-gradient(
+            135deg,
+            #f9fbf8,
+            #f0f6f1
+        );
+    border:1px solid #dce7de;
+    border-radius:24px;
+}
+
+.analogy-box h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:27px;
+}
+
+.analogy-box p {
+    color:#566058;
+}
+
+.analogy-highlight {
+    margin-top:22px;
+    padding:20px 22px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:15px;
+}
+
+
+/* INSOMNIA */
+
+.insomnia {
+    background:var(--cream);
+}
+
+.text-panel {
+    padding:35px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:22px;
+}
+
+.text-panel h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:25px;
+}
+
+.text-panel p {
+    color:#566058;
+}
+
+
+/* TREATMENT */
+
+.treatment {
+    background:white;
+}
+
+.treatment-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:13px;
+}
+
+.treatment-item {
+    padding:24px 15px;
+    background:var(--green-pale);
+    border:1px solid var(--line);
+    border-radius:16px;
+    text-align:center;
+    font-weight:750;
+}
+
+.treatment-explain {
+    margin-top:30px;
+    padding:30px;
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:20px;
+}
+
+.treatment-explain p {
+    color:var(--sub);
+}
+
+
+/* HERBAL */
+
+.herbal {
+    background:var(--green-soft);
+}
+
+.herbal-box {
+    padding:42px;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:23px;
+}
+
+.herbal-box h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:26px;
+}
+
+.herbal-box p {
+    color:#566058;
+}
+
+
+/* TRADITIONAL VIEW */
+
+.traditional {
+    background:white;
+}
+
+.traditional-box {
+    display:grid;
+    grid-template-columns:.7fr 1.3fr;
+    gap:38px;
+    align-items:start;
+}
+
+.traditional-title {
+    font-size:29px;
+    font-weight:800;
+    line-height:1.5;
+    letter-spacing:-1.5px;
+}
+
+.traditional-text {
+    padding:35px;
+    background:var(--warm);
+    border:1px solid #ebe4d9;
+    border-radius:22px;
+}
+
+.traditional-text p {
+    margin:0 0 15px;
+    color:#625e56;
+}
+
+.traditional-text p:last-child {
+    margin-bottom:0;
+}
+
+
+/* CONSULTATION */
+
+.consultation {
+    background:var(--cream);
+}
+
+
+/* MEDICATION */
+
+.medication {
+    background:var(--green-soft);
+}
+
+.medication-box {
+    padding:32px;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:20px;
+}
+
+.medication-box strong {
+    color:var(--green-deep);
+}
+
+
+/* FAQ */
+
+.faq-section {
+    background:white;
+}
+
+.faq-list {
+    padding:5px 30px;
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:22px;
+}
+
+.faq-list details {
+    padding:22px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.faq-list details:last-child {
+    border-bottom:0;
+}
+
+.faq-list summary {
+    cursor:pointer;
+    font-weight:750;
+}
+
+.faq-list p {
+    margin-bottom:0;
+    color:var(--sub);
+}
+
+
+/* CONTACT */
+
+.contact {
+    background:var(--green-soft);
+}
+
+.contact-box {
+    padding:48px 30px;
+    text-align:center;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:24px;
+}
+
+.contact-box h2 {
+    margin:0 0 10px;
+}
+
+.contact-box p {
+    color:var(--sub);
+}
+
+.contact-buttons {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding:48px 0;
+    background:#f2f6f2;
+    border-top:1px solid var(--line);
+    color:#5b645e;
+    font-size:13px;
+}
+
+.footer-logo {
+    width:120px;
+    margin-bottom:17px;
+}
+
+footer p {
+    margin:5px 0;
+}
+
+.notice {
+    max-width:790px;
+    margin-top:23px;
+    color:#89918b;
+    font-size:12px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px) {
+
+    .nav-menu {
+        display:none;
+    }
+
+    .mobile-menu-button {
+        display:flex;
+    }
+
+    .brand img {
+        width:110px;
+    }
+
+    .hero-grid,
+    .split,
+    .traditional-box {
+        grid-template-columns:1fr;
+    }
+
+    .hero-copy {
+        padding:37px 25px;
+    }
+
+    .hero h1 {
+        font-size:38px;
+        letter-spacing:-2px;
+    }
+
+    .hero-lead {
+        font-size:15px;
+    }
+
+    .hero-image,
+    .hero-image img {
+        min-height:300px;
+        height:300px;
+    }
+
+    section {
+        padding:66px 0;
+        scroll-margin-top:76px;
+    }
+
+    .area-grid {
+        grid-template-columns:1fr;
+    }
+
+    .treatment-grid {
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .doctor-box,
+    .body-card,
+    .analogy-box,
+    .text-panel,
+    .herbal-box,
+    .traditional-text,
+    .medication-box {
+        padding:27px 23px;
+    }
+
+    .contact-buttons {
+        display:grid;
+    }
+
+    .contact-buttons .button {
+        width:100%;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container nav">
+
+<a href="index.html"
+   class="brand"
+   aria-label="솔솔한의원 홈페이지">
+
+<img src="logo.jpg"
+     alt="솔솔한의원 로고">
+
+</a>
+
+
+<nav class="nav-menu">
+
+<a href="#areas">진료분야</a>
+<a href="#body">몸의 증상</a>
+<a href="#panic">공황</a>
+<a href="#treatment">진료방법</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">예약·문의</a>
+
+</nav>
+
+
+<button class="mobile-menu-button"
+        id="mobileMenuButton"
+        type="button"
+        aria-label="메뉴 열기"
+        aria-expanded="false">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+<div class="mobile-menu"
+     id="mobileMenu">
+
+<a href="#areas">진료분야</a>
+<a href="#body">몸의 증상</a>
+<a href="#panic">공황 증상</a>
+<a href="#treatment">진료방법</a>
+<a href="#faq">자주 묻는 질문</a>
+<a href="#contact">예약·문의</a>
+<a href="index.html">솔솔한의원 홈</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="index.html">
+솔솔한의원
+</a>
+
+&nbsp;›&nbsp;
+
+심신클리닉
+
+</div>
+
+
+<div class="hero-grid">
+
+
+<div class="hero-copy">
+
+<div class="hero-kicker">
+아산 배방 · 심신클리닉
+</div>
+
+<h1>
+몸의 증상과<br>
+마음의 불편을<br>
+함께 살펴봅니다.
+</h1>
+
+<p class="hero-lead">
+
+불면, 불안, 공황 증상, 화병, 우울감 등은
+마음의 불편뿐 아니라
+두근거림, 가슴 답답함, 두통, 어지럼,
+소화와 수면의 변화 등 여러 신체 증상과
+함께 나타날 수 있습니다.
+
+</p>
+
+<div class="hero-note">
+
+솔솔한의원에서는
+현재 느끼는 증상뿐 아니라
+수면, 소화, 생활환경과 증상이 변화해온 과정을
+함께 살펴봅니다.
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<img src="mind-clinic-consultation.jpg"
+     alt="심신의 불편과 생활 상태에 대해 의료진과 상담하는 모습">
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- DOCTOR -->
+
+<section class="doctor-section">
+
+<div class="container">
+
+<div class="doctor-box">
+
+<div class="label">
+의료진 작성 · 검토
+</div>
+
+<h2>
+이승환 대표원장
+</h2>
+
+<p>
+
+<strong>
+한의학박사 · 한방신경정신과 전문의
+</strong>
+
+<br><br>
+
+몸과 마음의 증상을 따로 떼어 보기보다
+환자분이 경험하고 있는 여러 불편과
+그동안의 경과를 함께 살펴 진료합니다.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- AREAS -->
+
+<section id="areas"
+         class="areas">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+MIND CLINIC
+</div>
+
+<h2>
+이런 심신의 불편을 살펴봅니다
+</h2>
+
+<p>
+증상의 모습과 정도는 사람마다 다르게 나타날 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="area-grid">
+
+
+<div class="area-card">
+
+<h3>
+불면 · 수면불량
+</h3>
+
+<p>
+잠들기 어렵거나 자주 깨는 경우,
+아침에 일찍 깨거나 충분히 잤는데도
+개운하지 않은 경우 등을 살펴봅니다.
+</p>
+
+</div>
+
+
+<div class="area-card">
+
+<h3>
+불안
+</h3>
+
+<p>
+지속적인 걱정과 긴장,
+두근거림이나 답답함 등
+불안과 함께 나타나는 여러 증상을 확인합니다.
+</p>
+
+</div>
+
+
+<div class="area-card">
+
+<h3>
+공황 증상
+</h3>
+
+<p>
+갑작스러운 두려움과 함께 나타날 수 있는
+두근거림, 숨이 답답한 느낌,
+어지럼 등의 증상과 경과를 살펴봅니다.
+</p>
+
+</div>
+
+
+<div class="area-card">
+
+<h3>
+화병
+</h3>
+
+<p>
+억울함이나 분노, 답답함과 함께
+가슴이나 목의 불편,
+열감이나 수면의 변화 등을 살펴봅니다.
+</p>
+
+</div>
+
+
+<div class="area-card">
+
+<h3>
+우울감 · 의욕저하
+</h3>
+
+<p>
+기분의 변화뿐 아니라
+수면, 식욕, 기력과 일상생활의 변화도
+함께 확인합니다.
+</p>
+
+</div>
+
+
+<div class="area-card">
+
+<h3>
+스트레스와 신체 증상
+</h3>
+
+<p>
+스트레스와 함께 나타나는
+두통, 소화불량, 긴장감 등
+신체적인 불편도 함께 이야기할 수 있습니다.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- BODY SYMPTOMS -->
+
+<section id="body"
+         class="body-symptoms">
+
+<div class="container">
+
+<div class="split">
+
+
+<div class="body-card">
+
+<div class="section-kicker">
+MIND &amp; BODY
+</div>
+
+<h3>
+마음이 힘들 때 몸도 함께 불편할 수 있습니다
+</h3>
+
+<p>
+불안이나 스트레스가 있을 때
+마음의 증상만 나타나는 것은 아닙니다.
+</p>
+
+<p>
+사람에 따라 여러 신체적인 불편을
+함께 경험할 수 있습니다.
+</p>
+
+
+<div class="symptom-tags">
+
+<span>두근거림</span>
+<span>가슴 답답함</span>
+<span>두통</span>
+<span>어지럼</span>
+<span>수면불량</span>
+<span>소화불량</span>
+<span>식욕 변화</span>
+<span>목·어깨 긴장</span>
+<span>기력저하</span>
+
+</div>
+
+
+<p style="margin-top:20px;">
+
+다만 이러한 증상은 다른 신체질환에서도
+나타날 수 있으므로
+모든 증상을 심리적인 원인으로만 설명하지 않고
+현재 상태와 경과를 함께 확인합니다.
+
+</p>
+
+</div>
+
+
+<div>
+
+<img src="mind-clinic-anxiety-panic.jpg"
+     alt="불안과 긴장으로 신체적인 불편함을 느끼는 모습"
+     class="photo">
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PANIC ANALOGY -->
+
+<section id="panic"
+         class="panic">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+PANIC
+</div>
+
+<h2>
+공황 증상을 좁은 골목길의 초보운전에 비유해봅니다
+</h2>
+
+</div>
+
+
+<div class="analogy-box">
+
+<h3>
+처음에는 좁은 골목길을 지나는 것처럼 두렵게 느껴질 수 있습니다.
+</h3>
+
+<p>
+양옆에 자동차가 세워져 있는
+좁은 골목길을 처음 운전하는 모습을 떠올려보세요.
+</p>
+
+<p>
+초보운전자는 혹시 부딪히지는 않을까 긴장하고,
+아주 천천히 움직이거나
+아예 앞으로 나아가기 어렵다고 느낄 수도 있습니다.
+</p>
+
+<p>
+공황 증상 역시 처음 경험하면
+몸에서 일어나는 작은 변화도 크게 느껴지고,
+또다시 증상이 나타날까 걱정하게 되는 경우가 있습니다.
+</p>
+
+
+<div class="analogy-highlight">
+
+<strong>
+증상을 이해하고 대응하는 방법을 조금씩 익혀가는 과정도 중요합니다.
+</strong>
+
+<br><br>
+
+복식호흡과 이완을 연습하고,
+현재의 몸 상태를 돌보며,
+필요한 치료와 상담을 이어가면서
+자신에게 맞는 대응방법을 찾아가는 것이 중요합니다.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- INSOMNIA -->
+
+<section class="insomnia">
+
+<div class="container">
+
+<div class="split">
+
+
+<div>
+
+<img src="mind-clinic-insomnia.jpg"
+     alt="잠들기 어려워 밤에 깨어 있는 모습"
+     class="photo">
+
+</div>
+
+
+<div class="text-panel">
+
+<div class="section-kicker">
+SLEEP
+</div>
+
+<h3>
+잠을 얼마나 자는지만 보지 않습니다
+</h3>
+
+<p>
+수면의 어려움은
+잠드는 시간, 자주 깨는지 여부,
+꿈, 아침의 피로감 등 여러 모습으로 나타날 수 있습니다.
+</p>
+
+<p>
+또한 불안이나 긴장,
+소화 상태와 생활습관 등이
+수면과 함께 변화하는 경우도 있습니다.
+</p>
+
+<p>
+진료 시에는 이러한 부분을 함께 확인하여
+현재의 수면 상태를 살펴봅니다.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TREATMENT -->
+
+<section id="treatment"
+         class="treatment">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+TREATMENT
+</div>
+
+<h2>
+현재 상태에 따라 진료 방향을 상담합니다
+</h2>
+
+<p>
+모든 치료를 모든 환자에게 동일하게 적용하지 않습니다.
+</p>
+
+</div>
+
+
+<div class="treatment-grid">
+
+<div class="treatment-item">
+한약
+</div>
+
+<div class="treatment-item">
+침
+</div>
+
+<div class="treatment-item">
+이완요법
+</div>
+
+<div class="treatment-item">
+복식호흡
+</div>
+
+</div>
+
+
+<div class="treatment-explain">
+
+<p>
+불면이나 불안, 공황 증상 등은
+증상의 모습과 지속기간,
+함께 나타나는 신체 증상이 사람마다 다를 수 있습니다.
+</p>
+
+<p>
+현재 상태를 살펴 필요한 경우
+한약과 침 등의 한의진료를 고려하며,
+복식호흡이나 이완 등 일상에서 활용할 수 있는 방법도
+함께 안내할 수 있습니다.
+</p>
+
+</div>
+
+
+<div style="margin-top:38px;">
+
+<img src="mind-clinic-acupuncture-relaxation.jpg"
+     alt="편안한 자세로 침 치료와 이완을 하는 모습"
+     class="photo">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- HERBAL -->
+
+<section class="herbal">
+
+<div class="container">
+
+<div class="herbal-box">
+
+<div class="section-kicker">
+HERBAL MEDICINE
+</div>
+
+<h3>
+한약 처방은 현재의 몸과 마음 상태를 함께 살펴 결정합니다
+</h3>
+
+<p>
+같은 불안이나 불면을 호소하더라도
+수면, 소화, 식욕, 기력,
+두근거림이나 답답함 등
+함께 나타나는 증상은 서로 다를 수 있습니다.
+</p>
+
+<p>
+솔솔한의원에서는
+현재 나타나는 증상과 체질 및 전반적인 상태를 확인하여
+필요한 경우 한약 처방을 상담합니다.
+</p>
+
+<p>
+처방의 종류와 복용기간은
+증상의 양상과 변화에 따라 달라질 수 있으며
+진료 과정에서 상태를 확인하며 조정할 수 있습니다.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TRADITIONAL VIEW -->
+
+<section class="traditional">
+
+<div class="container">
+
+<div class="traditional-box">
+
+
+<div class="traditional-title">
+
+한의학에서는<br>
+몸과 마음을<br>
+서로 연결된 것으로<br>
+바라봅니다.
+
+</div>
+
+
+<div class="traditional-text">
+
+<p>
+한의학에서는
+<strong>심신일여(心身一如)</strong>라는 관점에서
+몸과 마음의 상태가 서로 영향을 줄 수 있다고 봅니다.
+</p>
+
+<p>
+또한 전통적인 한의학에서는
+소화기능과 전신의 순환 상태도
+불안, 수면, 기력 등의 증상을 살펴볼 때
+함께 고려해 왔습니다.
+</p>
+
+<p>
+따라서 심신클리닉에서는
+마음의 불편뿐 아니라
+수면, 소화, 식욕, 피로 등
+몸의 상태도 함께 확인합니다.
+</p>
+
+<p>
+이러한 내용은 전통 한의학적 관점을 설명한 것으로,
+개별 증상의 원인은 진료를 통해 종합적으로 살펴야 합니다.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONSULTATION -->
+
+<section class="consultation">
+
+<div class="container">
+
+<div class="split">
+
+
+<div>
+
+<img src="mind-clinic-consultation.jpg"
+     alt="심신 증상과 생활 상태를 의료진과 상담하는 모습"
+     class="photo">
+
+</div>
+
+
+<div>
+
+<div class="section-kicker">
+CONSULTATION
+</div>
+
+<h2>
+편하게 이야기하셔도 됩니다
+</h2>
+
+<p>
+불안이나 수면 문제를 이야기하는 것을
+어렵게 느끼시는 분도 있습니다.
+</p>
+
+<p>
+언제부터 불편했는지,
+어떤 상황에서 증상이 심해지는지,
+잠과 식사, 일상생활에는 어떤 변화가 있었는지 등
+현재 느끼는 부분부터 천천히 말씀해주시면 됩니다.
+</p>
+
+<p>
+몸의 증상과 마음의 불편을
+따로 구분해서 이야기하실 필요는 없습니다.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- MEDICATION -->
+
+<section class="medication">
+
+<div class="container">
+
+<div class="medication-box">
+
+<strong>
+현재 복용 중인 약이 있다면 진료 시 알려주세요.
+</strong>
+
+<br><br>
+
+정신건강의학과 등 다른 의료기관에서
+현재 처방받아 복용 중인 약이 있다면
+약 이름이나 처방 내용을 함께 알려주시면 좋습니다.
+
+<br><br>
+
+복용 중인 처방약을
+임의로 중단하거나 용량을 줄이지 마시고,
+변경이 필요한 경우에는
+해당 약을 처방한 의료진과 상의하시기 바랍니다.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FAQ -->
+
+<section id="faq"
+         class="faq-section">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+FAQ
+</div>
+
+<h2>
+심신클리닉에서 자주 듣는 질문
+</h2>
+
+</div>
+
+
+<div class="faq-list">
+
+
+<details>
+
+<summary>
+불안하면 왜 가슴이 두근거리거나 답답할 수 있나요?
+</summary>
+
+<p>
+불안이나 공황 증상과 함께
+두근거림, 숨이 답답한 느낌,
+어지럼이나 복부의 불편 등
+신체적인 증상을 경험하는 경우가 있습니다.
+다만 신체 증상의 원인은 다양하므로
+증상의 양상과 경과를 함께 확인합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+불안한데 왜 소화 상태도 물어보나요?
+</summary>
+
+<p>
+불안과 긴장이 있을 때
+식욕이나 소화 상태가 함께 변하는 경우가 있습니다.
+또한 한의학에서는 몸과 마음을 서로 연결된 상태로 살피기 때문에
+수면과 소화, 기력 등 전반적인 상태를 함께 확인합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+잠을 잘 못 자는 것도 함께 이야기해야 하나요?
+</summary>
+
+<p>
+네.
+수면은 심신 상태를 살펴볼 때 중요한 부분 중 하나입니다.
+잠드는 데 걸리는 시간,
+밤중에 자주 깨는지,
+아침에 피곤한지 등을 함께 말씀해주시면 됩니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+공황 증상이 있을 때 복식호흡을 해도 되나요?
+</summary>
+
+<p>
+천천히 호흡하며 몸의 긴장을 낮추는 방법을
+연습하는 분들이 있습니다.
+호흡을 억지로 크게 하기보다는
+편안한 속도로 천천히 호흡하는 것이 중요합니다.
+구체적인 방법은 진료 시 안내받으실 수 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+침 치료도 함께 하나요?
+</summary>
+
+<p>
+현재 상태에 따라
+침 치료를 한약이나 생활관리와 함께
+고려할 수 있습니다.
+구체적인 치료방법은 진료 후 결정합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+한약은 얼마나 복용해야 하나요?
+</summary>
+
+<p>
+정해진 기간이 모든 분에게 동일하게 적용되는 것은 아닙니다.
+증상이 지속된 기간과 현재 상태,
+복용 중 나타나는 변화 등을 확인하면서
+처방과 복용기간을 상담합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+기운이 많이 떨어져 있는데 이것도 말씀드려야 하나요?
+</summary>
+
+<p>
+네.
+불안이나 수면의 어려움과 함께
+기력저하, 식욕 변화, 피로 등이 나타나는 경우도 있어
+진료 시 함께 살펴볼 수 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+정신건강의학과 약을 먹고 있는데 한의원 진료를 받을 때 말해야 하나요?
+</summary>
+
+<p>
+네.
+현재 복용 중인 약이나 건강기능식품 등이 있다면
+진료 시 알려주세요.
+처방약은 임의로 중단하거나 변경하지 마시고
+약 조정이 필요한 경우 처방 의료진과 상의하시기 바랍니다.
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact"
+         class="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>
+심신클리닉 예약 및 문의
+</h2>
+
+<p>
+네이버 예약 또는 전화로 진료 예약이 가능합니다.
+</p>
+
+
+<div class="contact-buttons">
+
+<a class="button"
+   href="tel:0415343100">
+전화하기
+</a>
+
+<a class="button light"
+   href="https://booking.naver.com/booking/13/bizes/250311"
+   target="_blank"
+   rel="noopener">
+네이버 예약
+</a>
+
+<a class="button light"
+   href="http://pf.kakao.com/_xjTGtj"
+   target="_blank"
+   rel="noopener">
+카카오톡 상담
+</a>
+
+<a class="button light"
+   href="https://naver.me/52RVqgJs"
+   target="_blank"
+   rel="noopener">
+네이버지도 길찾기
+</a>
+
+</div>
+
+
+<div style="margin-top:30px;">
+
+<a href="index.html"
+   style="color:#527e5e;font-weight:700;">
+
+← 솔솔한의원 메인 홈페이지로 돌아가기
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<div class="container">
+
+<img src="logo.jpg"
+     alt="솔솔한의원"
+     class="footer-logo">
+
+<p>
+<strong>솔솔한의원</strong>
+</p>
+
+<p>
+충청남도 아산시 배방읍 모산로 91, 1층
+</p>
+
+<p>
+041-534-3100
+</p>
+
+<p>
+평일 09:00 ~ 19:30 · 점심시간 13:00 ~ 14:00
+</p>
+
+<p>
+토요일 09:00 ~ 13:00 · 일요일 및 공휴일 휴진
+</p>
+
+
+<div class="notice">
+
+본 페이지는 불면, 불안, 공황 증상 등
+심신의 불편에 관한 일반적인 정보를 제공하기 위한 것입니다.
+증상의 원인과 진료 내용은 개인에 따라 다를 수 있으며
+구체적인 사항은 진료를 통해 상담하시기 바랍니다.
+
+</div>
+
+<p style="margin-top:24px;">
+© Solsol Korean Medicine Clinic. All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+const menuButton =
+    document.getElementById("mobileMenuButton");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+menuButton.addEventListener(
+    "click",
+    function () {
+
+        const isOpen =
+            mobileMenu.classList.toggle("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "메뉴 닫기" : "메뉴 열기"
+        );
+
+    }
+);
+
+
+mobileMenu.querySelectorAll("a").forEach(
+    function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                mobileMenu.classList.remove("open");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
