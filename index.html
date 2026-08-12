@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>솔솔한의원 | 아산 배방 부부한의원</title>
+
+<meta name="description"
+      content="동문수학한 부부한의사가 함께 진료하는 아산 배방 솔솔한의원입니다. 한의학박사·한방신경정신과 전문의 이승환 대표원장과 정보은 원장이 진료합니다.">
+
+<meta name="robots" content="index, follow">
+
+<meta name="author" content="솔솔한의원">
+
+<link rel="canonical"
+      href="https://solsolclinic.github.io/">
+
+
+<!-- 링크 공유 미리보기 -->
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="솔솔한의원">
+
+<meta property="og:title"
+      content="솔솔한의원 | 아산 배방 부부한의원">
+
+<meta property="og:description"
+      content="동문수학한 부부한의사가 함께 진료하는 아산 배방 솔솔한의원입니다. 편안하게 이야기하고 차분하게 진료합니다.">
+
+<meta property="og:url"
+      content="https://solsolclinic.github.io/">
+
+<meta property="og:image"
+      content="https://solsolclinic.github.io/clinic.jpg">
+
+<meta property="og:image:secure_url"
+      content="https://solsolclinic.github.io/clinic.jpg">
+
+<meta property="og:image:type"
+      content="image/jpeg">
+
+<meta property="og:image:alt"
+      content="아산 배방 솔솔한의원 내부 모습">
+
+<meta name="twitter:card"
+      content="summary_large_image">
+
+<meta name="twitter:title"
+      content="솔솔한의원 | 아산 배방 부부한의원">
+
+<meta name="twitter:description"
+      content="동문수학한 부부한의사가 함께 진료하는 아산 배방 솔솔한의원">
+
+<meta name="twitter:image"
+      content="https://solsolclinic.github.io/clinic.jpg">
+
+
+<!-- 검색엔진용 구조화 데이터 -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "솔솔한의원",
+  "url": "https://solsolclinic.github.io/",
+  "telephone": "+82-41-534-3100",
+  "image": [
+    "https://solsolclinic.github.io/clinic.jpg",
+    "https://solsolclinic.github.io/logo.jpg"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "배방읍 모산로 91, 1층",
+    "addressLocality": "아산시",
+    "addressRegion": "충청남도",
+    "addressCountry": "KR"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ],
+  "sameAs": [
+    "https://blog.naver.com/solsolclinic3100",
+    "http://pf.kakao.com/_xjTGtj",
+    "https://naver.me/52RVqgJs"
+  ]
+}
+</script>
+
+
+<style>
+
+:root {
+    --green: #93bea0;
+    --green-main: #6ca67b;
+    --green-deep: #527e5e;
+    --green-soft: #eef6f0;
+    --green-pale: #f6faf7;
+    --cream: #fbfaf6;
+    --white: #ffffff;
+    --text: #303530;
+    --sub: #687169;
+    --line: #e1e9e3;
+    --shadow: 0 14px 38px rgba(55,85,62,.07);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Noto Sans KR",
+        "Malgun Gothic",
+        sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.75;
+    word-break: keep-all;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font: inherit;
+}
+
+.container {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.97);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(10px);
+}
+
+.nav {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.brand img {
+    width: 145px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-menu a:hover {
+    color: var(--green-deep);
+}
+
+
+/* MOBILE MENU */
+
+.mobile-menu-button {
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile-menu-button span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 10px 20px 18px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 14px 30px rgba(45,70,50,.09);
+}
+
+.mobile-menu.open {
+    display: block;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 14px 8px;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: 0;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 55px 0 72px;
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcf9 0%,
+            #eff7f1 100%
+        );
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: .95fr 1.05fr;
+    min-height: 585px;
+    background: white;
+    border: 1px solid #e5ece7;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.hero-copy {
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-kicker {
+    color: var(--green-deep);
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.couple-label {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 22px;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: var(--green-soft);
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.hero h1 {
+    margin: 0 0 23px;
+    font-size: clamp(39px, 5.3vw, 60px);
+    line-height: 1.28;
+    letter-spacing: -3px;
+}
+
+.hero-expertise {
+    margin: 0 0 16px;
+    color: var(--green-deep);
+    font-size: 17px;
+    font-weight: 750;
+    line-height: 1.75;
+}
+
+.hero-description {
+    margin: 0;
+    color: var(--sub);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.button {
+    min-height: 49px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 22px;
+    border-radius: 999px;
+    background: var(--green-deep);
+    color: white;
+    border: 1px solid var(--green-deep);
+    font-size: 14px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.button.light {
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--line);
+}
+
+.button.soft {
+    background: var(--green-soft);
+    color: var(--green-deep);
+    border: 1px solid #d8e7db;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    opacity: .9;
+}
+
+.hero-image {
+    min-height: 585px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 585px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    z-index: 2;
+    background: linear-gradient(90deg, white, transparent);
+    pointer-events: none;
+}
+
+
+/* COMMON */
+
+section {
+    padding: 95px 0;
+    scroll-margin-top: 90px;
+}
+
+.section-head {
+    margin-bottom: 42px;
+}
+
+.section-kicker {
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    margin-bottom: 7px;
+}
+
+.section-head h2 {
+    margin: 0 0 10px;
+    font-size: clamp(30px, 4vw, 40px);
+    line-height: 1.35;
+    letter-spacing: -2px;
+}
+
+.section-head p {
+    margin: 0;
+    color: var(--sub);
+}
+
+
+/* PHILOSOPHY */
+
+.philosophy {
+    background: white;
+}
+
+.philosophy-card {
+    display: grid;
+    grid-template-columns: .78fr 1.22fr;
+    gap: 50px;
+    align-items: center;
+    padding: 55px;
+    background: linear-gradient(135deg, #f7faf7, #edf5ef);
+    border: 1px solid #deeadf;
+    border-radius: 27px;
+}
+
+.philosophy-title h2 {
+    margin: 9px 0 18px;
+    font-size: clamp(31px, 4vw, 44px);
+    line-height: 1.43;
+    letter-spacing: -2px;
+}
+
+.story-title {
+    margin: 0 0 13px;
+    color: var(--green-deep);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.philosophy-text p {
+    margin: 0 0 16px;
+    color: #525b54;
+    font-size: 16px;
+}
+
+.philosophy-sign {
+    margin-top: 27px !important;
+    color: var(--text) !important;
+    font-weight: 700;
+}
+
+.philosophy-more {
+    margin-top: 24px;
+}
+
+
+/* DOCTORS */
+
+.doctors {
+    background: var(--cream);
+}
+
+.doctor-intro {
+    margin-bottom: 32px;
+    padding: 25px 29px;
+    border-radius: 18px;
+    background: var(--green-soft);
+    color: #536057;
+    border: 1px solid #dce8df;
+}
+
+.doctor-intro strong {
+    color: var(--green-deep);
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.doctor-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.doctor-photo {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.doctor-body {
+    padding: 34px;
+}
+
+.doctor-body h3 {
+    margin: 0;
+    font-size: 27px;
+}
+
+.doctor-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 12px 0 25px;
+}
+
+.badge {
+    display: inline-flex;
+    padding: 6px 11px;
+    border-radius: 999px;
+    background: var(--green-soft);
+    border: 1px solid #d4e5d8;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.doctor-body h4 {
+    margin: 28px 0 9px;
+}
+
+.doctor-body ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    color: #535a55;
+    font-size: 14px;
+}
+
+details {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+}
+
+summary {
+    cursor: pointer;
+    color: var(--green-deep);
+    font-weight: 700;
+}
+
+
+/* TREATMENTS */
+
+.treatments {
+    background: var(--green-soft);
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.treatment-card {
+    padding: 29px;
+    background: rgba(255,255,255,.95);
+    border: 1px solid #dce7de;
+    border-radius: 18px;
+    min-height: 205px;
+}
+
+.treatment-number {
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.treatment-card h3 {
+    margin: 7px 0 11px;
+    font-size: 20px;
+}
+
+.treatment-card p {
+    margin: 0;
+    color: var(--sub);
+    font-size: 14px;
+}
+
+
+/* INFORMATION */
+
+.information {
+    background: white;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.info-card {
+    padding: 34px;
+    background: var(--green-pale);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+}
+
+.info-card h3 {
+    margin: 0 0 22px;
+}
+
+.info-row {
+    display: flex;
+    gap: 22px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.info-label {
+    width: 100px;
+    flex: 0 0 auto;
+    font-weight: 700;
+}
+
+.info-text {
+    color: var(--sub);
+}
+
+.map-area {
+    margin-top: 27px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+}
+
+
+/* HEALTH */
+
+.health {
+    background: var(--cream);
+}
+
+.health-card {
+    max-width: 880px;
+    margin: auto;
+    padding: 50px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    text-align: center;
+}
+
+.health-card h2 {
+    margin: 0 0 12px;
+}
+
+.health-card p {
+    color: var(--sub);
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 50px 0;
+    background: #f2f6f2;
+    border-top: 1px solid var(--line);
+    color: #58615a;
+    font-size: 13px;
+}
+
+.footer-logo {
+    width: 125px;
+    margin-bottom: 18px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-notice {
+    max-width: 760px;
+    margin-top: 25px;
+    color: #8a928c;
+    font-size: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width:800px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+    }
+
+    .brand img {
+        width: 112px;
+    }
+
+    .hero {
+        padding: 28px 0 55px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .hero-copy {
+        padding: 46px 25px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        letter-spacing: -2px;
+    }
+
+    .hero-expertise,
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+
+    .hero-image,
+    .hero-image img {
+        min-height: 330px;
+        height: 330px;
+    }
+
+    .hero-image::before {
+        display: none;
+    }
+
+    section {
+        padding: 72px 0;
+        scroll-margin-top: 78px;
+    }
+
+    .philosophy-card,
+    .doctor-grid,
+    .treatment-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .philosophy-card {
+        padding: 38px 25px;
+    }
+
+    .doctor-photo {
+        height: auto;
+        max-height: 530px;
+    }
+
+    .doctor-body {
+        padding: 27px;
+    }
+
+    .treatment-card {
+        min-height: auto;
+    }
+
+    .info-row {
+        display: block;
+    }
+
+    .info-label {
+        width: auto;
+        margin-bottom: 4px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container nav">
+
+<a href="#top"
+   class="brand"
+   aria-label="솔솔한의원 홈">
+
+<img src="logo.jpg"
+     alt="솔솔한의원 로고">
+
+</a>
+
+
+<nav class="nav-menu">
+
+<a href="#philosophy">진료철학</a>
+<a href="#doctors">의료진 소개</a>
+<a href="#treatments">진료분야</a>
+<a href="#information">진료안내</a>
+<a href="#health">건강정보</a>
+
+</nav>
+
+
+<button class="mobile-menu-button"
+        id="mobileMenuButton"
+        aria-label="메뉴 열기"
+        aria-expanded="false">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+<div class="mobile-menu"
+     id="mobileMenu">
+
+<a href="#philosophy">진료철학</a>
+<a href="#doctors">의료진 소개</a>
+<a href="#treatments">진료분야</a>
+<a href="#information">진료안내</a>
+<a href="#health">건강정보</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<main id="top">
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+
+<div class="hero-copy">
+
+<div class="hero-kicker">
+아산시 배방읍 · 솔솔한의원
+</div>
+
+<div class="couple-label">
+동문수학한 부부한의사가 함께 진료합니다
+</div>
+
+<h1>
+편안하게 이야기하고,<br>
+차분하게 진료합니다.
+</h1>
+
+<p class="hero-expertise">
+한의학박사 · 한방신경정신과 전문의<br>
+이승환 대표원장과 정보은 원장이 함께 진료합니다.
+</p>
+
+<p class="hero-description">
+증상뿐 아니라 그동안의 과정과 생활을 함께 살펴보며<br>
+현재의 상태에 맞는 진료 방향을 상담합니다.
+</p>
+
+<div class="hero-buttons">
+
+<a class="button"
+   href="tel:0415343100">
+전화하기
+</a>
+
+<a class="button light"
+   href="https://booking.naver.com/booking/13/bizes/250311"
+   target="_blank"
+   rel="noopener">
+네이버 예약
+</a>
+
+<a class="button light"
+   href="http://pf.kakao.com/_xjTGtj"
+   target="_blank"
+   rel="noopener">
+카카오톡 상담
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<img src="clinic.jpg"
+     alt="아산 배방 솔솔한의원 내부 모습">
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PHILOSOPHY -->
+
+<section id="philosophy"
+         class="philosophy">
+
+<div class="container">
+
+<div class="philosophy-card">
+
+
+<div class="philosophy-title">
+
+<div class="section-kicker">
+OUR STORY
+</div>
+
+<h2>
+한 분 한 분을<br>
+소중히 생각하며<br>
+진료합니다.
+</h2>
+
+<div class="philosophy-more">
+
+<a class="button soft"
+   href="https://blog.naver.com/solsolclinic3100/223508287753"
+   target="_blank"
+   rel="noopener">
+
+솔솔한의원의 이야기를 더 읽어보세요 →
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="philosophy-text">
+
+<div class="story-title">
+동문수학했던 두 한의사가 함께 시작했습니다.
+</div>
+
+<p>
+저희는 국립한의학전문대학원 1학년 때 만나
+한의학을 함께 공부했습니다.
+</p>
+
+<p>
+졸업 후 결혼하고 아이를 낳으며 한 가정을 이루었고,
+이승환 원장의 할아버지가 지내셨던
+아산 배방과의 인연을 따라 이곳에 자리를 잡았습니다.
+</p>
+
+<p>
+그렇게 2019년,
+부부한의사 두 사람이 함께 진료하는
+솔솔한의원의 문을 열었습니다.
+</p>
+
+<p>
+진료를 이어오며 더욱 중요하게 생각하게 된 것은
+눈앞의 증상만을 보는 것이 아니라,
+그 증상이 나타난 과정과 생활환경,
+몸과 마음의 상태를 함께 살펴보는 것이었습니다.
+</p>
+
+<p>
+한 분 한 분이 살아온 시간과 현재의 고민을 가지고
+진료실에 오신다고 생각합니다.
+그래서 이야기를 충분히 듣고 현재의 상태를 살펴보며,
+필요한 진료 방향을 함께 고민하려고 합니다.
+</p>
+
+<p>
+솔솔한의원이라는 이름처럼
+편안하게 이야기하고 차분하게 진료하겠습니다.
+</p>
+
+<p class="philosophy-sign">
+솔솔한의원 이승환 · 정보은
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- DOCTORS -->
+
+<section id="doctors"
+         class="doctors">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+DOCTORS
+</div>
+
+<h2>
+두 한의사가 함께 진료합니다
+</h2>
+
+<p>
+동문수학한 부부한의사 이승환 대표원장과
+정보은 원장을 소개합니다.
+</p>
+
+</div>
+
+
+<div class="doctor-intro">
+
+<strong>
+이승환 대표원장은 한의학박사이자
+한방신경정신과 전문의입니다.
+</strong>
+
+두 원장이 각자의 학문적 배경과 진료 경험을 바탕으로
+환자의 상태를 살펴봅니다.
+
+</div>
+
+
+<div class="doctor-grid">
+
+
+<article class="doctor-card">
+
+<img src="lee.jpg"
+     alt="솔솔한의원 이승환 대표원장"
+     class="doctor-photo">
+
+<div class="doctor-body">
+
+<h3>
+이승환 대표원장
+</h3>
+
+<div class="doctor-badges">
+
+<span class="badge">
+한의학박사
+</span>
+
+<span class="badge">
+한방신경정신과 전문의
+</span>
+
+</div>
+
+<h4>주요 약력</h4>
+
+<ul>
+<li>국립한의학전문대학원 졸업</li>
+<li>한의학박사(PhD)</li>
+<li>한방신경정신과 전문의</li>
+<li>전 부산대학교 한방병원 전공의</li>
+<li>전 부산대학교 한의학전문대학원 외래교수</li>
+<li>전 자생한의원 서면점 원장</li>
+</ul>
+
+<h4>학회 및 전문활동</h4>
+
+<ul>
+<li>대한한의학회 회원</li>
+<li>대한한방신경정신과학회 회원</li>
+<li>대한한방신경정신과학회 전문의이사</li>
+<li>M&amp;L심리치료학회 평생회원</li>
+<li>우울증 한의임상진료지침 개발위원 역임</li>
+<li>불면장애 한의표준임상진료지침 개발위원 역임</li>
+<li>재난트라우마의 한의사 진료 매뉴얼 자문위원 역임</li>
+<li>M&amp;L 프로스킬 전문가과정 수료</li>
+<li>네이버 지식iN 위촉 상담한의사 역임</li>
+<li>SK브로드밴드 중부방송 「알기쉬운 건강상식」 출연</li>
+</ul>
+
+<details>
+
+<summary>
+논문 및 저서 보기
+</summary>
+
+<h4>논문</h4>
+
+<ul>
+
+<li>
+Effects of Emotion Freedom Techniques on Academic Stress in Korean Medical Students:
+A Single-Group Pre-Post Study.
+Journal of Oriental Neuropsychiatry.
+2022;33(1).
+</li>
+
+<li>
+전립선 비대증에 대한 뜸치료의 효과:
+체계적 문헌 고찰과 메타분석. 2018.
+</li>
+
+<li>
+학생들의 정신건강을 위한 감정자유기법(EFT):
+체계적 문헌고찰. 2017.
+</li>
+
+<li>
+불면장애에 대한 혈부축어탕의 체계적 문헌 고찰 및 메타분석 연구. 2017.
+</li>
+
+<li>
+인터넷 중독에 대한 침 치료 연구동향. 2017.
+</li>
+
+<li>
+침과 이완요법 병행치료에 대한 중의학 연구동향. 2017.
+</li>
+
+<li>
+한방치료와 심리치료를 병행한 공황장애 환자 치험 1례. 2017.
+</li>
+
+<li>
+혼백에 대한 중의학 연구 동향. 2017.
+</li>
+
+<li>
+본태성 진전에 대한 중의학 연구동향. 2017.
+</li>
+
+<li>
+신체화 장애에 대한 중의학 연구동향. 2017.
+</li>
+
+<li>
+섭식장애의 치료에 대한 임상연구 동향. 2016.
+</li>
+
+<li>
+불안에 대한 운동요법 중 요가, 기공, 태극권 연구 고찰. 2016.
+</li>
+
+<li>
+국내 한의학 학회지에 게재된 질적 연구 보고 분석. 2016.
+</li>
+
+<li>
+마음챙김 명상을 시행한 정충 환자 치험 1례. 2016.
+</li>
+
+<li>
+공황장애 치료에 대한 중의학의 임상연구 동향. 2015.
+</li>
+
+<li>
+울증에 대한 고찰. 2015.
+</li>
+
+<li>
+점진적 근육이완법을 시행한 화병환자 치험 1례. 2015.
+</li>
+
+<li>
+불안장애 치료에 관한 최근 임상연구 동향. 2012.
+</li>
+
+<li>
+꿈에 관한 문헌 연구. 2011.
+</li>
+
+</ul>
+
+<h4>저서</h4>
+
+<ul>
+<li>우울증 한의임상진료지침. 한국한의학연구원. 2016. 공저</li>
+<li>불면장애 한의표준임상진료지침. 한국한의약진흥원. 2021. 공저</li>
+</ul>
+
+</details>
+
+</div>
+
+</article>
+
+
+
+<article class="doctor-card">
+
+<img src="jung.jpg"
+     alt="솔솔한의원 정보은 원장"
+     class="doctor-photo">
+
+<div class="doctor-body">
+
+<h3>
+정보은 원장
+</h3>
+
+<div class="doctor-badges">
+
+<span class="badge">
+한의학석사
+</span>
+
+<span class="badge">
+한의사 · 수의사
+</span>
+
+</div>
+
+<h4>주요 약력</h4>
+
+<ul>
+<li>국립한의학전문대학원 졸업</li>
+<li>부산대학교 한의학석사</li>
+<li>전 하늘마음한의원 덕천점 원장</li>
+<li>전 하늘마음한의원 서면점 원장</li>
+<li>전 수석한의원 원장</li>
+<li>제주대학교 수의학과 졸업 (수의사)</li>
+</ul>
+
+<h4>학회 및 전문활동</h4>
+
+<ul>
+<li>대한한의학회 회원</li>
+<li>대한한방피부과학회 회원</li>
+<li>대한한방알레르기 및 면역학회 회원</li>
+<li>네이버 지식iN 위촉 상담한의사 역임</li>
+<li>SK브로드밴드 중부방송 「알기쉬운 건강상식」 출연</li>
+</ul>
+
+<details>
+
+<summary>
+논문 보기
+</summary>
+
+<ul>
+
+<li>
+Cytoprotective effects of fucoidan,
+an algae-derived polysaccharide on
+5-fluorouracil-treated dendritic cells.
+Food and Chemical Toxicology.
+2012;50(5).
+</li>
+
+<li>
+학생들의 정신건강을 위한 감정자유기법(EFT):
+체계적 문헌고찰. 2017.
+</li>
+
+<li>
+인터넷 중독에 대한 침 치료 연구동향. 2017.
+</li>
+
+<li>
+반복적인 전침 처치의 척수 교세포 활성 억제를 통한
+신경병증성 통증 억제 효과.
+Korean Journal of Acupuncture.
+2013.
+</li>
+
+</ul>
+
+</details>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TREATMENTS -->
+
+<section id="treatments"
+         class="treatments">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+CLINIC
+</div>
+
+<h2>
+주요 진료분야
+</h2>
+
+<p>
+증상과 건강 상태를 살펴 개인에 맞는 진료 방향을 상담합니다.
+</p>
+
+</div>
+
+
+<div class="treatment-grid">
+
+<article class="treatment-card">
+<div class="treatment-number">01</div>
+<h3>통증 클리닉</h3>
+<p>
+목·허리 통증, 디스크, 척추관 협착증,
+두통·어지럼, 각종 염좌 등
+근골격계와 관련된 여러 증상을 살펴봅니다.
+</p>
+</article>
+
+<article class="treatment-card">
+<div class="treatment-number">02</div>
+<h3>자동차사고 후유증</h3>
+<p>
+교통사고 이후 나타날 수 있는 목·허리 통증,
+근육의 불편감, 두통·어지럼 등 여러 증상을 살펴봅니다.
+</p>
+</article>
+
+<article class="treatment-card">
+<div class="treatment-number">03</div>
+<h3>심신 클리닉</h3>
+<p>
+불안, 불면, 공황장애, 화병, 우울 등
+마음과 몸이 서로 영향을 주고받으며 나타나는
+여러 증상을 살펴봅니다.
+</p>
+</article>
+
+<article class="treatment-card">
+<div class="treatment-number">04</div>
+<h3>소화기 클리닉</h3>
+<p>
+기능성소화불량, 역류성식도염,
+매핵기, 과민성장증후군 등
+소화기와 관련된 증상을 살펴봅니다.
+</p>
+</article>
+
+<article class="treatment-card">
+<div class="treatment-number">05</div>
+<h3>알레르기 클리닉</h3>
+<p>
+비염, 두드러기 등
+알레르기와 관련된 여러 증상을 살펴봅니다.
+</p>
+</article>
+
+<article class="treatment-card">
+<div class="treatment-number">06</div>
+<h3>체질 클리닉</h3>
+<p>
+사상체질의학의 관점에서 개인의 체질,
+현재 증상과 생활습관 등을 함께 살펴보고
+체질에 따른 한약 처방을 상담합니다.
+</p>
+</article>
+
+<article class="treatment-card">
+<div class="treatment-number">07</div>
+<h3>소아 클리닉</h3>
+<p>
+소아 성장, 새학기 증후군,
+야제·야경증, ADHD·틱 등
+성장 과정에서 나타나는 건강 문제를 살펴봅니다.
+</p>
+</article>
+
+<article class="treatment-card">
+<div class="treatment-number">08</div>
+<h3>여성 클리닉</h3>
+<p>
+월경통, 산후풍, 산후보약,
+유산 후 관리 등 여성 건강과 관련된
+여러 문제를 살펴봅니다.
+</p>
+</article>
+
+<article class="treatment-card">
+<div class="treatment-number">09</div>
+<h3>보약 클리닉</h3>
+<p>
+공진단, 경옥고, 녹용보약 등을 비롯하여
+현재의 건강 상태와 복용 목적을 고려한
+한약 상담을 진행합니다.
+</p>
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- INFORMATION -->
+
+<section id="information"
+         class="information">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+INFORMATION
+</div>
+
+<h2>
+진료 안내
+</h2>
+
+<p>
+방문 전 진료시간과 위치를 확인해주세요.
+</p>
+
+</div>
+
+
+<div class="info-grid">
+
+
+<div class="info-card">
+
+<h3>진료시간</h3>
+
+<div class="info-row">
+<div class="info-label">평일</div>
+<div class="info-text">
+09:00 ~ 19:30<br>
+점심시간 13:00 ~ 14:00
+</div>
+</div>
+
+<div class="info-row">
+<div class="info-label">토요일</div>
+<div class="info-text">
+09:00 ~ 13:00<br>
+점심시간 없음
+</div>
+</div>
+
+<div class="info-row">
+<div class="info-label">휴진</div>
+<div class="info-text">
+일요일 및 공휴일
+</div>
+</div>
+
+<div class="info-row">
+<div class="info-label">전화</div>
+<div class="info-text">
+041-534-3100
+</div>
+</div>
+
+</div>
+
+
+
+<div class="info-card">
+
+<h3>오시는 길</h3>
+
+<div class="info-row">
+<div class="info-label">주소</div>
+<div class="info-text">
+충청남도 아산시 배방읍<br>
+모산로 91, 1층
+</div>
+</div>
+
+<div class="info-row">
+<div class="info-label">전화</div>
+<div class="info-text">
+041-534-3100
+</div>
+</div>
+
+<div class="map-area">
+
+<a class="button soft"
+   href="https://naver.me/52RVqgJs"
+   target="_blank"
+   rel="noopener">
+
+네이버지도 길찾기 →
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- HEALTH -->
+
+<section id="health"
+         class="health">
+
+<div class="container">
+
+<div class="health-card">
+
+<div class="section-kicker">
+HEALTH INFORMATION
+</div>
+
+<h2>
+솔솔한의원 건강정보
+</h2>
+
+<p>
+질환과 생활관리, 한의학에 관한 다양한 건강정보를 확인해보세요.
+</p>
+
+<a class="button soft"
+   href="https://blog.naver.com/solsolclinic3100"
+   target="_blank"
+   rel="noopener">
+
+네이버 블로그 바로가기 →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<div class="container">
+
+<img src="logo.jpg"
+     alt="솔솔한의원"
+     class="footer-logo">
+
+<p>
+<strong>솔솔한의원</strong>
+</p>
+
+<p>
+동문수학한 부부한의사가 함께 진료합니다.
+</p>
+
+<p>
+충청남도 아산시 배방읍 모산로 91, 1층
+</p>
+
+<p>
+041-534-3100
+</p>
+
+<p>
+평일 09:00 ~ 19:30 · 점심시간 13:00 ~ 14:00
+</p>
+
+<p>
+토요일 09:00 ~ 13:00 · 일요일 및 공휴일 휴진
+</p>
+
+<div class="footer-notice">
+본 홈페이지의 건강정보는 일반적인 정보 제공을 위한 것이며
+개인의 진단이나 치료를 대신하지 않습니다.
+구체적인 진료 내용은 개인의 상태에 따라 달라질 수 있습니다.
+</div>
+
+<p style="margin-top:25px;">
+© Solsol Korean Medicine Clinic. All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+const menuButton =
+    document.getElementById("mobileMenuButton");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+menuButton.addEventListener(
+    "click",
+    function () {
+
+        const isOpen =
+            mobileMenu.classList.toggle("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+    }
+);
+
+
+const mobileLinks =
+    mobileMenu.querySelectorAll("a");
+
+
+mobileLinks.forEach(
+    function (link) {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                mobileMenu.classList.remove("open");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+        );
+
+    }
+);
+
+
+document.addEventListener(
+    "click",
+    function (event) {
+
+        if (
+            !mobileMenu.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
+
+            mobileMenu.classList.remove("open");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
