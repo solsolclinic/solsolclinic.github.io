@@ -1,1118 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>소아클리닉 | 소아성장·식욕부진·잦은감기·비염 | 아산 배방 솔솔한의원</title>
+<meta charset="UTF-8">
 
-  <meta name="description"
-        content="아산 배방 솔솔한의원 소아클리닉. 소아 성장, 식욕부진, 소화불량, 잦은 감기와 비염, 수면 등 아이의 성장과 건강을 식사·수면·대소변·생활습관과 함께 살펴봅니다.">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-  <meta name="keywords"
-        content="아산소아한의원, 배방소아한의원, 아산성장한의원, 배방성장한의원, 소아성장, 성장한약, 어린이한약, 식욕부진, 소아비염, 잦은감기, 솔솔한의원">
+<title>소아클리닉 | 소아성장·식욕부진·성장한약 | 아산 배방 솔솔한의원</title>
 
-  <meta name="robots" content="index, follow">
+<meta name="description"
+      content="아산 배방 솔솔한의원 소아클리닉. 소아 성장, 식욕부진, 소화불량, 잦은 감기와 비염, 수면과 생활습관을 함께 살펴보고 필요한 경우 성장한약과 소아한약을 상담합니다.">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<meta name="robots"
+      content="index, follow">
 
-    html {
-      scroll-behavior: smooth;
-    }
+<link rel="canonical"
+      href="https://solsolclinic.github.io/pediatric-clinic.html">
 
-    body {
-      margin: 0;
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Pretendard",
-        "Noto Sans KR",
-        "Apple SD Gothic Neo",
-        Arial,
-        sans-serif;
-      color: #333;
-      background: #fff;
-      line-height: 1.8;
-      word-break: keep-all;
-    }
+<link rel="icon"
+      href="logo.jpg"
+      type="image/jpeg">
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
 
-    img {
-      width: 100%;
-      display: block;
-    }
+<!-- SNS 공유 -->
 
-    .container {
-      width: min(1100px, calc(100% - 36px));
-      margin: 0 auto;
-    }
+<meta property="og:type"
+      content="website">
 
-    /* 상단 */
+<meta property="og:site_name"
+      content="솔솔한의원">
 
-    header {
-      border-bottom: 1px solid #eee;
-      background: rgba(255,255,255,0.97);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+<meta property="og:title"
+      content="소아클리닉 | 소아성장·식욕부진 | 아산 배방 솔솔한의원">
 
-    .header-inner {
-      min-height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
+<meta property="og:description"
+      content="아이의 성장과 건강을 키뿐 아니라 식사, 수면, 대소변, 활동량과 평소 건강 상태를 함께 살펴봅니다.">
 
-    .logo {
-      font-size: 22px;
-      font-weight: 800;
-      color: #356859;
-      letter-spacing: -1px;
-    }
+<meta property="og:url"
+      content="https://solsolclinic.github.io/pediatric-clinic.html">
 
-    .home-link {
-      font-size: 14px;
-      color: #666;
-      padding: 8px 14px;
-      border: 1px solid #ddd;
-      border-radius: 20px;
-    }
+<meta property="og:image"
+      content="https://solsolclinic.github.io/pediatric-clinic-growth.jpg">
 
-    /* Hero */
-
-    .hero {
-      padding: 80px 0 65px;
-      background:
-        linear-gradient(
-          135deg,
-          #f5faf7 0%,
-          #fffdf7 100%
-        );
-    }
-
-    .eyebrow {
-      display: inline-block;
-      color: #4d7b6c;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(34px, 5vw, 55px);
-      line-height: 1.25;
-      letter-spacing: -2px;
-      color: #263d36;
-    }
-
-    .hero p {
-      max-width: 760px;
-      margin: 25px 0 0;
-      font-size: 18px;
-      color: #555;
-    }
-
-    .hero-highlight {
-      color: #356859;
-      font-weight: 700;
-    }
-
-    /* 공통 section */
-
-    section {
-      padding: 80px 0;
-    }
-
-    .soft-section {
-      background: #f8faf9;
-    }
-
-    .section-title {
-      margin-bottom: 35px;
-    }
-
-    .section-title .small {
-      color: #588273;
-      font-weight: 700;
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-
-    .section-title h2 {
-      margin: 0;
-      font-size: clamp(27px, 4vw, 38px);
-      letter-spacing: -1.5px;
-      line-height: 1.35;
-      color: #263d36;
-    }
-
-    .section-title p {
-      max-width: 760px;
-      margin-top: 15px;
-      color: #666;
-    }
-
-    /* 핵심 메시지 */
-
-    .three-points {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 35px;
-    }
-
-    .point-card {
-      border: 1px solid #e4ebe7;
-      border-radius: 18px;
-      padding: 28px 24px;
-      background: white;
-    }
-
-    .point-number {
-      font-size: 13px;
-      font-weight: 800;
-      color: #73978a;
-      margin-bottom: 10px;
-    }
-
-    .point-card h3 {
-      margin: 0 0 10px;
-      color: #2f594c;
-      font-size: 21px;
-    }
-
-    .point-card p {
-      margin: 0;
-      font-size: 15px;
-      color: #666;
-    }
-
-    /* 이미지 */
-
-    .image-wide {
-      margin-top: 35px;
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
-    }
-
-    .image-wide img {
-      max-height: 600px;
-      object-fit: cover;
-    }
-
-    /* 진료 영역 */
-
-    .clinic-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .clinic-card {
-      padding: 28px;
-      border-radius: 18px;
-      background: #fff;
-      border: 1px solid #e5ebe8;
-    }
-
-    .clinic-card h3 {
-      margin: 0 0 8px;
-      font-size: 21px;
-      color: #315b4e;
-    }
-
-    .clinic-card p {
-      margin: 0;
-      color: #666;
-      font-size: 15px;
-    }
-
-    /* 강조 문장 */
-
-    .quote-box {
-      margin: 35px 0;
-      padding: 30px;
-      border-left: 5px solid #7fa697;
-      background: #f5f9f7;
-      border-radius: 0 15px 15px 0;
-      font-size: 20px;
-      font-weight: 700;
-      color: #315448;
-    }
-
-    /* 이미지 + 텍스트 */
-
-    .split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .split-image {
-      overflow: hidden;
-      border-radius: 22px;
-    }
-
-    .split-image img {
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-    }
-
-    .split-text h2 {
-      font-size: clamp(27px, 4vw, 38px);
-      line-height: 1.4;
-      color: #263d36;
-      margin-top: 0;
-    }
-
-    .split-text p {
-      color: #5e5e5e;
-    }
-
-    /* 생활관리 */
-
-    .life-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      margin-top: 30px;
-    }
-
-    .life-item {
-      background: white;
-      border: 1px solid #e4e9e6;
-      border-radius: 14px;
-      padding: 20px;
-    }
-
-    .life-item strong {
-      display: block;
-      color: #315b4e;
-      margin-bottom: 5px;
-    }
-
-    /* Q&A */
-
-    .faq {
-      max-width: 900px;
-    }
-
-    details {
-      background: white;
-      border: 1px solid #e2e7e4;
-      border-radius: 15px;
-      margin-bottom: 12px;
-      overflow: hidden;
-    }
-
-    summary {
-      cursor: pointer;
-      list-style: none;
-      padding: 21px 55px 21px 22px;
-      font-weight: 700;
-      position: relative;
-      color: #344f46;
-    }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    summary::after {
-      content: "+";
-      position: absolute;
-      right: 22px;
-      top: 17px;
-      font-size: 25px;
-      font-weight: 400;
-      color: #749488;
-    }
-
-    details[open] summary::after {
-      content: "−";
-    }
-
-    .faq-answer {
-      padding: 0 22px 22px;
-      color: #5f5f5f;
-      font-size: 15px;
-    }
-
-    .faq-answer p {
-      margin-top: 0;
-    }
-
-    /* 안내 */
-
-    .notice {
-      padding: 28px;
-      border-radius: 18px;
-      background: #fffaf0;
-      border: 1px solid #f0e4ca;
-      color: #655b49;
-    }
-
-    .notice strong {
-      color: #514936;
-    }
-
-    /* CTA */
-
-    .cta {
-      text-align: center;
-      background: #315b4e;
-      color: white;
-    }
-
-    .cta h2 {
-      margin-top: 0;
-      font-size: clamp(28px, 4vw, 40px);
-      line-height: 1.4;
-    }
-
-    .cta p {
-      color: rgba(255,255,255,0.85);
-      max-width: 680px;
-      margin: 0 auto 28px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      padding: 14px 28px;
-      background: white;
-      color: #315b4e;
-      border-radius: 30px;
-      font-weight: 800;
-    }
-
-    footer {
-      padding: 35px 0;
-      text-align: center;
-      color: #888;
-      font-size: 13px;
-    }
-
-    /* 모바일 */
-
-    @media (max-width: 760px) {
-
-      .container {
-        width: min(100% - 28px, 1100px);
-      }
-
-      .header-inner {
-        min-height: 62px;
-      }
-
-      .logo {
-        font-size: 19px;
-      }
-
-      .hero {
-        padding: 55px 0 50px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      section {
-        padding: 58px 0;
-      }
-
-      .three-points,
-      .clinic-grid,
-      .life-list,
-      .split {
-        grid-template-columns: 1fr;
-      }
-
-      .split {
-        gap: 28px;
-      }
-
-      .point-card,
-      .clinic-card {
-        padding: 22px 20px;
-      }
-
-      .quote-box {
-        font-size: 18px;
-        padding: 23px 20px;
-      }
-
-      summary {
-        padding: 19px 48px 19px 18px;
-      }
-
-      .faq-answer {
-        padding: 0 18px 20px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <div class="container header-inner">
-    <a class="logo" href="index.html">솔솔한의원</a>
-    <a class="home-link" href="index.html">홈으로</a>
-  </div>
-</header>
-
-
-<!-- HERO -->
-
-<section class="hero">
-  <div class="container">
-
-    <span class="eyebrow">SOLSOL PEDIATRIC CLINIC</span>
-
-    <h1>
-      잘 먹고,<br>
-      잘 자고,<br>
-      잘 배출하고 있나요?
-    </h1>
-
-    <p>
-      아이의 성장과 건강을 살펴볼 때는 키만 보는 것이 아니라
-      <span class="hero-highlight">
-        식사, 수면, 대소변, 활동량과 평소 건강 상태
-      </span>
-      를 함께 살펴보는 것이 중요합니다.
-      솔솔한의원 소아클리닉에서는 아이의 현재 상태와 생활습관을
-      종합적으로 살펴봅니다.
-    </p>
-
-  </div>
-</section>
-
-
-<!-- 성장의 기본 -->
-
-<section>
-  <div class="container">
-
-    <div class="section-title">
-      <div class="small">아이의 성장과 건강</div>
-
-      <h2>
-        성장의 기본부터 살펴봅니다
-      </h2>
-
-      <p>
-        부모님께서 아이의 키를 걱정하며 내원하시지만,
-        진료실에서는 키뿐 아니라 아이가 평소 어떻게 먹고,
-        어떻게 자며, 대소변은 편안한지 등을 함께 확인합니다.
-      </p>
-    </div>
-
-    <div class="three-points">
-
-      <div class="point-card">
-        <div class="point-number">01</div>
-        <h3>잘 먹기</h3>
-        <p>
-          식욕과 소화 상태, 식사량과 식습관 등을 함께 살펴봅니다.
-        </p>
-      </div>
-
-      <div class="point-card">
-        <div class="point-number">02</div>
-        <h3>잘 자기</h3>
-        <p>
-          충분한 수면시간뿐 아니라 자주 깨지는 않는지,
-          편안하게 숙면하는지도 중요합니다.
-        </p>
-      </div>
-
-      <div class="point-card">
-        <div class="point-number">03</div>
-        <h3>잘 배출하기</h3>
-        <p>
-          변비, 설사, 잦은 복통 등 대소변 상태도
-          아이의 전반적인 건강을 살펴보는 중요한 부분입니다.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="image-wide">
-      <img
-        src="pediatric-clinic-growth.jpg"
-        alt="아산 배방 솔솔한의원 소아 성장 상담과 키 측정"
-        loading="lazy">
-    </div>
-
-  </div>
-</section>
-
-
-<!-- 진료 -->
-
-<section class="soft-section">
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="small">PEDIATRIC CARE</div>
-
-      <h2>
-        이런 부분을 함께 살펴봅니다
-      </h2>
-
-      <p>
-        아이들은 같은 나이라도 식사량, 체격, 수면,
-        소화 상태와 평소 건강 상태가 모두 다릅니다.
-        현재 아이에게 어떤 부분이 필요한지를 먼저 살펴봅니다.
-      </p>
-
-    </div>
-
-    <div class="clinic-grid">
-
-      <div class="clinic-card">
-        <h3>소아 성장</h3>
-        <p>
-          현재 키와 체중뿐 아니라 식사, 수면, 운동,
-          생활습관 등을 함께 확인합니다.
-        </p>
-      </div>
-
-      <div class="clinic-card">
-        <h3>식욕부진 · 소화불량</h3>
-        <p>
-          밥을 잘 먹지 않거나 자주 체하고,
-          복통이나 변비·설사가 반복되는 경우
-          소화 상태를 함께 살펴봅니다.
-        </p>
-      </div>
-
-      <div class="clinic-card">
-        <h3>잦은 감기 · 비염</h3>
-        <p>
-          환절기마다 감기가 반복되거나 콧물,
-          코막힘 등 비염 증상으로 불편해하는 아이를 진료합니다.
-        </p>
-      </div>
-
-      <div class="clinic-card">
-        <h3>수면 · 기력</h3>
-        <p>
-          잠들기 어렵거나 자주 깨는 경우,
-          쉽게 피곤해하고 활동량이 떨어지는 경우 등
-          전반적인 상태를 확인합니다.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- 식사 -->
-
-<section>
-  <div class="container split">
-
-    <div class="split-image">
-      <img
-        src="pediatric-clinic-meal.jpg"
-        alt="소아 성장에 중요한 규칙적인 식사와 균형 잡힌 영양"
-        loading="lazy">
-    </div>
-
-    <div class="split-text">
-
-      <h2>
-        무엇을 먹이느냐보다<br>
-        어떻게 먹고 있는지부터
-      </h2>
-
-      <p>
-        성장기 아이에게는 다양한 영양소를 골고루 섭취하는 것이
-        중요합니다. 특정 음식 하나가 키를 크게 만들어주는 것은
-        아니므로 규칙적인 식사와 균형 잡힌 식습관을 먼저
-        만들어주는 것이 좋습니다.
-      </p>
-
-      <p>
-        아이가 밥을 지나치게 적게 먹거나,
-        식사 때마다 복통이나 메스꺼움을 호소하거나,
-        변비·설사가 반복된다면 단순히 많이 먹이려고 하기보다
-        현재 소화 상태를 함께 살펴볼 필요가 있습니다.
-      </p>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- 수면 -->
-
-<section class="soft-section">
-  <div class="container split">
-
-    <div class="split-text">
-
-      <h2>
-        몇 시에 자느냐만큼<br>
-        편안하게 자는 것도 중요합니다
-      </h2>
-
-      <p>
-        성장과 관련해 부모님들이 많이 물어보시는 질문 중 하나가
-        “밤 10시 전에 꼭 자야 하나요?”입니다.
-      </p>
-
-      <p>
-        특정 시간만을 지나치게 의식하기보다는
-        아이가 연령에 맞는 충분한 수면을 취하고 있는지,
-        잠든 뒤 자주 깨지는 않는지,
-        편안하게 숙면하고 있는지를 함께 살펴보는 것이 좋습니다.
-      </p>
-
-    </div>
-
-    <div class="split-image">
-      <img
-        src="pediatric-clinic-sleep.jpg"
-        alt="소아 성장과 건강을 위한 편안하고 충분한 수면"
-        loading="lazy">
-    </div>
-
-  </div>
-</section>
-
-
-<!-- 한약 -->
-
-<section>
-  <div class="container">
-
-    <div class="section-title">
-      <div class="small">HERBAL MEDICINE</div>
-
-      <h2>
-        소아 한약은 아이의 현재 상태에 맞춰 상담합니다
-      </h2>
-    </div>
-
-    <div class="quote-box">
-      같은 성장 고민이라도 아이마다 필요한 진료의 방향은
-      다를 수 있습니다.
-    </div>
-
-    <p>
-      밥을 잘 먹지 않고 소화가 불편한 아이,
-      감기나 비염이 자주 반복되는 아이,
-      수면이나 땀, 기력 등의 문제가 함께 있는 아이처럼
-      현재 상태는 서로 다를 수 있습니다.
-    </p>
-
-    <p>
-      솔솔한의원에서는 식욕, 소화, 수면, 대소변,
-      활동량과 전반적인 상태를 진료한 뒤
-      필요한 경우 아이의 상태에 맞는 한약 처방을 상담합니다.
-    </p>
-
-    <p>
-      녹용을 비롯한 약재 역시 모든 아이에게 동일하게
-      사용하는 것이 아니라 진료 후 아이의 상태와
-      처방 목적에 따라 사용 여부를 결정합니다.
-    </p>
-
-  </div>
-</section>
-
-
-<!-- 생활관리 -->
-
-<section class="soft-section">
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="small">HOME CARE</div>
-
-      <h2>집에서 먼저 챙겨주세요</h2>
-
-      <p>
-        성장과 건강 관리의 기본은 매일 반복되는
-        생활습관에서 시작됩니다.
-      </p>
-
-    </div>
-
-    <div class="life-list">
-
-      <div class="life-item">
-        <strong>규칙적인 식사</strong>
-        끼니를 지나치게 거르지 않고 다양한 음식을 골고루 먹도록 합니다.
-      </div>
-
-      <div class="life-item">
-        <strong>충분한 수면</strong>
-        일정한 수면 습관을 만들고 편안한 수면환경을 만들어줍니다.
-      </div>
-
-      <div class="life-item">
-        <strong>꾸준한 신체활동</strong>
-        아이가 즐겁게 지속할 수 있는 운동과 야외활동을 권합니다.
-      </div>
-
-      <div class="life-item">
-        <strong>손 씻기와 위생관리</strong>
-        외출 후 손 씻기 등 기본적인 위생습관을 생활화합니다.
-      </div>
-
-      <div class="life-item">
-        <strong>충분한 수분 섭취</strong>
-        물을 적절하게 마시는 습관을 만들어줍니다.
-      </div>
-
-      <div class="life-item">
-        <strong>간접흡연 피하기</strong>
-        성장기 아이가 담배 연기와 흡연 잔류물에 노출되지 않도록 합니다.
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Q&A -->
-
-<section>
-  <div class="container">
-
-    <div class="section-title">
-
-      <div class="small">FAQ</div>
-
-      <h2>
-        부모님들이 자주 물어보시는 질문
-      </h2>
-
-      <p>
-        소아 성장과 건강에 대해 진료실에서
-        자주 듣는 질문들을 정리했습니다.
-      </p>
-
-    </div>
-
-
-    <div class="faq">
-
-      <details>
-        <summary>
-          Q1. 키는 무조건 유전인가요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            유전적인 요인은 성장에 중요한 영향을 미치지만
-            성장에는 영양, 수면, 운동, 전반적인 건강 상태 등
-            여러 요소가 함께 관여합니다.
-          </p>
-
-          <p>
-            따라서 부모님의 키만으로 아이의 최종 키를
-            단정하기보다는 현재 성장 상태와 생활습관을
-            함께 살펴보는 것이 좋습니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q2. 아이 성장에서 가장 중요한 생활습관은 무엇인가요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            쉽게 말씀드리면
-            <strong>잘 먹고, 잘 자고, 잘 배출하는 것</strong>입니다.
-          </p>
-
-          <p>
-            여기에 규칙적인 운동과 충분한 신체활동을 더하고,
-            아이가 불편해하는 증상이 있다면 그 원인을 함께
-            살펴보는 것이 좋습니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q3. 밤 10시 전에 꼭 자야 키가 잘 크나요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            특정 시간 하나만으로 성장 여부가 결정되는 것은 아닙니다.
-            충분한 수면시간과 수면의 질이 중요합니다.
-          </p>
-
-          <p>
-            아이가 늦게까지 깨어 있거나 자다가 자주 깨고,
-            아침에 일어나기 어려워한다면 수면시간과
-            수면환경을 점검해보는 것이 좋습니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q4. 운동은 많이 할수록 키 성장에 좋은가요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            성장기에는 규칙적인 신체활동이 중요하지만
-            무조건 강도가 높은 운동을 많이 하는 것이
-            좋은 것은 아닙니다.
-          </p>
-
-          <p>
-            걷기, 달리기, 줄넘기, 자전거, 수영,
-            구기운동 등 아이가 즐겁게 지속할 수 있는
-            다양한 운동을 규칙적으로 하는 것이 좋습니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q5. 어릴 때 살은 나중에 다 키로 가나요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            그렇다고 단정할 수 없습니다.
-            성장기에는 적절한 체중 증가가 필요하지만
-            지나친 체중 증가는 별도로 관리할 필요가 있습니다.
-          </p>
-
-          <p>
-            단순히 많이 먹이는 것보다는 아이의 키와 체중 변화,
-            식습관과 활동량을 함께 살펴보는 것이 중요합니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q6. 밥을 잘 안 먹는 아이는 어떻게 해야 하나요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            먼저 식사시간과 간식 습관을 살펴보는 것이 좋습니다.
-            아이가 식사 때마다 복통, 더부룩함, 메스꺼움,
-            변비나 설사 등을 함께 호소하는지도 확인합니다.
-          </p>
-
-          <p>
-            식욕부진이 지속되거나 체중 증가가 원활하지 않다면
-            아이의 소화 상태와 전반적인 건강 상태를
-            진료를 통해 확인해볼 수 있습니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q7. 감기나 비염이 자주 있는 아이도 함께 진료하나요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            네. 소아의 감기, 콧물, 코막힘, 비염 등의 증상도
-            함께 진료할 수 있습니다.
-          </p>
-
-          <p>
-            이러한 증상이 반복되면서 식욕이나 수면 등
-            일상생활에 불편을 주고 있는지도 함께 살펴봅니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q8. 성장한약은 어떤 아이가 먹나요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            모든 아이에게 동일한 성장한약을 처방하는 것은 아닙니다.
-          </p>
-
-          <p>
-            식욕과 소화 상태, 수면, 대소변, 체격,
-            활동량과 현재 불편한 증상 등을 확인한 뒤
-            한약이 필요한지 상담하고 아이의 상태에 맞춰
-            처방합니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q9. 성장한약에는 녹용이 꼭 들어가나요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            녹용이 모든 아이에게 반드시 필요한 것은 아닙니다.
-            아이의 현재 상태와 처방 목적에 따라
-            사용 여부가 달라질 수 있습니다.
-          </p>
-
-          <p>
-            특정 약재를 임의로 복용하기보다는
-            진료 후 아이에게 적절한 처방인지 상담받는 것이 좋습니다.
-          </p>
-        </div>
-      </details>
-
-
-      <details>
-        <summary>
-          Q10. 아이마다 성장 속도가 다른가요?
-        </summary>
-
-        <div class="faq-answer">
-          <p>
-            네. 아이의 성장 속도는 연령과 성별,
-            유전적 요인, 사춘기 시기 등 여러 요소에 따라
-            차이가 날 수 있습니다.
-          </p>
-
-          <p>
-            한 번의 키 측정만으로 판단하기보다는
-            일정 기간 동안 키와 체중이 어떻게 변화하고 있는지를
-            함께 살펴보는 것이 중요합니다.
-          </p>
-        </div>
-      </details>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- 상담 사진 -->
-
-<section class="soft-section">
-  <div class="container split">
-
-    <div class="split-image">
-      <img
-        src="pediatric-clinic-consultation.jpg"
-        alt="아산 배방 솔솔한의원 소아클리닉 보호자 상담"
-        loading="lazy">
-    </div>
-
-    <div class="split-text">
-
-      <h2>
-        아이를 키우는 부모의 마음으로
-      </h2>
-
-      <p>
-        솔솔한의원의 두 한의사 역시
-        아이를 키우고 있는 부모입니다.
-      </p>
-
-      <p>
-        부모님께서 아이의 식사 한 끼,
-        잠드는 시간 하나까지 걱정하게 되는 마음을 알기에
-        키 숫자 하나만 보기보다는 아이의 일상과
-        현재 불편한 부분을 함께 듣고 살펴보겠습니다.
-      </p>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- 안내 -->
-
-<section>
-  <div class="container">
-
-    <div class="notice">
-      <strong>안내드립니다.</strong><br>
-      아이의 성장 속도와 건강 상태에는 개인차가 있습니다.
-      성장이나 발달에 대한 의학적인 평가가 필요한 경우에는
-      소아청소년과 등 관련 의료기관의 검사와 진료가 필요할 수 있습니다.
-      한약 및 한의치료 역시 진료 후 아이의 상태에 따라
-      치료 방법과 기간을 개별적으로 결정합니다.
-    </div>
-
-  </div>
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta">
-  <div class="container">
-
-    <h2>
-      우리 아이의 성장과 건강,<br>
-      현재 상태부터 차근차근 살펴보세요.
-    </h2>
-
-    <p>
-      식욕, 소화, 수면, 대소변과 생활습관까지
-      아이의 현재 상태를 함께 살펴봅니다.
-    </p>
-
-    <!-- 아래 링크는 기존 네이버 예약 주소가 있다면 교체 -->
-    <a class="cta-button"
-       href="index.html">
-      솔솔한의원 진료안내 보기
-    </a>
-
-  </div>
-</section>
-
-
-<footer>
-  <div class="container">
-    솔솔한의원 · 소아클리닉
-  </div>
-</footer>
+<meta property="og:image:alt"
+      content="아이의 성장과 건강을 살펴보는 소아클리닉">
 
 
 <!-- 구조화 데이터 -->
@@ -1122,18 +55,2557 @@
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   "name": "솔솔한의원 소아클리닉",
-  "description": "아산 배방 솔솔한의원 소아클리닉. 소아 성장, 식욕부진, 소화불량, 잦은 감기와 비염, 수면과 생활습관 등을 함께 살펴봅니다.",
+  "url": "https://solsolclinic.github.io/pediatric-clinic.html",
+  "description": "소아 성장, 식욕부진, 소화불량, 잦은 감기와 비염, 수면, 성장한약 및 소아한약 상담에 관한 진료 안내",
   "about": [
     "소아 성장",
-    "소아 식욕부진",
-    "소아 소화불량",
+    "식욕부진",
+    "소화불량",
     "소아 비염",
     "소아 감기",
-    "소아 수면"
+    "소아 수면",
+    "성장한약",
+    "소아한약"
   ],
-  "inLanguage": "ko-KR"
+  "inLanguage": "ko-KR",
+  "publisher": {
+    "@type": "MedicalClinic",
+    "name": "솔솔한의원",
+    "url": "https://solsolclinic.github.io/",
+    "telephone": "+82-41-534-3100",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "배방읍 모산로 91, 1층",
+      "addressLocality": "아산시",
+      "addressRegion": "충청남도",
+      "addressCountry": "KR"
+    }
+  }
 }
 </script>
 
+
+<style>
+
+:root {
+    --green-deep:#527e5e;
+    --green-main:#6ca67b;
+    --green-soft:#eef6f0;
+    --green-pale:#f7faf7;
+
+    --cream:#fbfaf6;
+    --white:#ffffff;
+
+    --text:#303530;
+    --sub:#687169;
+
+    --line:#e1e9e3;
+
+    --warm:#f7f2ea;
+
+    --shadow:0 14px 38px rgba(55,85,62,.08);
+}
+
+
+* {
+    box-sizing:border-box;
+}
+
+
+html {
+    scroll-behavior:smooth;
+}
+
+
+body {
+
+    margin:0;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Noto Sans KR",
+        "Malgun Gothic",
+        sans-serif;
+
+    color:var(--text);
+
+    background:var(--cream);
+
+    line-height:1.8;
+
+    word-break:keep-all;
+}
+
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+
+img {
+    display:block;
+    max-width:100%;
+}
+
+
+button {
+    font:inherit;
+}
+
+
+.container {
+
+    width:
+        min(
+            1080px,
+            calc(100% - 40px)
+        );
+
+    margin:0 auto;
+}
+
+
+/* HEADER */
+
+header {
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:
+        rgba(255,255,255,.97);
+
+    border-bottom:
+        1px solid var(--line);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+.nav {
+
+    min-height:75px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    position:relative;
+}
+
+
+.brand img {
+    width:140px;
+}
+
+
+.nav-menu {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    font-size:14px;
+
+    font-weight:700;
+}
+
+
+.nav-menu a:hover {
+    color:var(--green-deep);
+}
+
+
+/* MOBILE MENU */
+
+.mobile-menu-button {
+
+    display:none;
+
+    width:44px;
+
+    height:44px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:
+        12px;
+
+    background:white;
+
+    cursor:pointer;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    gap:5px;
+}
+
+
+.mobile-menu-button span {
+
+    width:20px;
+
+    height:2px;
+
+    background:var(--text);
+}
+
+
+.mobile-menu {
+
+    display:none;
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    right:0;
+
+    padding:
+        10px 20px 18px;
+
+    background:white;
+
+    border-bottom:
+        1px solid var(--line);
+
+    box-shadow:
+        0 14px 30px
+        rgba(45,70,50,.09);
+}
+
+
+.mobile-menu.open {
+    display:block;
+}
+
+
+.mobile-menu a {
+
+    display:block;
+
+    padding:
+        14px 8px;
+
+    border-bottom:
+        1px solid var(--line);
+
+    font-size:15px;
+
+    font-weight:700;
+}
+
+
+.mobile-menu a:last-child {
+    border-bottom:0;
+}
+
+
+/* BUTTON */
+
+.button {
+
+    min-height:49px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:
+        0 22px;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--green-deep);
+
+    border:
+        1px solid
+        var(--green-deep);
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    transition:.2s;
+}
+
+
+.button.light {
+
+    background:white;
+
+    color:var(--text);
+
+    border-color:
+        var(--line);
+}
+
+
+.button:hover {
+
+    transform:
+        translateY(-2px);
+
+    opacity:.9;
+}
+
+
+/* COMMON */
+
+section {
+
+    padding:
+        82px 0;
+
+    scroll-margin-top:
+        85px;
+}
+
+
+.section-head {
+
+    margin-bottom:
+        35px;
+}
+
+
+.section-kicker {
+
+    margin-bottom:
+        7px;
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        .08em;
+}
+
+
+.section-head h2 {
+
+    margin:
+        0 0 10px;
+
+    font-size:
+        clamp(
+            29px,
+            4vw,
+            40px
+        );
+
+    line-height:
+        1.4;
+
+    letter-spacing:
+        -2px;
+}
+
+
+.section-head p {
+
+    margin:0;
+
+    color:
+        var(--sub);
+}
+
+
+.split {
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        40px;
+
+    align-items:center;
+}
+
+
+.photo {
+
+    width:100%;
+
+    border-radius:
+        22px;
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+/* HERO */
+
+.hero {
+
+    padding:
+        58px 0
+        75px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcf9 0%,
+            #f4f1ea 100%
+        );
+}
+
+
+.breadcrumb {
+
+    margin-bottom:
+        28px;
+
+    color:
+        var(--sub);
+
+    font-size:
+        13px;
+}
+
+
+.breadcrumb a {
+
+    color:
+        var(--green-deep);
+
+    font-weight:
+        700;
+}
+
+
+.hero-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        .95fr
+        1.05fr;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        #e4e9e5;
+
+    border-radius:
+        28px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.hero-copy {
+
+    padding:
+        50px;
+
+    display:flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+}
+
+
+.hero-kicker {
+
+    margin-bottom:
+        10px;
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        14px;
+
+    font-weight:
+        800;
+}
+
+
+.hero h1 {
+
+    margin:
+        0 0 22px;
+
+    font-size:
+        clamp(
+            38px,
+            5vw,
+            55px
+        );
+
+    line-height:
+        1.28;
+
+    letter-spacing:
+        -3px;
+}
+
+
+.hero-lead {
+
+    margin:0;
+
+    color:
+        #58625b;
+
+    font-size:
+        17px;
+}
+
+
+.hero-note {
+
+    margin-top:
+        23px;
+
+    padding:
+        18px 20px;
+
+    background:
+        var(--green-soft);
+
+    border-radius:
+        15px;
+
+    color:
+        #576159;
+
+    font-size:
+        14px;
+}
+
+
+.hero-image {
+
+    min-height:
+        520px;
+}
+
+
+.hero-image img {
+
+    width:100%;
+
+    height:100%;
+
+    min-height:
+        520px;
+
+    object-fit:
+        cover;
+}
+
+
+/* BASICS */
+
+.basics {
+
+    background:
+        white;
+}
+
+
+.basic-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        14px;
+}
+
+
+.basic-card {
+
+    padding:
+        28px 25px;
+
+    background:
+        var(--green-pale);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        17px;
+}
+
+
+.basic-number {
+
+    margin-bottom:
+        7px;
+
+    color:
+        #84a28d;
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
+}
+
+
+.basic-card h3 {
+
+    margin:
+        0 0 7px;
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        20px;
+}
+
+
+.basic-card p {
+
+    margin:0;
+
+    color:
+        var(--sub);
+
+    font-size:
+        14px;
+}
+
+
+/* PEDIATRIC CARE */
+
+.pediatric-care {
+
+    background:
+        var(--cream);
+}
+
+
+.clinic-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        14px;
+}
+
+
+.clinic-card {
+
+    padding:
+        26px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        17px;
+}
+
+
+.clinic-card h3 {
+
+    margin:
+        0 0 7px;
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        19px;
+}
+
+
+.clinic-card p {
+
+    margin:0;
+
+    color:
+        var(--sub);
+
+    font-size:
+        14px;
+}
+
+
+/* MEAL */
+
+.meal {
+
+    background:
+        var(--green-soft);
+}
+
+
+.info-box {
+
+    padding:
+        36px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        #dce7de;
+
+    border-radius:
+        22px;
+}
+
+
+.info-box h2 {
+
+    margin-top:0;
+
+    font-size:
+        32px;
+
+    line-height:
+        1.4;
+
+    letter-spacing:
+        -1.5px;
+}
+
+
+.info-box p {
+
+    color:
+        #566058;
+}
+
+
+/* SLEEP */
+
+.sleep {
+
+    background:
+        white;
+}
+
+
+.sleep-text h2 {
+
+    margin-top:0;
+
+    font-size:
+        32px;
+
+    line-height:
+        1.4;
+
+    letter-spacing:
+        -1.5px;
+}
+
+
+.sleep-text p {
+
+    color:
+        #5d655f;
+}
+
+
+/* HERBAL */
+
+.herbal {
+
+    background:
+        var(--cream);
+}
+
+
+.herbal-box {
+
+    padding:
+        38px;
+
+    background:
+        var(--warm);
+
+    border:
+        1px solid
+        #ece4d8;
+
+    border-radius:
+        22px;
+}
+
+
+.herbal-box h3 {
+
+    margin-top:0;
+
+    color:
+        #5c6c5e;
+
+    font-size:
+        25px;
+}
+
+
+.herbal-box p {
+
+    color:
+        #615f59;
+}
+
+
+.quote {
+
+    margin:
+        22px 0;
+
+    padding:
+        18px 20px;
+
+    background:
+        white;
+
+    border-left:
+        4px solid
+        var(--green-main);
+
+    border-radius:
+        0 12px 12px 0;
+
+    color:
+        var(--green-deep);
+
+    font-weight:
+        700;
+}
+
+
+/* HOME CARE */
+
+.home-care {
+
+    background:
+        var(--green-soft);
+}
+
+
+.life-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        14px;
+}
+
+
+.life-card {
+
+    padding:
+        23px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        16px;
+}
+
+
+.life-card strong {
+
+    display:block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--green-deep);
+}
+
+
+.life-card span {
+
+    color:
+        var(--sub);
+
+    font-size:
+        14px;
+}
+
+
+/* PARENTS */
+
+.parents {
+
+    background:
+        white;
+}
+
+
+.parents-box {
+
+    padding:
+        36px;
+
+    background:
+        var(--green-pale);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        22px;
+}
+
+
+.parents-box h2 {
+
+    margin-top:0;
+
+    font-size:
+        32px;
+
+    line-height:
+        1.4;
+
+    letter-spacing:
+        -1.5px;
+}
+
+
+.parents-box p {
+
+    color:
+        #566058;
+}
+
+
+/* FAQ */
+
+.faq-section {
+
+    background:
+        var(--cream);
+}
+
+
+.faq-list {
+
+    padding:
+        5px 30px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        22px;
+}
+
+
+.faq-list details {
+
+    padding:
+        22px 0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+}
+
+
+.faq-list details:last-child {
+    border-bottom:0;
+}
+
+
+.faq-list summary {
+
+    cursor:pointer;
+
+    font-weight:
+        750;
+}
+
+
+.faq-list p {
+
+    margin-bottom:0;
+
+    color:
+        var(--sub);
+}
+
+
+/* MEDICAL NOTICE */
+
+.medical-notice {
+
+    background:
+        white;
+}
+
+
+.notice-box {
+
+    padding:
+        25px;
+
+    background:
+        #fffaf0;
+
+    border:
+        1px solid
+        #eee1c8;
+
+    border-radius:
+        16px;
+
+    color:
+        #655e50;
+
+    font-size:
+        14px;
+}
+
+
+/* CONTACT */
+
+.contact {
+
+    background:
+        var(--green-soft);
+}
+
+
+.contact-box {
+
+    padding:
+        48px 30px;
+
+    text-align:center;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        #dce7de;
+
+    border-radius:
+        24px;
+}
+
+
+.contact-box h2 {
+
+    margin:
+        0 0 10px;
+}
+
+
+.contact-box p {
+
+    color:
+        var(--sub);
+}
+
+
+.contact-buttons {
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:
+        10px;
+
+    margin-top:
+        25px;
+}
+
+
+/* FOOTER */
+
+footer {
+
+    padding:
+        48px 0;
+
+    background:
+        #f2f6f2;
+
+    border-top:
+        1px solid
+        var(--line);
+
+    color:
+        #5b645e;
+
+    font-size:
+        13px;
+}
+
+
+.footer-logo {
+
+    width:
+        120px;
+
+    margin-bottom:
+        17px;
+}
+
+
+footer p {
+
+    margin:
+        5px 0;
+}
+
+
+.footer-notice {
+
+    max-width:
+        790px;
+
+    margin-top:
+        23px;
+
+    color:
+        #89918b;
+
+    font-size:
+        12px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px) {
+
+    .nav-menu {
+        display:none;
+    }
+
+
+    .mobile-menu-button {
+        display:flex;
+    }
+
+
+    .brand img {
+        width:110px;
+    }
+
+
+    .hero-grid,
+    .split {
+        grid-template-columns:1fr;
+    }
+
+
+    .hero-copy {
+
+        padding:
+            36px 24px;
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            37px;
+
+        letter-spacing:
+            -2px;
+    }
+
+
+    .hero-lead {
+        font-size:15px;
+    }
+
+
+    .hero-image,
+    .hero-image img {
+
+        min-height:
+            300px;
+
+        height:
+            300px;
+    }
+
+
+    section {
+
+        padding:
+            62px 0;
+
+        scroll-margin-top:
+            76px;
+    }
+
+
+    .basic-grid,
+    .clinic-grid,
+    .life-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .info-box,
+    .herbal-box,
+    .parents-box {
+
+        padding:
+            26px 22px;
+    }
+
+
+    .faq-list {
+
+        padding:
+            4px 20px;
+    }
+
+
+    .contact-buttons {
+        display:grid;
+    }
+
+
+    .contact-buttons .button {
+        width:100%;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<header>
+
+<div class="container nav">
+
+
+<a href="index.html"
+   class="brand"
+   aria-label="솔솔한의원 홈페이지">
+
+<img src="logo.jpg"
+     alt="솔솔한의원 로고">
+
+</a>
+
+
+<nav class="nav-menu">
+
+<a href="#growth">
+소아성장
+</a>
+
+<a href="#care">
+진료안내
+</a>
+
+<a href="#herbal">
+소아한약
+</a>
+
+<a href="#lifestyle">
+생활관리
+</a>
+
+<a href="#faq">
+FAQ
+</a>
+
+<a href="#contact">
+예약·문의
+</a>
+
+</nav>
+
+
+<button class="mobile-menu-button"
+        id="mobileMenuButton"
+        type="button"
+        aria-label="메뉴 열기"
+        aria-expanded="false">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+<div class="mobile-menu"
+     id="mobileMenu">
+
+<a href="#growth">
+소아성장
+</a>
+
+<a href="#care">
+진료안내
+</a>
+
+<a href="#herbal">
+소아한약
+</a>
+
+<a href="#lifestyle">
+생활관리
+</a>
+
+<a href="#faq">
+자주 묻는 질문
+</a>
+
+<a href="#contact">
+예약·문의
+</a>
+
+<a href="index.html">
+솔솔한의원 홈
+</a>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+
+<div class="breadcrumb">
+
+<a href="index.html">
+솔솔한의원
+</a>
+
+&nbsp;›&nbsp;
+
+소아클리닉
+
+</div>
+
+
+<div class="hero-grid">
+
+
+<div class="hero-copy">
+
+
+<div class="hero-kicker">
+아산 배방 · 소아클리닉
+</div>
+
+
+<h1>
+
+잘 먹고,<br>
+잘 자고,<br>
+잘 배출하고 있나요?
+
+</h1>
+
+
+<p class="hero-lead">
+
+아이의 성장과 건강을 살펴볼 때는
+키만 보는 것이 아니라
+식사, 수면, 대소변, 활동량과
+평소 건강 상태를 함께 살펴보는 것이 중요합니다.
+
+</p>
+
+
+<div class="hero-note">
+
+솔솔한의원 소아클리닉에서는
+아이의 현재 키와 체중뿐 아니라
+식욕·소화·수면·대소변·활동량과
+평소 불편한 증상까지 함께 살펴봅니다.
+
+</div>
+
+
+</div>
+
+
+<div class="hero-image">
+
+<img src="pediatric-clinic-growth.jpg"
+     alt="아산 배방 솔솔한의원 소아 성장과 건강 상담">
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- GROWTH BASICS -->
+
+<section id="growth"
+         class="basics">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+
+<div class="section-kicker">
+CHILD GROWTH
+</div>
+
+
+<h2>
+아이의 성장, 기본부터 살펴봅니다
+</h2>
+
+
+<p>
+부모님께서 아이의 키를 걱정하며 내원하시지만,
+진료실에서는 키뿐 아니라 아이가 평소 어떻게 먹고,
+어떻게 자며, 대소변은 편안한지 등을 함께 확인합니다.
+</p>
+
+
+</div>
+
+
+<div class="basic-grid">
+
+
+<div class="basic-card">
+
+<div class="basic-number">
+01
+</div>
+
+<h3>
+잘 먹기
+</h3>
+
+<p>
+식욕과 소화 상태,
+식사량과 식습관 등을
+함께 살펴봅니다.
+</p>
+
+</div>
+
+
+<div class="basic-card">
+
+<div class="basic-number">
+02
+</div>
+
+<h3>
+잘 자기
+</h3>
+
+<p>
+충분한 수면시간뿐 아니라
+자주 깨지는 않는지,
+편안하게 숙면하는지도 살펴봅니다.
+</p>
+
+</div>
+
+
+<div class="basic-card">
+
+<div class="basic-number">
+03
+</div>
+
+<h3>
+잘 배출하기
+</h3>
+
+<p>
+변비, 설사, 잦은 복통 등
+대소변 상태도 아이의 전반적인
+건강 상태를 살펴보는 부분입니다.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CARE -->
+
+<section id="care"
+         class="pediatric-care">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+
+<div class="section-kicker">
+PEDIATRIC CARE
+</div>
+
+
+<h2>
+이런 부분을 함께 살펴봅니다
+</h2>
+
+
+<p>
+아이들은 같은 나이라도
+식사량, 체격, 수면, 소화 상태와
+평소 건강 상태가 모두 다릅니다.
+현재 아이에게 어떤 부분이 필요한지 먼저 살펴봅니다.
+</p>
+
+
+</div>
+
+
+<div class="clinic-grid">
+
+
+<div class="clinic-card">
+
+<h3>
+소아 성장
+</h3>
+
+<p>
+현재 키와 체중의 변화와 함께
+식사, 수면, 운동과 생활습관 등을
+확인합니다.
+</p>
+
+</div>
+
+
+<div class="clinic-card">
+
+<h3>
+식욕부진 · 소화불량
+</h3>
+
+<p>
+밥을 잘 먹지 않거나 자주 체하고,
+복통이나 변비·설사가 반복되는 경우
+소화 상태를 함께 살펴봅니다.
+</p>
+
+</div>
+
+
+<div class="clinic-card">
+
+<h3>
+잦은 감기 · 비염
+</h3>
+
+<p>
+감기가 반복되거나
+콧물, 코막힘 등 비염 증상으로
+불편해하는 아이를 진료합니다.
+</p>
+
+</div>
+
+
+<div class="clinic-card">
+
+<h3>
+수면 · 기력
+</h3>
+
+<p>
+잠들기 어렵거나 자주 깨는 경우,
+쉽게 피곤해하고 활동량이 떨어지는 경우 등
+전반적인 상태를 확인합니다.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- MEAL -->
+
+<section class="meal">
+
+
+<div class="container">
+
+
+<div class="split">
+
+
+<div>
+
+<img src="pediatric-clinic-meal.jpg"
+     alt="소아 성장과 건강에 중요한 규칙적인 식사와 균형 잡힌 영양"
+     class="photo"
+     loading="lazy">
+
+</div>
+
+
+<div class="info-box">
+
+
+<div class="section-kicker">
+MEAL & DIGESTION
+</div>
+
+
+<h2>
+무엇을 먹이느냐보다<br>
+어떻게 먹고 있는지부터
+</h2>
+
+
+<p>
+성장기 아이에게는 다양한 영양소를
+골고루 섭취하는 것이 중요합니다.
+특정 음식 하나에 의존하기보다는
+규칙적인 식사와 균형 잡힌 식습관을
+만들어주는 것이 좋습니다.
+</p>
+
+
+<p>
+아이가 밥을 지나치게 적게 먹거나,
+식사 때마다 복통이나 메스꺼움을 호소하거나,
+변비·설사가 반복된다면
+단순히 많이 먹이려고 하기보다
+현재 소화 상태를 함께 살펴볼 필요가 있습니다.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- SLEEP -->
+
+<section class="sleep">
+
+
+<div class="container">
+
+
+<div class="split">
+
+
+<div class="sleep-text">
+
+
+<div class="section-kicker">
+SLEEP
+</div>
+
+
+<h2>
+몇 시에 자느냐만큼<br>
+편안하게 자는 것도 중요합니다
+</h2>
+
+
+<p>
+성장과 관련해 부모님들이 많이 물어보시는
+질문 중 하나가
+“밤 10시 전에 꼭 자야 하나요?”입니다.
+</p>
+
+
+<p>
+특정 시간 하나만을 지나치게 의식하기보다는
+아이가 연령에 맞는 충분한 수면을 취하고 있는지,
+잠든 뒤 자주 깨지는 않는지,
+편안하게 숙면하고 있는지를
+함께 살펴보는 것이 좋습니다.
+</p>
+
+
+</div>
+
+
+<div>
+
+<img src="pediatric-clinic-sleep.jpg"
+     alt="소아 성장과 건강을 위한 편안하고 충분한 수면"
+     class="photo"
+     loading="lazy">
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- HERBAL MEDICINE -->
+
+<section id="herbal"
+         class="herbal">
+
+
+<div class="container">
+
+
+<div class="herbal-box">
+
+
+<div class="section-kicker">
+PEDIATRIC HERBAL MEDICINE
+</div>
+
+
+<h3>
+성장한약과 소아한약은 아이의 현재 상태에 맞춰 상담합니다
+</h3>
+
+
+<div class="quote">
+같은 성장 고민이라도
+아이마다 필요한 진료의 방향은 다를 수 있습니다.
+</div>
+
+
+<p>
+밥을 잘 먹지 않고 소화가 불편한 아이,
+감기나 비염이 자주 반복되는 아이,
+수면이나 기력 등의 불편이 함께 있는 아이처럼
+현재 상태는 서로 다를 수 있습니다.
+</p>
+
+
+<p>
+솔솔한의원에서는 식욕, 소화, 수면,
+대소변, 활동량과 전반적인 상태를 진료한 뒤
+필요한 경우 아이의 상태에 맞는
+한약 처방을 상담합니다.
+</p>
+
+
+<p>
+녹용을 비롯한 약재 역시
+모든 아이에게 동일하게 사용하는 것이 아니라
+진료 후 아이의 상태와 처방 목적에 따라
+사용 여부를 결정합니다.
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- HOME CARE -->
+
+<section id="lifestyle"
+         class="home-care">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+
+<div class="section-kicker">
+HOME CARE
+</div>
+
+
+<h2>
+집에서 먼저 챙겨주세요
+</h2>
+
+
+<p>
+아이의 성장과 건강 관리의 기본은
+매일 반복되는 생활습관에서 시작됩니다.
+</p>
+
+
+</div>
+
+
+<div class="life-grid">
+
+
+<div class="life-card">
+
+<strong>
+규칙적인 식사
+</strong>
+
+<span>
+끼니를 지나치게 거르지 않고
+다양한 음식을 골고루 먹도록 합니다.
+</span>
+
+</div>
+
+
+<div class="life-card">
+
+<strong>
+충분한 수면
+</strong>
+
+<span>
+일정한 수면 습관을 만들고
+편안한 수면환경을 만들어줍니다.
+</span>
+
+</div>
+
+
+<div class="life-card">
+
+<strong>
+꾸준한 신체활동
+</strong>
+
+<span>
+아이가 즐겁게 지속할 수 있는
+운동과 야외활동을 권합니다.
+</span>
+
+</div>
+
+
+<div class="life-card">
+
+<strong>
+손 씻기와 위생관리
+</strong>
+
+<span>
+외출 후 손 씻기 등
+기본적인 위생습관을 생활화합니다.
+</span>
+
+</div>
+
+
+<div class="life-card">
+
+<strong>
+충분한 수분 섭취
+</strong>
+
+<span>
+아이의 활동량과 계절을 고려해
+적절하게 물을 마시도록 합니다.
+</span>
+
+</div>
+
+
+<div class="life-card">
+
+<strong>
+간접흡연 피하기
+</strong>
+
+<span>
+성장기 아이가 담배 연기와
+흡연 잔류물에 노출되지 않도록 합니다.
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PARENTS -->
+
+<section class="parents">
+
+
+<div class="container">
+
+
+<div class="split">
+
+
+<div>
+
+<img src="pediatric-clinic-consultation.jpg"
+     alt="아산 배방 솔솔한의원 소아클리닉 보호자 상담"
+     class="photo"
+     loading="lazy">
+
+</div>
+
+
+<div class="parents-box">
+
+
+<div class="section-kicker">
+WITH PARENTS
+</div>
+
+
+<h2>
+아이를 키우는 부모의 마음으로
+</h2>
+
+
+<p>
+솔솔한의원의 두 한의사 역시
+아이를 키우고 있는 부모입니다.
+</p>
+
+
+<p>
+부모님께서 아이의 식사 한 끼,
+잠드는 시간 하나까지 걱정하게 되는 마음을 알기에
+키 숫자 하나만 보기보다는
+아이의 일상과 현재 불편한 부분을
+함께 듣고 살펴보겠습니다.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- FAQ -->
+
+<section id="faq"
+         class="faq-section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+
+<div class="section-kicker">
+FAQ
+</div>
+
+
+<h2>
+소아클리닉에서 자주 듣는 질문
+</h2>
+
+
+<p>
+소아 성장과 건강에 대해
+진료실에서 자주 듣는 질문들을 정리했습니다.
+</p>
+
+
+</div>
+
+
+<div class="faq-list">
+
+
+<details>
+
+<summary>
+키는 무조건 유전인가요?
+</summary>
+
+<p>
+유전적인 요인은 성장에 중요한 영향을 미치지만
+성장에는 영양, 수면, 운동,
+전반적인 건강 상태 등
+여러 요소가 함께 관여합니다.
+부모님의 키만으로 아이의 최종 키를 단정하기보다
+현재 성장 상태와 생활습관을
+함께 살펴보는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+아이 성장에서 중요한 생활습관은 무엇인가요?
+</summary>
+
+<p>
+쉽게 말씀드리면
+잘 먹고, 잘 자고, 잘 배출하는 것입니다.
+여기에 규칙적인 운동과 충분한 신체활동을 더하고,
+아이가 불편해하는 증상이 있다면
+그 원인을 함께 살펴보는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+밤 10시 전에 꼭 자야 키가 잘 크나요?
+</summary>
+
+<p>
+특정 시간 하나만으로 성장 여부가
+결정되는 것은 아닙니다.
+아이의 연령에 맞는 충분한 수면시간과
+수면의 질을 함께 살펴보는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+운동은 많이 할수록 키 성장에 좋은가요?
+</summary>
+
+<p>
+성장기에는 규칙적인 신체활동이 중요하지만
+무조건 강도가 높은 운동을 많이 하는 것이
+좋은 것은 아닙니다.
+걷기, 달리기, 줄넘기, 자전거, 수영,
+구기운동 등 아이가 즐겁게 지속할 수 있는
+활동을 규칙적으로 하는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+어릴 때 살은 나중에 다 키로 가나요?
+</summary>
+
+<p>
+그렇다고 단정할 수 없습니다.
+성장기에는 적절한 체중 증가가 필요하지만
+지나친 체중 증가는 별도로 살펴볼 필요가 있습니다.
+아이의 키와 체중 변화,
+식습관과 활동량을 함께 살펴보는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+밥을 잘 안 먹는 아이는 어떻게 해야 하나요?
+</summary>
+
+<p>
+먼저 식사시간과 간식 습관을 살펴보는 것이 좋습니다.
+아이에게 복통, 더부룩함, 메스꺼움,
+변비나 설사 등이 함께 있는지도 확인합니다.
+식욕부진이 지속되거나 체중 증가가 원활하지 않다면
+진료를 통해 소화 상태와 전반적인 건강 상태를
+확인해볼 수 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+감기나 비염이 자주 있는 아이도 함께 진료하나요?
+</summary>
+
+<p>
+네. 소아의 감기, 콧물, 코막힘,
+비염 등의 증상도 함께 진료할 수 있습니다.
+이러한 증상이 반복되면서 식욕이나 수면 등
+일상생활에 불편을 주고 있는지도 함께 살펴봅니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+성장한약은 어떤 아이가 먹나요?
+</summary>
+
+<p>
+모든 아이에게 동일한 성장한약을
+처방하는 것은 아닙니다.
+식욕과 소화 상태, 수면, 대소변,
+체격, 활동량과 현재 불편한 증상 등을 확인한 뒤
+한약이 필요한지 상담하고
+아이의 상태에 맞춰 처방합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+성장한약에는 녹용이 꼭 들어가나요?
+</summary>
+
+<p>
+녹용이 모든 아이에게 반드시 필요한 것은 아닙니다.
+아이의 현재 상태와 처방 목적에 따라
+사용 여부가 달라질 수 있습니다.
+특정 약재를 임의로 복용하기보다는
+진료 후 아이에게 적절한 처방인지
+상담받는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+아이마다 성장 속도가 다른가요?
+</summary>
+
+<p>
+네. 아이의 성장 속도는
+연령과 성별, 유전적 요인,
+사춘기 시기 등 여러 요소에 따라
+차이가 날 수 있습니다.
+한 번의 키 측정만으로 판단하기보다
+일정 기간 동안 키와 체중이
+어떻게 변화하고 있는지를
+함께 살펴보는 것이 중요합니다.
+</p>
+
+</details>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- MEDICAL NOTICE -->
+
+<section class="medical-notice">
+
+
+<div class="container">
+
+
+<div class="notice-box">
+
+<strong>
+안내드립니다.
+</strong>
+
+<br><br>
+
+아이의 성장 속도와 건강 상태에는 개인차가 있습니다.
+성장이나 발달에 대한 의학적인 평가가 필요한 경우에는
+소아청소년과 등 관련 의료기관의 검사와 진료가 필요할 수 있습니다.
+
+<br><br>
+
+한약 및 한의치료 역시
+진료 후 아이의 현재 상태를 확인한 뒤
+치료 방법과 기간을 개별적으로 결정합니다.
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact"
+         class="contact">
+
+
+<div class="container">
+
+
+<div class="contact-box">
+
+
+<h2>
+소아클리닉 예약 및 문의
+</h2>
+
+
+<p>
+소아 성장, 식욕부진, 소화불량,
+잦은 감기와 비염, 성장한약과 소아한약에 대해
+상담하실 수 있습니다.
+</p>
+
+
+<div class="contact-buttons">
+
+
+<a class="button"
+   href="tel:0415343100">
+
+전화하기
+
+</a>
+
+
+<a class="button light"
+   href="https://booking.naver.com/booking/13/bizes/250311"
+   target="_blank"
+   rel="noopener">
+
+네이버 예약
+
+</a>
+
+
+<a class="button light"
+   href="http://pf.kakao.com/_xjTGtj"
+   target="_blank"
+   rel="noopener">
+
+카카오톡 상담
+
+</a>
+
+
+<a class="button light"
+   href="https://naver.me/52RVqgJs"
+   target="_blank"
+   rel="noopener">
+
+네이버지도 길찾기
+
+</a>
+
+
+</div>
+
+
+<div style="margin-top:30px;">
+
+
+<a href="index.html"
+   style="
+      color:#527e5e;
+      font-weight:700;
+   ">
+
+← 솔솔한의원 메인 홈페이지로 돌아가기
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+
+<div class="container">
+
+
+<img src="logo.jpg"
+     alt="솔솔한의원"
+     class="footer-logo">
+
+
+<p>
+<strong>
+솔솔한의원
+</strong>
+</p>
+
+
+<p>
+충청남도 아산시 배방읍 모산로 91, 1층
+</p>
+
+
+<p>
+041-534-3100
+</p>
+
+
+<p>
+평일 09:00 ~ 19:30 · 점심시간 13:00 ~ 14:00
+</p>
+
+
+<p>
+토요일 09:00 ~ 13:00 · 일요일 및 공휴일 휴진
+</p>
+
+
+<div class="footer-notice">
+
+본 페이지는 소아 성장과 건강,
+식욕부진, 소화, 수면, 비염,
+소아한약과 성장한약 등에 관한
+일반적인 정보를 제공하기 위한 것입니다.
+
+아이의 성장 속도와 건강 상태에는 개인차가 있으며,
+구체적인 진단과 처방은 현재 상태를 확인한 뒤 결정합니다.
+필요한 경우 소아청소년과 등
+관련 의료기관의 검사와 진료가 함께 필요할 수 있습니다.
+
+</div>
+
+
+<p style="margin-top:24px;">
+
+© Solsol Korean Medicine Clinic. All rights reserved.
+
+</p>
+
+
+</div>
+
+
+</footer>
+
+
+
+<script>
+
+const menuButton =
+    document.getElementById("mobileMenuButton");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+menuButton.addEventListener(
+    "click",
+    function () {
+
+        const isOpen =
+            mobileMenu.classList.toggle("open");
+
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "메뉴 닫기" : "메뉴 열기"
+        );
+
+    }
+);
+
+
+mobileMenu
+    .querySelectorAll("a")
+    .forEach(
+
+        function(link) {
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    mobileMenu
+                        .classList
+                        .remove("open");
+
+
+                    menuButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+
+                    menuButton.setAttribute(
+                        "aria-label",
+                        "메뉴 열기"
+                    );
+
+                }
+            );
+
+        }
+
+    );
+
+</script>
+
+
 </body>
+
 </html>
