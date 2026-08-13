@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>체질클리닉 | 사상체질·태음인·소양인·소음인 | 아산 배방 솔솔한의원</title>
+
+<meta name="description"
+      content="아산 배방 솔솔한의원 체질클리닉. 사상체질의 관점에서 태음인, 소양인, 소음인 등 개인의 체질 가능성과 소화, 땀, 열감, 음식 반응, 생활습관 등을 함께 살펴봅니다.">
+
+<meta name="robots"
+      content="index, follow">
+
+<link rel="canonical"
+      href="https://solsolclinic.github.io/constitution-clinic.html">
+
+<link rel="icon"
+      href="logo.jpg"
+      type="image/jpeg">
+
+
+<!-- SNS 공유 -->
+
+<meta property="og:type"
+      content="website">
+
+<meta property="og:site_name"
+      content="솔솔한의원">
+
+<meta property="og:title"
+      content="체질클리닉 | 아산 배방 솔솔한의원">
+
+<meta property="og:description"
+      content="내 체질은 무엇일까요? 사상체질의 관점에서 체질과 음식, 소화, 열감, 땀의 양상을 함께 살펴봅니다.">
+
+<meta property="og:url"
+      content="https://solsolclinic.github.io/constitution-clinic.html">
+
+<meta property="og:image"
+      content="https://solsolclinic.github.io/constitution-clinic-consultation.jpg">
+
+<meta property="og:image:alt"
+      content="사상체질과 평소 건강 상태에 대해 상담하는 모습">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "솔솔한의원 체질클리닉",
+  "url": "https://solsolclinic.github.io/constitution-clinic.html",
+  "description": "사상체질과 체질별 건강관리 및 음식에 관한 진료 안내",
+  "publisher": {
+    "@type": "MedicalClinic",
+    "name": "솔솔한의원",
+    "url": "https://solsolclinic.github.io/",
+    "telephone": "+82-41-534-3100",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "배방읍 모산로 91, 1층",
+      "addressLocality": "아산시",
+      "addressRegion": "충청남도",
+      "addressCountry": "KR"
+    }
+  }
+}
+</script>
+
+
+<style>
+
+:root {
+    --green-deep:#527e5e;
+    --green-main:#6ca67b;
+    --green-soft:#eef6f0;
+    --green-pale:#f7faf7;
+    --cream:#fbfaf6;
+    --white:#ffffff;
+    --text:#303530;
+    --sub:#687169;
+    --line:#e1e9e3;
+    --warm:#f7f2ea;
+    --shadow:0 14px 38px rgba(55,85,62,.08);
+}
+
+* {
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin:0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Noto Sans KR",
+        "Malgun Gothic",
+        sans-serif;
+    color:var(--text);
+    background:var(--cream);
+    line-height:1.8;
+    word-break:keep-all;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+img {
+    display:block;
+    max-width:100%;
+}
+
+button {
+    font:inherit;
+}
+
+.container {
+    width:min(1080px, calc(100% - 40px));
+    margin:0 auto;
+}
+
+
+/* HEADER */
+
+header {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);
+    backdrop-filter:blur(10px);
+}
+
+.nav {
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+.brand img {
+    width:140px;
+}
+
+.nav-menu {
+    display:flex;
+    align-items:center;
+    gap:22px;
+    font-size:14px;
+    font-weight:700;
+}
+
+.nav-menu a:hover {
+    color:var(--green-deep);
+}
+
+
+/* MOBILE MENU */
+
+.mobile-menu-button {
+    display:none;
+    width:44px;
+    height:44px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:white;
+    cursor:pointer;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:5px;
+}
+
+.mobile-menu-button span {
+    width:20px;
+    height:2px;
+    background:var(--text);
+}
+
+.mobile-menu {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    padding:10px 20px 18px;
+    background:white;
+    border-bottom:1px solid var(--line);
+    box-shadow:0 14px 30px rgba(45,70,50,.09);
+}
+
+.mobile-menu.open {
+    display:block;
+}
+
+.mobile-menu a {
+    display:block;
+    padding:14px 8px;
+    border-bottom:1px solid var(--line);
+    font-size:15px;
+    font-weight:700;
+}
+
+.mobile-menu a:last-child {
+    border-bottom:0;
+}
+
+
+/* BUTTON */
+
+.button {
+    min-height:49px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 22px;
+    border-radius:999px;
+    background:var(--green-deep);
+    border:1px solid var(--green-deep);
+    color:white;
+    font-size:14px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.button.light {
+    background:white;
+    color:var(--text);
+    border-color:var(--line);
+}
+
+.button:hover {
+    transform:translateY(-2px);
+    opacity:.9;
+}
+
+
+/* COMMON */
+
+section {
+    padding:84px 0;
+    scroll-margin-top:85px;
+}
+
+.section-head {
+    margin-bottom:36px;
+}
+
+.section-kicker {
+    margin-bottom:7px;
+    color:var(--green-deep);
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.08em;
+}
+
+.section-head h2 {
+    margin:0 0 10px;
+    font-size:clamp(29px,4vw,40px);
+    line-height:1.4;
+    letter-spacing:-2px;
+}
+
+.section-head p {
+    margin:0;
+    color:var(--sub);
+}
+
+.split {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.photo {
+    width:100%;
+    border-radius:22px;
+    box-shadow:var(--shadow);
+}
+
+
+/* HERO */
+
+.hero {
+    padding:58px 0 75px;
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcf9 0%,
+            #edf6ef 100%
+        );
+}
+
+.breadcrumb {
+    margin-bottom:28px;
+    color:var(--sub);
+    font-size:13px;
+}
+
+.breadcrumb a {
+    color:var(--green-deep);
+    font-weight:700;
+}
+
+.hero-grid {
+    display:grid;
+    grid-template-columns:.95fr 1.05fr;
+    background:white;
+    border:1px solid #e1eae3;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.hero-copy {
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-kicker {
+    margin-bottom:10px;
+    color:var(--green-deep);
+    font-size:14px;
+    font-weight:800;
+}
+
+.hero h1 {
+    margin:0 0 22px;
+    font-size:clamp(38px,5vw,56px);
+    line-height:1.28;
+    letter-spacing:-3px;
+}
+
+.hero-lead {
+    margin:0;
+    color:#58625b;
+    font-size:17px;
+}
+
+.hero-note {
+    margin-top:23px;
+    padding:18px 20px;
+    background:var(--green-soft);
+    border-radius:15px;
+    color:#576159;
+    font-size:14px;
+}
+
+.hero-image {
+    min-height:520px;
+}
+
+.hero-image img {
+    width:100%;
+    height:100%;
+    min-height:520px;
+    object-fit:cover;
+}
+
+
+/* DIAGNOSIS */
+
+.diagnosis {
+    background:white;
+}
+
+.diagnosis-box {
+    padding:40px;
+    background:var(--green-pale);
+    border:1px solid var(--line);
+    border-radius:23px;
+}
+
+.diagnosis-box h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:26px;
+}
+
+.diagnosis-box p {
+    color:#566058;
+}
+
+
+/* CONSTITUTIONS */
+
+.types {
+    background:var(--cream);
+}
+
+.type-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.type-card {
+    padding:28px 25px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:18px;
+}
+
+.type-card h3 {
+    margin:0 0 9px;
+    color:var(--green-deep);
+    font-size:21px;
+}
+
+.type-card p {
+    margin:0;
+    color:var(--sub);
+    font-size:14px;
+}
+
+
+/* FOOD */
+
+.food {
+    background:var(--green-soft);
+}
+
+.food-text {
+    padding:36px;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:22px;
+}
+
+.food-text h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:25px;
+}
+
+.food-text p {
+    color:#566058;
+}
+
+
+/* FOOD TABLE */
+
+.food-details {
+    background:white;
+}
+
+.food-details details {
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.food-details summary {
+    padding:21px 25px;
+    cursor:pointer;
+    color:var(--green-deep);
+    font-weight:800;
+    list-style:none;
+}
+
+.food-details summary::-webkit-details-marker {
+    display:none;
+}
+
+.food-details summary::after {
+    content:"＋";
+    float:right;
+}
+
+.food-details details[open] summary::after {
+    content:"－";
+}
+
+.food-table-wrap {
+    padding:0 24px 25px;
+    overflow-x:auto;
+}
+
+.food-table {
+    width:100%;
+    border-collapse:collapse;
+    min-width:720px;
+    font-size:13px;
+}
+
+.food-table th,
+.food-table td {
+    padding:13px 12px;
+    border:1px solid var(--line);
+    text-align:left;
+    vertical-align:top;
+}
+
+.food-table th {
+    background:var(--green-soft);
+    color:var(--green-deep);
+}
+
+.food-note {
+    margin:0 0 22px;
+    padding:18px;
+    background:white;
+    border-radius:14px;
+    color:var(--sub);
+    font-size:13px;
+}
+
+
+/* HEAT SWEAT */
+
+.heat {
+    background:var(--cream);
+}
+
+.heat-text {
+    padding:36px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:22px;
+}
+
+.heat-text h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:25px;
+}
+
+.heat-text p {
+    color:#566058;
+}
+
+.myth {
+    margin-top:20px;
+    padding:19px 21px;
+    background:var(--green-soft);
+    border-radius:15px;
+}
+
+
+/* HERBAL */
+
+.herbal {
+    background:white;
+}
+
+.herbal-box {
+    padding:40px;
+    background:var(--green-pale);
+    border:1px solid var(--line);
+    border-radius:23px;
+}
+
+.herbal-box h3 {
+    margin-top:0;
+    color:var(--green-deep);
+    font-size:26px;
+}
+
+.herbal-box p {
+    color:#566058;
+}
+
+
+/* FAQ */
+
+.faq-section {
+    background:var(--cream);
+}
+
+.faq-list {
+    padding:5px 30px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:22px;
+}
+
+.faq-list details {
+    padding:22px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.faq-list details:last-child {
+    border-bottom:0;
+}
+
+.faq-list summary {
+    cursor:pointer;
+    font-weight:750;
+}
+
+.faq-list p {
+    margin-bottom:0;
+    color:var(--sub);
+}
+
+
+/* CONTACT */
+
+.contact {
+    background:var(--green-soft);
+}
+
+.contact-box {
+    padding:48px 30px;
+    text-align:center;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:24px;
+}
+
+.contact-box h2 {
+    margin:0 0 10px;
+}
+
+.contact-box p {
+    color:var(--sub);
+}
+
+.contact-buttons {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding:48px 0;
+    background:#f2f6f2;
+    border-top:1px solid var(--line);
+    color:#5b645e;
+    font-size:13px;
+}
+
+.footer-logo {
+    width:120px;
+    margin-bottom:17px;
+}
+
+footer p {
+    margin:5px 0;
+}
+
+.notice {
+    max-width:790px;
+    margin-top:23px;
+    color:#89918b;
+    font-size:12px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px) {
+
+    .nav-menu {
+        display:none;
+    }
+
+    .mobile-menu-button {
+        display:flex;
+    }
+
+    .brand img {
+        width:110px;
+    }
+
+    .hero-grid,
+    .split {
+        grid-template-columns:1fr;
+    }
+
+    .hero-copy {
+        padding:37px 25px;
+    }
+
+    .hero h1 {
+        font-size:37px;
+        letter-spacing:-2px;
+    }
+
+    .hero-lead {
+        font-size:15px;
+    }
+
+    .hero-image,
+    .hero-image img {
+        min-height:300px;
+        height:300px;
+    }
+
+    section {
+        padding:62px 0;
+        scroll-margin-top:76px;
+    }
+
+    .type-grid {
+        grid-template-columns:1fr;
+    }
+
+    .diagnosis-box,
+    .food-text,
+    .heat-text,
+    .herbal-box {
+        padding:27px 23px;
+    }
+
+    .contact-buttons {
+        display:grid;
+    }
+
+    .contact-buttons .button {
+        width:100%;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container nav">
+
+<a href="index.html"
+   class="brand"
+   aria-label="솔솔한의원 홈페이지">
+
+<img src="logo.jpg"
+     alt="솔솔한의원 로고">
+
+</a>
+
+
+<nav class="nav-menu">
+
+<a href="#diagnosis">체질판별</a>
+<a href="#types">사상체질</a>
+<a href="#food">체질과 음식</a>
+<a href="#heat">열·땀</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">예약·문의</a>
+
+</nav>
+
+
+<button class="mobile-menu-button"
+        id="mobileMenuButton"
+        type="button"
+        aria-label="메뉴 열기"
+        aria-expanded="false">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+<div class="mobile-menu"
+     id="mobileMenu">
+
+<a href="#diagnosis">체질판별</a>
+<a href="#types">사상체질</a>
+<a href="#food">체질과 음식</a>
+<a href="#heat">열·땀</a>
+<a href="#faq">자주 묻는 질문</a>
+<a href="#contact">예약·문의</a>
+<a href="index.html">솔솔한의원 홈</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="index.html">
+솔솔한의원
+</a>
+
+&nbsp;›&nbsp;
+
+체질클리닉
+
+</div>
+
+
+<div class="hero-grid">
+
+<div class="hero-copy">
+
+<div class="hero-kicker">
+아산 배방 · 체질클리닉
+</div>
+
+<h1>
+“저는 무슨<br>
+체질인가요?”
+</h1>
+
+<p class="hero-lead">
+
+사상체질은 단순한 체형이나
+몇 가지 질문만으로 결정하기보다
+평소의 몸 상태와 증상의 경과를
+함께 살펴보는 것이 중요합니다.
+
+</p>
+
+<div class="hero-note">
+
+소화, 수면, 땀, 열감,
+대소변의 양상과 평소 음식에 대한 반응 등도
+체질을 이해할 때 함께 살펴볼 수 있습니다.
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<img src="constitution-clinic-consultation.jpg"
+     alt="사상체질과 평소 건강 상태에 대해 상담하는 모습">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- DIAGNOSIS -->
+
+<section id="diagnosis"
+         class="diagnosis">
+
+<div class="container">
+
+<div class="diagnosis-box">
+
+<div class="section-kicker">
+CONSTITUTION
+</div>
+
+<h3>
+체질은 한 가지 특징만 보고 판단하지 않습니다
+</h3>
+
+<p>
+사상의학에서는
+사람의 신체적·심리적 특성과
+평소의 생리적인 특징,
+질병이 나타나는 양상 등을 종합적으로 살펴
+체질 가능성을 판단합니다.
+</p>
+
+<p>
+진료 과정에서는
+평소 소화 상태, 식욕, 수면,
+땀과 열감, 대소변,
+추위와 더위에 대한 반응 등을
+함께 확인할 수 있습니다.
+</p>
+
+<p>
+필요한 경우 체질에 따른 한약 처방을 고려하고,
+복용 후 나타나는 변화와 경과도
+체질 판단에 참고할 수 있습니다.
+</p>
+
+<div class="myth">
+
+<strong>
+“얼굴만 보고 바로 태음인·소음인이라고 알 수 있나요?”
+</strong>
+
+<br><br>
+
+체형이나 인상 역시 참고할 수 있는 요소이지만,
+그것만으로 체질을 단정하기보다는
+여러 특징과 증상, 경과를 함께 살펴보는 것이 좋습니다.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TYPES -->
+
+<section id="types"
+         class="types">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+SASANG CONSTITUTION
+</div>
+
+<h2>
+태음인·소양인·소음인, 무엇이 다를까요?
+</h2>
+
+<p>
+아래 설명은 일반적인 사상의학적 특징을 쉽게 이해하기 위한 참고 내용입니다.
+</p>
+
+</div>
+
+
+<div class="type-grid">
+
+
+<div class="type-card">
+
+<h3>
+태음인
+</h3>
+
+<p>
+식욕, 체격, 땀의 양상 등
+여러 특성을 함께 살펴봅니다.
+땀이 많다는 이유 하나만으로
+태음인이라고 판단하지 않습니다.
+</p>
+
+</div>
+
+
+<div class="type-card">
+
+<h3>
+소양인
+</h3>
+
+<p>
+열감이나 더위에 대한 반응이
+두드러지는 경우가 있을 수 있지만,
+열이 많다는 특징 하나만으로
+소양인이라고 판단하지 않습니다.
+</p>
+
+</div>
+
+
+<div class="type-card">
+
+<h3>
+소음인
+</h3>
+
+<p>
+소화 상태나 추위에 대한 반응 등이
+체질을 살펴보는 데 참고가 될 수 있습니다.
+다만 개인마다 나타나는 모습에는 차이가 있습니다.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div style="
+    margin-top:20px;
+    padding:20px 23px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:16px;
+    color:var(--sub);
+    font-size:14px;
+">
+
+사상의학에는 태양인도 포함됩니다.
+각 체질의 특징은 단순한 체크리스트처럼
+하나씩 일치한다고 해서 결정되는 것은 아닙니다.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOD -->
+
+<section id="food"
+         class="food">
+
+<div class="container">
+
+<div class="split">
+
+
+<div>
+
+<img src="constitution-clinic-food.jpg"
+     alt="곡류 채소 과일 단백질 등 다양한 식품이 차려진 모습"
+     class="photo">
+
+</div>
+
+
+<div class="food-text">
+
+<div class="section-kicker">
+FOOD &amp; CONSTITUTION
+</div>
+
+<h3>
+체질에 맞는 음식만 먹어야 하나요?
+</h3>
+
+<p>
+그렇지는 않습니다.
+체질별로 전통적으로 잘 맞는다고 설명되는 음식이 있지만,
+다른 체질의 음식을 먹었다고 해서
+곧바로 건강에 문제가 생긴다는 의미는 아닙니다.
+</p>
+
+<p>
+실제로는 평소 음식을 먹은 뒤
+속이 편했는지,
+더부룩함이나 설사, 속쓰림 등
+불편이 반복되지는 않았는지를 함께 살펴보는 것이
+더 실용적일 수 있습니다.
+</p>
+
+<p>
+기존 질환이나 알레르기가 있다면
+체질 음식보다 해당 질환에 맞는
+의학적 식사 관리가 우선될 수 있습니다.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOD TABLE -->
+
+<section class="food-details">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+FOOD GUIDE
+</div>
+
+<h2>
+체질별 음식 참고표
+</h2>
+
+<p>
+필요하신 분만 펼쳐서 확인하실 수 있습니다.
+</p>
+
+</div>
+
+
+<details>
+
+<summary>
+체질별 음식 참고표 보기
+</summary>
+
+
+<div class="food-table-wrap">
+
+<div class="food-note">
+
+<strong>
+중요합니다.
+</strong>
+
+이 표는 체질별 음식에 관한 일반적인 참고자료입니다.
+다른 체질의 음식은 먹으면 안 된다는 의미가 아니며,
+특정 음식을 지나치게 제한하거나 한 음식만 반복해서 섭취하는 것은 권하지 않습니다.
+평소 자신의 소화 상태와 기존 질환을 함께 고려해주세요.
+
+</div>
+
+
+<table class="food-table">
+
+<thead>
+
+<tr>
+
+<th>분류</th>
+<th>태양인</th>
+<th>소양인</th>
+<th>태음인</th>
+<th>소음인</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<th>곡류·전분류</th>
+
+<td>
+메밀 등
+</td>
+
+<td>
+보리, 팥, 녹두 등
+</td>
+
+<td>
+현미, 율무, 고구마, 옥수수, 밤 등
+</td>
+
+<td>
+쌀, 찹쌀, 감자, 누룽지 등
+</td>
+
+</tr>
+
+
+<tr>
+
+<th>어육류</th>
+
+<td>
+굴, 새우, 오징어,
+홍합, 게 등
+</td>
+
+<td>
+돼지고기, 오리고기,
+흰살생선, 굴, 새우 등
+</td>
+
+<td>
+소고기, 생선류,
+연어, 고등어 등
+</td>
+
+<td>
+닭고기, 명태,
+조기, 멸치, 장어 등
+</td>
+
+</tr>
+
+
+<tr>
+
+<th>채소류</th>
+
+<td>
+상추, 샐러리 등
+</td>
+
+<td>
+오이, 가지,
+배추, 숙주나물 등
+</td>
+
+<td>
+무, 호박, 콩나물,
+버섯, 도라지, 연근 등
+</td>
+
+<td>
+깻잎, 부추, 시금치,
+양배추, 양파, 마늘 등
+</td>
+
+</tr>
+
+
+<tr>
+
+<th>과일류</th>
+
+<td>
+포도, 다래,
+감, 키위 등
+</td>
+
+<td>
+딸기, 수박,
+참외, 멜론 등
+</td>
+
+<td>
+배, 매실,
+살구, 자두 등
+</td>
+
+<td>
+사과, 귤,
+복숭아, 대추 등
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</details>
+
+</div>
+
+</section>
+
+
+
+<!-- HEAT AND SWEAT -->
+
+<section id="heat"
+         class="heat">
+
+<div class="container">
+
+<div class="split">
+
+
+<div class="heat-text">
+
+<div class="section-kicker">
+HEAT &amp; SWEAT
+</div>
+
+<h3>
+열이 많고 땀이 많으면 어떤 체질일까요?
+</h3>
+
+<p>
+“더위를 많이 타니까 소양인인가요?”
+“땀이 많으니 태음인인가요?”
+라는 질문을 자주 듣습니다.
+</p>
+
+<p>
+하지만 열감이나 땀의 양만으로
+사상체질을 결정하기는 어렵습니다.
+</p>
+
+<p>
+같은 체질에서도
+건강 상태와 계절,
+현재 나타나는 병증에 따라
+평소와 다른 열감이나 땀의 변화가 나타날 수 있습니다.
+</p>
+
+<div class="myth">
+
+<strong>
+열 많음 = 소양인,
+땀 많음 = 태음인이라고
+단순하게 생각하지 않는 것이 좋습니다.
+</strong>
+
+</div>
+
+</div>
+
+
+<div>
+
+<img src="constitution-clinic-sweating.jpg"
+     alt="더운 날 열감과 땀으로 불편함을 느끼는 모습"
+     class="photo">
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- HERBAL -->
+
+<section class="herbal">
+
+<div class="container">
+
+<div class="split">
+
+
+<div>
+
+<img src="constitution-clinic-herbal-medicine.jpg"
+     alt="체질과 현재 증상에 대해 한약 상담을 하는 모습"
+     class="photo">
+
+</div>
+
+
+<div class="herbal-box">
+
+<div class="section-kicker">
+HERBAL MEDICINE
+</div>
+
+<h3>
+체질한약은 현재의 증상도 함께 살펴 처방합니다
+</h3>
+
+<p>
+같은 체질이라고 하더라도
+모든 사람에게 항상 같은 처방을 사용하는 것은 아닙니다.
+</p>
+
+<p>
+현재의 증상과 건강 상태,
+소화·수면·식욕·땀과 대소변 등의 양상을
+함께 확인한 뒤 한약 처방을 상담합니다.
+</p>
+
+<p>
+처방 후 나타나는 변화와 경과도
+다음 진료와 체질 판단에 참고할 수 있습니다.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FAQ -->
+
+<section id="faq"
+         class="faq-section">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+FAQ
+</div>
+
+<h2>
+체질에 대해 자주 묻는 질문
+</h2>
+
+</div>
+
+
+<div class="faq-list">
+
+
+<details>
+
+<summary>
+제 사상체질은 어떻게 알 수 있나요?
+</summary>
+
+<p>
+신체적인 특징뿐 아니라
+평소 소화, 식욕, 수면,
+땀과 열감, 대소변의 양상,
+증상이 나타나는 경향 등을 종합적으로 살펴봅니다.
+필요한 경우 한약 처방 후 나타나는 변화도
+판단에 참고할 수 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+체질은 설문검사만 하면 바로 알 수 있나요?
+</summary>
+
+<p>
+설문은 참고자료가 될 수 있지만
+그 결과 하나만으로 체질을 단정하기보다는
+진료를 통해 여러 특징을 함께 살펴보는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+열이 많으면 무조건 소양인인가요?
+</summary>
+
+<p>
+아닙니다.
+소양인에서 열감이 두드러지는 경우가 있을 수 있지만
+다른 체질에서도 현재 건강 상태에 따라
+열감이나 더위가 심하게 느껴질 수 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+땀이 많으면 태음인인가요?
+</summary>
+
+<p>
+땀의 양상은 체질을 살펴보는 요소 중 하나이지만,
+땀이 많다는 이유만으로 태음인이라고 판단하지 않습니다.
+계절과 건강 상태, 다른 증상을 함께 살펴야 합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+체질에 맞는 음식만 먹어야 하나요?
+</summary>
+
+<p>
+그렇지 않습니다.
+체질별 음식은 참고자료로 활용할 수 있으며
+다른 체질에 해당하는 음식을 먹으면 안 된다는 의미는 아닙니다.
+평소 자신이 먹었을 때 편한 음식과
+반복해서 불편을 유발하는 음식을 살펴보는 것도 중요합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+다른 체질의 음식을 먹으면 몸에 해로운가요?
+</summary>
+
+<p>
+일반적으로 그렇게 단순하게 볼 필요는 없습니다.
+과도한 음식 제한보다는
+균형 잡힌 식사와 자신의 소화 상태를
+함께 고려하는 것이 중요합니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+소음인은 찬 음식을 먹으면 안 되나요?
+</summary>
+
+<p>
+사상의학에서는 소음인의 소화 상태와
+찬 음식에 대한 반응을 중요하게 살펴보기도 합니다.
+하지만 개인차가 있으므로
+특정 음식을 무조건 금지하기보다
+실제로 먹었을 때의 반응을 살펴보는 것이 좋습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+체질을 알면 어떤 점이 도움이 되나요?
+</summary>
+
+<p>
+체질은 현재의 건강 상태와 생활습관을
+한의학적인 관점에서 이해하는 참고틀로 활용할 수 있습니다.
+한약 처방이나 생활관리 상담에서도
+체질적인 특징을 함께 고려할 수 있습니다.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+체질한약은 모두 같은 처방을 쓰나요?
+</summary>
+
+<p>
+아닙니다.
+같은 체질이라고 하더라도
+현재의 증상과 상태가 다를 수 있기 때문에
+진료 내용을 바탕으로 처방을 결정합니다.
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact"
+         class="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>
+체질클리닉 예약 및 문의
+</h2>
+
+<p>
+네이버 예약 또는 전화로 진료 예약이 가능합니다.
+</p>
+
+
+<div class="contact-buttons">
+
+<a class="button"
+   href="tel:0415343100">
+전화하기
+</a>
+
+<a class="button light"
+   href="https://booking.naver.com/booking/13/bizes/250311"
+   target="_blank"
+   rel="noopener">
+네이버 예약
+</a>
+
+<a class="button light"
+   href="http://pf.kakao.com/_xjTGtj"
+   target="_blank"
+   rel="noopener">
+카카오톡 상담
+</a>
+
+<a class="button light"
+   href="https://naver.me/52RVqgJs"
+   target="_blank"
+   rel="noopener">
+네이버지도 길찾기
+</a>
+
+</div>
+
+
+<div style="margin-top:30px;">
+
+<a href="index.html"
+   style="color:#527e5e;font-weight:700;">
+
+← 솔솔한의원 메인 홈페이지로 돌아가기
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<div class="container">
+
+<img src="logo.jpg"
+     alt="솔솔한의원"
+     class="footer-logo">
+
+<p><strong>솔솔한의원</strong></p>
+
+<p>
+충청남도 아산시 배방읍 모산로 91, 1층
+</p>
+
+<p>
+041-534-3100
+</p>
+
+<p>
+평일 09:00 ~ 19:30 · 점심시간 13:00 ~ 14:00
+</p>
+
+<p>
+토요일 09:00 ~ 13:00 · 일요일 및 공휴일 휴진
+</p>
+
+
+<div class="notice">
+
+본 페이지의 사상체질 및 체질별 음식 정보는
+일반적인 한의학적 정보를 제공하기 위한 것입니다.
+개인의 체질과 건강 상태는 서로 다를 수 있으며,
+특정 음식이나 한약의 효과를 보장하는 내용이 아닙니다.
+구체적인 사항은 진료를 통해 상담하시기 바랍니다.
+
+</div>
+
+
+<p style="margin-top:24px;">
+© Solsol Korean Medicine Clinic. All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+const menuButton =
+    document.getElementById("mobileMenuButton");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+menuButton.addEventListener(
+    "click",
+    function () {
+
+        const isOpen =
+            mobileMenu.classList.toggle("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "메뉴 닫기" : "메뉴 열기"
+        );
+
+    }
+);
+
+
+mobileMenu.querySelectorAll("a").forEach(
+    function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                mobileMenu.classList.remove("open");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    "메뉴 열기"
+                );
+
+            }
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
