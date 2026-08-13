@@ -8,12 +8,12 @@
   </url>
 
   <url>
-    <loc>https://solsolclinic.github.io/traffic-accident.html</loc>
+    <loc>https://solsolclinic.github.io/pain-clinic.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://solsolclinic.github.io/pain-clinic.html</loc>
+    <loc>https://solsolclinic.github.io/traffic-accident.html</loc>
     <priority>0.8</priority>
   </url>
 
@@ -26,10 +26,30 @@
     <loc>https://solsolclinic.github.io/digestive-clinic.html</loc>
     <priority>0.8</priority>
   </url>
- 
+
   <url>
-  <loc>https://solsolclinic.github.io/allergy-clinic.html</loc>
-  <priority>0.8</priority>
+    <loc>https://solsolclinic.github.io/allergy-clinic.html</loc>
+    <priority>0.8</priority>
   </url>
-  
+
+  <url>
+    <loc>https://solsolclinic.github.io/constitution-clinic.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://solsolclinic.github.io/pediatric-clinic.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://solsolclinic.github.io/women-clinic.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://solsolclinic.github.io/herbal-tonic-clinic.html</loc>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
