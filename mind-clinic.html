@@ -33,10 +33,10 @@
       content="솔솔한의원">
 
 <meta property="og:title"
-      content="심신클리닉 | 아산 배방 솔솔한의원">
+      content="심신클리닉 | 불면·불안·공황·화병 | 아산 배방 솔솔한의원">
 
 <meta property="og:description"
-      content="불면·불안·공황 증상과 함께 나타나는 몸과 마음의 변화를 함께 살펴봅니다.">
+      content="불면·불안·공황 증상과 함께 나타날 수 있는 몸과 마음의 변화를 함께 살펴봅니다.">
 
 <meta property="og:url"
       content="https://solsolclinic.github.io/mind-clinic.html">
@@ -56,9 +56,20 @@
   "@type": "MedicalWebPage",
   "name": "솔솔한의원 심신클리닉",
   "url": "https://solsolclinic.github.io/mind-clinic.html",
-  "description": "불면, 불안, 공황 증상, 화병, 우울감 등 심신의 불편에 관한 진료 안내",
+  "description": "불면, 불안, 공황 증상, 화병, 우울감과 함께 나타날 수 있는 여러 심신의 불편에 관한 진료 및 건강정보 안내",
+  "about": [
+    "불면",
+    "수면불량",
+    "불안",
+    "공황 증상",
+    "화병",
+    "우울감",
+    "스트레스와 신체 증상"
+  ],
+  "inLanguage": "ko-KR",
   "publisher": {
     "@type": "MedicalClinic",
+    "@id": "https://solsolclinic.github.io/#clinic",
     "name": "솔솔한의원",
     "url": "https://solsolclinic.github.io/",
     "telephone": "+82-41-534-3100",
@@ -158,8 +169,8 @@ header {
 .nav-menu {
     display:flex;
     align-items:center;
-    gap:22px;
-    font-size:14px;
+    gap:17px;
+    font-size:13.5px;
     font-weight:700;
 }
 
@@ -475,7 +486,7 @@ section {
 }
 
 
-/* PANIC ANALOGY */
+/* PANIC */
 
 .panic {
     background:white;
@@ -689,6 +700,102 @@ section {
 }
 
 
+/* HEALTH COLUMNS */
+
+.health-columns {
+    background:var(--green-soft);
+}
+
+.column-intro {
+    max-width:820px;
+}
+
+.column-list {
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:22px;
+    overflow:hidden;
+}
+
+.column-item {
+    margin:0;
+    background:white;
+    border-bottom:1px solid var(--line);
+}
+
+.column-item:last-child {
+    border-bottom:0;
+}
+
+.column-item > summary {
+    position:relative;
+    padding:24px 60px 24px 26px;
+    cursor:pointer;
+    list-style:none;
+    color:#3f5548;
+    font-size:17px;
+    font-weight:800;
+    line-height:1.55;
+}
+
+.column-item > summary::-webkit-details-marker {
+    display:none;
+}
+
+.column-item > summary::after {
+    content:"＋";
+    position:absolute;
+    right:25px;
+    top:20px;
+    color:var(--green-deep);
+    font-size:24px;
+    font-weight:400;
+}
+
+.column-item[open] > summary::after {
+    content:"－";
+}
+
+.column-item[open] > summary {
+    background:var(--green-pale);
+}
+
+.column-body {
+    padding:7px 30px 35px;
+    color:#566058;
+}
+
+.column-body h3 {
+    margin:28px 0 10px;
+    color:var(--green-deep);
+    font-size:19px;
+    line-height:1.55;
+}
+
+.column-body p {
+    margin:0 0 16px;
+}
+
+.column-point {
+    margin:23px 0;
+    padding:18px 20px;
+    background:var(--green-pale);
+    border-left:4px solid var(--green-main);
+    border-radius:0 13px 13px 0;
+    color:#4f5b52;
+}
+
+.column-warning {
+    margin-top:23px;
+    padding:18px 20px;
+    background:#fff8ed;
+    border:1px solid #eee2cc;
+    border-radius:13px;
+    color:#655f52;
+    font-size:14px;
+}
+
+
 /* CONTACT */
 
 .contact {
@@ -811,6 +918,29 @@ footer p {
         padding:27px 23px;
     }
 
+    .faq-list {
+        padding:5px 20px;
+    }
+
+    .column-item > summary {
+        padding:20px 50px 20px 19px;
+        font-size:15px;
+    }
+
+    .column-item > summary::after {
+        right:18px;
+        top:16px;
+    }
+
+    .column-body {
+        padding:5px 20px 29px;
+        font-size:14px;
+    }
+
+    .column-body h3 {
+        font-size:17px;
+    }
+
     .contact-buttons {
         display:grid;
     }
@@ -849,6 +979,7 @@ footer p {
 <a href="#panic">공황</a>
 <a href="#treatment">진료방법</a>
 <a href="#faq">FAQ</a>
+<a href="#columns">건강칼럼</a>
 <a href="#contact">예약·문의</a>
 
 </nav>
@@ -875,6 +1006,7 @@ footer p {
 <a href="#panic">공황 증상</a>
 <a href="#treatment">진료방법</a>
 <a href="#faq">자주 묻는 질문</a>
+<a href="#columns">건강칼럼</a>
 <a href="#contact">예약·문의</a>
 <a href="index.html">솔솔한의원 홈</a>
 
@@ -883,7 +1015,6 @@ footer p {
 </div>
 
 </header>
-
 
 
 <main>
@@ -909,7 +1040,6 @@ footer p {
 
 
 <div class="hero-grid">
-
 
 <div class="hero-copy">
 
@@ -952,13 +1082,11 @@ footer p {
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- DOCTOR -->
@@ -998,7 +1126,6 @@ footer p {
 </section>
 
 
-
 <!-- AREAS -->
 
 <section id="areas"
@@ -1024,7 +1151,6 @@ MIND CLINIC
 
 
 <div class="area-grid">
-
 
 <div class="area-card">
 
@@ -1115,13 +1241,11 @@ MIND CLINIC
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- BODY SYMPTOMS -->
@@ -1190,7 +1314,6 @@ MIND &amp; BODY
 
 </div>
 
-
 </div>
 
 </div>
@@ -1198,8 +1321,7 @@ MIND &amp; BODY
 </section>
 
 
-
-<!-- PANIC ANALOGY -->
+<!-- PANIC -->
 
 <section id="panic"
          class="panic">
@@ -1265,7 +1387,6 @@ PANIC
 </section>
 
 
-
 <!-- INSOMNIA -->
 
 <section class="insomnia">
@@ -1273,7 +1394,6 @@ PANIC
 <div class="container">
 
 <div class="split">
-
 
 <div>
 
@@ -1297,7 +1417,8 @@ SLEEP
 <p>
 수면의 어려움은
 잠드는 시간, 자주 깨는지 여부,
-꿈, 아침의 피로감 등 여러 모습으로 나타날 수 있습니다.
+아침에 너무 일찍 깨는지,
+자고 난 뒤 피로감이 남는지 등 여러 모습으로 나타날 수 있습니다.
 </p>
 
 <p>
@@ -1313,13 +1434,11 @@ SLEEP
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- TREATMENT -->
@@ -1398,7 +1517,6 @@ TREATMENT
 </section>
 
 
-
 <!-- HERBAL -->
 
 <section class="herbal">
@@ -1424,14 +1542,13 @@ HERBAL MEDICINE
 
 <p>
 솔솔한의원에서는
-현재 나타나는 증상과 체질 및 전반적인 상태를 확인하여
+현재 나타나는 증상과 전반적인 상태를 확인하여
 필요한 경우 한약 처방을 상담합니다.
 </p>
 
 <p>
 처방의 종류와 복용기간은
-증상의 양상과 변화에 따라 달라질 수 있으며
-진료 과정에서 상태를 확인하며 조정할 수 있습니다.
+현재 상태와 진료 경과에 따라 달라질 수 있습니다.
 </p>
 
 </div>
@@ -1441,7 +1558,6 @@ HERBAL MEDICINE
 </section>
 
 
-
 <!-- TRADITIONAL VIEW -->
 
 <section class="traditional">
@@ -1449,7 +1565,6 @@ HERBAL MEDICINE
 <div class="container">
 
 <div class="traditional-box">
-
 
 <div class="traditional-title">
 
@@ -1471,9 +1586,8 @@ HERBAL MEDICINE
 
 <p>
 또한 전통적인 한의학에서는
-소화기능과 전신의 순환 상태도
-불안, 수면, 기력 등의 증상을 살펴볼 때
-함께 고려해 왔습니다.
+소화와 수면, 기력 등의 상태도
+심신의 불편을 살펴볼 때 함께 고려해 왔습니다.
 </p>
 
 <p>
@@ -1490,13 +1604,11 @@ HERBAL MEDICINE
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- CONSULTATION -->
@@ -1506,7 +1618,6 @@ HERBAL MEDICINE
 <div class="container">
 
 <div class="split">
-
 
 <div>
 
@@ -1546,13 +1657,11 @@ CONSULTATION
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- MEDICATION -->
@@ -1587,7 +1696,6 @@ CONSULTATION
 </section>
 
 
-
 <!-- FAQ -->
 
 <section id="faq"
@@ -1609,7 +1717,6 @@ FAQ
 
 
 <div class="faq-list">
-
 
 <details>
 
@@ -1656,7 +1763,8 @@ FAQ
 수면은 심신 상태를 살펴볼 때 중요한 부분 중 하나입니다.
 잠드는 데 걸리는 시간,
 밤중에 자주 깨는지,
-아침에 피곤한지 등을 함께 말씀해주시면 됩니다.
+아침에 너무 일찍 깨는지,
+낮 동안 피곤한지 등을 함께 말씀해주시면 됩니다.
 </p>
 
 </details>
@@ -1669,11 +1777,11 @@ FAQ
 </summary>
 
 <p>
-천천히 호흡하며 몸의 긴장을 낮추는 방법을
+천천히 호흡하며 몸의 긴장을 조절하는 방법을
 연습하는 분들이 있습니다.
 호흡을 억지로 크게 하기보다는
-편안한 속도로 천천히 호흡하는 것이 중요합니다.
-구체적인 방법은 진료 시 안내받으실 수 있습니다.
+편안한 속도로 호흡하는 것이 좋습니다.
+구체적인 방법은 현재 상태에 맞춰 안내받을 수 있습니다.
 </p>
 
 </details>
@@ -1689,7 +1797,7 @@ FAQ
 현재 상태에 따라
 침 치료를 한약이나 생활관리와 함께
 고려할 수 있습니다.
-구체적인 치료방법은 진료 후 결정합니다.
+구체적인 진료방법은 진료 후 결정합니다.
 </p>
 
 </details>
@@ -1704,7 +1812,7 @@ FAQ
 <p>
 정해진 기간이 모든 분에게 동일하게 적용되는 것은 아닙니다.
 증상이 지속된 기간과 현재 상태,
-복용 중 나타나는 변화 등을 확인하면서
+진료 경과 등을 확인하면서
 처방과 복용기간을 상담합니다.
 </p>
 
@@ -1743,13 +1851,606 @@ FAQ
 
 </details>
 
-
 </div>
 
 </div>
 
 </section>
 
+
+<!-- HEALTH COLUMNS -->
+
+<section id="columns"
+         class="health-columns">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+SOLSOL MIND COLUMN
+</div>
+
+<h2>
+심신 건강칼럼
+</h2>
+
+<p class="column-intro">
+불면, 불안, 공황 증상, 화병과 스트레스에 대해
+진료실에서 자주 듣는 질문을 중심으로 정리했습니다.
+궁금한 제목을 누르면 내용을 확인하실 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="column-list">
+
+
+<!-- COLUMN 01 -->
+
+<details class="column-item">
+
+<summary>
+01. 잠은 드는데 자꾸 깨요. 이것도 불면인가요?
+</summary>
+
+<div class="column-body">
+
+<p>
+불면이라고 하면 보통
+밤에 잠이 전혀 들지 않는 모습을 먼저 떠올리지만,
+수면의 어려움은 여러 형태로 나타날 수 있습니다.
+</p>
+
+<p>
+잠드는 데 오랜 시간이 걸리는 경우도 있고,
+잠은 비교적 쉽게 들지만 밤중에 반복해서 깨거나
+원하는 시간보다 너무 일찍 깨어 다시 잠들기 어려운 경우도 있습니다.
+</p>
+
+<h3>
+잠드는 것뿐 아니라 수면이 유지되는지도 살펴봅니다
+</h3>
+
+<p>
+진료실에서는 잠자리에 든 뒤 얼마나 지나 잠이 드는지,
+밤중에 몇 번 정도 깨는지,
+깨고 나서 다시 잠들기 어려운지,
+아침에 너무 일찍 깨지는 않는지 등을 함께 확인합니다.
+</p>
+
+<p>
+또 실제 수면시간뿐 아니라
+아침에 일어났을 때 개운한지,
+낮 동안 피로하거나 집중하기 어려운지 등
+일상생활에 미치는 영향도 함께 살펴볼 수 있습니다.
+</p>
+
+<div class="column-point">
+불면은 단순히 “몇 시간 잤는가”만으로 판단하기보다
+잠드는 과정, 수면 유지,
+아침의 상태와 낮 동안의 생활을 함께 살펴보는 것이 중요합니다.
+</div>
+
+<h3>
+수면에 영향을 줄 수 있는 생활요인도 확인합니다
+</h3>
+
+<p>
+늦은 시간의 카페인 섭취,
+취침 전 스마트폰 사용,
+낮잠이나 불규칙한 수면시간,
+스트레스와 긴장 등이 수면과 함께 변화하고 있는지도
+살펴볼 수 있습니다.
+</p>
+
+<p>
+수면 문제가 지속되거나
+낮 동안의 피로와 집중력 저하 등으로
+생활에 불편이 있다면 현재 수면 상태를 상담해볼 수 있습니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 02 -->
+
+<details class="column-item">
+
+<summary>
+02. 가슴이 두근거리고 숨이 답답한데 공황장애일까요?
+</summary>
+
+<div class="column-body">
+
+<p>
+갑자기 가슴이 두근거리거나
+숨이 충분히 들어오지 않는 것처럼 답답해지고,
+어지럽거나 식은땀이 나는 느낌 때문에
+공황장애가 아닐까 걱정하시는 분들이 있습니다.
+</p>
+
+<p>
+이러한 증상은 공황발작에서 나타날 수 있는 증상과
+일부 겹칠 수 있지만,
+두근거림이나 호흡의 불편이 있다는 이유만으로
+곧바로 공황장애라고 단정할 수는 없습니다.
+</p>
+
+<h3>
+증상이 어떻게 시작되고 얼마나 지속되는지 살펴봅니다
+</h3>
+
+<p>
+증상이 갑자기 시작되는지,
+특정 상황에서 반복되는지,
+두근거림과 함께 어지럼이나 손발의 이상감각,
+죽을 것 같은 두려움 등이 함께 나타나는지 등을
+확인할 수 있습니다.
+</p>
+
+<p>
+증상을 경험한 뒤
+또 그런 일이 생길까 계속 걱정하거나
+특정 장소나 상황을 피하게 되는지도
+함께 살펴볼 수 있습니다.
+</p>
+
+<div class="column-point">
+공황 증상을 평가할 때는
+한 번의 신체증상만 보는 것이 아니라
+증상이 나타나는 양상과 반복 여부,
+증상 이후의 걱정과 일상생활의 변화 등을 함께 살펴봅니다.
+</div>
+
+<h3>
+신체질환과의 구분도 중요합니다
+</h3>
+
+<p>
+가슴 두근거림이나 숨이 답답한 느낌은
+여러 신체적 원인에서도 나타날 수 있습니다.
+따라서 모든 증상을 불안이나 공황으로만 설명해서는 안 됩니다.
+</p>
+
+<div class="column-warning">
+갑작스럽고 심한 흉통,
+의식소실이나 실신,
+평소와 다른 심한 호흡곤란 등
+응급평가가 필요할 수 있는 증상이 있다면
+관련 의료기관의 평가를 우선 고려해야 합니다.
+</div>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 03 -->
+
+<details class="column-item">
+
+<summary>
+03. 불안하면 어지럽거나 속이 불편할 수도 있나요?
+</summary>
+
+<div class="column-body">
+
+<p>
+불안이 있다고 하면
+걱정이나 두려움 같은 감정만을 떠올리기 쉽지만,
+사람에 따라 다양한 신체적인 불편이 함께 나타나기도 합니다.
+</p>
+
+<p>
+가슴 두근거림이나 답답함,
+어지럼, 두통, 목과 어깨의 긴장,
+속이 메스껍거나 소화가 잘 되지 않는 느낌 등을
+함께 경험하는 경우도 있습니다.
+</p>
+
+<h3>
+몸의 증상도 함께 이야기해주세요
+</h3>
+
+<p>
+불안이 심해지는 상황에서
+신체적인 불편이 함께 나타나는지,
+스트레스가 줄어들면 증상이 달라지는지,
+수면이나 식욕에도 변화가 있는지 등을 살펴볼 수 있습니다.
+</p>
+
+<p>
+신체증상이 반복될 경우
+그 증상 때문에 다시 불안해지고,
+불안이 커지면서 몸의 불편을 더 민감하게 느끼는 경우도 있습니다.
+</p>
+
+<div class="column-point">
+몸과 마음의 증상이 함께 나타날 수 있지만,
+모든 신체증상을 불안 때문이라고 단정하지 않는 것이 중요합니다.
+증상의 시작 시점과 양상,
+필요한 검사 여부를 함께 고려해야 합니다.
+</div>
+
+<h3>
+기존 질환과 복용약도 알려주세요
+</h3>
+
+<p>
+기존에 심장이나 갑상선 등 다른 질환이 있거나
+현재 복용 중인 처방약이나 건강기능식품이 있다면
+진료 시 함께 말씀해주시는 것이 좋습니다.
+</p>
+
+<p>
+솔솔한의원에서는
+마음의 불편뿐 아니라
+수면, 소화, 식욕, 기력 등
+함께 나타나는 몸의 변화도 확인합니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 04 -->
+
+<details class="column-item">
+
+<summary>
+04. 갑자기 숨이 막히고 죽을 것 같은 느낌이 들면 모두 공황장애인가요?
+</summary>
+
+<div class="column-body">
+
+<p>
+갑자기 심한 두려움이 밀려오면서
+가슴이 두근거리거나 숨이 답답하고,
+어지럽거나 쓰러질 것 같은 느낌,
+죽을 것 같은 두려움을 경험했다고 말씀하시는 경우가 있습니다.
+</p>
+
+<p>
+이런 급격한 증상은 공황발작에서 나타날 수 있지만,
+공황발작을 한 번 경험했다는 사실만으로
+곧바로 공황장애라고 단정하는 것은 적절하지 않습니다.
+</p>
+
+<h3>
+공황발작과 공황장애는 같은 의미가 아닙니다
+</h3>
+
+<p>
+공황 증상을 살펴볼 때는
+발작이 반복되는지,
+다시 증상이 생길까 지속적으로 걱정하는지,
+외출이나 대중교통 이용 등 일상생활에서
+피하게 되는 상황이 생겼는지 등을 함께 확인합니다.
+</p>
+
+<p>
+처음 증상이 발생한 시기와 상황,
+증상이 얼마나 지속되었는지,
+최근 수면이나 스트레스에 변화가 있었는지도
+살펴볼 수 있습니다.
+</p>
+
+<div class="column-point">
+공황 증상이 있다는 이유만으로
+스스로 진단명을 정하기보다,
+증상의 양상과 반복 여부,
+일상생활에 미치는 영향을 함께 확인하는 것이 중요합니다.
+</div>
+
+<h3>
+처음 발생한 심한 신체증상은 필요한 평가를 고려합니다
+</h3>
+
+<p>
+두근거림이나 숨이 답답한 느낌 등은
+공황 외에도 여러 원인에서 나타날 수 있습니다.
+특히 처음 경험하는 심한 신체증상이라면
+현재 상태에 따라 필요한 검사를 고려해야 할 수 있습니다.
+</p>
+
+<div class="column-warning">
+심한 흉통, 실신,
+평소와 다른 심한 호흡곤란이나
+신경학적 이상 등이 있는 경우에는
+관련 의료기관에서 신속한 평가를 우선 고려해야 합니다.
+</div>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 05 -->
+
+<details class="column-item">
+
+<summary>
+05. 화병은 단순히 화를 많이 내는 병인가요?
+</summary>
+
+<div class="column-body">
+
+<p>
+‘화병’이라는 이름 때문에
+화를 자주 내는 사람에게 생기는 문제라고
+생각하시는 경우가 있습니다.
+하지만 화병을 단순히 성격이나 분노의 정도만으로
+설명하기는 어렵습니다.
+</p>
+
+<p>
+오랫동안 쌓인 억울함이나 분노,
+답답함 등 정서적인 어려움과 함께
+여러 신체적인 불편을 호소하는 경우가 있습니다.
+</p>
+
+<h3>
+몸의 불편이 함께 나타나기도 합니다
+</h3>
+
+<p>
+가슴이나 목이 답답한 느낌,
+열이 오르는 듯한 느낌,
+두근거림이나 두통,
+수면의 변화 등을 함께 이야기하시는 경우도 있습니다.
+</p>
+
+<p>
+다만 이러한 증상이 있다고 해서
+모두 화병이라고 볼 수 있는 것은 아니며,
+불안이나 우울 등 다른 심리적인 문제나
+신체적인 원인과의 구분도 필요할 수 있습니다.
+</p>
+
+<div class="column-point">
+화병을 단순히 “화를 참아서 생기는 병”으로만 이해하기보다
+증상이 시작된 과정,
+정서적인 부담과 신체적인 변화,
+일상생활에 미치는 영향을 함께 살펴보는 것이 중요합니다.
+</div>
+
+<h3>
+개인의 상황과 경과를 함께 듣습니다
+</h3>
+
+<p>
+어떤 상황에서 불편이 시작되었는지,
+얼마나 오랫동안 지속되었는지,
+수면이나 식욕, 기력에는 어떤 변화가 있었는지 등
+현재 경험하고 있는 부분을 함께 이야기할 수 있습니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 06 -->
+
+<details class="column-item">
+
+<summary>
+06. 스트레스를 받으면 잠과 소화가 함께 불편해질 수 있나요?
+</summary>
+
+<div class="column-body">
+
+<p>
+업무나 인간관계, 가족 문제 등으로
+스트레스가 심해졌을 때
+잠을 잘 못 자거나 식욕이 떨어지고,
+속이 더부룩해졌다고 말씀하시는 경우가 있습니다.
+</p>
+
+<p>
+스트레스 상황에서는
+수면이나 식사 패턴 자체가 달라지기도 하고,
+몸의 긴장감이나 피로가 함께 늘어날 수 있습니다.
+</p>
+
+<h3>
+수면과 소화가 동시에 달라지기도 합니다
+</h3>
+
+<p>
+걱정이 많아져 잠드는 시간이 늦어지거나
+잠들어도 자주 깨고,
+낮 동안 피곤한 상태가 이어질 수 있습니다.
+</p>
+
+<p>
+식욕이 줄거나 반대로 자주 간식을 먹게 되고,
+식사 후 속이 더부룩하거나
+복부의 불편을 더 민감하게 느끼는 경우도 있습니다.
+</p>
+
+<div class="column-point">
+스트레스와 함께 수면이나 소화가 달라졌다면
+각각의 증상만 따로 보기보다
+언제부터 어떤 변화가 함께 나타났는지를 살펴보는 것이 좋습니다.
+</div>
+
+<h3>
+모든 소화 증상을 스트레스 때문이라고 단정하지 않습니다
+</h3>
+
+<p>
+소화불량이나 복통은
+다른 소화기 문제와 관련될 수도 있습니다.
+따라서 증상이 지속되거나
+체중 변화, 심한 통증 등 다른 문제가 동반될 경우에는
+필요한 평가를 고려해야 합니다.
+</p>
+
+<p>
+심신클리닉에서는
+수면과 소화, 식욕, 피로와 스트레스의 변화 등을
+함께 확인합니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 07 -->
+
+<details class="column-item">
+
+<summary>
+07. 자꾸 걱정이 떠오르고 생각을 멈추기 어렵다면?
+</summary>
+
+<div class="column-body">
+
+<p>
+한 가지 걱정이 끝나면 또 다른 걱정이 떠오르고,
+머릿속에서 계속 생각이 이어져
+쉬고 싶어도 쉬지 못하는 느낌을 호소하는 분들이 있습니다.
+</p>
+
+<p>
+걱정 자체는 누구에게나 있을 수 있기 때문에
+걱정이 많다는 이유만으로
+곧바로 특정한 불안장애라고 단정할 수는 없습니다.
+</p>
+
+<h3>
+걱정의 정도와 생활에 미치는 영향을 살펴봅니다
+</h3>
+
+<p>
+걱정이 얼마나 오랫동안 이어지는지,
+스스로 조절하기 어렵다고 느끼는지,
+걱정 때문에 잠들기 어렵거나
+업무와 공부에 집중하기 힘든지 등을 확인할 수 있습니다.
+</p>
+
+<p>
+걱정이 많을 때
+목과 어깨가 긴장되거나,
+가슴이 두근거리거나,
+소화가 불편해지는 등
+몸의 변화가 함께 나타나는지도 살펴볼 수 있습니다.
+</p>
+
+<div class="column-point">
+중요한 것은 “걱정이 많은 성격인가”를 판단하는 것이 아니라
+현재의 걱정과 긴장이 수면이나 집중력,
+일상생활에 어느 정도 영향을 주고 있는지를 함께 살펴보는 것입니다.
+</div>
+
+<h3>
+언제 심해지는지도 이야기해주세요
+</h3>
+
+<p>
+특정 장소나 사람을 만날 때 심해지는지,
+업무가 많을 때 심해지는지,
+저녁이나 잠자리에 들었을 때 생각이 많아지는지 등
+증상과 상황의 관계도 진료에 도움이 될 수 있습니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 08 -->
+
+<details class="column-item">
+
+<summary>
+08. 불면이나 불안으로 처음 진료받을 때 무엇을 이야기하면 좋을까요?
+</summary>
+
+<div class="column-body">
+
+<p>
+불면이나 불안 때문에 진료를 받고 싶지만
+처음 진료실에서 무엇부터 말해야 할지 모르겠다고
+느끼시는 분들도 있습니다.
+</p>
+
+<p>
+미리 정확하게 정리해서 오실 필요는 없습니다.
+현재 가장 불편한 부분부터
+편하게 말씀해주시면 됩니다.
+</p>
+
+<h3>
+증상이 언제 시작됐는지 알려주세요
+</h3>
+
+<p>
+언제부터 불편했는지,
+처음 시작될 때 특별한 사건이나 생활의 변화가 있었는지,
+최근 증상이 좋아지고 있는지 또는 심해지고 있는지 등을
+말씀해주시면 좋습니다.
+</p>
+
+<h3>
+수면과 신체증상도 함께 말씀해주세요
+</h3>
+
+<p>
+잠드는 데 얼마나 걸리는지,
+밤중에 자주 깨는지,
+아침에 너무 일찍 깨는지,
+낮 동안 얼마나 피곤한지 등을 알려주실 수 있습니다.
+</p>
+
+<p>
+또 가슴 두근거림,
+답답함, 두통이나 어지럼,
+소화불량이나 기력저하처럼
+함께 나타나는 신체적인 불편도 이야기해주세요.
+</p>
+
+<div class="column-point">
+몸의 증상과 마음의 불편을
+따로 구분해서 준비하실 필요는 없습니다.
+현재 경험하고 있는 변화를 있는 그대로 말씀해주시면 됩니다.
+</div>
+
+<h3>
+현재 복용 중인 약을 알려주세요
+</h3>
+
+<p>
+정신건강의학과 또는 다른 의료기관에서
+현재 처방받아 복용 중인 약이 있다면
+약 이름이나 처방전 등을 함께 알려주시면 좋습니다.
+건강기능식품을 복용하고 있다면 그 내용도 말씀해주세요.
+</p>
+
+<p>
+현재 복용하는 처방약은
+임의로 중단하거나 용량을 변경하지 마시고,
+조정이 필요한 경우 해당 약을 처방한 의료진과
+상의하는 것이 좋습니다.
+</p>
+
+</div>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
 
 
 <!-- CONTACT -->
@@ -1812,7 +2513,6 @@ FAQ
 
 </div>
 
-
 </div>
 
 </div>
@@ -1821,7 +2521,6 @@ FAQ
 
 
 </main>
-
 
 
 <footer>
@@ -1833,7 +2532,9 @@ FAQ
      class="footer-logo">
 
 <p>
-<strong>솔솔한의원</strong>
+<strong>
+솔솔한의원
+</strong>
 </p>
 
 <p>
@@ -1855,10 +2556,11 @@ FAQ
 
 <div class="notice">
 
-본 페이지는 불면, 불안, 공황 증상 등
-심신의 불편에 관한 일반적인 정보를 제공하기 위한 것입니다.
-증상의 원인과 진료 내용은 개인에 따라 다를 수 있으며
-구체적인 사항은 진료를 통해 상담하시기 바랍니다.
+본 페이지는 불면, 불안, 공황 증상, 화병 등
+심신의 불편에 관한 일반적인 건강정보를 제공하기 위한 것입니다.
+개인의 구체적인 진단이나 치료를 대신하지 않으며,
+증상의 원인과 필요한 진료는 현재 상태에 따라 달라질 수 있습니다.
+필요한 경우 관련 의료기관의 검사와 진료가 함께 필요할 수 있습니다.
 
 </div>
 
@@ -1869,7 +2571,6 @@ FAQ
 </div>
 
 </footer>
-
 
 
 <script>
@@ -1914,6 +2615,11 @@ mobileMenu.querySelectorAll("a").forEach(
                 menuButton.setAttribute(
                     "aria-expanded",
                     "false"
+                );
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    "메뉴 열기"
                 );
 
             }
