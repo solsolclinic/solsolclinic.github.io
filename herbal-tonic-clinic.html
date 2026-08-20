@@ -56,9 +56,21 @@
   "@type": "MedicalWebPage",
   "name": "솔솔한의원 보약클리닉",
   "url": "https://solsolclinic.github.io/herbal-tonic-clinic.html",
-  "description": "만성피로, 기력저하와 한약 및 보약 상담에 관한 진료 안내",
+  "description": "만성피로, 기력저하와 한약 및 보약 상담에 관한 진료 및 건강정보 안내",
+  "about": [
+    "피로",
+    "기력저하",
+    "보약",
+    "한약",
+    "녹용",
+    "공진단",
+    "수면불량",
+    "식욕저하"
+  ],
+  "inLanguage": "ko-KR",
   "publisher": {
     "@type": "MedicalClinic",
+    "@id": "https://solsolclinic.github.io/#clinic",
     "name": "솔솔한의원",
     "url": "https://solsolclinic.github.io/",
     "telephone": "+82-41-534-3100",
@@ -81,77 +93,53 @@
     --green-main:#6ca67b;
     --green-soft:#eef6f0;
     --green-pale:#f7faf7;
-
     --cream:#fbfaf6;
     --white:#ffffff;
-
     --text:#303530;
     --sub:#687169;
-
     --line:#e1e9e3;
-
     --warm:#f7f2ea;
-
     --shadow:0 14px 38px rgba(55,85,62,.08);
 }
-
 
 * {
     box-sizing:border-box;
 }
 
-
 html {
     scroll-behavior:smooth;
 }
 
-
 body {
-
     margin:0;
-
     font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Noto Sans KR",
         "Malgun Gothic",
         sans-serif;
-
     color:var(--text);
-
     background:var(--cream);
-
     line-height:1.8;
-
     word-break:keep-all;
 }
-
 
 a {
     color:inherit;
     text-decoration:none;
 }
 
-
 img {
     display:block;
     max-width:100%;
 }
 
-
 button {
     font:inherit;
 }
 
-
 .container {
-
-    width:
-        min(
-            1080px,
-            calc(100% - 40px)
-        );
-
+    width:min(1080px, calc(100% - 40px));
     margin:0 auto;
 }
 
@@ -159,56 +147,33 @@ button {
 /* HEADER */
 
 header {
-
     position:sticky;
-
     top:0;
-
     z-index:1000;
-
-    background:
-        rgba(255,255,255,.97);
-
-    border-bottom:
-        1px solid var(--line);
-
-    backdrop-filter:
-        blur(10px);
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--line);
+    backdrop-filter:blur(10px);
 }
-
 
 .nav {
-
     min-height:75px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
     position:relative;
 }
-
 
 .brand img {
     width:140px;
 }
 
-
 .nav-menu {
-
     display:flex;
-
     align-items:center;
-
-    gap:20px;
-
-    font-size:14px;
-
+    gap:17px;
+    font-size:13.5px;
     font-weight:700;
 }
-
 
 .nav-menu a:hover {
     color:var(--green-deep);
@@ -218,89 +183,48 @@ header {
 /* MOBILE MENU */
 
 .mobile-menu-button {
-
     display:none;
-
     width:44px;
-
     height:44px;
-
-    border:
-        1px solid var(--line);
-
-    border-radius:
-        12px;
-
+    border:1px solid var(--line);
+    border-radius:12px;
     background:white;
-
     cursor:pointer;
-
     align-items:center;
-
     justify-content:center;
-
     flex-direction:column;
-
     gap:5px;
 }
 
-
 .mobile-menu-button span {
-
     width:20px;
-
     height:2px;
-
     background:var(--text);
 }
 
-
 .mobile-menu {
-
     display:none;
-
     position:absolute;
-
     top:100%;
-
     left:0;
-
     right:0;
-
-    padding:
-        10px 20px 18px;
-
+    padding:10px 20px 18px;
     background:white;
-
-    border-bottom:
-        1px solid var(--line);
-
-    box-shadow:
-        0 14px 30px
-        rgba(45,70,50,.09);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 14px 30px rgba(45,70,50,.09);
 }
-
 
 .mobile-menu.open {
     display:block;
 }
 
-
 .mobile-menu a {
-
     display:block;
-
-    padding:
-        14px 8px;
-
-    border-bottom:
-        1px solid var(--line);
-
+    padding:14px 8px;
+    border-bottom:1px solid var(--line);
     font-size:15px;
-
     font-weight:700;
 }
-
 
 .mobile-menu a:last-child {
     border-bottom:0;
@@ -310,54 +234,28 @@ header {
 /* BUTTON */
 
 .button {
-
     min-height:49px;
-
     display:inline-flex;
-
     align-items:center;
-
     justify-content:center;
-
-    padding:
-        0 22px;
-
-    border-radius:
-        999px;
-
-    background:
-        var(--green-deep);
-
-    border:
-        1px solid
-        var(--green-deep);
-
+    padding:0 22px;
+    border-radius:999px;
+    background:var(--green-deep);
+    border:1px solid var(--green-deep);
     color:white;
-
     font-size:14px;
-
     font-weight:700;
-
     transition:.2s;
 }
 
-
 .button.light {
-
     background:white;
-
     color:var(--text);
-
-    border-color:
-        var(--line);
+    border-color:var(--line);
 }
 
-
 .button:hover {
-
-    transform:
-        translateY(-2px);
-
+    transform:translateY(-2px);
     opacity:.9;
 }
 
@@ -365,104 +263,52 @@ header {
 /* COMMON */
 
 section {
-
-    padding:
-        82px 0;
-
-    scroll-margin-top:
-        85px;
+    padding:82px 0;
+    scroll-margin-top:85px;
 }
-
 
 .section-head {
-
-    margin-bottom:
-        35px;
+    margin-bottom:35px;
 }
-
 
 .section-kicker {
-
-    margin-bottom:
-        7px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        .08em;
+    margin-bottom:7px;
+    color:var(--green-deep);
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.08em;
 }
-
 
 .section-head h2 {
-
-    margin:
-        0 0 10px;
-
-    font-size:
-        clamp(
-            29px,
-            4vw,
-            40px
-        );
-
-    line-height:
-        1.4;
-
-    letter-spacing:
-        -2px;
+    margin:0 0 10px;
+    font-size:clamp(29px,4vw,40px);
+    line-height:1.4;
+    letter-spacing:-2px;
 }
-
 
 .section-head p {
-
     margin:0;
-
-    color:
-        var(--sub);
+    color:var(--sub);
 }
 
-
 .split {
-
     display:grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap:
-        40px;
-
+    grid-template-columns:1fr 1fr;
+    gap:40px;
     align-items:center;
 }
 
-
 .photo {
-
     width:100%;
-
-    border-radius:
-        22px;
-
-    box-shadow:
-        var(--shadow);
+    border-radius:22px;
+    box-shadow:var(--shadow);
 }
 
 
 /* HERO */
 
 .hero {
-
-    padding:
-        58px 0
-        75px;
-
+    padding:58px 0 75px;
     background:
         linear-gradient(
             135deg,
@@ -471,647 +317,418 @@ section {
         );
 }
 
-
 .breadcrumb {
-
-    margin-bottom:
-        28px;
-
-    color:
-        var(--sub);
-
-    font-size:
-        13px;
+    margin-bottom:28px;
+    color:var(--sub);
+    font-size:13px;
 }
-
 
 .breadcrumb a {
-
-    color:
-        var(--green-deep);
-
-    font-weight:
-        700;
+    color:var(--green-deep);
+    font-weight:700;
 }
-
 
 .hero-grid {
-
     display:grid;
-
-    grid-template-columns:
-        .95fr
-        1.05fr;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        #e4e9e5;
-
-    border-radius:
-        28px;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        var(--shadow);
+    grid-template-columns:.95fr 1.05fr;
+    background:white;
+    border:1px solid #e4e9e5;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
 }
-
 
 .hero-copy {
-
-    padding:
-        50px;
-
+    padding:50px;
     display:flex;
-
-    flex-direction:
-        column;
-
-    justify-content:
-        center;
+    flex-direction:column;
+    justify-content:center;
 }
-
 
 .hero-kicker {
-
-    margin-bottom:
-        10px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        14px;
-
-    font-weight:
-        800;
+    margin-bottom:10px;
+    color:var(--green-deep);
+    font-size:14px;
+    font-weight:800;
 }
-
 
 .hero h1 {
-
-    margin:
-        0 0 22px;
-
-    font-size:
-        clamp(
-            38px,
-            5vw,
-            55px
-        );
-
-    line-height:
-        1.28;
-
-    letter-spacing:
-        -3px;
+    margin:0 0 22px;
+    font-size:clamp(38px,5vw,55px);
+    line-height:1.28;
+    letter-spacing:-3px;
 }
-
 
 .hero-lead {
-
     margin:0;
-
-    color:
-        #58625b;
-
-    font-size:
-        17px;
+    color:#58625b;
+    font-size:17px;
 }
-
 
 .hero-note {
-
-    margin-top:
-        23px;
-
-    padding:
-        18px 20px;
-
-    background:
-        var(--green-soft);
-
-    border-radius:
-        15px;
-
-    color:
-        #576159;
-
-    font-size:
-        14px;
+    margin-top:23px;
+    padding:18px 20px;
+    background:var(--green-soft);
+    border-radius:15px;
+    color:#576159;
+    font-size:14px;
 }
-
 
 .hero-image {
-
-    min-height:
-        520px;
+    min-height:520px;
 }
 
-
 .hero-image img {
-
     width:100%;
-
     height:100%;
-
-    min-height:
-        520px;
-
-    object-fit:
-        cover;
+    min-height:520px;
+    object-fit:cover;
 }
 
 
 /* FATIGUE */
 
 .fatigue {
-
-    background:
-        white;
+    background:white;
 }
-
 
 .symptom-grid {
-
     display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:
-        14px;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
 }
-
 
 .symptom-card {
-
-    padding:
-        25px;
-
-    background:
-        var(--green-pale);
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        17px;
+    padding:25px;
+    background:var(--green-pale);
+    border:1px solid var(--line);
+    border-radius:17px;
 }
-
 
 .symptom-card h3 {
-
-    margin:
-        0 0 7px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        18px;
+    margin:0 0 7px;
+    color:var(--green-deep);
+    font-size:18px;
 }
 
-
 .symptom-card p {
-
     margin:0;
-
-    color:
-        var(--sub);
-
-    font-size:
-        14px;
+    color:var(--sub);
+    font-size:14px;
 }
 
 
 /* CHRONIC FATIGUE */
 
 .chronic {
-
-    background:
-        var(--cream);
+    background:var(--cream);
 }
-
 
 .chronic-box {
-
-    padding:
-        38px;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        22px;
+    padding:38px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:22px;
 }
-
 
 .chronic-box h3 {
-
     margin-top:0;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        26px;
+    color:var(--green-deep);
+    font-size:26px;
 }
-
 
 .chronic-box p {
-
-    color:
-        #566058;
+    color:#566058;
 }
 
-
 .warning {
-
-    margin-top:
-        20px;
-
-    padding:
-        20px;
-
-    background:
-        #fff7eb;
-
-    border:
-        1px solid
-        #eee1c8;
-
-    border-radius:
-        14px;
-
-    color:
-        #655e50;
+    margin-top:20px;
+    padding:20px;
+    background:#fff7eb;
+    border:1px solid #eee1c8;
+    border-radius:14px;
+    color:#655e50;
 }
 
 
 /* CONSULT */
 
 .consult {
-
-    background:
-        var(--green-soft);
+    background:var(--green-soft);
 }
-
 
 .consult-text {
-
-    padding:
-        36px;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        #dce7de;
-
-    border-radius:
-        22px;
+    padding:36px;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:22px;
 }
-
 
 .consult-text h3 {
-
     margin-top:0;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        25px;
+    color:var(--green-deep);
+    font-size:25px;
 }
-
 
 .consult-text p {
-
-    color:
-        #566058;
+    color:#566058;
 }
-
 
 .check-grid {
-
     display:grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap:
-        10px;
-
-    margin-top:
-        20px;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-top:20px;
 }
 
-
 .check-item {
-
-    padding:
-        14px;
-
-    background:
-        var(--green-pale);
-
-    border-radius:
-        12px;
-
-    color:
-        #59615b;
-
-    font-size:
-        14px;
+    padding:14px;
+    background:var(--green-pale);
+    border-radius:12px;
+    color:#59615b;
+    font-size:14px;
 }
 
 
 /* HERBAL MEDICINE */
 
 .herbal {
-
-    background:
-        white;
+    background:white;
 }
-
 
 .herbal-box {
-
-    padding:
-        38px;
-
-    background:
-        var(--warm);
-
-    border:
-        1px solid
-        #ece4d8;
-
-    border-radius:
-        22px;
+    padding:38px;
+    background:var(--warm);
+    border:1px solid #ece4d8;
+    border-radius:22px;
 }
-
 
 .herbal-box h3 {
-
     margin-top:0;
-
-    color:
-        #5c6c5e;
-
-    font-size:
-        25px;
+    color:#5c6c5e;
+    font-size:25px;
 }
 
-
 .herbal-box p {
-
-    color:
-        #615f59;
+    color:#615f59;
 }
 
 
 /* HOME CARE */
 
 .home-care {
-
-    background:
-        var(--cream);
+    background:var(--cream);
 }
-
 
 .life-grid {
-
     display:grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap:
-        14px;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
 }
-
 
 .life-card {
-
-    padding:
-        23px;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        16px;
+    padding:23px;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:16px;
 }
-
 
 .life-card strong {
-
     display:block;
-
-    margin-bottom:
-        6px;
-
-    color:
-        var(--green-deep);
+    margin-bottom:6px;
+    color:var(--green-deep);
 }
 
-
 .life-card span {
-
-    color:
-        var(--sub);
-
-    font-size:
-        14px;
+    color:var(--sub);
+    font-size:14px;
 }
 
 
 /* FAQ */
 
 .faq-section {
-
-    background:
-        white;
+    background:white;
 }
-
 
 .faq-list {
-
-    padding:
-        5px 30px;
-
-    background:
-        var(--cream);
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        22px;
+    padding:5px 30px;
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:22px;
 }
-
 
 .faq-list details {
-
-    padding:
-        22px 0;
-
-    border-bottom:
-        1px solid
-        var(--line);
+    padding:22px 0;
+    border-bottom:1px solid var(--line);
 }
-
 
 .faq-list details:last-child {
     border-bottom:0;
 }
 
-
 .faq-list summary {
-
     cursor:pointer;
+    font-weight:750;
+}
 
-    font-weight:
-        750;
+.faq-list p {
+    margin-bottom:0;
+    color:var(--sub);
 }
 
 
-.faq-list p {
+/* HEALTH COLUMNS */
 
-    margin-bottom:0;
+.health-columns {
+    background:var(--green-soft);
+}
 
-    color:
-        var(--sub);
+.column-intro {
+    max-width:820px;
+}
+
+.column-list {
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:22px;
+    overflow:hidden;
+}
+
+.column-item {
+    margin:0;
+    background:white;
+    border-bottom:1px solid var(--line);
+}
+
+.column-item:last-child {
+    border-bottom:0;
+}
+
+.column-item > summary {
+    position:relative;
+    padding:24px 60px 24px 26px;
+    cursor:pointer;
+    list-style:none;
+    color:#3f5548;
+    font-size:17px;
+    font-weight:800;
+    line-height:1.55;
+}
+
+.column-item > summary::-webkit-details-marker {
+    display:none;
+}
+
+.column-item > summary::after {
+    content:"＋";
+    position:absolute;
+    right:25px;
+    top:20px;
+    color:var(--green-deep);
+    font-size:24px;
+    font-weight:400;
+}
+
+.column-item[open] > summary::after {
+    content:"－";
+}
+
+.column-item[open] > summary {
+    background:var(--green-pale);
+}
+
+.column-body {
+    padding:7px 30px 35px;
+    color:#566058;
+}
+
+.column-body h3 {
+    margin:28px 0 10px;
+    color:var(--green-deep);
+    font-size:19px;
+    line-height:1.55;
+}
+
+.column-body p {
+    margin:0 0 16px;
+}
+
+.column-point {
+    margin:23px 0;
+    padding:18px 20px;
+    background:var(--green-pale);
+    border-left:4px solid var(--green-main);
+    border-radius:0 13px 13px 0;
+    color:#4f5b52;
+}
+
+.column-warning {
+    margin-top:23px;
+    padding:18px 20px;
+    background:#fff8ed;
+    border:1px solid #eee2cc;
+    border-radius:13px;
+    color:#655f52;
+    font-size:14px;
 }
 
 
 /* CONTACT */
 
 .contact {
-
-    background:
-        var(--green-soft);
+    background:var(--green-soft);
 }
-
 
 .contact-box {
-
-    padding:
-        48px 30px;
-
+    padding:48px 30px;
     text-align:center;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        #dce7de;
-
-    border-radius:
-        24px;
+    background:white;
+    border:1px solid #dce7de;
+    border-radius:24px;
 }
-
 
 .contact-box h2 {
-
-    margin:
-        0 0 10px;
+    margin:0 0 10px;
 }
-
 
 .contact-box p {
-
-    color:
-        var(--sub);
+    color:var(--sub);
 }
 
-
 .contact-buttons {
-
     display:flex;
-
     justify-content:center;
-
     flex-wrap:wrap;
-
-    gap:
-        10px;
-
-    margin-top:
-        25px;
+    gap:10px;
+    margin-top:25px;
 }
 
 
 /* FOOTER */
 
 footer {
-
-    padding:
-        48px 0;
-
-    background:
-        #f2f6f2;
-
-    border-top:
-        1px solid
-        var(--line);
-
-    color:
-        #5b645e;
-
-    font-size:
-        13px;
+    padding:48px 0;
+    background:#f2f6f2;
+    border-top:1px solid var(--line);
+    color:#5b645e;
+    font-size:13px;
 }
-
 
 .footer-logo {
-
-    width:
-        120px;
-
-    margin-bottom:
-        17px;
+    width:120px;
+    margin-bottom:17px;
 }
-
 
 footer p {
-
-    margin:
-        5px 0;
+    margin:5px 0;
 }
 
-
 .notice {
-
-    max-width:
-        790px;
-
-    margin-top:
-        23px;
-
-    color:
-        #89918b;
-
-    font-size:
-        12px;
+    max-width:790px;
+    margin-top:23px;
+    color:#89918b;
+    font-size:12px;
 }
 
 
@@ -1123,101 +740,84 @@ footer p {
         display:none;
     }
 
-
     .mobile-menu-button {
         display:flex;
     }
 
-
     .brand img {
         width:110px;
     }
-
 
     .hero-grid,
     .split {
         grid-template-columns:1fr;
     }
 
-
     .hero-copy {
-
-        padding:
-            36px 24px;
+        padding:36px 24px;
     }
-
 
     .hero h1 {
-
-        font-size:
-            37px;
-
-        letter-spacing:
-            -2px;
+        font-size:37px;
+        letter-spacing:-2px;
     }
-
 
     .hero-lead {
         font-size:15px;
     }
 
-
     .hero-image,
     .hero-image img {
-
-        min-height:
-            300px;
-
-        height:
-            300px;
+        min-height:300px;
+        height:300px;
     }
-
 
     section {
-
-        padding:
-            62px 0;
-
-        scroll-margin-top:
-            76px;
+        padding:62px 0;
+        scroll-margin-top:76px;
     }
-
 
     .symptom-grid,
     .life-grid {
-
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
     }
-
 
     .check-grid {
-
-        grid-template-columns:
-            repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
-
 
     .chronic-box,
     .consult-text,
     .herbal-box {
-
-        padding:
-            26px 22px;
+        padding:26px 22px;
     }
-
 
     .faq-list {
-
-        padding:
-            4px 20px;
+        padding:4px 20px;
     }
 
+    .column-item > summary {
+        padding:20px 50px 20px 19px;
+        font-size:15px;
+    }
+
+    .column-item > summary::after {
+        right:18px;
+        top:16px;
+    }
+
+    .column-body {
+        padding:5px 20px 29px;
+        font-size:14px;
+    }
+
+    .column-body h3 {
+        font-size:17px;
+    }
 
     .contact-buttons {
         display:grid;
     }
-
 
     .contact-buttons .button {
         width:100%;
@@ -1230,14 +830,12 @@ footer p {
 </head>
 
 
-
 <body>
 
 
 <header>
 
 <div class="container nav">
-
 
 <a href="index.html"
    class="brand"
@@ -1251,29 +849,13 @@ footer p {
 
 <nav class="nav-menu">
 
-<a href="#fatigue">
-피로증상
-</a>
-
-<a href="#chronic">
-만성피로
-</a>
-
-<a href="#herbal">
-보약상담
-</a>
-
-<a href="#lifestyle">
-생활관리
-</a>
-
-<a href="#faq">
-FAQ
-</a>
-
-<a href="#contact">
-예약·문의
-</a>
+<a href="#fatigue">피로증상</a>
+<a href="#chronic">만성피로</a>
+<a href="#herbal">보약상담</a>
+<a href="#lifestyle">생활관리</a>
+<a href="#faq">FAQ</a>
+<a href="#columns">건강칼럼</a>
+<a href="#contact">예약·문의</a>
 
 </nav>
 
@@ -1294,41 +876,20 @@ FAQ
 <div class="mobile-menu"
      id="mobileMenu">
 
-<a href="#fatigue">
-피로증상
-</a>
-
-<a href="#chronic">
-만성피로
-</a>
-
-<a href="#herbal">
-보약상담
-</a>
-
-<a href="#lifestyle">
-생활관리
-</a>
-
-<a href="#faq">
-자주 묻는 질문
-</a>
-
-<a href="#contact">
-예약·문의
-</a>
-
-<a href="index.html">
-솔솔한의원 홈
-</a>
+<a href="#fatigue">피로증상</a>
+<a href="#chronic">만성피로</a>
+<a href="#herbal">보약상담</a>
+<a href="#lifestyle">생활관리</a>
+<a href="#faq">자주 묻는 질문</a>
+<a href="#columns">건강칼럼</a>
+<a href="#contact">예약·문의</a>
+<a href="index.html">솔솔한의원 홈</a>
 
 </div>
-
 
 </div>
 
 </header>
-
 
 
 <main>
@@ -1339,7 +900,6 @@ FAQ
 <section class="hero">
 
 <div class="container">
-
 
 <div class="breadcrumb">
 
@@ -1356,23 +916,17 @@ FAQ
 
 <div class="hero-grid">
 
-
 <div class="hero-copy">
-
 
 <div class="hero-kicker">
 아산 배방 · 보약클리닉
 </div>
 
-
 <h1>
-
 자도 자도 피곤하고,<br>
 예전처럼 회복이<br>
 잘 안 되시나요?
-
 </h1>
-
 
 <p class="hero-lead">
 
@@ -1386,7 +940,6 @@ FAQ
 
 </p>
 
-
 <div class="hero-note">
 
 솔솔한의원에서는
@@ -1396,7 +949,6 @@ FAQ
 한약과 보약 처방을 상담합니다.
 
 </div>
-
 
 </div>
 
@@ -1408,14 +960,11 @@ FAQ
 
 </div>
 
-
 </div>
-
 
 </div>
 
 </section>
-
 
 
 <!-- FATIGUE -->
@@ -1423,34 +972,27 @@ FAQ
 <section id="fatigue"
          class="fatigue">
 
-
 <div class="container">
 
-
 <div class="section-head">
-
 
 <div class="section-kicker">
 FATIGUE
 </div>
 
-
 <h2>
 피로는 여러 모습으로 나타날 수 있습니다
 </h2>
-
 
 <p>
 단순히 “피곤하다”는 느낌 외에도
 여러 불편이 함께 나타나는 경우가 있습니다.
 </p>
 
-
 </div>
 
 
 <div class="symptom-grid">
-
 
 <div class="symptom-card">
 
@@ -1537,14 +1079,11 @@ FATIGUE
 
 </div>
 
-
 </div>
-
 
 </div>
 
 </section>
-
 
 
 <!-- CHRONIC FATIGUE -->
@@ -1552,22 +1091,17 @@ FATIGUE
 <section id="chronic"
          class="chronic">
 
-
 <div class="container">
 
-
 <div class="chronic-box">
-
 
 <div class="section-kicker">
 CHRONIC FATIGUE
 </div>
 
-
 <h3>
 오래 피곤하다고 모두 만성피로증후군은 아닙니다
 </h3>
-
 
 <p>
 피로가 장기간 지속되는 경우에는
@@ -1578,28 +1112,26 @@ CHRONIC FATIGUE
 함께 고려할 필요가 있습니다.
 </p>
 
-
 <p>
 만성피로증후군은
 단순히 피로가 오래 지속된다는 이유 하나만으로
 진단하는 질환은 아닙니다.
 </p>
 
-
 <p>
 일상적인 활동 능력이 이전보다 현저히 감소하고,
 휴식으로 충분히 회복되지 않는 피로와 함께
-운동이나 활동 후 증상이 심해지는 양상,
+활동 후 증상의 변화,
 수면 문제 등 여러 특징을
 종합적으로 살펴 진단합니다.
 </p>
 
-
 <div class="warning">
 
 <strong>
-오래 지속되는 피로는
-“보약이 부족해서 생긴 것”으로만 생각하지 않는 것이 중요합니다.
+오래 지속되는 피로를
+단순히 “보약이 필요해서 생긴 것”으로만
+생각하지 않는 것이 중요합니다.
 </strong>
 
 <br><br>
@@ -1610,50 +1142,39 @@ CHRONIC FATIGUE
 
 </div>
 
-
 </div>
-
 
 </div>
 
 </section>
 
 
-
 <!-- CONSULT -->
 
 <section class="consult">
 
-
 <div class="container">
-
 
 <div class="split">
 
-
 <div>
-
 
 <img src="herbal-tonic-clinic-consultation.jpg"
      alt="피로와 전반적인 건강 상태에 대해 한약 상담을 하는 모습"
      class="photo">
-
 
 </div>
 
 
 <div class="consult-text">
 
-
 <div class="section-kicker">
 PERSONALIZED CONSULTATION
 </div>
 
-
 <h3>
 같은 피로라도 상태는 서로 다릅니다
 </h3>
-
 
 <p>
 밤늦게까지 일해 수면이 부족한 분과
@@ -1663,63 +1184,32 @@ PERSONALIZED CONSULTATION
 서로 다를 수 있습니다.
 </p>
 
-
 <p>
 그래서 보약을 상담할 때도
 피로 하나만 보지 않고
 현재의 생활과 몸 상태를 함께 살펴봅니다.
 </p>
 
-
 <div class="check-grid">
 
-
-<div class="check-item">
-수면
-</div>
-
-<div class="check-item">
-식욕
-</div>
-
-<div class="check-item">
-소화
-</div>
-
-<div class="check-item">
-대소변
-</div>
-
-<div class="check-item">
-스트레스
-</div>
-
-<div class="check-item">
-활동량
-</div>
-
-<div class="check-item">
-기존 질환
-</div>
-
-<div class="check-item">
-복용 중인 약
-</div>
-
+<div class="check-item">수면</div>
+<div class="check-item">식욕</div>
+<div class="check-item">소화</div>
+<div class="check-item">대소변</div>
+<div class="check-item">스트레스</div>
+<div class="check-item">활동량</div>
+<div class="check-item">기존 질환</div>
+<div class="check-item">복용 중인 약</div>
 
 </div>
 
-
 </div>
 
-
 </div>
-
 
 </div>
 
 </section>
-
 
 
 <!-- HERBAL MEDICINE -->
@@ -1727,31 +1217,24 @@ PERSONALIZED CONSULTATION
 <section id="herbal"
          class="herbal">
 
-
 <div class="container">
-
 
 <div class="split">
 
-
 <div class="herbal-box">
-
 
 <div class="section-kicker">
 HERBAL TONIC
 </div>
 
-
 <h3>
 보약은 현재 상태에 맞춰 처방합니다
 </h3>
-
 
 <p>
 “보약”이라고 해서
 누구에게나 같은 약을 사용하는 것은 아닙니다.
 </p>
-
 
 <p>
 기력저하가 주된 분,
@@ -1761,7 +1244,6 @@ HERBAL TONIC
 진료 내용을 바탕으로 처방을 구성합니다.
 </p>
 
-
 <p>
 인삼, 황기, 녹용 등
 전통적으로 보익 목적으로 활용해 온 약재도
@@ -1770,59 +1252,46 @@ HERBAL TONIC
 사용 여부를 결정합니다.
 </p>
 
-
 </div>
 
 
 <div>
 
-
 <img src="herbal-tonic-clinic-herbal-medicine.jpg"
      alt="한약재와 보약 처방을 준비하는 모습"
      class="photo">
 
-
 </div>
 
-
 </div>
-
 
 </div>
 
 </section>
 
 
-
 <!-- HERBAL IMAGE 2 -->
 
 <section>
 
-
 <div class="container">
-
 
 <div class="split">
 
-
 <div>
-
 
 <img src="herbal-tonic-clinic-herbal-tea.jpg"
      alt="여러 한약재와 함께 준비된 한약"
      class="photo">
 
-
 </div>
 
 
 <div>
 
-
 <div class="section-kicker">
 HERBAL MEDICINE
 </div>
-
 
 <h2 style="
     margin-top:0;
@@ -1830,42 +1299,30 @@ HERBAL MEDICINE
     line-height:1.4;
     letter-spacing:-1.5px;
 ">
-
 특정 약재 하나보다<br>
 전체 처방 구성이 중요합니다
-
 </h2>
 
-
 <p style="color:#5d655f;">
-
 “피곤하니까 인삼을 먹을까요?”
 “홍삼을 계속 먹어도 괜찮을까요?”
 라는 질문을 자주 듣습니다.
-
 </p>
-
 
 <p style="color:#5d655f;">
-
 한약재는 각각의 성질과 쓰임이 다르기 때문에
 한 가지 약재를 장기간 임의로 복용하기보다
-현재의 체질과 증상,
+현재의 상태와 증상,
 복용 중인 약 등을 함께 고려하는 것이 좋습니다.
-
 </p>
 
-
 </div>
 
-
 </div>
-
 
 </div>
 
 </section>
-
 
 
 <!-- HOME CARE -->
@@ -1873,28 +1330,22 @@ HERBAL MEDICINE
 <section id="lifestyle"
          class="home-care">
 
-
 <div class="container">
 
-
 <div class="section-head">
-
 
 <div class="section-kicker">
 LIFESTYLE
 </div>
 
-
 <h2>
 피로 관리의 기본도 생활습관입니다
 </h2>
-
 
 </div>
 
 
 <div class="life-grid">
-
 
 <div class="life-card">
 
@@ -1981,14 +1432,11 @@ LIFESTYLE
 
 </div>
 
-
 </div>
-
 
 </div>
 
 </section>
-
 
 
 <!-- FAQ -->
@@ -1996,29 +1444,22 @@ LIFESTYLE
 <section id="faq"
          class="faq-section">
 
-
 <div class="container">
 
-
 <div class="section-head">
-
 
 <div class="section-kicker">
 FAQ
 </div>
 
-
 <h2>
 보약클리닉에서 자주 듣는 질문
 </h2>
-
 
 </div>
 
 
 <div class="faq-list">
-
-
 
 <details>
 
@@ -2034,7 +1475,6 @@ FAQ
 </p>
 
 </details>
-
 
 
 <details>
@@ -2054,7 +1494,6 @@ FAQ
 </details>
 
 
-
 <details>
 
 <summary>
@@ -2071,7 +1510,6 @@ FAQ
 </details>
 
 
-
 <details>
 
 <summary>
@@ -2086,7 +1524,6 @@ FAQ
 </p>
 
 </details>
-
 
 
 <details>
@@ -2106,7 +1543,6 @@ FAQ
 </details>
 
 
-
 <details>
 
 <summary>
@@ -2118,11 +1554,10 @@ FAQ
 현재 증상과 체질,
 식욕과 소화 상태,
 기존 질환 등을 확인한 뒤
-필요 여부를 판단합니다.
+사용 여부를 판단합니다.
 </p>
 
 </details>
-
 
 
 <details>
@@ -2143,7 +1578,6 @@ FAQ
 </details>
 
 
-
 <details>
 
 <summary>
@@ -2152,13 +1586,12 @@ FAQ
 
 <p>
 복용기간은 처방 목적과 현재 증상,
-치료 경과에 따라 달라질 수 있습니다.
+진료 경과에 따라 달라질 수 있습니다.
 모든 분에게 일정한 기간을 정해
 동일하게 권하지 않습니다.
 </p>
 
 </details>
-
 
 
 <details>
@@ -2179,7 +1612,6 @@ FAQ
 </details>
 
 
-
 <details>
 
 <summary>
@@ -2197,7 +1629,6 @@ FAQ
 </details>
 
 
-
 <details>
 
 <summary>
@@ -2213,15 +1644,547 @@ FAQ
 
 </details>
 
-
-
 </div>
-
 
 </div>
 
 </section>
 
+
+<!-- HEALTH COLUMNS -->
+
+<section id="columns"
+         class="health-columns">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+SOLSOL HERBAL TONIC COLUMN
+</div>
+
+<h2>
+보약 건강칼럼
+</h2>
+
+<p class="column-intro">
+피로와 기력저하, 보약·녹용·공진단 등
+진료실에서 자주 듣는 질문을 중심으로 정리했습니다.
+궁금한 제목을 누르면 내용을 확인하실 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="column-list">
+
+
+<!-- COLUMN 01 -->
+
+<details class="column-item">
+
+<summary>
+01. 요즘 계속 피곤한데, 보약을 먹으면 좋을까요?
+</summary>
+
+<div class="column-body">
+
+<p>
+“요즘 너무 피곤한데 보약을 먹어야 할까요?”
+보약 상담에서 자주 듣는 질문입니다.
+</p>
+
+<p>
+하지만 피로가 있다고 해서
+곧바로 보약이 필요하다고 결정하는 것은 아닙니다.
+피로는 수면 부족이나 과로처럼 생활과 관련된 경우도 있고,
+식욕과 소화 상태, 스트레스,
+현재 건강 상태 등 여러 요인과 함께 나타날 수 있습니다.
+</p>
+
+<h3>
+언제부터 피곤했는지 살펴봅니다</h3>
+
+<p>
+최근 업무량이 갑자기 늘었는지,
+밤늦게까지 일하거나 수면시간이 줄었는지,
+충분히 쉬어도 개운하지 않은지 등을 확인할 수 있습니다.
+</p>
+
+<p>
+피로와 함께 식욕이 떨어졌는지,
+몸무게에 변화가 있는지,
+두통이나 어지럼,
+수면의 변화 등 다른 불편이 있는지도 함께 살펴봅니다.
+</p>
+
+<div class="column-point">
+보약 상담에서는 단순히
+“얼마나 피곤한가”만 보는 것이 아니라
+피로가 시작된 과정과 수면·식사·소화·스트레스,
+현재 건강 상태를 함께 확인하는 것이 중요합니다.
+</div>
+
+<div class="column-warning">
+피로가 장기간 지속되거나
+체중 감소, 발열, 숨참 등 평소와 다른 증상이 함께 있다면
+현재 상태에 따라 혈액검사 등
+관련 의료기관의 평가가 우선 필요할 수 있습니다.
+</div>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 02 -->
+
+<details class="column-item">
+
+<summary>
+02. 보약은 몸이 ‘허한’ 사람만 먹는 건가요?
+</summary>
+
+<div class="column-body">
+
+<p>
+“제가 몸이 허한 것 같은데 보약을 먹어야 할까요?”
+또는 “허약체질이 아니어도 보약을 먹나요?”라고
+질문하시는 경우가 있습니다.
+</p>
+
+<p>
+일상에서 ‘몸이 허하다’는 표현은
+기운이 없고 쉽게 피곤하거나,
+예전보다 회복이 더디다고 느끼는 상태를
+넓게 표현하는 말로 사용되기도 합니다.
+</p>
+
+<h3>
+같은 ‘기력저하’라도 모습은 다를 수 있습니다
+</h3>
+
+<p>
+잠을 충분히 자도 피곤한 분도 있고,
+식욕이 떨어지고 소화가 불편하면서
+기운이 없다고 느끼는 분도 있습니다.
+</p>
+
+<p>
+과로나 수면 부족이 이어진 뒤
+평소보다 쉽게 지치는 분,
+스트레스와 함께 수면과 컨디션이 달라진 분도 있습니다.
+</p>
+
+<div class="column-point">
+‘몸이 허하다’는 느낌 하나만으로
+특정 보약을 정하기보다
+현재 어떤 증상이 함께 나타나는지
+구체적으로 살펴보는 것이 좋습니다.
+</div>
+
+<p>
+보약 상담 시에는
+수면, 식욕, 소화, 대소변,
+활동량과 스트레스,
+기존 질환과 복용약 등을 함께 확인합니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 03 -->
+
+<details class="column-item">
+
+<summary>
+03. 녹용은 보약에 꼭 들어가야 하나요?
+</summary>
+
+<div class="column-body">
+
+<p>
+보약을 생각하면
+가장 먼저 녹용을 떠올리는 분들이 많습니다.
+“녹용이 들어가야 좋은 보약인가요?”
+라고 질문하시기도 합니다.
+</p>
+
+<p>
+녹용은 한약 처방에 사용되는 약재 중 하나이지만,
+모든 보약 처방에 반드시 포함되는 것은 아닙니다.
+</p>
+
+<h3>
+특정 약재 하나보다 전체 처방을 봅니다
+</h3>
+
+<p>
+보약 처방은
+현재의 피로 양상과 수면,
+식욕과 소화,
+대소변과 전반적인 건강 상태 등을 살펴
+구성합니다.
+</p>
+
+<p>
+따라서 녹용뿐 아니라 인삼, 황기 등
+여러 약재의 사용 여부는
+현재 상태와 처방 목적을 고려해 결정합니다.
+</p>
+
+<div class="column-point">
+“녹용이 들어가면 좋은 보약,
+들어가지 않으면 부족한 보약”으로
+단순하게 구분하기보다
+현재 상태에 맞는 전체 처방 구성이 중요합니다.
+</div>
+
+<h3>
+복용 중인 약도 알려주세요
+</h3>
+
+<p>
+기존 질환이 있거나
+현재 처방약이나 건강기능식품을 복용하고 있다면
+진료 시 알려주세요.
+</p>
+
+<p>
+특정 약재를 임의로 장기간 복용하기보다
+현재 상태와 함께 살펴보는 것이 좋습니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 04 -->
+
+<details class="column-item">
+
+<summary>
+04. 공진단과 일반 한약은 어떻게 다른가요?
+</summary>
+
+<div class="column-body">
+
+<p>
+공진단과 일반적인 탕약 중
+어떤 것을 선택해야 하는지
+궁금해하시는 분들이 있습니다.
+</p>
+
+<p>
+공진단은 전통적으로 사용되어 온
+한약 처방 중 하나이며,
+일반적인 탕약과는 처방 구성과 제형 등이 다릅니다.
+</p>
+
+<h3>
+유명한 처방이라고 누구에게나 같은 것은 아닙니다
+</h3>
+
+<p>
+공진단이라는 이름이 잘 알려져 있다고 해서
+모든 사람에게 동일하게 적합한 것은 아닙니다.
+</p>
+
+<p>
+현재 어떤 목적으로 복용을 생각하고 있는지,
+피로와 기력저하 외에
+수면·소화·식욕 등에 어떤 불편이 있는지,
+기존 질환과 복용약이 있는지를
+함께 살펴볼 필요가 있습니다.
+</p>
+
+<div class="column-point">
+공진단과 일반 한약 가운데
+무엇이 더 좋다고 일률적으로 비교하기보다
+현재 상태와 복용 목적에 맞는지
+상담하는 것이 중요합니다.
+</div>
+
+<p>
+특정 처방을 먼저 정해두기보다
+현재 건강 상태를 확인한 뒤
+적절한 처방 방향을 상담할 수 있습니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 05 -->
+
+<details class="column-item">
+
+<summary>
+05. 수술이나 큰 병을 앓은 뒤 보약은 언제부터 먹을 수 있나요?
+</summary>
+
+<div class="column-body">
+
+<p>
+수술이나 질환 치료 후
+체력이 예전 같지 않다고 느껴
+보약을 문의하시는 경우가 있습니다.
+</p>
+
+<p>
+하지만 수술 후 또는 질환 치료 중의 상태는
+개인마다 크게 다를 수 있기 때문에
+특정 시점부터 누구나 보약을 먹을 수 있다고
+일률적으로 말씀드리기는 어렵습니다.
+</p>
+
+<h3>
+현재 치료와 회복 상태를 먼저 확인합니다
+</h3>
+
+<p>
+어떤 수술이나 치료를 받았는지,
+현재 치료가 종료된 상태인지,
+식사와 소화는 어느 정도 가능한지,
+상처 회복 상태와 전반적인 컨디션은 어떤지를
+함께 살펴볼 수 있습니다.
+</p>
+
+<p>
+현재 복용 중인 처방약이 있는지도
+중요한 확인사항입니다.
+</p>
+
+<div class="column-point">
+회복기 보약을 상담할 때는
+단순히 “수술했으니 보약을 먹는다”기보다
+현재 회복 과정과 복용약,
+식사·소화 상태 등을 확인한 뒤
+한약 복용 여부를 상담하는 것이 좋습니다.
+</div>
+
+<div class="column-warning">
+수술이나 질환 치료를 담당한 의료기관의 처방약을
+임의로 중단하거나 변경해서는 안 됩니다.
+현재 치료 중이거나 복용약이 있다면
+진료 시 그 내용을 반드시 알려주세요.
+</div>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 06 -->
+
+<details class="column-item">
+
+<summary>
+06. 피곤하다고 모두 같은 보약을 먹는 것은 아닙니다
+</summary>
+
+<div class="column-body">
+
+<p>
+“피로에 좋은 보약 하나 추천해주세요.”
+라고 말씀하시는 분들이 있습니다.
+</p>
+
+<p>
+하지만 같은 ‘피로’라는 표현을 사용하더라도
+실제로 느끼는 상태는 사람마다 다를 수 있습니다.
+</p>
+
+<h3>
+피로의 모습부터 서로 다릅니다
+</h3>
+
+<p>
+잠을 충분히 자도 개운하지 않은 분,
+식욕이 떨어지고 소화가 잘되지 않으면서
+기운이 없는 분,
+야근과 수면 부족이 이어져
+쉽게 지치는 분의 상태는 서로 다릅니다.
+</p>
+
+<p>
+스트레스가 심해지면서
+수면이나 두통,
+목·어깨 긴장이 함께 나타나는 분도 있습니다.
+</p>
+
+<div class="column-point">
+같은 ‘피곤함’이라도
+수면, 식욕, 소화, 활동량,
+스트레스와 함께 나타나는 증상이 서로 다르기 때문에
+모두에게 같은 보약을 사용하는 것은 아닙니다.
+</div>
+
+<h3>
+특정 보약부터 정하지 않습니다
+</h3>
+
+<p>
+녹용이나 인삼처럼 특정 약재를 먼저 선택하거나,
+잘 알려진 처방 이름만 보고 결정하기보다
+현재 상태를 확인하는 과정이 먼저입니다.
+</p>
+
+<p>
+진료 내용을 바탕으로
+한약이 필요한지,
+필요하다면 어떤 방향으로 처방할지를
+상담합니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 07 -->
+
+<details class="column-item">
+
+<summary>
+07. 보약은 얼마나 먹어야 하나요? 오래 먹을수록 좋은가요?
+</summary>
+
+<div class="column-body">
+
+<p>
+“한 제만 먹으면 되나요?”
+“몇 달 정도 먹어야 하나요?”
+라는 질문도 자주 듣습니다.
+</p>
+
+<p>
+보약이나 한약의 복용기간을
+모든 사람에게 똑같이 정하기는 어렵습니다.
+</p>
+
+<h3>
+복용 목적과 현재 상태에 따라 달라집니다
+</h3>
+
+<p>
+최근의 과로와 수면 부족으로
+일시적으로 컨디션이 떨어진 경우와,
+오랫동안 식욕과 기력이 저하되어 있는 경우는
+상태가 서로 다를 수 있습니다.
+</p>
+
+<p>
+증상이 얼마나 오래 지속되었는지,
+한약을 어떤 목적으로 복용하는지,
+복용 후 상태가 어떻게 변화하는지 등을
+함께 살펴볼 수 있습니다.
+</p>
+
+<div class="column-point">
+한약은 오래 먹을수록 좋다고
+일률적으로 말할 수 없습니다.
+현재 상태와 복용 목적,
+진료 경과에 따라 복용기간을 상담합니다.
+</div>
+
+<h3>
+복용하면서 상태를 확인합니다
+</h3>
+
+<p>
+복용 중에는
+식욕과 소화, 수면,
+피로의 변화 등을 확인하고,
+필요한 경우 진료를 통해
+처방 방향이나 복용기간을 다시 살펴볼 수 있습니다.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- COLUMN 08 -->
+
+<details class="column-item">
+
+<summary>
+08. 야근·육아·시험처럼 많이 지친 시기에도 보약을 상담할 수 있나요?
+</summary>
+
+<div class="column-body">
+
+<p>
+밤늦게까지 일하는 직장인,
+육아와 일을 함께 하느라
+충분히 쉬지 못하는 분,
+시험을 준비하면서 생활이 불규칙해진 분처럼
+특정한 시기에 피로가 크게 누적되었다고 느끼는 경우가 있습니다.
+</p>
+
+<p>
+이럴 때도 단순히
+“많이 지쳤으니 보약을 먹는다”기보다
+현재 생활과 건강 상태를 먼저 살펴보는 것이 좋습니다.
+</p>
+
+<h3>
+수면과 식사가 얼마나 달라졌는지 확인합니다
+</h3>
+
+<p>
+평소보다 수면시간이 줄었는지,
+밤늦게까지 깨어 있는 날이 많아졌는지,
+식사를 자주 거르는지,
+카페인 섭취가 늘었는지 등을 살펴볼 수 있습니다.
+</p>
+
+<p>
+피로와 함께
+소화불량이나 두통,
+수면불량, 식욕저하 등
+다른 불편이 있는지도 확인합니다.
+</p>
+
+<div class="column-point">
+야근·육아·시험처럼 바쁜 시기의 피로 역시
+생활습관과 현재 증상을 함께 살펴본 뒤
+필요한 경우 한약과 보약 처방을 상담할 수 있습니다.
+</div>
+
+<h3>
+휴식과 생활관리도 함께 중요합니다
+</h3>
+
+<p>
+한약을 복용하더라도
+지속적인 수면 부족이나 과로를 그대로 두는 것보다
+가능한 범위에서 수면과 식사,
+휴식 시간을 함께 조절하는 것이 중요합니다.
+</p>
+
+<p>
+피로가 지나치게 오래 지속되거나
+생활 변화만으로 설명하기 어려운 증상이 있다면
+현재 상태에 따라 필요한 검사도 고려할 수 있습니다.
+</p>
+
+</div>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
 
 
 <!-- CONTACT -->
@@ -2229,17 +2192,13 @@ FAQ
 <section id="contact"
          class="contact">
 
-
 <div class="container">
 
-
 <div class="contact-box">
-
 
 <h2>
 보약클리닉 예약 및 문의
 </h2>
-
 
 <p>
 만성피로, 기력저하,
@@ -2249,67 +2208,47 @@ FAQ
 
 <div class="contact-buttons">
 
-
 <a class="button"
    href="tel:0415343100">
-
 전화하기
-
 </a>
-
 
 <a class="button light"
    href="https://booking.naver.com/booking/13/bizes/250311"
    target="_blank"
    rel="noopener">
-
 네이버 예약
-
 </a>
-
 
 <a class="button light"
    href="http://pf.kakao.com/_xjTGtj"
    target="_blank"
    rel="noopener">
-
 카카오톡 상담
-
 </a>
-
 
 <a class="button light"
    href="https://naver.me/52RVqgJs"
    target="_blank"
    rel="noopener">
-
 네이버지도 길찾기
-
 </a>
-
 
 </div>
 
 
 <div style="margin-top:30px;">
 
-
 <a href="index.html"
-   style="
-      color:#527e5e;
-      font-weight:700;
-   ">
+   style="color:#527e5e;font-weight:700;">
 
 ← 솔솔한의원 메인 홈페이지로 돌아가기
 
 </a>
 
-
 </div>
 
-
 </div>
-
 
 </div>
 
@@ -2319,17 +2258,13 @@ FAQ
 </main>
 
 
-
 <footer>
 
-
 <div class="container">
-
 
 <img src="logo.jpg"
      alt="솔솔한의원"
      class="footer-logo">
-
 
 <p>
 <strong>
@@ -2337,50 +2272,39 @@ FAQ
 </strong>
 </p>
 
-
 <p>
 충청남도 아산시 배방읍 모산로 91, 1층
 </p>
-
 
 <p>
 041-534-3100
 </p>
 
-
 <p>
 평일 09:00 ~ 19:30 · 점심시간 13:00 ~ 14:00
 </p>
-
 
 <p>
 토요일 09:00 ~ 13:00 · 일요일 및 공휴일 휴진
 </p>
 
-
 <div class="notice">
 
 본 페이지는 피로와 기력저하,
-보약과 한약에 관한 일반적인 정보를 제공하기 위한 것입니다.
+보약과 한약에 관한 일반적인 건강정보를 제공하기 위한 것입니다.
 지속되는 피로는 여러 원인과 관련될 수 있으며,
 구체적인 진단과 처방은 개인의 현재 상태를 확인한 뒤 결정합니다.
 필요한 경우 다른 의료기관의 검사와 진료가 함께 필요할 수 있습니다.
 
 </div>
 
-
 <p style="margin-top:24px;">
-
 © Solsol Korean Medicine Clinic. All rights reserved.
-
 </p>
-
 
 </div>
 
-
 </footer>
-
 
 
 <script>
@@ -2399,12 +2323,10 @@ menuButton.addEventListener(
         const isOpen =
             mobileMenu.classList.toggle("open");
 
-
         menuButton.setAttribute(
             "aria-expanded",
             isOpen ? "true" : "false"
         );
-
 
         menuButton.setAttribute(
             "aria-label",
@@ -2418,7 +2340,6 @@ menuButton.addEventListener(
 mobileMenu
     .querySelectorAll("a")
     .forEach(
-
         function(link) {
 
             link.addEventListener(
@@ -2429,12 +2350,10 @@ mobileMenu
                         .classList
                         .remove("open");
 
-
                     menuButton.setAttribute(
                         "aria-expanded",
                         "false"
                     );
-
 
                     menuButton.setAttribute(
                         "aria-label",
@@ -2445,7 +2364,6 @@ mobileMenu
             );
 
         }
-
     );
 
 </script>
