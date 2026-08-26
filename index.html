@@ -29,13 +29,10 @@
 
 <!-- Google Search Console 소유확인 -->
 <meta name="google-site-verification"
-      content="RReSG-kzHWym8EcIkMieVUCDnjPiA39rvatiNnC0_8g" />
+      content="RReSG-kzHWym8EcIkMieVUCDnjPiA39rvatiNnC0_8g">
 
 
-<!-- =========================================
-     SNS / 카카오톡 링크 공유
-========================================= -->
-
+<!-- SNS / 카카오톡 링크 공유 -->
 <meta property="og:locale"
       content="ko_KR">
 
@@ -80,33 +77,23 @@
       content="https://solsolclinic.github.io/clinic.jpg">
 
 
-<!-- =========================================
-     검색엔진용 구조화 데이터
-========================================= -->
-
+<!-- 검색엔진용 구조화 데이터 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
   "@id": "https://solsolclinic.github.io/#clinic",
-
   "name": "솔솔한의원",
-
   "alternateName": "Solsol Korean Medicine Clinic",
-
   "url": "https://solsolclinic.github.io/",
-
   "logo": "https://solsolclinic.github.io/logo.jpg",
-
   "image": [
     "https://solsolclinic.github.io/clinic.jpg",
+    "https://solsolclinic.github.io/solsol_clinic_entrance.jpg",
     "https://solsolclinic.github.io/logo.jpg"
   ],
-
   "description": "아산시 배방읍 배방역 인근에 위치한 솔솔한의원입니다. 동문수학한 부부한의사 이승환 대표원장과 정보은 원장이 함께 진료합니다.",
-
   "telephone": "+82-41-534-3100",
-
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "배방읍 모산로 91, 1층",
@@ -114,7 +101,6 @@
     "addressRegion": "충청남도",
     "addressCountry": "KR"
   },
-
   "areaServed": [
     {
       "@type": "City",
@@ -129,9 +115,7 @@
       "name": "탕정"
     }
   ],
-
   "hasMap": "https://naver.me/52RVqgJs",
-
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -152,7 +136,6 @@
       "closes": "13:00"
     }
   ],
-
   "employee": [
     {
       "@type": "Person",
@@ -169,7 +152,6 @@
       "image": "https://solsolclinic.github.io/jung.jpg"
     }
   ],
-
   "sameAs": [
     "https://blog.naver.com/solsolclinic3100",
     "http://pf.kakao.com/_xjTGtj"
@@ -181,29 +163,20 @@
 <style>
 
 :root {
-
     --green-deep: #527e5e;
     --green-main: #6ca67b;
     --green-soft: #eef6f0;
     --green-pale: #f7faf7;
-
     --cream: #fbfaf6;
     --white: #ffffff;
-
     --text: #303530;
     --sub: #687169;
-
     --line: #e1e9e3;
-
-    --shadow:
-        0 14px 38px
-        rgba(55,85,62,.07);
+    --shadow: 0 14px 38px rgba(55,85,62,.07);
 }
 
 
-/* =========================================
-   BASIC
-========================================= */
+/* BASIC */
 
 * {
     box-sizing: border-box;
@@ -214,22 +187,16 @@ html {
 }
 
 body {
-
     margin: 0;
-
     font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Noto Sans KR",
         "Malgun Gothic",
         sans-serif;
-
     color: var(--text);
-
     background: var(--cream);
-
     line-height: 1.75;
-
     word-break: keep-all;
 }
 
@@ -248,282 +215,145 @@ button {
 }
 
 .container {
-
-    width:
-        min(
-            1120px,
-            calc(100% - 40px)
-        );
-
+    width: min(1120px, calc(100% - 40px));
     margin: 0 auto;
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 header {
-
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
-
-    background:
-        rgba(255,255,255,.97);
-
-    border-bottom:
-        1px solid var(--line);
-
-    backdrop-filter:
-        blur(10px);
+    background: rgba(255,255,255,.97);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(10px);
 }
 
 .nav {
-
     min-height: 74px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 30px;
-
     position: relative;
 }
 
 .brand img {
-
     width: 140px;
-
     height: auto;
 }
 
 .nav-menu {
-
     display: flex;
-
     align-items: center;
-
-    gap: 23px;
-
+    gap: 22px;
     font-size: 14px;
-
     font-weight: 700;
 }
 
 .nav-menu a {
-
     transition: .2s;
 }
 
 .nav-menu a:hover {
-
-    color:
-        var(--green-deep);
+    color: var(--green-deep);
 }
 
 
-/* =========================================
-   MOBILE MENU
-========================================= */
+/* MOBILE MENU */
 
 .mobile-menu-button {
-
     display: none;
-
     width: 44px;
-
     height: 44px;
-
     padding: 0;
-
-    border:
-        1px solid var(--line);
-
-    border-radius:
-        12px;
-
-    background:
-        white;
-
-    cursor:
-        pointer;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    flex-direction:
-        column;
-
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     gap: 5px;
 }
 
 .mobile-menu-button span {
-
     width: 20px;
-
     height: 2px;
-
-    background:
-        var(--text);
-
-    border-radius:
-        2px;
+    background: var(--text);
+    border-radius: 2px;
 }
 
 .mobile-menu {
-
     display: none;
-
     position: absolute;
-
-    top:
-        calc(100% + 1px);
-
+    top: calc(100% + 1px);
     left: 0;
-
     right: 0;
-
-    background:
-        white;
-
-    padding:
-        8px 20px
-        15px;
-
-    border-bottom:
-        1px solid var(--line);
-
-    box-shadow:
-        0 14px 30px
-        rgba(45,70,50,.09);
+    background: white;
+    padding: 8px 20px 15px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 14px 30px rgba(45,70,50,.09);
 }
 
 .mobile-menu.open {
-
     display: block;
 }
 
 .mobile-menu a {
-
     display: block;
-
-    padding:
-        13px 8px;
-
-    border-bottom:
-        1px solid var(--line);
-
-    font-size:
-        15px;
-
-    font-weight:
-        700;
+    padding: 13px 8px;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .mobile-menu a:last-child {
-
     border-bottom: 0;
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
+/* BUTTON */
 
 .button {
-
     min-height: 48px;
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    padding:
-        0 21px;
-
-    border-radius:
-        999px;
-
-    background:
-        var(--green-deep);
-
-    color:
-        white;
-
-    border:
-        1px solid
-        var(--green-deep);
-
-    font-size:
-        14px;
-
-    font-weight:
-        700;
-
-    transition:
-        .2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 21px;
+    border-radius: 999px;
+    background: var(--green-deep);
+    color: white;
+    border: 1px solid var(--green-deep);
+    font-size: 14px;
+    font-weight: 700;
+    transition: .2s;
 }
 
 .button.light {
-
-    background:
-        white;
-
-    color:
-        var(--text);
-
-    border:
-        1px solid
-        var(--line);
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--line);
 }
 
 .button.soft {
-
-    background:
-        var(--green-soft);
-
-    color:
-        var(--green-deep);
-
-    border:
-        1px solid
-        #d8e7db;
+    background: var(--green-soft);
+    color: var(--green-deep);
+    border: 1px solid #d8e7db;
 }
 
 .button:hover {
-
-    transform:
-        translateY(-2px);
-
-    opacity:
-        .9;
+    transform: translateY(-2px);
+    opacity: .9;
 }
 
 
-/* =========================================
-   HERO
-========================================= */
+/* FIRST VIEW */
 
 .hero {
-
-    padding:
-        48px 0
-        65px;
-
+    padding: 48px 0 65px;
     background:
         linear-gradient(
             135deg,
@@ -533,1256 +363,744 @@ header {
 }
 
 .hero-grid {
-
     display: grid;
-
-    grid-template-columns:
-        .95fr
-        1.05fr;
-
-    min-height:
-        545px;
-
-    background:
-        white;
-
-    border:
-        1px solid #e5ece7;
-
-    border-radius:
-        28px;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        var(--shadow);
+    grid-template-columns: .95fr 1.05fr;
+    min-height: 545px;
+    background: white;
+    border: 1px solid #e5ece7;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 .hero-copy {
-
-    padding:
-        52px;
-
+    padding: 52px;
     display: flex;
-
-    flex-direction:
-        column;
-
-    justify-content:
-        center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-kicker {
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        14px;
-
-    font-weight:
-        800;
-
-    margin-bottom:
-        11px;
+    color: var(--green-deep);
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 11px;
 }
 
 .couple-label {
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    width:
-        fit-content;
-
-    margin-bottom:
-        20px;
-
-    padding:
-        7px 13px;
-
-    border-radius:
-        999px;
-
-    background:
-        var(--green-soft);
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 20px;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: var(--green-soft);
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 .hero h1 {
-
-    margin:
-        0 0
-        21px;
-
-    font-size:
-        clamp(
-            38px,
-            5vw,
-            57px
-        );
-
-    line-height:
-        1.28;
-
-    letter-spacing:
-        -3px;
+    margin: 0 0 21px;
+    font-size: clamp(38px, 5vw, 57px);
+    line-height: 1.28;
+    letter-spacing: -3px;
 }
 
 .hero-expertise {
-
-    margin:
-        0 0
-        14px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        17px;
-
-    font-weight:
-        750;
-
-    line-height:
-        1.7;
+    margin: 0 0 14px;
+    color: var(--green-deep);
+    font-size: 17px;
+    font-weight: 750;
+    line-height: 1.7;
 }
 
 .hero-local {
-
-    margin:
-        0 0
-        11px;
-
-    color:
-        #4f5d53;
-
-    font-size:
-        14px;
-
-    font-weight:
-        700;
-
-    line-height:
-        1.75;
+    margin: 0 0 11px;
+    color: #4f5d53;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.75;
 }
 
 .hero-description {
-
     margin: 0;
-
-    color:
-        var(--sub);
-
-    font-size:
-        15px;
-
-    line-height:
-        1.85;
+    color: var(--sub);
+    font-size: 15px;
+    line-height: 1.85;
 }
 
 .hero-buttons {
-
     display: flex;
-
     gap: 9px;
-
     flex-wrap: wrap;
-
-    margin-top:
-        29px;
+    margin-top: 29px;
 }
 
 .hero-image {
-
-    min-height:
-        545px;
-
-    position:
-        relative;
-
-    overflow:
-        hidden;
+    min-height: 545px;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-image img {
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    min-height:
-        545px;
-
-    object-fit:
-        cover;
-
-    object-position:
-        center;
+    width: 100%;
+    height: 100%;
+    min-height: 545px;
+    object-fit: cover;
+    object-position: center;
 }
 
 
-/* =========================================
-   COMMON
-========================================= */
+/* COMMON */
 
 section {
-
-    padding:
-        80px 0;
-
-    scroll-margin-top:
-        85px;
+    padding: 80px 0;
+    scroll-margin-top: 85px;
 }
 
 .section-head {
-
-    margin-bottom:
-        34px;
+    margin-bottom: 34px;
 }
 
 .section-kicker {
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        .08em;
-
-    margin-bottom:
-        6px;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    margin-bottom: 6px;
 }
 
 .section-head h2 {
-
-    margin:
-        0 0
-        9px;
-
-    font-size:
-        clamp(
-            29px,
-            4vw,
-            39px
-        );
-
-    line-height:
-        1.35;
-
-    letter-spacing:
-        -2px;
+    margin: 0 0 9px;
+    font-size: clamp(29px, 4vw, 39px);
+    line-height: 1.35;
+    letter-spacing: -2px;
 }
 
 .section-head p {
-
     margin: 0;
-
-    color:
-        var(--sub);
+    color: var(--sub);
 }
 
 
-/* =========================================
-   PHILOSOPHY
-========================================= */
+/* PHILOSOPHY */
 
 .philosophy {
-
-    background:
-        white;
+    background: white;
 }
 
 .philosophy-card {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        .78fr
-        1.22fr;
-
-    gap:
-        45px;
-
-    align-items:
-        center;
-
-    padding:
-        48px;
-
+    display: grid;
+    grid-template-columns: .78fr 1.22fr;
+    gap: 45px;
+    align-items: center;
+    padding: 48px;
     background:
         linear-gradient(
             135deg,
             #f7faf7,
             #edf5ef
         );
-
-    border:
-        1px solid
-        #deeadf;
-
-    border-radius:
-        25px;
+    border: 1px solid #deeadf;
+    border-radius: 25px;
 }
 
 .philosophy-title h2 {
-
-    margin:
-        8px 0
-        17px;
-
-    font-size:
-        clamp(
-            30px,
-            4vw,
-            42px
-        );
-
-    line-height:
-        1.43;
-
-    letter-spacing:
-        -2px;
+    margin: 8px 0 17px;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.43;
+    letter-spacing: -2px;
 }
 
 .story-title {
-
-    margin:
-        0 0
-        12px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        17px;
-
-    font-weight:
-        800;
+    margin: 0 0 12px;
+    color: var(--green-deep);
+    font-size: 17px;
+    font-weight: 800;
 }
 
 .philosophy-text p {
-
-    margin:
-        0 0
-        14px;
-
-    color:
-        #525b54;
-
-    font-size:
-        15px;
+    margin: 0 0 14px;
+    color: #525b54;
+    font-size: 15px;
 }
 
 .philosophy-sign {
-
-    margin-top:
-        23px !important;
-
-    color:
-        var(--text) !important;
-
-    font-weight:
-        700;
+    margin-top: 23px !important;
+    color: var(--text) !important;
+    font-weight: 700;
 }
 
 .philosophy-more {
-
-    margin-top:
-        21px;
+    margin-top: 21px;
 }
 
 
-/* =========================================
-   DOCTORS
-========================================= */
+/* DOCTORS */
 
 .doctors {
-
-    background:
-        var(--cream);
+    background: var(--cream);
 }
 
 .doctor-intro {
-
-    margin-bottom:
-        27px;
-
-    padding:
-        22px 26px;
-
-    border-radius:
-        17px;
-
-    background:
-        var(--green-soft);
-
-    color:
-        #536057;
-
-    border:
-        1px solid
-        #dce8df;
+    margin-bottom: 27px;
+    padding: 22px 26px;
+    border-radius: 17px;
+    background: var(--green-soft);
+    color: #536057;
+    border: 1px solid #dce8df;
 }
 
 .doctor-intro strong {
-
-    color:
-        var(--green-deep);
+    color: var(--green-deep);
 }
 
 .doctor-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap:
-        22px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
 }
 
 .doctor-card {
-
-    background:
-        white;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        22px;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        0 7px 22px
-        rgba(70,80,72,.03);
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 7px 22px rgba(70,80,72,.03);
 }
 
 .doctor-photo {
-
-    width:
-        100%;
-
-    height:
-        400px;
-
-    object-fit:
-        cover;
-
-    object-position:
-        top center;
-
-    background:
-        #eee;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top center;
+    background: #eee;
 }
 
 .doctor-body {
-
-    padding:
-        29px;
+    padding: 29px;
 }
 
 .doctor-body h3 {
-
     margin: 0;
-
-    font-size:
-        26px;
-
-    letter-spacing:
-        -1px;
+    font-size: 26px;
+    letter-spacing: -1px;
 }
 
 .doctor-badges {
-
-    display:
-        flex;
-
-    flex-wrap:
-        wrap;
-
-    gap:
-        7px;
-
-    margin:
-        11px 0
-        18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 11px 0 18px;
 }
 
 .badge {
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    padding:
-        6px 11px;
-
-    border-radius:
-        999px;
-
-    background:
-        var(--green-soft);
-
-    border:
-        1px solid
-        #d4e5d8;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 11px;
+    border-radius: 999px;
+    background: var(--green-soft);
+    border: 1px solid #d4e5d8;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 .doctor-summary {
-
-    margin:
-        0 0
-        19px;
-
-    color:
-        var(--sub);
-
-    font-size:
-        14px;
-
-    line-height:
-        1.8;
+    margin: 0 0 19px;
+    color: var(--sub);
+    font-size: 14px;
+    line-height: 1.8;
 }
 
 .doctor-card details {
-
-    margin-top:
-        9px;
-
-    padding: 0;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        12px;
-
-    background:
-        #fafcf9;
-
-    overflow:
-        hidden;
+    margin-top: 9px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fafcf9;
+    overflow: hidden;
 }
 
 .doctor-card summary {
-
-    padding:
-        13px 15px;
-
-    cursor:
-        pointer;
-
-    color:
-        var(--green-deep);
-
-    font-weight:
-        700;
-
-    font-size:
-        14px;
-
-    list-style:
-        none;
+    padding: 13px 15px;
+    cursor: pointer;
+    color: var(--green-deep);
+    font-weight: 700;
+    font-size: 14px;
+    list-style: none;
 }
 
 .doctor-card summary::-webkit-details-marker {
-
-    display:
-        none;
+    display: none;
 }
 
 .doctor-card summary::after {
-
-    content:
-        "＋";
-
-    float:
-        right;
-
-    font-weight:
-        400;
+    content: "＋";
+    float: right;
+    font-weight: 400;
 }
 
 .doctor-card details[open] summary::after {
-
-    content:
-        "－";
+    content: "－";
 }
 
 .doctor-card details ul {
-
-    margin:
-        0;
-
-    padding:
-        0 34px
-        18px;
-
-    color:
-        #535a55;
-
-    font-size:
-        13.5px;
+    margin: 0;
+    padding: 0 34px 18px;
+    color: #535a55;
+    font-size: 13.5px;
 }
 
 .doctor-card details li {
-
-    margin:
-        5px 0;
+    margin: 5px 0;
 }
 
 
-/* =========================================
-   TREATMENTS
-========================================= */
+/* TREATMENTS */
 
 .treatments {
-
-    background:
-        var(--green-soft);
+    background: var(--green-soft);
 }
 
 .treatment-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap:
-        14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
 }
 
 .treatment-link {
-
-    display:
-        block;
-
-    height:
-        100%;
+    display: block;
+    height: 100%;
 }
 
 .treatment-card {
-
-    height:
-        100%;
-
-    padding:
-        26px;
-
-    background:
-        rgba(255,255,255,.96);
-
-    border:
-        1px solid
-        #dce7de;
-
-    border-radius:
-        18px;
-
-    min-height:
-        190px;
-
-    transition:
-        .2s;
+    height: 100%;
+    padding: 26px;
+    background: rgba(255,255,255,.96);
+    border: 1px solid #dce7de;
+    border-radius: 18px;
+    min-height: 190px;
+    transition: .2s;
 }
 
-.treatment-link:hover .treatment-card,
-.treatment-card:hover {
-
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        var(--shadow);
+.treatment-link:hover .treatment-card {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
 }
 
 .treatment-number {
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 .treatment-card h3 {
-
-    margin:
-        7px 0
-        9px;
-
-    font-size:
-        20px;
-
-    letter-spacing:
-        -.5px;
+    margin: 7px 0 9px;
+    font-size: 20px;
+    letter-spacing: -.5px;
 }
 
 .treatment-card p {
-
     margin: 0;
-
-    color:
-        var(--sub);
-
-    font-size:
-        14px;
+    color: var(--sub);
+    font-size: 14px;
 }
 
 .more-link {
-
-    margin-top:
-        15px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
+    margin-top: 15px;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 
-/* =========================================
-   INFORMATION
-========================================= */
+/* CLINIC GALLERY */
 
-.information {
-
-    background:
-        white;
+.clinic-gallery {
+    background: white;
 }
 
-.info-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap:
-        18px;
+.gallery-intro {
+    max-width: 720px;
 }
 
-.info-card {
-
-    padding:
-        31px;
-
-    background:
-        var(--green-pale);
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        21px;
+.gallery-feature {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 18px;
+    margin-bottom: 18px;
 }
 
-.info-card h3 {
-
-    margin:
-        0 0
-        18px;
-
-    font-size:
-        21px;
+.gallery-main,
+.gallery-side,
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #f4f6f4;
 }
 
-.info-row {
-
-    display:
-        flex;
-
-    gap:
-        20px;
-
-    padding:
-        12px 0;
-
-    border-bottom:
-        1px solid
-        var(--line);
+.gallery-main {
+    min-height: 470px;
 }
 
-.info-row:last-of-type {
-
-    border-bottom:
-        none;
+.gallery-side {
+    min-height: 470px;
 }
 
-.info-label {
-
-    width:
-        95px;
-
-    flex:
-        0 0 auto;
-
-    font-weight:
-        700;
+.gallery-main img,
+.gallery-side img {
+    width: 100%;
+    height: 100%;
+    min-height: 470px;
+    object-fit: cover;
 }
 
-.info-text {
-
-    color:
-        var(--sub);
+.gallery-caption {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    padding: 15px 17px;
+    border-radius: 14px;
+    background: rgba(255,255,255,.93);
+    backdrop-filter: blur(7px);
 }
 
-.map-area {
+.gallery-caption strong {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
 
-    margin-top:
-        22px;
+.gallery-caption span {
+    display: block;
+    color: var(--sub);
+    font-size: 13px;
+    line-height: 1.6;
+}
 
-    padding-top:
-        21px;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
 
-    border-top:
-        1px solid
-        var(--line);
+.gallery-card {
+    background: white;
+    border: 1px solid var(--line);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+
+.gallery-card-body {
+    padding: 20px;
+}
+
+.gallery-card-body h3 {
+    margin: 0 0 7px;
+    font-size: 18px;
+}
+
+.gallery-card-body p {
+    margin: 0;
+    color: var(--sub);
+    font-size: 13.5px;
+    line-height: 1.75;
 }
 
 
-/* =========================================
-   HEALTH
-========================================= */
+/* HEALTH */
 
 .health {
-
-    background:
-        var(--cream);
+    background: var(--cream);
 }
 
 .health-card {
-
-    max-width:
-        850px;
-
-    margin:
-        auto;
-
-    padding:
-        43px;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        22px;
-
-    text-align:
-        center;
+    max-width: 850px;
+    margin: auto;
+    padding: 43px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    text-align: center;
 }
 
 .health-card h2 {
-
-    margin:
-        0 0
-        10px;
-
-    font-size:
-        30px;
-
-    letter-spacing:
-        -1.5px;
+    margin: 0 0 10px;
+    font-size: 30px;
+    letter-spacing: -1.5px;
 }
 
 .health-card p {
-
-    margin:
-        0 0
-        24px;
-
-    color:
-        var(--sub);
+    margin: 0 0 24px;
+    color: var(--sub);
 }
 
 .health-buttons {
-
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    flex-wrap:
-        wrap;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 9px;
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/* INFORMATION */
+
+.information {
+    background: white;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.info-card {
+    padding: 31px;
+    background: var(--green-pale);
+    border: 1px solid var(--line);
+    border-radius: 21px;
+}
+
+.info-card h3 {
+    margin: 0 0 18px;
+    font-size: 21px;
+}
+
+.info-row {
+    display: flex;
+    gap: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.info-row:last-of-type {
+    border-bottom: none;
+}
+
+.info-label {
+    width: 95px;
+    flex: 0 0 auto;
+    font-weight: 700;
+}
+
+.info-text {
+    color: var(--sub);
+}
+
+.map-area {
+    margin-top: 22px;
+    padding-top: 21px;
+    border-top: 1px solid var(--line);
+}
+
+
+/* FOOTER */
 
 footer {
-
-    padding:
-        44px 0;
-
-    background:
-        #f2f6f2;
-
-    border-top:
-        1px solid
-        var(--line);
-
-    color:
-        #58615a;
-
-    font-size:
-        13px;
+    padding: 44px 0;
+    background: #f2f6f2;
+    border-top: 1px solid var(--line);
+    color: #58615a;
+    font-size: 13px;
 }
 
 .footer-logo {
-
-    width:
-        120px;
-
-    margin-bottom:
-        16px;
+    width: 120px;
+    margin-bottom: 16px;
 }
 
 footer p {
-
-    margin:
-        5px 0;
+    margin: 5px 0;
 }
 
 .footer-notice {
-
-    max-width:
-        760px;
-
-    margin-top:
-        22px;
-
-    color:
-        #8a928c;
-
-    font-size:
-        12px;
+    max-width: 760px;
+    margin-top: 22px;
+    color: #8a928c;
+    font-size: 12px;
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
 
     .container {
-
-        width:
-            min(
-                100% - 28px,
-                1120px
-            );
+        width: min(100% - 28px, 1120px);
     }
 
     .nav {
-
-        min-height:
-            66px;
+        min-height: 66px;
     }
 
     .brand img {
-
-        width:
-            108px;
+        width: 108px;
     }
 
     .nav-menu {
-
-        display:
-            none;
+        display: none;
     }
 
     .mobile-menu-button {
-
-        display:
-            flex;
+        display: flex;
     }
 
     .hero {
-
-        padding:
-            24px 0
-            48px;
+        padding: 24px 0 48px;
     }
 
     .hero-grid {
-
-        grid-template-columns:
-            1fr;
-
-        min-height:
-            0;
-
-        border-radius:
-            21px;
+        grid-template-columns: 1fr;
+        min-height: 0;
+        border-radius: 21px;
     }
 
     .hero-copy {
-
-        padding:
-            36px 23px;
+        padding: 36px 23px;
     }
 
     .hero h1 {
-
-        font-size:
-            36px;
-
-        letter-spacing:
-            -2px;
+        font-size: 36px;
+        letter-spacing: -2px;
     }
 
     .couple-label {
-
-        font-size:
-            12px;
+        font-size: 12px;
     }
 
     .hero-expertise {
-
-        font-size:
-            15px;
+        font-size: 15px;
     }
 
     .hero-local {
-
-        font-size:
-            13.5px;
+        font-size: 13.5px;
     }
 
     .hero-description {
-
-        font-size:
-            14px;
+        font-size: 14px;
     }
 
     .hero-buttons {
-
-        display:
-            grid;
-
-        grid-template-columns:
-            1fr;
-
-        width:
-            100%;
-
-        margin-top:
-            25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 25px;
     }
 
     .hero-buttons .button {
-
-        width:
-            100%;
+        width: 100%;
     }
 
-    .hero-image {
-
-        height:
-            260px;
-
-        min-height:
-            260px;
-    }
-
+    .hero-image,
     .hero-image img {
-
-        height:
-            260px;
-
-        min-height:
-            260px;
+        height: 260px;
+        min-height: 260px;
     }
 
     section {
-
-        padding:
-            58px 0;
-
-        scroll-margin-top:
-            72px;
-    }
-
-    .section-head {
-
-        margin-bottom:
-            27px;
+        padding: 58px 0;
+        scroll-margin-top: 72px;
     }
 
     .philosophy-card {
-
-        grid-template-columns:
-            1fr;
-
-        gap:
-            24px;
-
-        padding:
-            31px 23px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 31px 23px;
     }
 
     .philosophy-text p {
-
-        font-size:
-            14px;
+        font-size: 14px;
     }
 
     .doctor-grid,
     .treatment-grid,
     .info-grid {
-
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
     }
 
     .doctor-intro {
-
-        padding:
-            19px 21px;
-
-        font-size:
-            14px;
+        padding: 19px 21px;
+        font-size: 14px;
     }
 
     .doctor-photo {
-
-        height:
-            310px;
-
-        object-position:
-            top center;
+        height: 310px;
     }
 
     .doctor-body {
-
-        padding:
-            23px;
+        padding: 23px;
     }
 
     .doctor-body h3 {
-
-        font-size:
-            23px;
+        font-size: 23px;
     }
 
     .doctor-card details ul {
-
-        padding:
-            0 29px
-            17px;
-
-        font-size:
-            13px;
+        padding: 0 29px 17px;
+        font-size: 13px;
     }
 
     .treatment-card {
-
-        min-height:
-            auto;
-
-        padding:
-            23px;
+        min-height: auto;
+        padding: 23px;
     }
 
-    .info-row {
-
-        display:
-            block;
+    .gallery-feature {
+        grid-template-columns: 1fr;
     }
 
-    .info-label {
+    .gallery-main,
+    .gallery-side {
+        min-height: 300px;
+    }
 
-        width:
-            auto;
+    .gallery-main img,
+    .gallery-side img {
+        min-height: 300px;
+        height: 300px;
+    }
 
-        margin-bottom:
-            3px;
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .gallery-card img {
+        height: 250px;
     }
 
     .health-card {
-
-        padding:
-            33px 22px;
+        padding: 33px 22px;
     }
 
     .health-card h2 {
-
-        font-size:
-            27px;
+        font-size: 27px;
     }
 
     .health-buttons {
-
-        display:
-            grid;
-
-        grid-template-columns:
-            1fr;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .health-buttons .button {
+        width: 100%;
+    }
 
-        width:
-            100%;
+    .info-row {
+        display: block;
+    }
+
+    .info-label {
+        width: auto;
+        margin-bottom: 3px;
     }
 }
 
@@ -1794,9 +1112,7 @@ footer p {
 <body>
 
 
-<!-- =========================================
-     HEADER
-========================================= -->
+<!-- HEADER -->
 
 <header>
 
@@ -1815,25 +1131,12 @@ footer p {
 <nav class="nav-menu"
      aria-label="주요 메뉴">
 
-<a href="#philosophy">
-진료철학
-</a>
-
-<a href="#doctors">
-의료진
-</a>
-
-<a href="#treatments">
-진료분야
-</a>
-
-<a href="#information">
-진료안내
-</a>
-
-<a href="columns.html">
-건강칼럼
-</a>
+<a href="#philosophy">진료철학</a>
+<a href="#doctors">의료진</a>
+<a href="#treatments">진료분야</a>
+<a href="#clinic">한의원 둘러보기</a>
+<a href="columns.html">건강칼럼</a>
+<a href="#information">진료안내</a>
 
 </nav>
 
@@ -1854,25 +1157,12 @@ footer p {
 <div class="mobile-menu"
      id="mobileMenu">
 
-<a href="#philosophy">
-진료철학
-</a>
-
-<a href="#doctors">
-의료진
-</a>
-
-<a href="#treatments">
-진료분야
-</a>
-
-<a href="#information">
-진료안내
-</a>
-
-<a href="columns.html">
-건강칼럼
-</a>
+<a href="#philosophy">진료철학</a>
+<a href="#doctors">의료진</a>
+<a href="#treatments">진료분야</a>
+<a href="#clinic">한의원 둘러보기</a>
+<a href="columns.html">건강칼럼</a>
+<a href="#information">진료안내</a>
 
 </div>
 
@@ -1884,9 +1174,7 @@ footer p {
 <main id="top">
 
 
-<!-- =========================================
-     HERO
-========================================= -->
+<!-- 첫 화면 -->
 
 <section class="hero">
 
@@ -1898,47 +1186,30 @@ footer p {
 <div class="hero-copy">
 
 <div class="hero-kicker">
-
 아산시 배방읍 · 배방역 인근 · 솔솔한의원
-
 </div>
-
 
 <div class="couple-label">
-
 동문수학한 부부한의사가 함께 진료합니다
-
 </div>
 
-
 <h1>
-
 편안하게 이야기하고,<br>
 차분하게 진료합니다.
-
 </h1>
 
-
 <p class="hero-expertise">
-
 한의학박사 · 한방신경정신과 전문의<br>
 이승환 대표원장과 정보은 원장이 함께 진료합니다.
-
 </p>
-
 
 <p class="hero-local">
-
 배방·탕정과 천안아산 인근에서 찾아주시는 분들을 만나고 있습니다.
-
 </p>
 
-
 <p class="hero-description">
-
 증상뿐 아니라 그동안의 과정과 생활을 함께 살펴보며
 현재의 상태에 맞는 진료 방향을 상담합니다.
-
 </p>
 
 
@@ -1946,29 +1217,21 @@ footer p {
 
 <a class="button"
    href="tel:0415343100">
-
 전화하기
-
 </a>
-
 
 <a class="button light"
    href="https://booking.naver.com/booking/13/bizes/250311"
    target="_blank"
    rel="noopener">
-
 네이버 예약
-
 </a>
-
 
 <a class="button light"
    href="http://pf.kakao.com/_xjTGtj"
    target="_blank"
    rel="noopener">
-
 카카오톡 상담
-
 </a>
 
 </div>
@@ -1991,9 +1254,7 @@ footer p {
 </section>
 
 
-<!-- =========================================
-     STORY
-========================================= -->
+<!-- 진료철학 -->
 
 <section id="philosophy"
          class="philosophy">
@@ -2006,17 +1267,13 @@ footer p {
 <div class="philosophy-title">
 
 <div class="section-kicker">
-
 OUR STORY
-
 </div>
 
 <h2>
-
 한 분 한 분을<br>
 소중히 생각하며<br>
 진료합니다.
-
 </h2>
 
 <div class="philosophy-more">
@@ -2038,61 +1295,45 @@ OUR STORY
 <div class="philosophy-text">
 
 <div class="story-title">
-
 동문수학했던 두 한의사가 함께 시작했습니다.
-
 </div>
 
 <p>
-
 저희는 국립한의학전문대학원 1학년 때 만나
 한의학을 함께 공부했습니다.
-
 </p>
 
 <p>
-
 졸업 후 결혼하고 아이를 낳으며 한 가정을 이루었고,
 이승환 원장의 할아버지가 지내셨던
 아산 배방과의 인연을 따라 이곳에 자리를 잡았습니다.
-
 </p>
 
 <p>
-
 그렇게 2019년,
 부부한의사 두 사람이 함께 진료하는
 솔솔한의원의 문을 열었습니다.
-
 </p>
 
 <p>
-
 눈앞의 증상만 보기보다
 그 증상이 나타난 과정과 생활환경,
 몸과 마음의 상태를 함께 살펴보려고 합니다.
-
 </p>
 
 <p>
-
 한 분 한 분이 살아온 시간과
 현재의 고민을 가지고 진료실에 오신다고 생각하며,
 이야기를 충분히 듣고 필요한 진료 방향을 함께 고민합니다.
-
 </p>
 
 <p>
-
 솔솔한의원이라는 이름처럼
 편안하게 이야기하고 차분하게 진료하겠습니다.
-
 </p>
 
 <p class="philosophy-sign">
-
 솔솔한의원 이승환 · 정보은
-
 </p>
 
 </div>
@@ -2104,9 +1345,7 @@ OUR STORY
 </section>
 
 
-<!-- =========================================
-     DOCTORS
-========================================= -->
+<!-- 의료진 -->
 
 <section id="doctors"
          class="doctors">
@@ -2116,22 +1355,16 @@ OUR STORY
 <div class="section-head">
 
 <div class="section-kicker">
-
 DOCTORS
-
 </div>
 
 <h2>
-
 동문수학한 부부한의사가 함께 진료합니다
-
 </h2>
 
 <p>
-
 두 원장의 주요 자격을 먼저 확인하시고,
 자세한 약력과 논문은 필요할 때 펼쳐보실 수 있습니다.
-
 </p>
 
 </div>
@@ -2140,10 +1373,8 @@ DOCTORS
 <div class="doctor-intro">
 
 <strong>
-
 이승환 대표원장은 한의학박사이자
 한방신경정신과 전문의입니다.
-
 </strong>
 
 &nbsp;
@@ -2156,45 +1387,33 @@ DOCTORS
 <div class="doctor-grid">
 
 
-<!-- 이승환 원장 -->
+<!-- 이승환 대표원장 -->
 
 <article class="doctor-card">
 
 <img src="lee.jpg"
      alt="솔솔한의원 이승환 대표원장"
-     class="doctor-photo">
+     class="doctor-photo"
+     loading="lazy">
 
 <div class="doctor-body">
 
-<h3>
-이승환 대표원장
-</h3>
+<h3>이승환 대표원장</h3>
 
 <div class="doctor-badges">
-
-<span class="badge">
-한의학박사
-</span>
-
-<span class="badge">
-한방신경정신과 전문의
-</span>
-
+<span class="badge">한의학박사</span>
+<span class="badge">한방신경정신과 전문의</span>
 </div>
 
 <p class="doctor-summary">
-
 국립한의학전문대학원 졸업<br>
 전 부산대학교 한방병원 전공의
-
 </p>
 
 
 <details>
 
-<summary>
-주요 약력 보기
-</summary>
+<summary>주요 약력 보기</summary>
 
 <ul>
 <li>국립한의학전문대학원 졸업</li>
@@ -2210,9 +1429,7 @@ DOCTORS
 
 <details>
 
-<summary>
-학회 및 전문활동 보기
-</summary>
+<summary>학회 및 전문활동 보기</summary>
 
 <ul>
 <li>대한한의학회 회원</li>
@@ -2232,9 +1449,7 @@ DOCTORS
 
 <details>
 
-<summary>
-논문 및 저서 보기
-</summary>
+<summary>논문 및 저서 보기</summary>
 
 <ul>
 
@@ -2247,117 +1462,68 @@ Journal of Oriental Neuropsychiatry.
 
 <li>
 전립선 비대증에 대한 뜸치료의 효과:
-체계적 문헌 고찰과 메타분석.
-2018.
+체계적 문헌 고찰과 메타분석. 2018.
 </li>
 
 <li>
 학생들의 정신건강을 위한 감정자유기법(EFT):
-체계적 문헌고찰.
-2017.
+체계적 문헌고찰. 2017.
 </li>
 
 <li>
 불면장애에 대한 혈부축어탕의
-체계적 문헌 고찰 및 메타분석 연구.
-2017.
+체계적 문헌 고찰 및 메타분석 연구. 2017.
 </li>
 
-<li>
-인터넷 중독에 대한 침 치료 연구동향.
-2017.
-</li>
+<li>인터넷 중독에 대한 침 치료 연구동향. 2017.</li>
 
 <li>
-침과 이완요법 병행치료에 대한 중의학 연구동향.
-2017.
+침과 이완요법 병행치료에 대한 중의학 연구동향. 2017.
 </li>
 
 <li>
 한방치료와 심리치료를 병행한
-공황장애 환자 치험 1례.
-2017.
+공황장애 환자 치험 1례. 2017.
 </li>
 
-<li>
-혼백에 대한 중의학 연구 동향.
-2017.
-</li>
+<li>혼백에 대한 중의학 연구 동향. 2017.</li>
 
-<li>
-본태성 진전에 대한 중의학 연구동향.
-2017.
-</li>
+<li>본태성 진전에 대한 중의학 연구동향. 2017.</li>
 
-<li>
-신체화 장애에 대한 중의학 연구동향.
-2017.
-</li>
+<li>신체화 장애에 대한 중의학 연구동향. 2017.</li>
 
-<li>
-섭식장애의 치료에 대한 임상연구 동향.
-2016.
-</li>
+<li>섭식장애의 치료에 대한 임상연구 동향. 2016.</li>
 
 <li>
 불안에 대한 운동요법 중 요가, 기공,
-태극권 연구 고찰.
-2016.
+태극권 연구 고찰. 2016.
 </li>
 
 <li>
 국내 한의학 학회지에 게재된
-질적 연구 보고 분석.
-2016.
+질적 연구 보고 분석. 2016.
 </li>
 
-<li>
-마음챙김 명상을 시행한 정충 환자 치험 1례.
-2016.
-</li>
+<li>마음챙김 명상을 시행한 정충 환자 치험 1례. 2016.</li>
 
-<li>
-공황장애 치료에 대한 중의학의 임상연구 동향.
-2015.
-</li>
+<li>공황장애 치료에 대한 중의학의 임상연구 동향. 2015.</li>
 
-<li>
-울증에 대한 고찰.
-2015.
-</li>
+<li>울증에 대한 고찰. 2015.</li>
 
 <li>
 점진적 근육이완법을 시행한
-화병환자 치험 1례.
-2015.
+화병환자 치험 1례. 2015.
 </li>
 
-<li>
-불안장애 치료에 관한 최근 임상연구 동향.
-2012.
-</li>
+<li>불안장애 치료에 관한 최근 임상연구 동향. 2012.</li>
 
-<li>
-꿈에 관한 문헌 연구.
-2011.
-</li>
+<li>꿈에 관한 문헌 연구. 2011.</li>
 
 </ul>
 
 <ul>
-
-<li>
-우울증 한의임상진료지침.
-한국한의학연구원.
-2016. 공저
-</li>
-
-<li>
-불면장애 한의표준임상진료지침.
-한국한의약진흥원.
-2021. 공저
-</li>
-
+<li>우울증 한의임상진료지침. 한국한의학연구원. 2016. 공저</li>
+<li>불면장애 한의표준임상진료지침. 한국한의약진흥원. 2021. 공저</li>
 </ul>
 
 </details>
@@ -2373,39 +1539,27 @@ Journal of Oriental Neuropsychiatry.
 
 <img src="jung.jpg"
      alt="솔솔한의원 정보은 원장"
-     class="doctor-photo">
+     class="doctor-photo"
+     loading="lazy">
 
 <div class="doctor-body">
 
-<h3>
-정보은 원장
-</h3>
+<h3>정보은 원장</h3>
 
 <div class="doctor-badges">
-
-<span class="badge">
-한의학석사
-</span>
-
-<span class="badge">
-한의사 · 수의사
-</span>
-
+<span class="badge">한의학석사</span>
+<span class="badge">한의사 · 수의사</span>
 </div>
 
 <p class="doctor-summary">
-
 국립한의학전문대학원 졸업<br>
 부산대학교 한의학석사
-
 </p>
 
 
 <details>
 
-<summary>
-주요 약력 보기
-</summary>
+<summary>주요 약력 보기</summary>
 
 <ul>
 <li>국립한의학전문대학원 졸업</li>
@@ -2421,9 +1575,7 @@ Journal of Oriental Neuropsychiatry.
 
 <details>
 
-<summary>
-학회 및 전문활동 보기
-</summary>
+<summary>학회 및 전문활동 보기</summary>
 
 <ul>
 <li>대한한의학회 회원</li>
@@ -2438,9 +1590,7 @@ Journal of Oriental Neuropsychiatry.
 
 <details>
 
-<summary>
-논문 보기
-</summary>
+<summary>논문 보기</summary>
 
 <ul>
 
@@ -2454,20 +1604,15 @@ Food and Chemical Toxicology.
 
 <li>
 학생들의 정신건강을 위한 감정자유기법(EFT):
-체계적 문헌고찰.
-2017.
+체계적 문헌고찰. 2017.
 </li>
 
-<li>
-인터넷 중독에 대한 침 치료 연구동향.
-2017.
-</li>
+<li>인터넷 중독에 대한 침 치료 연구동향. 2017.</li>
 
 <li>
 반복적인 전침 처치의 척수 교세포 활성 억제를 통한
 신경병증성 통증 억제 효과.
-Korean Journal of Acupuncture.
-2013.
+Korean Journal of Acupuncture. 2013.
 </li>
 
 </ul>
@@ -2478,6 +1623,7 @@ Korean Journal of Acupuncture.
 
 </article>
 
+
 </div>
 
 </div>
@@ -2485,9 +1631,7 @@ Korean Journal of Acupuncture.
 </section>
 
 
-<!-- =========================================
-     TREATMENTS
-========================================= -->
+<!-- 주요 진료분야 -->
 
 <section id="treatments"
          class="treatments">
@@ -2500,9 +1644,7 @@ Korean Journal of Acupuncture.
 CLINIC
 </div>
 
-<h2>
-주요 진료분야
-</h2>
+<h2>주요 진료분야</h2>
 
 <p>
 각 진료분야의 상세 내용을 확인하실 수 있습니다.
@@ -2515,225 +1657,152 @@ CLINIC
 
 
 <a href="pain-clinic.html"
-   class="treatment-link"
-   aria-label="통증클리닉 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">01</div>
-
 <h3>통증 클리닉</h3>
-
 <p>
 목·허리 통증, 디스크·협착 관련 불편,
 두통·어지럼, 각종 염좌 등을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
 
 
 <a href="traffic-accident.html"
-   class="treatment-link"
-   aria-label="자동차사고 후유증 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">02</div>
-
 <h3>자동차사고 후유증</h3>
-
 <p>
-교통사고 이후 나타날 수 있는
-목·허리 통증뿐 아니라 두통, 어지럼,
-수면 변화와 긴장 등 다양한 불편을 살펴봅니다.
+교통사고 이후 나타날 수 있는 목·허리 통증뿐 아니라
+두통, 어지럼, 수면 변화와 긴장 등 다양한 불편을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
 
 
 <a href="mind-clinic.html"
-   class="treatment-link"
-   aria-label="심신클리닉 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">03</div>
-
 <h3>심신 클리닉</h3>
-
 <p>
 불면, 불안, 공황 증상, 화병, 우울감과
 함께 나타날 수 있는 여러 신체 증상을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
 
 
 <a href="digestive-clinic.html"
-   class="treatment-link"
-   aria-label="소화기클리닉 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">04</div>
-
 <h3>소화기 클리닉</h3>
-
 <p>
 기능성 소화불량, 식후 더부룩함,
 속쓰림, 복부팽만, 매핵기,
 과민성장증후군 등 소화기 불편을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
 
 
 <a href="allergy-clinic.html"
-   class="treatment-link"
-   aria-label="알레르기클리닉 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">05</div>
-
 <h3>알레르기 클리닉</h3>
-
 <p>
 알레르기 비염, 반복되는 콧물·재채기·코막힘,
 감기 등 호흡기 증상을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
 
 
 <a href="constitution-clinic.html"
-   class="treatment-link"
-   aria-label="체질클리닉 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">06</div>
-
 <h3>체질 클리닉</h3>
-
 <p>
-사상체질의 관점에서
-체질 가능성과 소화·수면·땀·열감,
-음식 반응 등을 함께 살펴봅니다.
+사상체질의 관점에서 체질 가능성과
+소화·수면·땀·열감, 음식 반응 등을 함께 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
 
 
 <a href="pediatric-clinic.html"
-   class="treatment-link"
-   aria-label="소아클리닉 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">07</div>
-
 <h3>소아 클리닉</h3>
-
 <p>
 소아 성장, 식욕부진, 소화불량,
 잦은 감기·비염, 수면 등
 아이의 건강 상태를 함께 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
 
 
 <a href="women-clinic.html"
-   class="treatment-link"
-   aria-label="여성클리닉 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">08</div>
-
 <h3>여성 클리닉</h3>
-
 <p>
 산후보약, 출산 후 허리·골반 불편,
 모유수유 중 한약 상담,
 생리통 등 여성 건강을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
 
 
 <a href="herbal-tonic-clinic.html"
-   class="treatment-link"
-   aria-label="보약클리닉 자세히 보기">
+   class="treatment-link">
 
 <article class="treatment-card">
-
 <div class="treatment-number">09</div>
-
 <h3>보약 클리닉</h3>
-
 <p>
 만성피로, 기력저하, 식욕과 수면,
 스트레스 등 현재 상태를 확인해
 한약·보약 처방을 상담합니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
 
 </a>
+
 
 </div>
 
@@ -2742,9 +1811,251 @@ CLINIC
 </section>
 
 
-<!-- =========================================
-     INFORMATION
-========================================= -->
+<!-- 한의원 공간과 진료 모습 -->
+
+<section id="clinic"
+         class="clinic-gallery">
+
+<div class="container">
+
+<div class="section-head gallery-intro">
+
+<div class="section-kicker">
+SOL SOL CLINIC
+</div>
+
+<h2>
+솔솔한의원을 소개합니다
+</h2>
+
+<p>
+진료실에서 이야기를 나누고 몸의 상태를 살펴보는 과정부터
+한의원에서 이루어지는 여러 진료의 모습을 사진으로 소개합니다.
+</p>
+
+</div>
+
+
+<!-- 큰 사진 2장 -->
+
+<div class="gallery-feature">
+
+
+<div class="gallery-main">
+
+<img src="solsol_clinic_entrance.jpg"
+     alt="아산시 배방읍 솔솔한의원 입구와 내부 공간"
+     loading="lazy">
+
+<div class="gallery-caption">
+<strong>솔솔한의원</strong>
+<span>
+아산시 배방읍 모산로 91, 1층 · 배방역 인근
+</span>
+</div>
+
+</div>
+
+
+<div class="gallery-side">
+
+<img src="solsol_bodycheck.jpg"
+     alt="솔솔한의원에서 몸 상태를 살펴보는 모습"
+     loading="lazy">
+
+<div class="gallery-caption">
+<strong>상태를 함께 살펴봅니다</strong>
+<span>
+현재의 불편과 생활 속 변화를 함께 확인하며 상담합니다.
+</span>
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- 진료 사진 -->
+
+<div class="gallery-grid">
+
+
+<article class="gallery-card">
+
+<img src="solsol_chuna.jpg"
+     alt="솔솔한의원 추나 진료 모습"
+     loading="lazy">
+
+<div class="gallery-card-body">
+
+<h3>추나 진료</h3>
+
+<p>
+근골격계의 상태와 움직임을 살펴보고
+필요한 진료 방향을 상담합니다.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="gallery-card">
+
+<img src="solsol_herbal_medicine.jpg"
+     alt="솔솔한의원 한약 상담과 한약"
+     loading="lazy">
+
+<div class="gallery-card-body">
+
+<h3>한약 상담</h3>
+
+<p>
+현재의 증상과 생활습관, 전반적인 몸 상태 등을
+확인하며 한약 처방에 대해 상담합니다.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="gallery-card">
+
+<img src="solsol_herbal_tradition.jpg"
+     alt="한의학과 한약재를 보여주는 모습"
+     loading="lazy">
+
+<div class="gallery-card-body">
+
+<h3>한의학적 진료</h3>
+
+<p>
+환자의 이야기를 듣고 여러 상태를 종합적으로
+살펴보는 한의학적 진료를 지향합니다.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="gallery-card">
+
+<img src="solsol_herb.jpg"
+     alt="솔솔한의원 한약재"
+     loading="lazy">
+
+<div class="gallery-card-body">
+
+<h3>한약과 한약재</h3>
+
+<p>
+한약 처방이 필요한 경우에는
+개인의 현재 상태를 살펴본 뒤 상담합니다.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="gallery-card">
+
+<img src="solsol_pharmacoacupuncture.jpg"
+     alt="솔솔한의원 약침 진료 관련 모습"
+     loading="lazy">
+
+<div class="gallery-card-body">
+
+<h3>침 · 약침 진료</h3>
+
+<p>
+증상과 상태에 따라 침과 약침 등
+한의 진료 방법을 상담할 수 있습니다.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="gallery-card">
+
+<img src="solsol_physical.jpg"
+     alt="솔솔한의원 진료 공간과 물리치료 관련 모습"
+     loading="lazy">
+
+<div class="gallery-card-body">
+
+<h3>편안한 진료 공간</h3>
+
+<p>
+진료 과정에서 필요한 처치와 휴식을
+편안하게 받으실 수 있도록 공간을 마련하고 있습니다.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- 건강칼럼 -->
+
+<section id="health"
+         class="health">
+
+<div class="container">
+
+<div class="health-card">
+
+<div class="section-kicker">
+HEALTH INFORMATION
+</div>
+
+<h2>
+솔솔한의원 건강칼럼
+</h2>
+
+<p>
+통증, 자동차사고 후 불편, 수면과 마음건강,
+소화기, 알레르기, 체질, 소아, 여성건강 등
+진료실에서 자주 접하는 건강 이야기를 정리합니다.
+</p>
+
+
+<div class="health-buttons">
+
+<a class="button soft"
+   href="columns.html">
+건강칼럼 바로가기 →
+</a>
+
+<a class="button light"
+   href="https://blog.naver.com/solsolclinic3100"
+   target="_blank"
+   rel="noopener">
+네이버 블로그 →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- 진료안내 -->
 
 <section id="information"
          class="information">
@@ -2762,7 +2073,7 @@ INFORMATION
 </h2>
 
 <p>
-아산시 배방읍 배방역 인근에 위치하고 있습니다.
+솔솔한의원은 아산시 배방읍 배방역 인근에 위치하고 있습니다.
 방문 전 진료시간과 위치를 확인해주세요.
 </p>
 
@@ -2774,24 +2085,17 @@ INFORMATION
 
 <div class="info-card">
 
-<h3>
-진료시간
-</h3>
+<h3>진료시간</h3>
+
 
 <div class="info-row">
 
-<div class="info-label">
-평일
-</div>
+<div class="info-label">평일</div>
 
 <div class="info-text">
-
 09:00 ~ 19:30
-
 <br>
-
 점심시간 13:00 ~ 14:00
-
 </div>
 
 </div>
@@ -2799,18 +2103,12 @@ INFORMATION
 
 <div class="info-row">
 
-<div class="info-label">
-토요일
-</div>
+<div class="info-label">토요일</div>
 
 <div class="info-text">
-
 09:00 ~ 13:00
-
 <br>
-
 점심시간 없음
-
 </div>
 
 </div>
@@ -2818,9 +2116,7 @@ INFORMATION
 
 <div class="info-row">
 
-<div class="info-label">
-휴진
-</div>
+<div class="info-label">휴진</div>
 
 <div class="info-text">
 일요일 및 공휴일
@@ -2831,16 +2127,12 @@ INFORMATION
 
 <div class="info-row">
 
-<div class="info-label">
-전화
-</div>
+<div class="info-label">전화</div>
 
 <div class="info-text">
-
 <a href="tel:0415343100">
 041-534-3100
 </a>
-
 </div>
 
 </div>
@@ -2850,24 +2142,17 @@ INFORMATION
 
 <div class="info-card">
 
-<h3>
-오시는 길
-</h3>
+<h3>오시는 길</h3>
+
 
 <div class="info-row">
 
-<div class="info-label">
-주소
-</div>
+<div class="info-label">주소</div>
 
 <div class="info-text">
-
 충청남도 아산시 배방읍
-
 <br>
-
 모산로 91, 1층
-
 </div>
 
 </div>
@@ -2875,15 +2160,11 @@ INFORMATION
 
 <div class="info-row">
 
-<div class="info-label">
-위치
-</div>
+<div class="info-label">위치</div>
 
 <div class="info-text">
-
 아산시 배방읍 · 배방역 인근<br>
 배방·탕정과 천안아산 인근에서 찾아오실 수 있습니다.
-
 </div>
 
 </div>
@@ -2891,16 +2172,12 @@ INFORMATION
 
 <div class="info-row">
 
-<div class="info-label">
-전화
-</div>
+<div class="info-label">전화</div>
 
 <div class="info-text">
-
 <a href="tel:0415343100">
 041-534-3100
 </a>
-
 </div>
 
 </div>
@@ -2921,71 +2198,18 @@ INFORMATION
 
 </div>
 
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================
-     HEALTH
-========================================= -->
-
-<section id="health"
-         class="health">
-
-<div class="container">
-
-<div class="health-card">
-
-<div class="section-kicker">
-HEALTH INFORMATION
-</div>
-
-<h2>
-솔솔한의원 건강정보
-</h2>
-
-<p>
-통증, 자동차사고 후 불편, 불안·불면·공황 증상,
-소화기, 소아, 사상체질 등 다양한 건강정보를
-솔솔한의원 건강칼럼과 네이버 블로그에서 확인하실 수 있습니다.
-</p>
-
-
-<div class="health-buttons">
-
-<a class="button soft"
-   href="columns.html">
-
-건강칼럼 바로가기 →
-
-</a>
-
-<a class="button light"
-   href="https://blog.naver.com/solsolclinic3100"
-   target="_blank"
-   rel="noopener">
-
-네이버 블로그 →
-
-</a>
-
-</div>
 
 </div>
 
 </div>
 
 </section>
+
 
 </main>
 
 
-<!-- =========================================
-     FOOTER
-========================================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -2996,9 +2220,7 @@ HEALTH INFORMATION
      class="footer-logo">
 
 <p>
-<strong>
-솔솔한의원
-</strong>
+<strong>솔솔한의원</strong>
 </p>
 
 <p>
@@ -3033,10 +2255,9 @@ HEALTH INFORMATION
 
 </div>
 
+
 <p style="margin-top:23px;">
-
 © Solsol Korean Medicine Clinic. All rights reserved.
-
 </p>
 
 </div>
@@ -3044,9 +2265,7 @@ HEALTH INFORMATION
 </footer>
 
 
-<!-- =========================================
-     MOBILE MENU
-========================================= -->
+<!-- MOBILE MENU -->
 
 <script>
 
@@ -3081,7 +2300,6 @@ menuButton.addEventListener(
 mobileMenu
     .querySelectorAll("a")
     .forEach(
-
         function(link) {
 
             link.addEventListener(
@@ -3106,7 +2324,6 @@ mobileMenu
             );
 
         }
-
     );
 
 
@@ -3140,6 +2357,6 @@ document.addEventListener(
 
 </script>
 
-</body>
 
+</body>
 </html>
