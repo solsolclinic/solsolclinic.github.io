@@ -2,10 +2,29 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- =========================================
+       메인 홈페이지
+  ========================================== -->
+
   <url>
     <loc>https://solsolclinic.github.io/</loc>
     <priority>1.0</priority>
   </url>
+
+
+  <!-- =========================================
+       건강칼럼 모음
+  ========================================== -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/columns.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+
+  <!-- =========================================
+       주요 진료분야 9개
+  ========================================== -->
 
   <url>
     <loc>https://solsolclinic.github.io/pain-clinic.html</loc>
@@ -50,6 +69,82 @@
   <url>
     <loc>https://solsolclinic.github.io/herbal-tonic-clinic.html</loc>
     <priority>0.8</priority>
+  </url>
+
+
+  <!-- =========================================
+       건강칼럼 9개
+  ========================================== -->
+
+  <!-- 01 목 통증 · 베개 높이 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/pain-pillow-height.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- 02 교통사고 후 뒤늦은 통증 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/traffic-accident-delayed-pain.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- 03 불면 · 잠이 안 올 때 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/insomnia-stay-in-bed.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- 04 검사 정상인데 소화불량 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/digestive-discomfort-normal-test.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- 05 아침 알레르기 비염 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/allergic-rhinitis-morning.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- 06 사상체질 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/constitution-test.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- 07 소아 성장과 수면 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/child-sleep-growth.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- 08 산후 회복 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/postpartum-recovery.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- 09 피로와 보약 -->
+
+  <url>
+    <loc>https://solsolclinic.github.io/fatigue-herbal-medicine.html</loc>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
