@@ -2,6 +2,7 @@
 <html lang="ko">
 
 <head>
+
 <meta charset="UTF-8">
 
 <meta name="viewport"
@@ -12,8 +13,11 @@
 <meta name="description"
       content="아산시 배방읍 배방역 인근 솔솔한의원입니다. 배방·탕정과 천안아산 인근에서 찾아주시는 분들을 만나고 있으며, 동문수학한 부부한의사가 함께 진료합니다.">
 
-<meta name="robots" content="index, follow">
-<meta name="author" content="솔솔한의원">
+<meta name="robots"
+      content="index, follow">
+
+<meta name="author"
+      content="솔솔한의원">
 
 <link rel="canonical"
       href="https://solsolclinic.github.io/">
@@ -26,11 +30,18 @@
       content="RReSG-kzHWym8EcIkMieVUCDnjPiA39rvatiNnC0_8g">
 
 
-<!-- SNS / 카카오톡 링크 공유 -->
+<!-- =========================================
+     SNS
+========================================= -->
 
-<meta property="og:locale" content="ko_KR">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="솔솔한의원">
+<meta property="og:locale"
+      content="ko_KR">
+
+<meta property="og:type"
+      content="website">
+
+<meta property="og:site_name"
+      content="솔솔한의원">
 
 <meta property="og:title"
       content="솔솔한의원 | 아산 배방·탕정, 배방역 인근 한의원">
@@ -66,7 +77,9 @@
       content="https://solsolclinic.github.io/clinic.jpg">
 
 
-<!-- 검색엔진용 구조화 데이터 -->
+<!-- =========================================
+     구조화 데이터
+========================================= -->
 
 <script type="application/ld+json">
 {
@@ -158,16 +171,24 @@
     --green-main: #6ca67b;
     --green-soft: #eef6f0;
     --green-pale: #f7faf7;
+
     --cream: #fbfaf6;
     --white: #ffffff;
+
     --text: #303530;
     --sub: #687169;
+
     --line: #e1e9e3;
-    --shadow: 0 14px 38px rgba(55,85,62,.07);
+
+    --shadow:
+        0 14px 38px
+        rgba(55,85,62,.07);
 }
 
 
-/* BASIC */
+/* =========================================
+   BASIC
+========================================= */
 
 * {
     box-sizing: border-box;
@@ -179,15 +200,20 @@ html {
 
 body {
     margin: 0;
+
     font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Noto Sans KR",
         "Malgun Gothic",
         sans-serif;
+
     color: var(--text);
+
     background: var(--cream);
+
     line-height: 1.75;
+
     word-break: keep-all;
 }
 
@@ -210,41 +236,66 @@ button {
 }
 
 .container {
-    width: min(1120px, calc(100% - 40px));
+    width:
+        min(
+            1120px,
+            calc(100% - 40px)
+        );
+
     margin: 0 auto;
 }
 
 
-/* HEADER */
+/* =========================================
+   HEADER
+========================================= */
 
 header {
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
-    background: rgba(255,255,255,.97);
-    border-bottom: 1px solid var(--line);
-    backdrop-filter: blur(10px);
+
+    background:
+        rgba(255,255,255,.97);
+
+    border-bottom:
+        1px solid var(--line);
+
+    backdrop-filter:
+        blur(10px);
 }
 
 .nav {
     min-height: 74px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 30px;
+
     position: relative;
 }
 
 .brand img {
     width: 140px;
+
     height: auto;
 }
 
 .nav-menu {
     display: flex;
+
     align-items: center;
-    gap: 23px;
+
+    gap: 21px;
+
     font-size: 14px;
+
     font-weight: 700;
 }
 
@@ -253,44 +304,85 @@ header {
 }
 
 .nav-menu a:hover {
-    color: var(--green-deep);
+    color:
+        var(--green-deep);
 }
 
 
-/* MOBILE MENU */
+/* =========================================
+   MOBILE MENU
+========================================= */
 
 .mobile-menu-button {
     display: none;
+
     width: 44px;
+
     height: 44px;
+
     padding: 0;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: white;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:
+        12px;
+
+    background:
+        white;
+
+    cursor:
+        pointer;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    flex-direction:
+        column;
+
     gap: 5px;
 }
 
 .mobile-menu-button span {
     width: 20px;
+
     height: 2px;
-    background: var(--text);
-    border-radius: 2px;
+
+    background:
+        var(--text);
+
+    border-radius:
+        2px;
 }
 
 .mobile-menu {
     display: none;
+
     position: absolute;
-    top: calc(100% + 1px);
+
+    top:
+        calc(100% + 1px);
+
     left: 0;
+
     right: 0;
-    background: white;
-    padding: 8px 20px 15px;
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 14px 30px rgba(45,70,50,.09);
+
+    background:
+        white;
+
+    padding:
+        8px 20px
+        15px;
+
+    border-bottom:
+        1px solid var(--line);
+
+    box-shadow:
+        0 14px 30px
+        rgba(45,70,50,.09);
 }
 
 .mobile-menu.open {
@@ -299,10 +391,18 @@ header {
 
 .mobile-menu a {
     display: block;
-    padding: 13px 8px;
-    border-bottom: 1px solid var(--line);
-    font-size: 15px;
-    font-weight: 700;
+
+    padding:
+        13px 8px;
+
+    border-bottom:
+        1px solid var(--line);
+
+    font-size:
+        15px;
+
+    font-weight:
+        700;
 }
 
 .mobile-menu a:last-child {
@@ -310,45 +410,90 @@ header {
 }
 
 
-/* BUTTON */
+/* =========================================
+   BUTTON
+========================================= */
 
 .button {
     min-height: 48px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 21px;
-    border-radius: 999px;
-    background: var(--green-deep);
-    color: white;
-    border: 1px solid var(--green-deep);
-    font-size: 14px;
-    font-weight: 700;
-    transition: .2s;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        0 21px;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--green-deep);
+
+    color:
+        white;
+
+    border:
+        1px solid
+        var(--green-deep);
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+
+    transition:
+        .2s;
 }
 
 .button.light {
-    background: white;
-    color: var(--text);
-    border: 1px solid var(--line);
+    background:
+        white;
+
+    color:
+        var(--text);
+
+    border:
+        1px solid
+        var(--line);
 }
 
 .button.soft {
-    background: var(--green-soft);
-    color: var(--green-deep);
-    border: 1px solid #d8e7db;
+    background:
+        var(--green-soft);
+
+    color:
+        var(--green-deep);
+
+    border:
+        1px solid
+        #d8e7db;
 }
 
 .button:hover {
-    transform: translateY(-2px);
-    opacity: .9;
+    transform:
+        translateY(-2px);
+
+    opacity:
+        .9;
 }
 
 
-/* HERO */
+/* =========================================
+   FIRST SCREEN
+========================================= */
 
 .hero {
-    padding: 48px 0 65px;
+    padding:
+        48px 0
+        65px;
+
     background:
         linear-gradient(
             135deg,
@@ -359,899 +504,1666 @@ header {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: .95fr 1.05fr;
-    min-height: 545px;
-    background: white;
-    border: 1px solid #e5ece7;
-    border-radius: 28px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
+
+    grid-template-columns:
+        .95fr
+        1.05fr;
+
+    min-height:
+        545px;
+
+    background:
+        white;
+
+    border:
+        1px solid #e5ece7;
+
+    border-radius:
+        28px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        var(--shadow);
 }
 
 .hero-copy {
-    padding: 52px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding:
+        52px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
 }
 
 .hero-kicker {
-    color: var(--green-deep);
-    font-size: 14px;
-    font-weight: 800;
-    margin-bottom: 11px;
+    color:
+        var(--green-deep);
+
+    font-size:
+        14px;
+
+    font-weight:
+        800;
+
+    margin-bottom:
+        11px;
 }
 
 .couple-label {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    margin-bottom: 20px;
-    padding: 7px 13px;
-    border-radius: 999px;
-    background: var(--green-soft);
-    color: var(--green-deep);
-    font-size: 13px;
-    font-weight: 800;
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    width:
+        fit-content;
+
+    margin-bottom:
+        20px;
+
+    padding:
+        7px 13px;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--green-soft);
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
 }
 
 .hero h1 {
-    margin: 0 0 21px;
-    font-size: clamp(38px,5vw,57px);
-    line-height: 1.28;
-    letter-spacing: -3px;
+    margin:
+        0 0
+        21px;
+
+    font-size:
+        clamp(
+            38px,
+            5vw,
+            57px
+        );
+
+    line-height:
+        1.28;
+
+    letter-spacing:
+        -3px;
 }
 
 .hero-expertise {
-    margin: 0 0 14px;
-    color: var(--green-deep);
-    font-size: 17px;
-    font-weight: 750;
-    line-height: 1.7;
+    margin:
+        0 0
+        14px;
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        17px;
+
+    font-weight:
+        750;
+
+    line-height:
+        1.7;
 }
 
 .hero-local {
-    margin: 0 0 11px;
-    color: #4f5d53;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.75;
+    margin:
+        0 0
+        11px;
+
+    color:
+        #4f5d53;
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+
+    line-height:
+        1.75;
 }
 
 .hero-description {
     margin: 0;
-    color: var(--sub);
-    font-size: 15px;
-    line-height: 1.85;
+
+    color:
+        var(--sub);
+
+    font-size:
+        15px;
+
+    line-height:
+        1.85;
 }
 
 .hero-buttons {
     display: flex;
+
     gap: 9px;
+
     flex-wrap: wrap;
-    margin-top: 29px;
+
+    margin-top:
+        29px;
 }
 
 .hero-image {
-    min-height: 545px;
-    position: relative;
-    overflow: hidden;
+    min-height:
+        545px;
+
+    overflow:
+        hidden;
 }
 
 .hero-image img {
-    width: 100%;
-    height: 100%;
-    min-height: 545px;
-    object-fit: cover;
-    object-position: center;
+    width:
+        100%;
+
+    height:
+        100%;
+
+    min-height:
+        545px;
+
+    object-fit:
+        cover;
+
+    object-position:
+        center;
 }
 
 
-/* COMMON */
+/* =========================================
+   COMMON
+========================================= */
 
 section {
-    padding: 80px 0;
-    scroll-margin-top: 85px;
+    padding:
+        80px 0;
+
+    scroll-margin-top:
+        85px;
 }
 
 .section-head {
-    margin-bottom: 34px;
+    margin-bottom:
+        34px;
 }
 
 .section-kicker {
-    color: var(--green-deep);
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: .08em;
-    margin-bottom: 6px;
+    color:
+        var(--green-deep);
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        .08em;
+
+    margin-bottom:
+        6px;
 }
 
 .section-head h2 {
-    margin: 0 0 9px;
-    font-size: clamp(29px,4vw,39px);
-    line-height: 1.35;
-    letter-spacing: -2px;
+    margin:
+        0 0
+        9px;
+
+    font-size:
+        clamp(
+            29px,
+            4vw,
+            39px
+        );
+
+    line-height:
+        1.35;
+
+    letter-spacing:
+        -2px;
 }
 
 .section-head p {
     margin: 0;
-    color: var(--sub);
+
+    color:
+        var(--sub);
 }
 
 
-/* PHILOSOPHY */
+/* =========================================
+   PHILOSOPHY
+========================================= */
 
 .philosophy {
-    background: white;
+    background:
+        white;
 }
 
 .philosophy-card {
-    display: grid;
-    grid-template-columns: .78fr 1.22fr;
-    gap: 45px;
-    align-items: center;
-    padding: 48px;
+    display:
+        grid;
+
+    grid-template-columns:
+        .78fr
+        1.22fr;
+
+    gap:
+        45px;
+
+    align-items:
+        center;
+
+    padding:
+        48px;
+
     background:
         linear-gradient(
             135deg,
             #f7faf7,
             #edf5ef
         );
-    border: 1px solid #deeadf;
-    border-radius: 25px;
+
+    border:
+        1px solid
+        #deeadf;
+
+    border-radius:
+        25px;
 }
 
 .philosophy-title h2 {
-    margin: 8px 0 17px;
-    font-size: clamp(30px,4vw,42px);
-    line-height: 1.43;
-    letter-spacing: -2px;
+    margin:
+        8px 0
+        17px;
+
+    font-size:
+        clamp(
+            30px,
+            4vw,
+            42px
+        );
+
+    line-height:
+        1.43;
+
+    letter-spacing:
+        -2px;
 }
 
 .story-title {
-    margin: 0 0 12px;
-    color: var(--green-deep);
-    font-size: 17px;
-    font-weight: 800;
+    margin:
+        0 0
+        12px;
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        17px;
+
+    font-weight:
+        800;
 }
 
 .philosophy-text p {
-    margin: 0 0 14px;
-    color: #525b54;
-    font-size: 15px;
+    margin:
+        0 0
+        14px;
+
+    color:
+        #525b54;
+
+    font-size:
+        15px;
 }
 
 .philosophy-sign {
-    margin-top: 23px !important;
-    color: var(--text) !important;
-    font-weight: 700;
+    margin-top:
+        23px !important;
+
+    color:
+        var(--text) !important;
+
+    font-weight:
+        700;
 }
 
 .philosophy-more {
-    margin-top: 21px;
+    margin-top:
+        21px;
 }
 
 
-/* DOCTORS */
+/* =========================================
+   DOCTORS
+========================================= */
 
 .doctors {
-    background: var(--cream);
+    background:
+        var(--cream);
 }
 
 .doctor-intro {
-    margin-bottom: 27px;
-    padding: 22px 26px;
-    border-radius: 17px;
-    background: var(--green-soft);
-    color: #536057;
-    border: 1px solid #dce8df;
+    margin-bottom:
+        27px;
+
+    padding:
+        22px 26px;
+
+    border-radius:
+        17px;
+
+    background:
+        var(--green-soft);
+
+    color:
+        #536057;
+
+    border:
+        1px solid
+        #dce8df;
 }
 
 .doctor-intro strong {
-    color: var(--green-deep);
+    color:
+        var(--green-deep);
 }
 
 .doctor-grid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 22px;
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        22px;
 }
 
 .doctor-card {
-    background: white;
-    border: 1px solid var(--line);
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 7px 22px rgba(70,80,72,.03);
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        22px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        0 7px 22px
+        rgba(70,80,72,.03);
 }
 
 .doctor-photo {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position: top center;
-    background: #eee;
+    width:
+        100%;
+
+    height:
+        400px;
+
+    object-fit:
+        cover;
+
+    object-position:
+        top center;
+
+    background:
+        #eee;
 }
 
 .doctor-body {
-    padding: 29px;
+    padding:
+        29px;
 }
 
 .doctor-body h3 {
     margin: 0;
-    font-size: 26px;
-    letter-spacing: -1px;
+
+    font-size:
+        26px;
+
+    letter-spacing:
+        -1px;
 }
 
 .doctor-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin: 11px 0 18px;
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        7px;
+
+    margin:
+        11px 0
+        18px;
 }
 
 .badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 11px;
-    border-radius: 999px;
-    background: var(--green-soft);
-    border: 1px solid #d4e5d8;
-    color: var(--green-deep);
-    font-size: 13px;
-    font-weight: 800;
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    padding:
+        6px 11px;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--green-soft);
+
+    border:
+        1px solid
+        #d4e5d8;
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
 }
 
 .doctor-summary {
-    margin: 0 0 19px;
-    color: var(--sub);
-    font-size: 14px;
-    line-height: 1.8;
+    margin:
+        0 0
+        19px;
+
+    color:
+        var(--sub);
+
+    font-size:
+        14px;
+
+    line-height:
+        1.8;
 }
 
 .doctor-card details {
-    margin-top: 9px;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: #fafcf9;
-    overflow: hidden;
+    margin-top:
+        9px;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        12px;
+
+    background:
+        #fafcf9;
+
+    overflow:
+        hidden;
 }
 
 .doctor-card summary {
-    padding: 13px 15px;
-    cursor: pointer;
-    color: var(--green-deep);
-    font-weight: 700;
-    font-size: 14px;
-    list-style: none;
+    padding:
+        13px 15px;
+
+    cursor:
+        pointer;
+
+    color:
+        var(--green-deep);
+
+    font-weight:
+        700;
+
+    font-size:
+        14px;
+
+    list-style:
+        none;
 }
 
 .doctor-card summary::-webkit-details-marker {
-    display: none;
+    display:
+        none;
 }
 
 .doctor-card summary::after {
-    content: "＋";
-    float: right;
-    font-weight: 400;
+    content:
+        "＋";
+
+    float:
+        right;
 }
 
 .doctor-card details[open] summary::after {
-    content: "－";
+    content:
+        "－";
 }
 
 .doctor-card details ul {
-    margin: 0;
-    padding: 0 34px 18px;
-    color: #535a55;
-    font-size: 13.5px;
+    margin:
+        0;
+
+    padding:
+        0 34px
+        18px;
+
+    color:
+        #535a55;
+
+    font-size:
+        13.5px;
 }
 
 .doctor-card details li {
-    margin: 5px 0;
+    margin:
+        5px 0;
 }
 
 
-/* INFORMATION */
-
-.information {
-    background: white;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 18px;
-}
-
-.info-card {
-    padding: 31px;
-    background: var(--green-pale);
-    border: 1px solid var(--line);
-    border-radius: 21px;
-}
-
-.info-card h3 {
-    margin: 0 0 18px;
-    font-size: 21px;
-}
-
-.info-row {
-    display: flex;
-    gap: 20px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--line);
-}
-
-.info-row:last-of-type {
-    border-bottom: none;
-}
-
-.info-label {
-    width: 95px;
-    flex: 0 0 auto;
-    font-weight: 700;
-}
-
-.info-text {
-    color: var(--sub);
-}
-
-.map-area {
-    margin-top: 22px;
-    padding-top: 21px;
-    border-top: 1px solid var(--line);
-}
-
-
-/* TREATMENTS */
+/* =========================================
+   TREATMENTS
+========================================= */
 
 .treatments {
-    background: var(--green-soft);
+    background:
+        var(--green-soft);
 }
 
 .treatment-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 14px;
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        14px;
 }
 
 .treatment-link {
-    display: block;
-    height: 100%;
+    display:
+        block;
+
+    height:
+        100%;
 }
 
 .treatment-card {
-    height: 100%;
-    padding: 26px;
-    background: rgba(255,255,255,.96);
-    border: 1px solid #dce7de;
-    border-radius: 18px;
-    min-height: 190px;
-    transition: .2s;
+    height:
+        100%;
+
+    padding:
+        26px;
+
+    background:
+        rgba(255,255,255,.96);
+
+    border:
+        1px solid
+        #dce7de;
+
+    border-radius:
+        18px;
+
+    min-height:
+        190px;
+
+    transition:
+        .2s;
 }
 
 .treatment-link:hover .treatment-card {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        var(--shadow);
 }
 
 .treatment-number {
-    color: var(--green-deep);
-    font-size: 13px;
-    font-weight: 800;
+    color:
+        var(--green-deep);
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
 }
 
 .treatment-card h3 {
-    margin: 7px 0 9px;
-    font-size: 20px;
-    letter-spacing: -.5px;
+    margin:
+        7px 0
+        9px;
+
+    font-size:
+        20px;
+
+    letter-spacing:
+        -.5px;
 }
 
 .treatment-card p {
     margin: 0;
-    color: var(--sub);
-    font-size: 14px;
+
+    color:
+        var(--sub);
+
+    font-size:
+        14px;
 }
 
 .more-link {
-    margin-top: 15px;
-    color: var(--green-deep);
-    font-size: 13px;
-    font-weight: 800;
+    margin-top:
+        15px;
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
 }
 
 
-/* CLINIC PHOTO SLIDER */
+/* =========================================
+   PHOTO SLIDER
+========================================= */
 
 .clinic-gallery {
-    background: white;
+    background:
+        white;
 }
 
 .gallery-intro {
-    max-width: 720px;
+    max-width:
+        760px;
 }
 
 .gallery-slider-wrap {
-    position: relative;
-    margin-top: 32px;
+    position:
+        relative;
+
+    margin-top:
+        31px;
 }
 
 .gallery-slider {
-    display: flex;
-    gap: 18px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    padding: 4px 2px 16px;
+    display:
+        flex;
+
+    gap:
+        18px;
+
+    overflow-x:
+        auto;
+
+    scroll-snap-type:
+        x mandatory;
+
+    scroll-behavior:
+        smooth;
+
+    scrollbar-width:
+        none;
+
+    padding:
+        3px 2px
+        15px;
 }
 
 .gallery-slider::-webkit-scrollbar {
-    display: none;
+    display:
+        none;
 }
 
 .slide-card {
-    flex: 0 0 calc((100% - 36px) / 3);
-    min-width: 0;
-    scroll-snap-align: start;
-    background: var(--green-pale);
-    border: 1px solid var(--line);
-    border-radius: 20px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform .2s, box-shadow .2s;
+    flex:
+        0 0
+        calc((100% - 36px) / 3);
+
+    min-width:
+        0;
+
+    scroll-snap-align:
+        start;
+
+    background:
+        var(--green-pale);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        20px;
+
+    overflow:
+        hidden;
+
+    cursor:
+        zoom-in;
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
 }
 
 .slide-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        var(--shadow);
 }
 
 .slide-image {
-    width: 100%;
-    height: 255px;
-    object-fit: cover;
-    background: #f0f0f0;
+    width:
+        100%;
+
+    height:
+        250px;
+
+    object-fit:
+        cover;
+
+    background:
+        #f1f3f1;
 }
 
 .slide-caption {
-    padding: 18px 19px 20px;
+    padding:
+        17px 18px
+        19px;
 }
 
 .slide-caption strong {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 17px;
-    color: var(--text);
+    display:
+        block;
+
+    margin-bottom:
+        4px;
+
+    font-size:
+        16px;
 }
 
 .slide-caption span {
-    display: block;
-    color: var(--sub);
-    font-size: 13.5px;
-    line-height: 1.7;
+    display:
+        block;
+
+    color:
+        var(--sub);
+
+    font-size:
+        13px;
+
+    line-height:
+        1.65;
 }
 
 .gallery-hint {
-    margin-top: 8px;
-    color: #89918b;
-    font-size: 12px;
-    text-align: center;
+    margin-top:
+        7px;
+
+    color:
+        #919892;
+
+    text-align:
+        center;
+
+    font-size:
+        12px;
 }
 
+
+/* SLIDER BUTTON */
+
 .slider-button {
-    position: absolute;
-    top: 112px;
-    z-index: 10;
-    width: 48px;
-    height: 48px;
-    border: 1px solid #dce6de;
-    border-radius: 50%;
-    background: rgba(255,255,255,.96);
-    color: var(--green-deep);
-    font-size: 30px;
-    line-height: 1;
-    cursor: pointer;
-    box-shadow: 0 7px 20px rgba(55,85,62,.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .2s;
+    position:
+        absolute;
+
+    top:
+        104px;
+
+    z-index:
+        20;
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    border:
+        1px solid
+        #dce6de;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(255,255,255,.97);
+
+    color:
+        var(--green-deep);
+
+    font-size:
+        30px;
+
+    line-height:
+        1;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 7px 20px
+        rgba(55,85,62,.12);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    transition:
+        .2s;
 }
 
 .slider-button:hover {
-    background: var(--green-deep);
-    color: white;
+    background:
+        var(--green-deep);
+
+    color:
+        white;
 }
 
 .slider-prev {
-    left: -24px;
+    left:
+        -24px;
 }
 
 .slider-next {
-    right: -24px;
+    right:
+        -24px;
 }
 
 
-/* LIGHTBOX */
+/* =========================================
+   LIGHTBOX
+========================================= */
 
 .lightbox {
-    position: fixed;
-    inset: 0;
-    z-index: 5000;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: rgba(20,28,22,.91);
-    padding: 30px 80px;
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        5000;
+
+    display:
+        none;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        30px 82px;
+
+    background:
+        rgba(20,28,22,.92);
 }
 
 .lightbox.open {
-    display: flex;
+    display:
+        flex;
 }
 
 .lightbox-content {
-    position: relative;
-    width: min(1100px,100%);
-    height: min(86vh,850px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width:
+        min(1120px,100%);
+
+    height:
+        min(88vh,850px);
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
 }
 
 .lightbox-image {
-    display: block;
-    max-width: 100%;
-    max-height: calc(86vh - 100px);
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 18px 55px rgba(0,0,0,.35);
+    max-width:
+        100%;
+
+    max-height:
+        calc(88vh - 105px);
+
+    width:
+        auto;
+
+    height:
+        auto;
+
+    object-fit:
+        contain;
+
+    border-radius:
+        12px;
+
+    box-shadow:
+        0 18px 55px
+        rgba(0,0,0,.38);
 }
 
 .lightbox-caption {
-    margin-top: 16px;
-    color: white;
-    text-align: center;
+    margin-top:
+        15px;
+
+    color:
+        white;
+
+    text-align:
+        center;
 }
 
 .lightbox-caption strong {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 2px;
+    display:
+        block;
+
+    margin-bottom:
+        2px;
+
+    font-size:
+        18px;
 }
 
 .lightbox-caption span {
-    color: rgba(255,255,255,.74);
-    font-size: 13px;
+    color:
+        rgba(255,255,255,.75);
+
+    font-size:
+        13px;
 }
 
 .lightbox-close {
-    position: fixed;
-    top: 22px;
-    right: 28px;
-    z-index: 5100;
-    width: 48px;
-    height: 48px;
-    border: 0;
-    border-radius: 50%;
-    background: rgba(255,255,255,.13);
-    color: white;
-    font-size: 29px;
-    cursor: pointer;
+    position:
+        fixed;
+
+    top:
+        22px;
+
+    right:
+        26px;
+
+    z-index:
+        5100;
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    border:
+        0;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(255,255,255,.14);
+
+    color:
+        white;
+
+    font-size:
+        29px;
+
+    cursor:
+        pointer;
 }
 
 .lightbox-nav {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 5100;
-    width: 54px;
-    height: 54px;
-    border: 0;
-    border-radius: 50%;
-    background: rgba(255,255,255,.14);
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
+    position:
+        fixed;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    z-index:
+        5100;
+
+    width:
+        54px;
+
+    height:
+        54px;
+
+    border:
+        0;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(255,255,255,.14);
+
+    color:
+        white;
+
+    font-size:
+        35px;
+
+    cursor:
+        pointer;
 }
 
-.lightbox-nav:hover,
-.lightbox-close:hover {
-    background: rgba(255,255,255,.25);
+.lightbox-close:hover,
+.lightbox-nav:hover {
+    background:
+        rgba(255,255,255,.27);
 }
 
 .lightbox-prev {
-    left: 22px;
+    left:
+        22px;
 }
 
 .lightbox-next {
-    right: 22px;
+    right:
+        22px;
 }
 
 
-/* HEALTH */
+/* =========================================
+   HEALTH
+========================================= */
 
 .health {
-    background: var(--cream);
+    background:
+        var(--cream);
 }
 
 .health-card {
-    max-width: 850px;
-    margin: auto;
-    padding: 43px;
-    background: white;
-    border: 1px solid var(--line);
-    border-radius: 22px;
-    text-align: center;
+    max-width:
+        850px;
+
+    margin:
+        auto;
+
+    padding:
+        43px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        22px;
+
+    text-align:
+        center;
 }
 
 .health-card h2 {
-    margin: 0 0 10px;
-    font-size: 30px;
-    letter-spacing: -1.5px;
+    margin:
+        0 0
+        10px;
+
+    font-size:
+        30px;
+
+    letter-spacing:
+        -1.5px;
 }
 
 .health-card p {
-    margin: 0 0 24px;
-    color: var(--sub);
+    margin:
+        0 0
+        24px;
+
+    color:
+        var(--sub);
 }
 
 .health-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 9px;
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        9px;
 }
 
 
-/* FOOTER */
+/* =========================================
+   INFORMATION
+========================================= */
+
+.information {
+    background:
+        white;
+}
+
+.info-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        18px;
+}
+
+.info-card {
+    padding:
+        31px;
+
+    background:
+        var(--green-pale);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        21px;
+}
+
+.info-card h3 {
+    margin:
+        0 0
+        18px;
+
+    font-size:
+        21px;
+}
+
+.info-row {
+    display:
+        flex;
+
+    gap:
+        20px;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+}
+
+.info-row:last-of-type {
+    border-bottom:
+        none;
+}
+
+.info-label {
+    width:
+        95px;
+
+    flex:
+        0 0 auto;
+
+    font-weight:
+        700;
+}
+
+.info-text {
+    color:
+        var(--sub);
+}
+
+.map-area {
+    margin-top:
+        22px;
+
+    padding-top:
+        21px;
+
+    border-top:
+        1px solid
+        var(--line);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
-    padding: 44px 0;
-    background: #f2f6f2;
-    border-top: 1px solid var(--line);
-    color: #58615a;
-    font-size: 13px;
+    padding:
+        44px 0;
+
+    background:
+        #f2f6f2;
+
+    border-top:
+        1px solid
+        var(--line);
+
+    color:
+        #58615a;
+
+    font-size:
+        13px;
 }
 
 .footer-logo {
-    width: 120px;
-    margin-bottom: 16px;
+    width:
+        120px;
+
+    margin-bottom:
+        16px;
 }
 
 footer p {
-    margin: 5px 0;
+    margin:
+        5px 0;
 }
 
 .footer-notice {
-    max-width: 760px;
-    margin-top: 22px;
-    color: #8a928c;
-    font-size: 12px;
+    max-width:
+        760px;
+
+    margin-top:
+        22px;
+
+    color:
+        #8a928c;
+
+    font-size:
+        12px;
 }
 
 
-/* MOBILE */
+/* =========================================
+   MOBILE
+========================================= */
 
-@media (max-width: 800px) {
+@media (max-width:800px) {
 
     .container {
-        width: min(calc(100% - 28px),1120px);
+        width:
+            min(
+                calc(100% - 28px),
+                1120px
+            );
     }
 
     .nav {
-        min-height: 66px;
+        min-height:
+            66px;
     }
 
     .brand img {
-        width: 108px;
+        width:
+            108px;
     }
 
     .nav-menu {
-        display: none;
+        display:
+            none;
     }
 
     .mobile-menu-button {
-        display: flex;
+        display:
+            flex;
     }
 
     .hero {
-        padding: 24px 0 48px;
+        padding:
+            24px 0
+            48px;
     }
 
     .hero-grid {
-        grid-template-columns: 1fr;
-        min-height: 0;
-        border-radius: 21px;
+        grid-template-columns:
+            1fr;
+
+        min-height:
+            0;
+
+        border-radius:
+            21px;
     }
 
     .hero-copy {
-        padding: 36px 23px;
+        padding:
+            36px 23px;
     }
 
     .hero h1 {
-        font-size: 36px;
-        letter-spacing: -2px;
+        font-size:
+            36px;
+
+        letter-spacing:
+            -2px;
     }
 
     .couple-label {
-        font-size: 12px;
+        font-size:
+            12px;
     }
 
     .hero-expertise {
-        font-size: 15px;
+        font-size:
+            15px;
     }
 
     .hero-local {
-        font-size: 13.5px;
+        font-size:
+            13.5px;
     }
 
     .hero-description {
-        font-size: 14px;
+        font-size:
+            14px;
     }
 
     .hero-buttons {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        margin-top: 25px;
+        display:
+            grid;
+
+        grid-template-columns:
+            1fr;
+
+        width:
+            100%;
+
+        margin-top:
+            25px;
     }
 
     .hero-buttons .button {
-        width: 100%;
+        width:
+            100%;
     }
 
     .hero-image,
     .hero-image img {
-        height: 260px;
-        min-height: 260px;
+        height:
+            260px;
+
+        min-height:
+            260px;
     }
 
     section {
-        padding: 58px 0;
-        scroll-margin-top: 72px;
+        padding:
+            58px 0;
+
+        scroll-margin-top:
+            72px;
     }
 
     .section-head {
-        margin-bottom: 27px;
+        margin-bottom:
+            27px;
     }
 
     .philosophy-card {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        padding: 31px 23px;
+        grid-template-columns:
+            1fr;
+
+        gap:
+            24px;
+
+        padding:
+            31px 23px;
     }
 
     .philosophy-text p {
-        font-size: 14px;
+        font-size:
+            14px;
     }
 
     .doctor-grid,
     .treatment-grid,
     .info-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
     }
 
     .doctor-intro {
-        padding: 19px 21px;
-        font-size: 14px;
+        padding:
+            19px 21px;
+
+        font-size:
+            14px;
     }
 
     .doctor-photo {
-        height: 310px;
+        height:
+            310px;
     }
 
     .doctor-body {
-        padding: 23px;
+        padding:
+            23px;
     }
 
     .doctor-body h3 {
-        font-size: 23px;
+        font-size:
+            23px;
     }
 
     .doctor-card details ul {
-        padding: 0 29px 17px;
-        font-size: 13px;
-    }
+        padding:
+            0 29px
+            17px;
 
-    .info-row {
-        display: block;
-    }
-
-    .info-label {
-        width: auto;
-        margin-bottom: 3px;
+        font-size:
+            13px;
     }
 
     .treatment-card {
-        min-height: auto;
-        padding: 23px;
+        min-height:
+            auto;
+
+        padding:
+            23px;
     }
 
     .slide-card {
-        flex: 0 0 82%;
+        flex:
+            0 0
+            82%;
     }
 
     .slide-image {
-        height: 230px;
+        height:
+            230px;
     }
 
     .slider-button {
-        width: 42px;
-        height: 42px;
-        top: 100px;
-        font-size: 26px;
+        width:
+            42px;
+
+        height:
+            42px;
+
+        top:
+            95px;
+
+        font-size:
+            26px;
     }
 
     .slider-prev {
-        left: -8px;
+        left:
+            -8px;
     }
 
     .slider-next {
-        right: -8px;
-    }
-
-    .lightbox {
-        padding: 60px 15px 30px;
-    }
-
-    .lightbox-image {
-        max-height: calc(80vh - 100px);
-        border-radius: 8px;
-    }
-
-    .lightbox-close {
-        top: 14px;
-        right: 14px;
-        width: 44px;
-        height: 44px;
-    }
-
-    .lightbox-nav {
-        width: 44px;
-        height: 44px;
-        font-size: 28px;
-        background: rgba(0,0,0,.35);
-    }
-
-    .lightbox-prev {
-        left: 8px;
-    }
-
-    .lightbox-next {
-        right: 8px;
+        right:
+            -8px;
     }
 
     .health-card {
-        padding: 33px 22px;
+        padding:
+            33px 22px;
     }
 
     .health-card h2 {
-        font-size: 27px;
+        font-size:
+            27px;
     }
 
     .health-buttons {
-        display: grid;
-        grid-template-columns: 1fr;
+        display:
+            grid;
+
+        grid-template-columns:
+            1fr;
     }
 
     .health-buttons .button {
-        width: 100%;
+        width:
+            100%;
+    }
+
+    .info-row {
+        display:
+            block;
+    }
+
+    .info-label {
+        width:
+            auto;
+
+        margin-bottom:
+            3px;
+    }
+
+    .lightbox {
+        padding:
+            65px 14px
+            30px;
+    }
+
+    .lightbox-image {
+        max-height:
+            calc(80vh - 100px);
+
+        border-radius:
+            8px;
+    }
+
+    .lightbox-close {
+        top:
+            13px;
+
+        right:
+            13px;
+
+        width:
+            44px;
+
+        height:
+            44px;
+    }
+
+    .lightbox-nav {
+        width:
+            44px;
+
+        height:
+            44px;
+
+        font-size:
+            28px;
+
+        background:
+            rgba(0,0,0,.38);
+    }
+
+    .lightbox-prev {
+        left:
+            7px;
+    }
+
+    .lightbox-next {
+        right:
+            7px;
     }
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================================
+     HEADER
+========================================= -->
 
 <header>
 
@@ -1270,12 +2182,29 @@ footer p {
 <nav class="nav-menu"
      aria-label="주요 메뉴">
 
-<a href="#philosophy">진료철학</a>
-<a href="#doctors">의료진</a>
-<a href="#information">진료안내</a>
-<a href="#treatments">진료분야</a>
-<a href="#clinic-gallery">한의원 소개</a>
-<a href="columns.html">건강칼럼</a>
+<a href="#philosophy">
+진료철학
+</a>
+
+<a href="#doctors">
+의료진
+</a>
+
+<a href="#treatments">
+진료분야
+</a>
+
+<a href="#clinic-gallery">
+한의원 소개
+</a>
+
+<a href="columns.html">
+건강칼럼
+</a>
+
+<a href="#information">
+진료안내
+</a>
 
 </nav>
 
@@ -1296,12 +2225,29 @@ footer p {
 <div class="mobile-menu"
      id="mobileMenu">
 
-<a href="#philosophy">진료철학</a>
-<a href="#doctors">의료진</a>
-<a href="#information">진료안내</a>
-<a href="#treatments">진료분야</a>
-<a href="#clinic-gallery">한의원 소개</a>
-<a href="columns.html">건강칼럼</a>
+<a href="#philosophy">
+진료철학
+</a>
+
+<a href="#doctors">
+의료진
+</a>
+
+<a href="#treatments">
+진료분야
+</a>
+
+<a href="#clinic-gallery">
+한의원 소개
+</a>
+
+<a href="columns.html">
+건강칼럼
+</a>
+
+<a href="#information">
+진료안내
+</a>
 
 </div>
 
@@ -1313,13 +2259,16 @@ footer p {
 <main id="top">
 
 
-<!-- 첫 화면 -->
+<!-- =========================================
+     첫 화면
+========================================= -->
 
 <section class="hero">
 
 <div class="container">
 
 <div class="hero-grid">
+
 
 <div class="hero-copy">
 
@@ -1349,6 +2298,7 @@ footer p {
 증상뿐 아니라 그동안의 과정과 생활을 함께 살펴보며
 현재의 상태에 맞는 진료 방향을 상담합니다.
 </p>
+
 
 <div class="hero-buttons">
 
@@ -1383,6 +2333,7 @@ footer p {
 
 </div>
 
+
 </div>
 
 </div>
@@ -1390,7 +2341,9 @@ footer p {
 </section>
 
 
-<!-- 진료철학 -->
+<!-- =========================================
+     진료철학
+========================================= -->
 
 <section id="philosophy"
          class="philosophy">
@@ -1398,6 +2351,7 @@ footer p {
 <div class="container">
 
 <div class="philosophy-card">
+
 
 <div class="philosophy-title">
 
@@ -1478,7 +2432,9 @@ OUR STORY
 </section>
 
 
-<!-- 의료진 -->
+<!-- =========================================
+     의료진
+========================================= -->
 
 <section id="doctors"
          class="doctors">
@@ -1526,16 +2482,24 @@ DOCTORS
 
 <img src="lee.jpg"
      alt="솔솔한의원 이승환 대표원장"
-     class="doctor-photo">
+     class="doctor-photo"
+     loading="lazy">
 
 <div class="doctor-body">
 
-<h3>이승환 대표원장</h3>
+<h3>
+이승환 대표원장
+</h3>
 
 <div class="doctor-badges">
 
-<span class="badge">한의학박사</span>
-<span class="badge">한방신경정신과 전문의</span>
+<span class="badge">
+한의학박사
+</span>
+
+<span class="badge">
+한방신경정신과 전문의
+</span>
 
 </div>
 
@@ -1547,7 +2511,9 @@ DOCTORS
 
 <details>
 
-<summary>주요 약력 보기</summary>
+<summary>
+주요 약력 보기
+</summary>
 
 <ul>
 <li>국립한의학전문대학원 졸업</li>
@@ -1563,7 +2529,9 @@ DOCTORS
 
 <details>
 
-<summary>학회 및 전문활동 보기</summary>
+<summary>
+학회 및 전문활동 보기
+</summary>
 
 <ul>
 <li>대한한의학회 회원</li>
@@ -1583,7 +2551,9 @@ DOCTORS
 
 <details>
 
-<summary>논문 및 저서 보기</summary>
+<summary>
+논문 및 저서 보기
+</summary>
 
 <ul>
 
@@ -1594,30 +2564,91 @@ Journal of Oriental Neuropsychiatry.
 2022;33(1).
 </li>
 
-<li>전립선 비대증에 대한 뜸치료의 효과: 체계적 문헌 고찰과 메타분석. 2018.</li>
-<li>학생들의 정신건강을 위한 감정자유기법(EFT): 체계적 문헌고찰. 2017.</li>
-<li>불면장애에 대한 혈부축어탕의 체계적 문헌 고찰 및 메타분석 연구. 2017.</li>
+<li>
+전립선 비대증에 대한 뜸치료의 효과:
+체계적 문헌 고찰과 메타분석. 2018.
+</li>
+
+<li>
+학생들의 정신건강을 위한 감정자유기법(EFT):
+체계적 문헌고찰. 2017.
+</li>
+
+<li>
+불면장애에 대한 혈부축어탕의
+체계적 문헌 고찰 및 메타분석 연구. 2017.
+</li>
+
 <li>인터넷 중독에 대한 침 치료 연구동향. 2017.</li>
-<li>침과 이완요법 병행치료에 대한 중의학 연구동향. 2017.</li>
-<li>한방치료와 심리치료를 병행한 공황장애 환자 치험 1례. 2017.</li>
+
+<li>
+침과 이완요법 병행치료에 대한 중의학 연구동향. 2017.
+</li>
+
+<li>
+한방치료와 심리치료를 병행한
+공황장애 환자 치험 1례. 2017.
+</li>
+
 <li>혼백에 대한 중의학 연구 동향. 2017.</li>
+
 <li>본태성 진전에 대한 중의학 연구동향. 2017.</li>
+
 <li>신체화 장애에 대한 중의학 연구동향. 2017.</li>
+
 <li>섭식장애의 치료에 대한 임상연구 동향. 2016.</li>
-<li>불안에 대한 운동요법 중 요가, 기공, 태극권 연구 고찰. 2016.</li>
-<li>국내 한의학 학회지에 게재된 질적 연구 보고 분석. 2016.</li>
-<li>마음챙김 명상을 시행한 정충 환자 치험 1례. 2016.</li>
-<li>공황장애 치료에 대한 중의학의 임상연구 동향. 2015.</li>
-<li>울증에 대한 고찰. 2015.</li>
-<li>점진적 근육이완법을 시행한 화병환자 치험 1례. 2015.</li>
-<li>불안장애 치료에 관한 최근 임상연구 동향. 2012.</li>
-<li>꿈에 관한 문헌 연구. 2011.</li>
+
+<li>
+불안에 대한 운동요법 중 요가, 기공,
+태극권 연구 고찰. 2016.
+</li>
+
+<li>
+국내 한의학 학회지에 게재된
+질적 연구 보고 분석. 2016.
+</li>
+
+<li>
+마음챙김 명상을 시행한 정충 환자 치험 1례. 2016.
+</li>
+
+<li>
+공황장애 치료에 대한 중의학의 임상연구 동향. 2015.
+</li>
+
+<li>
+울증에 대한 고찰. 2015.
+</li>
+
+<li>
+점진적 근육이완법을 시행한
+화병환자 치험 1례. 2015.
+</li>
+
+<li>
+불안장애 치료에 관한 최근 임상연구 동향. 2012.
+</li>
+
+<li>
+꿈에 관한 문헌 연구. 2011.
+</li>
 
 </ul>
 
 <ul>
-<li>우울증 한의임상진료지침. 한국한의학연구원. 2016. 공저</li>
-<li>불면장애 한의표준임상진료지침. 한국한의약진흥원. 2021. 공저</li>
+
+<li>
+우울증 한의임상진료지침.
+한국한의학연구원.
+2016. 공저
+</li>
+
+<li>
+불면장애 한의표준임상진료지침.
+한국한의약진흥원.
+2021. 공저
+</li>
+
 </ul>
 
 </details>
@@ -1633,16 +2664,24 @@ Journal of Oriental Neuropsychiatry.
 
 <img src="jung.jpg"
      alt="솔솔한의원 정보은 원장"
-     class="doctor-photo">
+     class="doctor-photo"
+     loading="lazy">
 
 <div class="doctor-body">
 
-<h3>정보은 원장</h3>
+<h3>
+정보은 원장
+</h3>
 
 <div class="doctor-badges">
 
-<span class="badge">한의학석사</span>
-<span class="badge">한의사 · 수의사</span>
+<span class="badge">
+한의학석사
+</span>
+
+<span class="badge">
+한의사 · 수의사
+</span>
 
 </div>
 
@@ -1654,7 +2693,9 @@ Journal of Oriental Neuropsychiatry.
 
 <details>
 
-<summary>주요 약력 보기</summary>
+<summary>
+주요 약력 보기
+</summary>
 
 <ul>
 <li>국립한의학전문대학원 졸업</li>
@@ -1670,7 +2711,9 @@ Journal of Oriental Neuropsychiatry.
 
 <details>
 
-<summary>학회 및 전문활동 보기</summary>
+<summary>
+학회 및 전문활동 보기
+</summary>
 
 <ul>
 <li>대한한의학회 회원</li>
@@ -1685,7 +2728,9 @@ Journal of Oriental Neuropsychiatry.
 
 <details>
 
-<summary>논문 보기</summary>
+<summary>
+논문 보기
+</summary>
 
 <ul>
 
@@ -1697,8 +2742,14 @@ Food and Chemical Toxicology.
 2012;50(5).
 </li>
 
-<li>학생들의 정신건강을 위한 감정자유기법(EFT): 체계적 문헌고찰. 2017.</li>
-<li>인터넷 중독에 대한 침 치료 연구동향. 2017.</li>
+<li>
+학생들의 정신건강을 위한 감정자유기법(EFT):
+체계적 문헌고찰. 2017.
+</li>
+
+<li>
+인터넷 중독에 대한 침 치료 연구동향. 2017.
+</li>
 
 <li>
 반복적인 전침 처치의 척수 교세포 활성 억제를 통한
@@ -1722,116 +2773,9 @@ Korean Journal of Acupuncture.
 </section>
 
 
-<!-- 진료 안내 -->
-
-<section id="information"
-         class="information">
-
-<div class="container">
-
-<div class="section-head">
-
-<div class="section-kicker">
-INFORMATION
-</div>
-
-<h2>진료 안내</h2>
-
-<p>
-아산시 배방읍 배방역 인근에 위치하고 있습니다.
-방문 전 진료시간과 위치를 확인해주세요.
-</p>
-
-</div>
-
-
-<div class="info-grid">
-
-<div class="info-card">
-
-<h3>진료시간</h3>
-
-<div class="info-row">
-<div class="info-label">평일</div>
-<div class="info-text">
-09:00 ~ 19:30<br>
-점심시간 13:00 ~ 14:00
-</div>
-</div>
-
-<div class="info-row">
-<div class="info-label">토요일</div>
-<div class="info-text">
-09:00 ~ 13:00<br>
-점심시간 없음
-</div>
-</div>
-
-<div class="info-row">
-<div class="info-label">휴진</div>
-<div class="info-text">
-일요일 및 공휴일
-</div>
-</div>
-
-<div class="info-row">
-<div class="info-label">전화</div>
-<div class="info-text">
-<a href="tel:0415343100">041-534-3100</a>
-</div>
-</div>
-
-</div>
-
-
-<div class="info-card">
-
-<h3>오시는 길</h3>
-
-<div class="info-row">
-<div class="info-label">주소</div>
-<div class="info-text">
-충청남도 아산시 배방읍<br>
-모산로 91, 1층
-</div>
-</div>
-
-<div class="info-row">
-<div class="info-label">위치</div>
-<div class="info-text">
-아산시 배방읍 · 배방역 인근<br>
-배방·탕정과 천안아산 인근에서 찾아오실 수 있습니다.
-</div>
-</div>
-
-<div class="info-row">
-<div class="info-label">전화</div>
-<div class="info-text">
-<a href="tel:0415343100">041-534-3100</a>
-</div>
-</div>
-
-<div class="map-area">
-
-<a class="button soft"
-   href="https://naver.me/52RVqgJs"
-   target="_blank"
-   rel="noopener">
-네이버지도 길찾기 →
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- 주요 진료분야 -->
+<!-- =========================================
+     진료분야
+========================================= -->
 
 <section id="treatments"
          class="treatments">
@@ -1844,7 +2788,9 @@ INFORMATION
 CLINIC
 </div>
 
-<h2>주요 진료분야</h2>
+<h2>
+주요 진료분야
+</h2>
 
 <p>
 각 진료분야의 상세 내용을 확인하실 수 있습니다.
@@ -1855,122 +2801,254 @@ CLINIC
 
 <div class="treatment-grid">
 
-<a href="pain-clinic.html" class="treatment-link">
+
+<a href="pain-clinic.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">01</div>
-<h3>통증 클리닉</h3>
+
+<div class="treatment-number">
+01
+</div>
+
+<h3>
+통증 클리닉
+</h3>
+
 <p>
 목·허리 통증, 디스크·협착 관련 불편,
 두통·어지럼, 각종 염좌 등을 살펴봅니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
 
 
-<a href="traffic-accident.html" class="treatment-link">
+<a href="traffic-accident.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">02</div>
-<h3>자동차사고 후유증</h3>
+
+<div class="treatment-number">
+02
+</div>
+
+<h3>
+자동차사고 후유증
+</h3>
+
 <p>
 교통사고 이후 나타날 수 있는 목·허리 통증뿐 아니라
 두통, 어지럼, 수면 변화와 긴장 등 다양한 불편을 살펴봅니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
 
 
-<a href="mind-clinic.html" class="treatment-link">
+<a href="mind-clinic.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">03</div>
-<h3>심신 클리닉</h3>
+
+<div class="treatment-number">
+03
+</div>
+
+<h3>
+심신 클리닉
+</h3>
+
 <p>
 불면, 불안, 공황 증상, 화병, 우울감과
 함께 나타날 수 있는 여러 신체 증상을 살펴봅니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
 
 
-<a href="digestive-clinic.html" class="treatment-link">
+<a href="digestive-clinic.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">04</div>
-<h3>소화기 클리닉</h3>
+
+<div class="treatment-number">
+04
+</div>
+
+<h3>
+소화기 클리닉
+</h3>
+
 <p>
-기능성 소화불량, 식후 더부룩함, 속쓰림,
-복부팽만, 매핵기, 과민성장증후군 등
-소화기 불편을 살펴봅니다.
+기능성 소화불량, 식후 더부룩함,
+속쓰림, 복부팽만, 매핵기,
+과민성장증후군 등 소화기 불편을 살펴봅니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
 
 
-<a href="allergy-clinic.html" class="treatment-link">
+<a href="allergy-clinic.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">05</div>
-<h3>알레르기 클리닉</h3>
+
+<div class="treatment-number">
+05
+</div>
+
+<h3>
+알레르기 클리닉
+</h3>
+
 <p>
 알레르기 비염, 반복되는 콧물·재채기·코막힘,
 감기 등 호흡기 증상을 살펴봅니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
 
 
-<a href="constitution-clinic.html" class="treatment-link">
+<a href="constitution-clinic.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">06</div>
-<h3>체질 클리닉</h3>
+
+<div class="treatment-number">
+06
+</div>
+
+<h3>
+체질 클리닉
+</h3>
+
 <p>
 사상체질의 관점에서 체질 가능성과
-소화·수면·땀·열감, 음식 반응 등을 함께 살펴봅니다.
+소화·수면·땀·열감,
+음식 반응 등을 함께 살펴봅니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
 
 
-<a href="pediatric-clinic.html" class="treatment-link">
+<a href="pediatric-clinic.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">07</div>
-<h3>소아 클리닉</h3>
+
+<div class="treatment-number">
+07
+</div>
+
+<h3>
+소아 클리닉
+</h3>
+
 <p>
 소아 성장, 식욕부진, 소화불량,
-잦은 감기·비염, 수면 등 아이의 건강 상태를 함께 살펴봅니다.
+잦은 감기·비염, 수면 등
+아이의 건강 상태를 함께 살펴봅니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
 
 
-<a href="women-clinic.html" class="treatment-link">
+<a href="women-clinic.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">08</div>
-<h3>여성 클리닉</h3>
+
+<div class="treatment-number">
+08
+</div>
+
+<h3>
+여성 클리닉
+</h3>
+
 <p>
 산후보약, 출산 후 허리·골반 불편,
-모유수유 중 한약 상담, 생리통 등 여성 건강을 살펴봅니다.
+모유수유 중 한약 상담,
+생리통 등 여성 건강을 살펴봅니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
 
 
-<a href="herbal-tonic-clinic.html" class="treatment-link">
+<a href="herbal-tonic-clinic.html"
+   class="treatment-link">
+
 <article class="treatment-card">
-<div class="treatment-number">09</div>
-<h3>보약 클리닉</h3>
+
+<div class="treatment-number">
+09
+</div>
+
+<h3>
+보약 클리닉
+</h3>
+
 <p>
 만성피로, 기력저하, 식욕과 수면,
-스트레스 등 현재 상태를 확인해 한약·보약 처방을 상담합니다.
+스트레스 등 현재 상태를 확인해
+한약·보약 처방을 상담합니다.
 </p>
-<div class="more-link">자세히 보기 →</div>
+
+<div class="more-link">
+자세히 보기 →
+</div>
+
 </article>
+
 </a>
+
 
 </div>
 
@@ -1979,12 +3057,15 @@ CLINIC
 </section>
 
 
-<!-- 솔솔한의원 사진 슬라이드 -->
+<!-- =========================================
+     사진 슬라이드
+========================================= -->
 
 <section id="clinic-gallery"
          class="clinic-gallery">
 
 <div class="container">
+
 
 <div class="section-head gallery-intro">
 
@@ -1992,7 +3073,9 @@ CLINIC
 SOL SOL CLINIC
 </div>
 
-<h2>솔솔한의원을 소개합니다</h2>
+<h2>
+솔솔한의원을 소개합니다
+</h2>
 
 <p>
 솔솔한의원의 공간과 진료 모습을 사진으로 소개합니다.
@@ -2003,6 +3086,7 @@ SOL SOL CLINIC
 
 
 <div class="gallery-slider-wrap">
+
 
 <button class="slider-button slider-prev"
         id="galleryPrev"
@@ -2026,13 +3110,20 @@ SOL SOL CLINIC
          data-description="아산시 배방읍 모산로 91, 1층 · 배방역 인근">
 
 <img src="solsol_clinic_entrance.jpg"
-     alt="아산시 배방읍 배방역 인근 솔솔한의원 입구"
+     alt="아산시 배방읍 솔솔한의원 입구"
      class="slide-image"
      loading="lazy">
 
 <div class="slide-caption">
-<strong>솔솔한의원</strong>
-<span>아산시 배방읍 모산로 91, 1층 · 배방역 인근</span>
+
+<strong>
+솔솔한의원
+</strong>
+
+<span>
+아산시 배방읍 모산로 91, 1층 · 배방역 인근
+</span>
+
 </div>
 
 </article>
@@ -2053,8 +3144,15 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-<strong>상태를 함께 살펴봅니다</strong>
-<span>현재의 불편과 생활 속 변화를 함께 확인하며 상담합니다.</span>
+
+<strong>
+상태를 함께 살펴봅니다
+</strong>
+
+<span>
+현재의 불편과 생활 속 변화를 함께 확인하며 상담합니다.
+</span>
+
 </div>
 
 </article>
@@ -2075,8 +3173,15 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-<strong>추나 진료</strong>
-<span>근골격계 상태와 움직임을 살펴보고 필요한 진료 방향을 상담합니다.</span>
+
+<strong>
+추나 진료
+</strong>
+
+<span>
+근골격계 상태와 움직임을 살펴보고 필요한 진료 방향을 상담합니다.
+</span>
+
 </div>
 
 </article>
@@ -2097,8 +3202,15 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-<strong>한약 상담</strong>
-<span>현재의 증상과 생활습관, 전반적인 몸 상태 등을 확인하며 한약 처방에 대해 상담합니다.</span>
+
+<strong>
+한약 상담
+</strong>
+
+<span>
+현재의 상태를 확인하며 한약 처방에 대해 상담합니다.
+</span>
+
 </div>
 
 </article>
@@ -2111,7 +3223,7 @@ SOL SOL CLINIC
          role="button"
          data-image="solsol_herbal_tradition.jpg"
          data-title="한의학적 진료"
-         data-description="환자의 이야기를 듣고 여러 상태를 종합적으로 살펴보는 한의학적 진료를 지향합니다.">
+         data-description="환자의 이야기를 듣고 여러 상태를 종합적으로 살펴봅니다.">
 
 <img src="solsol_herbal_tradition.jpg"
      alt="솔솔한의원 한의학 진료 관련 모습"
@@ -2119,8 +3231,15 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-<strong>한의학적 진료</strong>
-<span>환자의 이야기를 듣고 여러 상태를 종합적으로 살펴보는 한의학적 진료를 지향합니다.</span>
+
+<strong>
+한의학적 진료
+</strong>
+
+<span>
+환자의 이야기를 듣고 여러 상태를 함께 살펴봅니다.
+</span>
+
 </div>
 
 </article>
@@ -2141,36 +3260,50 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-<strong>한약과 한약재</strong>
-<span>한약 처방이 필요한 경우에는 개인의 현재 상태를 살펴본 뒤 상담합니다.</span>
+
+<strong>
+한약과 한약재
+</strong>
+
+<span>
+한약 처방이 필요한 경우 현재 상태를 살펴본 뒤 상담합니다.
+</span>
+
 </div>
 
 </article>
 
 
-<!-- 7 -->
+<!-- 7 약침 -->
 
 <article class="slide-card"
          tabindex="0"
          role="button"
-         data-image="solsol_pharmacoacupuncture.jpg"
+         data-image="solsol_pharmaco.jpg"
          data-title="침 · 약침 진료"
-         data-description="증상과 상태에 따라 침과 약침 등의 진료 방법을 상담할 수 있습니다.">
+         data-description="증상과 상태를 살펴보고 필요한 진료 방법을 상담합니다.">
 
-<img src="solsol_pharmacoacopuncture.jpg"
+<img src="solsol_pharmaco.jpg"
      alt="솔솔한의원 침 및 약침 진료 관련 모습"
      class="slide-image"
      loading="lazy">
 
 <div class="slide-caption">
-<strong>침 · 약침 진료</strong>
-<span>증상과 상태에 따라 침과 약침 등의 진료 방법을 상담할 수 있습니다.</span>
+
+<strong>
+침 · 약침 진료
+</strong>
+
+<span>
+증상과 상태를 살펴보고 필요한 진료 방법을 상담합니다.
+</span>
+
 </div>
 
 </article>
 
 
-<!-- 8 -->
+<!-- 8 자기장치료기 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -2185,11 +3318,19 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-<strong>자기장치료기</strong>
-<span>진료 시 환자의 상태에 따라 활용할 수 있는 치료 장비입니다.</span>
+
+<strong>
+자기장치료기
+</strong>
+
+<span>
+진료 시 환자의 상태에 따라 활용할 수 있는 치료 장비입니다.
+</span>
+
 </div>
 
 </article>
+
 
 </div>
 
@@ -2201,19 +3342,23 @@ SOL SOL CLINIC
 ›
 </button>
 
+
 </div>
 
 
 <div class="gallery-hint">
-사진을 클릭하면 크게 볼 수 있습니다.
+좌우로 넘겨보세요 · 사진을 클릭하면 크게 볼 수 있습니다.
 </div>
+
 
 </div>
 
 </section>
 
 
-<!-- 건강정보 -->
+<!-- =========================================
+     건강칼럼
+========================================= -->
 
 <section id="health"
          class="health">
@@ -2226,12 +3371,14 @@ SOL SOL CLINIC
 HEALTH INFORMATION
 </div>
 
-<h2>솔솔한의원 건강정보</h2>
+<h2>
+솔솔한의원 건강칼럼
+</h2>
 
 <p>
-통증, 자동차사고 후 불편, 불안·불면·공황 증상,
-소화기, 소아, 사상체질 등 다양한 건강정보를
-솔솔한의원 건강칼럼과 네이버 블로그에서 확인하실 수 있습니다.
+통증, 자동차사고 후 불편, 수면과 마음건강,
+소화기, 알레르기, 체질, 소아, 여성건강 등
+진료실에서 자주 접하는 건강 이야기를 정리합니다.
 </p>
 
 
@@ -2258,10 +3405,193 @@ HEALTH INFORMATION
 </section>
 
 
+<!-- =========================================
+     진료안내 / 오시는 길
+     최하단 배치
+========================================= -->
+
+<section id="information"
+         class="information">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+INFORMATION
+</div>
+
+<h2>
+진료 안내 · 오시는 길
+</h2>
+
+<p>
+솔솔한의원은 아산시 배방읍 배방역 인근에 위치하고 있습니다.
+방문 전 진료시간과 위치를 확인해주세요.
+</p>
+
+</div>
+
+
+<div class="info-grid">
+
+
+<div class="info-card">
+
+<h3>
+진료시간
+</h3>
+
+
+<div class="info-row">
+
+<div class="info-label">
+평일
+</div>
+
+<div class="info-text">
+09:00 ~ 19:30<br>
+점심시간 13:00 ~ 14:00
+</div>
+
+</div>
+
+
+<div class="info-row">
+
+<div class="info-label">
+토요일
+</div>
+
+<div class="info-text">
+09:00 ~ 13:00<br>
+점심시간 없음
+</div>
+
+</div>
+
+
+<div class="info-row">
+
+<div class="info-label">
+휴진
+</div>
+
+<div class="info-text">
+일요일 및 공휴일
+</div>
+
+</div>
+
+
+<div class="info-row">
+
+<div class="info-label">
+전화
+</div>
+
+<div class="info-text">
+
+<a href="tel:0415343100">
+041-534-3100
+</a>
+
+</div>
+
+</div>
+
+
+<div class="map-area">
+
+<a class="button"
+   href="tel:0415343100">
+전화하기
+</a>
+
+</div>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>
+오시는 길
+</h3>
+
+
+<div class="info-row">
+
+<div class="info-label">
+주소
+</div>
+
+<div class="info-text">
+충청남도 아산시 배방읍<br>
+모산로 91, 1층
+</div>
+
+</div>
+
+
+<div class="info-row">
+
+<div class="info-label">
+위치
+</div>
+
+<div class="info-text">
+아산시 배방읍 · 배방역 인근<br>
+배방·탕정과 천안아산 인근에서 찾아오실 수 있습니다.
+</div>
+
+</div>
+
+
+<div class="info-row">
+
+<div class="info-label">
+전화
+</div>
+
+<div class="info-text">
+
+<a href="tel:0415343100">
+041-534-3100
+</a>
+
+</div>
+
+</div>
+
+
+<div class="map-area">
+
+<a class="button soft"
+   href="https://naver.me/52RVqgJs"
+   target="_blank"
+   rel="noopener">
+네이버지도 길찾기 →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
 </main>
 
 
-<!-- 사진 크게 보기 -->
+<!-- =========================================
+     사진 확대
+========================================= -->
 
 <div class="lightbox"
      id="lightbox"
@@ -2269,12 +3599,14 @@ HEALTH INFORMATION
      aria-modal="true"
      aria-label="솔솔한의원 사진 크게 보기">
 
+
 <button class="lightbox-close"
         id="lightboxClose"
         type="button"
         aria-label="사진 닫기">
 ×
 </button>
+
 
 <button class="lightbox-nav lightbox-prev"
         id="lightboxPrev"
@@ -2293,9 +3625,11 @@ HEALTH INFORMATION
 
 <div class="lightbox-caption">
 
-<strong id="lightboxTitle"></strong>
+<strong id="lightboxTitle">
+</strong>
 
-<span id="lightboxDescription"></span>
+<span id="lightboxDescription">
+</span>
 
 </div>
 
@@ -2309,10 +3643,13 @@ HEALTH INFORMATION
 ›
 </button>
 
+
 </div>
 
 
-<!-- FOOTER -->
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer>
 
@@ -2323,7 +3660,9 @@ HEALTH INFORMATION
      class="footer-logo">
 
 <p>
-<strong>솔솔한의원</strong>
+<strong>
+솔솔한의원
+</strong>
 </p>
 
 <p>
@@ -2358,6 +3697,7 @@ HEALTH INFORMATION
 
 </div>
 
+
 <p style="margin-top:23px;">
 © Solsol Korean Medicine Clinic. All rights reserved.
 </p>
@@ -2369,7 +3709,9 @@ HEALTH INFORMATION
 
 <script>
 
-/* 모바일 메뉴 */
+/* =========================================
+   MOBILE MENU
+========================================= */
 
 const menuButton =
     document.getElementById("mobileMenuButton");
@@ -2378,31 +3720,69 @@ const mobileMenu =
     document.getElementById("mobileMenu");
 
 
-menuButton.addEventListener("click", function () {
+menuButton.addEventListener(
+    "click",
+    function () {
 
-    const isOpen =
-        mobileMenu.classList.toggle("open");
+        const isOpen =
+            mobileMenu.classList.toggle("open");
 
-    menuButton.setAttribute(
-        "aria-expanded",
-        isOpen ? "true" : "false"
-    );
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
 
-    menuButton.setAttribute(
-        "aria-label",
-        isOpen ? "메뉴 닫기" : "메뉴 열기"
-    );
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "메뉴 닫기" : "메뉴 열기"
+        );
 
-});
+    }
+);
 
 
 mobileMenu
     .querySelectorAll("a")
-    .forEach(function(link) {
+    .forEach(
+        function(link) {
 
-        link.addEventListener("click", function() {
+            link.addEventListener(
+                "click",
+                function() {
 
-            mobileMenu.classList.remove("open");
+                    mobileMenu
+                        .classList
+                        .remove("open");
+
+                    menuButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuButton.setAttribute(
+                        "aria-label",
+                        "메뉴 열기"
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            !mobileMenu.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
+
+            mobileMenu
+                .classList
+                .remove("open");
 
             menuButton.setAttribute(
                 "aria-expanded",
@@ -2414,36 +3794,15 @@ mobileMenu
                 "메뉴 열기"
             );
 
-        });
-
-    });
-
-
-document.addEventListener("click", function(event) {
-
-    if (
-        !mobileMenu.contains(event.target) &&
-        !menuButton.contains(event.target)
-    ) {
-
-        mobileMenu.classList.remove("open");
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
-        menuButton.setAttribute(
-            "aria-label",
-            "메뉴 열기"
-        );
+        }
 
     }
+);
 
-});
 
-
-/* 사진 슬라이더 */
+/* =========================================
+   PHOTO SLIDER
+========================================= */
 
 const gallerySlider =
     document.getElementById("gallerySlider");
@@ -2464,81 +3823,189 @@ function getSlideDistance() {
         return 300;
     }
 
-    const style =
-        window.getComputedStyle(gallerySlider);
+    const sliderStyle =
+        window.getComputedStyle(
+            gallerySlider
+        );
 
     const gap =
-        parseFloat(style.gap) || 18;
+        parseFloat(
+            sliderStyle.gap
+        ) || 18;
 
-    return firstCard.offsetWidth + gap;
+    return (
+        firstCard.getBoundingClientRect().width
+        +
+        gap
+    );
 }
 
 
-galleryPrev.addEventListener("click", function() {
+function getMaxScroll() {
 
-    gallerySlider.scrollBy({
-        left: -getSlideDistance(),
-        behavior: "smooth"
-    });
-
-});
-
-
-galleryNext.addEventListener("click", function() {
-
-    gallerySlider.scrollBy({
-        left: getSlideDistance(),
-        behavior: "smooth"
-    });
-
-});
+    return (
+        gallerySlider.scrollWidth
+        -
+        gallerySlider.clientWidth
+    );
+}
 
 
-/* 사진 크게 보기 */
+/* 오른쪽 이동 + 끝에서 처음으로 */
+
+galleryNext.addEventListener(
+    "click",
+    function() {
+
+        const maxScroll =
+            getMaxScroll();
+
+        const distance =
+            getSlideDistance();
+
+        const nearEnd =
+            gallerySlider.scrollLeft
+            >=
+            maxScroll - 10;
+
+        if (nearEnd) {
+
+            gallerySlider.scrollTo({
+                left: 0,
+                behavior: "smooth"
+            });
+
+        } else {
+
+            gallerySlider.scrollBy({
+                left: distance,
+                behavior: "smooth"
+            });
+
+        }
+
+    }
+);
+
+
+/* 왼쪽 이동 + 처음에서 마지막으로 */
+
+galleryPrev.addEventListener(
+    "click",
+    function() {
+
+        const maxScroll =
+            getMaxScroll();
+
+        const distance =
+            getSlideDistance();
+
+        const nearStart =
+            gallerySlider.scrollLeft
+            <=
+            10;
+
+        if (nearStart) {
+
+            gallerySlider.scrollTo({
+                left: maxScroll,
+                behavior: "smooth"
+            });
+
+        } else {
+
+            gallerySlider.scrollBy({
+                left: -distance,
+                behavior: "smooth"
+            });
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   LIGHTBOX
+========================================= */
 
 const galleryCards =
     Array.from(
-        document.querySelectorAll(".slide-card")
+        document.querySelectorAll(
+            ".slide-card"
+        )
     );
 
+
 const lightbox =
-    document.getElementById("lightbox");
+    document.getElementById(
+        "lightbox"
+    );
 
 const lightboxImage =
-    document.getElementById("lightboxImage");
+    document.getElementById(
+        "lightboxImage"
+    );
 
 const lightboxTitle =
-    document.getElementById("lightboxTitle");
+    document.getElementById(
+        "lightboxTitle"
+    );
 
 const lightboxDescription =
-    document.getElementById("lightboxDescription");
+    document.getElementById(
+        "lightboxDescription"
+    );
 
 const lightboxClose =
-    document.getElementById("lightboxClose");
+    document.getElementById(
+        "lightboxClose"
+    );
 
 const lightboxPrev =
-    document.getElementById("lightboxPrev");
+    document.getElementById(
+        "lightboxPrev"
+    );
 
 const lightboxNext =
-    document.getElementById("lightboxNext");
+    document.getElementById(
+        "lightboxNext"
+    );
+
 
 let currentImageIndex = 0;
 
 
 function showLightboxImage(index) {
 
-    if (index < 0) {
-        index = galleryCards.length - 1;
+    if (
+        index < 0
+    ) {
+
+        index =
+            galleryCards.length - 1;
+
     }
 
-    if (index >= galleryCards.length) {
+
+    if (
+        index >= galleryCards.length
+    ) {
+
         index = 0;
+
     }
 
-    currentImageIndex = index;
+
+    currentImageIndex =
+        index;
+
 
     const card =
-        galleryCards[currentImageIndex];
+        galleryCards[
+            currentImageIndex
+        ];
+
 
     const image =
         card.dataset.image;
@@ -2549,7 +4016,9 @@ function showLightboxImage(index) {
     const description =
         card.dataset.description || "";
 
-    lightboxImage.src = image;
+
+    lightboxImage.src =
+        image;
 
     lightboxImage.alt =
         title || "솔솔한의원 사진";
@@ -2559,48 +4028,59 @@ function showLightboxImage(index) {
 
     lightboxDescription.textContent =
         description;
+
 }
 
 
 function openLightbox(index) {
 
-    showLightboxImage(index);
-
-    lightbox.classList.add("open");
-
-    document.body.classList.add(
-        "lightbox-open"
+    showLightboxImage(
+        index
     );
 
-    lightboxClose.focus();
+    lightbox
+        .classList
+        .add("open");
+
+    document.body
+        .classList
+        .add("lightbox-open");
+
 }
 
 
 function closeLightbox() {
 
-    lightbox.classList.remove("open");
+    lightbox
+        .classList
+        .remove("open");
 
-    document.body.classList.remove(
-        "lightbox-open"
-    );
+    document.body
+        .classList
+        .remove("lightbox-open");
+
 }
 
 
-function showPreviousImage() {
+function previousLightboxImage() {
 
     showLightboxImage(
         currentImageIndex - 1
     );
+
 }
 
 
-function showNextImage() {
+function nextLightboxImage() {
 
     showLightboxImage(
         currentImageIndex + 1
     );
+
 }
 
+
+/* 카드 클릭 */
 
 galleryCards.forEach(
     function(card,index) {
@@ -2609,7 +4089,9 @@ galleryCards.forEach(
             "click",
             function() {
 
-                openLightbox(index);
+                openLightbox(
+                    index
+                );
 
             }
         );
@@ -2620,13 +4102,16 @@ galleryCards.forEach(
             function(event) {
 
                 if (
-                    event.key === "Enter" ||
+                    event.key === "Enter"
+                    ||
                     event.key === " "
                 ) {
 
                     event.preventDefault();
 
-                    openLightbox(index);
+                    openLightbox(
+                        index
+                    );
 
                 }
 
@@ -2637,61 +4122,82 @@ galleryCards.forEach(
 );
 
 
+/* 확대창 버튼 */
+
 lightboxClose.addEventListener(
     "click",
     closeLightbox
 );
 
-
 lightboxPrev.addEventListener(
     "click",
-    showPreviousImage
+    previousLightboxImage
 );
-
 
 lightboxNext.addEventListener(
     "click",
-    showNextImage
+    nextLightboxImage
 );
 
 
-/* 어두운 배경을 누르면 닫기 */
+/* 배경 누르면 닫기 */
 
 lightbox.addEventListener(
     "click",
     function(event) {
 
-        if (event.target === lightbox) {
+        if (
+            event.target === lightbox
+        ) {
+
             closeLightbox();
+
         }
 
     }
 );
 
 
-/* 키보드 조작 */
+/* 키보드 */
 
 document.addEventListener(
     "keydown",
     function(event) {
 
         if (
-            !lightbox.classList.contains("open")
+            !lightbox
+                .classList
+                .contains("open")
         ) {
+
             return;
+
         }
 
-        if (event.key === "Escape") {
+
+        if (
+            event.key === "Escape"
+        ) {
 
             closeLightbox();
 
-        } else if (event.key === "ArrowLeft") {
+        }
 
-            showPreviousImage();
 
-        } else if (event.key === "ArrowRight") {
+        if (
+            event.key === "ArrowLeft"
+        ) {
 
-            showNextImage();
+            previousLightboxImage();
+
+        }
+
+
+        if (
+            event.key === "ArrowRight"
+        ) {
+
+            nextLightboxImage();
 
         }
 
@@ -2699,10 +4205,13 @@ document.addEventListener(
 );
 
 
-/* 모바일 확대 화면 좌우 스와이프 */
+/* 모바일 확대창 스와이프 */
 
-let touchStartX = 0;
-let touchEndX = 0;
+let touchStartX =
+    0;
+
+let touchEndX =
+    0;
 
 
 lightbox.addEventListener(
@@ -2710,10 +4219,14 @@ lightbox.addEventListener(
     function(event) {
 
         touchStartX =
-            event.changedTouches[0].screenX;
+            event
+                .changedTouches[0]
+                .screenX;
 
     },
-    { passive: true }
+    {
+        passive: true
+    }
 );
 
 
@@ -2722,30 +4235,49 @@ lightbox.addEventListener(
     function(event) {
 
         touchEndX =
-            event.changedTouches[0].screenX;
+            event
+                .changedTouches[0]
+                .screenX;
+
 
         const difference =
-            touchStartX - touchEndX;
+            touchStartX
+            -
+            touchEndX;
 
-        if (Math.abs(difference) < 50) {
+
+        if (
+            Math.abs(difference)
+            <
+            50
+        ) {
+
             return;
+
         }
 
-        if (difference > 0) {
 
-            showNextImage();
+        if (
+            difference > 0
+        ) {
+
+            nextLightboxImage();
 
         } else {
 
-            showPreviousImage();
+            previousLightboxImage();
 
         }
 
     },
-    { passive: true }
+    {
+        passive: true
+    }
 );
 
 </script>
 
+
 </body>
+
 </html>
