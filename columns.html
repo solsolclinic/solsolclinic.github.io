@@ -8,13 +8,16 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>건강칼럼 | 통증·교통사고·소아성장·피로 | 아산 배방 솔솔한의원</title>
+<title>건강칼럼 | 통증·수면·소화·소아·한약 건강정보 | 아산 배방 솔솔한의원</title>
 
 <meta name="description"
-      content="아산 배방 솔솔한의원 건강칼럼. 교통사고 후 불편, 목·어깨 통증, 소아 성장과 수면, 만성피로와 보약 등 진료실에서 자주 듣는 건강 질문을 정리합니다.">
+      content="아산 배방 솔솔한의원 건강칼럼. 통증, 자동차사고 후유증, 불면·불안, 소화기, 알레르기, 체질, 소아, 여성건강, 보약과 한약에 관한 건강정보를 정리합니다.">
 
 <meta name="robots"
       content="index, follow">
+
+<meta name="author"
+      content="솔솔한의원">
 
 <link rel="canonical"
       href="https://solsolclinic.github.io/columns.html">
@@ -26,6 +29,9 @@
 
 <!-- SNS 공유 -->
 
+<meta property="og:locale"
+      content="ko_KR">
+
 <meta property="og:type"
       content="website">
 
@@ -33,16 +39,19 @@
       content="솔솔한의원">
 
 <meta property="og:title"
-      content="솔솔 건강칼럼 | 아산 배방 솔솔한의원">
+      content="솔솔한의원 건강칼럼 | 아산 배방">
 
 <meta property="og:description"
-      content="진료실에서 자주 듣는 질문과 일상에서 궁금해하시는 건강 이야기를 정리했습니다.">
+      content="솔솔한의원 의료진이 정리하는 통증, 수면, 소화, 소아, 여성건강, 한약과 생활관리 이야기">
 
 <meta property="og:url"
       content="https://solsolclinic.github.io/columns.html">
 
 <meta property="og:image"
-      content="https://solsolclinic.github.io/logo.jpg">
+      content="https://solsolclinic.github.io/clinic.jpg">
+
+<meta property="og:image:alt"
+      content="아산 배방 솔솔한의원">
 
 
 <!-- 구조화 데이터 -->
@@ -51,9 +60,9 @@
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "솔솔 건강칼럼",
+  "name": "솔솔한의원 건강칼럼",
   "url": "https://solsolclinic.github.io/columns.html",
-  "description": "교통사고 후 불편, 통증, 소아 성장과 수면, 피로와 한약 등 건강정보를 정리한 솔솔한의원 건강칼럼",
+  "description": "통증, 자동차사고 후유증, 심신, 소화기, 알레르기, 체질, 소아, 여성, 보약에 관한 건강정보",
   "inLanguage": "ko-KR",
   "publisher": {
     "@type": "MedicalClinic",
@@ -75,6 +84,7 @@
 <style>
 
 :root {
+
     --green-deep:#527e5e;
     --green-main:#6ca67b;
     --green-soft:#eef6f0;
@@ -90,7 +100,9 @@
 
     --warm:#f7f2ea;
 
-    --shadow:0 14px 38px rgba(55,85,62,.08);
+    --shadow:
+        0 14px 38px
+        rgba(55,85,62,.07);
 }
 
 
@@ -105,6 +117,7 @@ html {
 
 
 body {
+
     margin:0;
 
     font-family:
@@ -118,7 +131,7 @@ body {
 
     background:var(--cream);
 
-    line-height:1.8;
+    line-height:1.75;
 
     word-break:keep-all;
 }
@@ -131,8 +144,8 @@ a {
 
 
 img {
-    display:block;
     max-width:100%;
+    display:block;
 }
 
 
@@ -142,33 +155,49 @@ button {
 
 
 .container {
-    width:min(1080px, calc(100% - 40px));
+
+    width:
+        min(
+            1120px,
+            calc(100% - 40px)
+        );
+
     margin:0 auto;
 }
-
 
 
 /* HEADER */
 
 header {
+
     position:sticky;
+
     top:0;
+
     z-index:1000;
 
-    background:rgba(255,255,255,.97);
+    background:
+        rgba(255,255,255,.97);
 
-    border-bottom:1px solid var(--line);
+    border-bottom:
+        1px solid var(--line);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:
+        blur(10px);
 }
 
 
 .nav {
-    min-height:75px;
+
+    min-height:74px;
 
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
+
+    gap:30px;
 
     position:relative;
 }
@@ -180,12 +209,15 @@ header {
 
 
 .nav-menu {
+
     display:flex;
+
     align-items:center;
 
-    gap:20px;
+    gap:22px;
 
     font-size:14px;
+
     font-weight:700;
 }
 
@@ -195,16 +227,21 @@ header {
 }
 
 
-
 /* MOBILE MENU */
 
 .mobile-menu-button {
+
     display:none;
 
     width:44px;
+
     height:44px;
 
-    border:1px solid var(--line);
+    padding:0;
+
+    border:
+        1px solid var(--line);
+
     border-radius:12px;
 
     background:white;
@@ -212,7 +249,9 @@ header {
     cursor:pointer;
 
     align-items:center;
+
     justify-content:center;
+
     flex-direction:column;
 
     gap:5px;
@@ -220,7 +259,9 @@ header {
 
 
 .mobile-menu-button span {
+
     width:20px;
+
     height:2px;
 
     background:var(--text);
@@ -228,19 +269,24 @@ header {
 
 
 .mobile-menu {
+
     display:none;
 
     position:absolute;
 
     top:100%;
+
     left:0;
+
     right:0;
 
-    padding:10px 20px 18px;
+    padding:
+        8px 20px 15px;
 
     background:white;
 
-    border-bottom:1px solid var(--line);
+    border-bottom:
+        1px solid var(--line);
 
     box-shadow:
         0 14px 30px
@@ -254,13 +300,16 @@ header {
 
 
 .mobile-menu a {
+
     display:block;
 
-    padding:14px 8px;
+    padding:13px 8px;
 
-    border-bottom:1px solid var(--line);
+    border-bottom:
+        1px solid var(--line);
 
     font-size:15px;
+
     font-weight:700;
 }
 
@@ -270,27 +319,31 @@ header {
 }
 
 
-
 /* BUTTON */
 
 .button {
-    min-height:49px;
+
+    min-height:48px;
 
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
 
-    padding:0 22px;
+    padding:0 21px;
 
     border-radius:999px;
 
     background:var(--green-deep);
 
-    border:1px solid var(--green-deep);
-
     color:white;
 
+    border:
+        1px solid var(--green-deep);
+
     font-size:14px;
+
     font-weight:700;
 
     transition:.2s;
@@ -298,6 +351,7 @@ header {
 
 
 .button.light {
+
     background:white;
 
     color:var(--text);
@@ -306,30 +360,45 @@ header {
 }
 
 
-.button:hover {
-    transform:translateY(-2px);
-    opacity:.9;
+.button.soft {
+
+    background:var(--green-soft);
+
+    color:var(--green-deep);
+
+    border-color:#d8e7db;
 }
 
+
+.button:hover {
+
+    transform:
+        translateY(-2px);
+
+    opacity:.9;
+}
 
 
 /* HERO */
 
 .hero {
-    padding:58px 0 72px;
+
+    padding:
+        62px 0
+        72px;
 
     background:
         linear-gradient(
             135deg,
             #f8fcf9 0%,
-            #f3f6ef 55%,
-            #f7f2ea 100%
+            #f3f1ea 100%
         );
 }
 
 
 .breadcrumb {
-    margin-bottom:28px;
+
+    margin-bottom:25px;
 
     color:var(--sub);
 
@@ -338,19 +407,24 @@ header {
 
 
 .breadcrumb a {
+
     color:var(--green-deep);
+
     font-weight:700;
 }
 
 
 .hero-box {
-    max-width:850px;
 
-    padding:52px;
+    max-width:900px;
+
+    padding:
+        55px 58px;
 
     background:white;
 
-    border:1px solid #e3e9e4;
+    border:
+        1px solid #e4e9e5;
 
     border-radius:28px;
 
@@ -359,83 +433,233 @@ header {
 
 
 .hero-kicker {
+
     margin-bottom:10px;
 
     color:var(--green-deep);
 
     font-size:14px;
+
     font-weight:800;
+
+    letter-spacing:.05em;
 }
 
 
 .hero h1 {
-    margin:0 0 22px;
 
-    font-size:clamp(40px, 5vw, 58px);
+    margin:
+        0 0 20px;
 
-    line-height:1.25;
+    font-size:
+        clamp(
+            39px,
+            5vw,
+            55px
+        );
+
+    line-height:1.3;
 
     letter-spacing:-3px;
 }
 
 
-.hero-lead {
-    max-width:680px;
+.hero-description {
+
+    max-width:720px;
 
     margin:0;
 
-    color:#58625b;
+    color:#5d655f;
 
-    font-size:17px;
+    font-size:16px;
+
+    line-height:1.9;
 }
 
 
-.hero-note {
-    margin-top:25px;
+/* INTRO */
 
-    padding:18px 20px;
+.intro {
 
-    background:var(--green-soft);
+    padding:
+        75px 0 35px;
 
-    border-radius:15px;
-
-    color:#576159;
-
-    font-size:14px;
+    background:white;
 }
 
 
+.intro-box {
 
-/* COMMON */
-
-section {
-    padding:82px 0;
-
-    scroll-margin-top:85px;
-}
-
-
-.section-head {
-    margin-bottom:35px;
+    max-width:850px;
 }
 
 
 .section-kicker {
+
     margin-bottom:7px;
 
     color:var(--green-deep);
 
     font-size:13px;
+
     font-weight:800;
 
     letter-spacing:.08em;
 }
 
 
-.section-head h2 {
-    margin:0 0 10px;
+.intro h2 {
 
-    font-size:clamp(29px, 4vw, 40px);
+    margin:
+        0 0 13px;
+
+    font-size:
+        clamp(
+            29px,
+            4vw,
+            39px
+        );
+
+    line-height:1.4;
+
+    letter-spacing:-2px;
+}
+
+
+.intro p {
+
+    margin:0;
+
+    color:var(--sub);
+}
+
+
+/* CATEGORY */
+
+.categories {
+
+    padding:
+        30px 0 80px;
+
+    background:white;
+}
+
+
+.category-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:14px;
+}
+
+
+.category-card {
+
+    display:block;
+
+    height:100%;
+
+    padding:25px;
+
+    background:var(--green-pale);
+
+    border:
+        1px solid var(--line);
+
+    border-radius:17px;
+
+    transition:.2s;
+}
+
+
+.category-card:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:var(--shadow);
+
+    border-color:#cfded2;
+}
+
+
+.category-number {
+
+    color:#84a28d;
+
+    font-size:12px;
+
+    font-weight:800;
+}
+
+
+.category-card h3 {
+
+    margin:
+        6px 0 7px;
+
+    color:var(--green-deep);
+
+    font-size:19px;
+}
+
+
+.category-card p {
+
+    margin:0;
+
+    color:var(--sub);
+
+    font-size:13.5px;
+
+    line-height:1.7;
+}
+
+
+.category-link {
+
+    margin-top:13px;
+
+    color:var(--green-deep);
+
+    font-size:13px;
+
+    font-weight:800;
+}
+
+
+/* COLUMN AREA */
+
+.columns {
+
+    padding:
+        80px 0;
+
+    background:var(--cream);
+}
+
+
+.section-head {
+
+    margin-bottom:35px;
+}
+
+
+.section-head h2 {
+
+    margin:
+        0 0 10px;
+
+    font-size:
+        clamp(
+            29px,
+            4vw,
+            40px
+        );
 
     line-height:1.4;
 
@@ -444,7 +668,6 @@ section {
 
 
 .section-head p {
-    max-width:720px;
 
     margin:0;
 
@@ -452,125 +675,78 @@ section {
 }
 
 
-
-/* CATEGORY */
-
-.category-section {
-    padding:48px 0;
-
-    background:white;
-
-    border-bottom:1px solid var(--line);
-}
-
-
-.category-list {
-    display:flex;
-    flex-wrap:wrap;
-
-    gap:9px;
-}
-
-
-.category-button {
-    padding:10px 18px;
-
-    border:1px solid var(--line);
-
-    border-radius:999px;
-
-    background:white;
-
-    color:#5e675f;
-
-    font-size:14px;
-    font-weight:700;
-
-    cursor:pointer;
-
-    transition:.2s;
-}
-
-
-.category-button:hover,
-.category-button.active {
-    background:var(--green-deep);
-
-    border-color:var(--green-deep);
-
-    color:white;
-}
-
-
-
-/* COLUMNS */
-
-.columns {
-    background:var(--cream);
-}
-
-
 .column-grid {
+
     display:grid;
 
     grid-template-columns:
-        repeat(2, 1fr);
+        repeat(3,1fr);
 
-    gap:18px;
+    gap:17px;
 }
 
 
 .column-card {
+
     display:flex;
+
     flex-direction:column;
 
-    min-height:300px;
+    height:100%;
 
-    padding:31px;
+    padding:28px;
 
     background:white;
 
-    border:1px solid var(--line);
+    border:
+        1px solid var(--line);
 
-    border-radius:22px;
-
-    box-shadow:
-        0 8px 25px
-        rgba(55,85,62,.04);
+    border-radius:20px;
 
     transition:.2s;
 }
 
 
 .column-card:hover {
-    transform:translateY(-3px);
+
+    transform:
+        translateY(-3px);
 
     box-shadow:var(--shadow);
 }
 
 
 .column-category {
-    margin-bottom:15px;
+
+    margin-bottom:10px;
 
     color:var(--green-deep);
 
-    font-size:13px;
+    font-size:12px;
+
     font-weight:800;
+
+    letter-spacing:.04em;
 }
 
 
 .column-card h3 {
-    margin:0 0 14px;
 
-    font-size:23px;
+    margin:
+        0 0 12px;
 
-    line-height:1.45;
+    font-size:20px;
 
-    letter-spacing:-1px;
+    line-height:1.55;
+
+    letter-spacing:-.6px;
 }
 
 
 .column-card p {
+
+    flex:1;
+
     margin:0;
 
     color:var(--sub);
@@ -579,163 +755,136 @@ section {
 }
 
 
-.column-link {
-    margin-top:auto;
+.read-more {
 
-    padding-top:25px;
+    margin-top:20px;
 
     color:var(--green-deep);
 
-    font-size:14px;
+    font-size:13px;
+
     font-weight:800;
 }
 
 
-.column-link.soon {
-    color:#9aa29c;
-}
+/* COMING SOON */
 
+.coming {
 
+    margin-top:28px;
 
-/* CATEGORY ACCENTS */
+    padding:25px 28px;
 
-.column-card[data-category="traffic"] {
-    border-top:4px solid #789987;
-}
-
-
-.column-card[data-category="pain"] {
-    border-top:4px solid #8ca895;
-}
-
-
-.column-card[data-category="child"] {
-    border-top:4px solid #b4a883;
-}
-
-
-.column-card[data-category="fatigue"] {
-    border-top:4px solid #8d9b8f;
-}
-
-
-
-/* GUIDE */
-
-.guide {
     background:var(--green-soft);
+
+    border:
+        1px solid #dce7de;
+
+    border-radius:17px;
+
+    color:#58625b;
+
+    font-size:14px;
+}
+
+
+/* CLINIC GUIDE */
+
+.clinic-guide {
+
+    padding:
+        80px 0;
+
+    background:white;
 }
 
 
 .guide-box {
+
     padding:42px;
 
-    background:white;
+    background:
+        linear-gradient(
+            135deg,
+            #f7faf7,
+            #edf5ef
+        );
 
-    border:1px solid #dce7de;
+    border:
+        1px solid #deeadf;
 
-    border-radius:23px;
+    border-radius:24px;
 }
 
 
 .guide-box h2 {
-    margin:0 0 15px;
 
-    font-size:30px;
+    margin:
+        0 0 12px;
 
-    line-height:1.4;
+    font-size:31px;
 
     letter-spacing:-1.5px;
 }
 
 
 .guide-box p {
-    margin:8px 0;
 
-    color:#59635b;
+    margin:
+        0 0 23px;
+
+    color:var(--sub);
 }
-
-
-
-/* CLINIC LINKS */
-
-.clinic-links {
-    background:white;
-}
-
-
-.clinic-grid {
-    display:grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap:12px;
-}
-
-
-.clinic-item {
-    padding:20px 12px;
-
-    text-align:center;
-
-    background:var(--green-pale);
-
-    border:1px solid var(--line);
-
-    border-radius:15px;
-
-    color:#536058;
-
-    font-size:14px;
-    font-weight:750;
-
-    transition:.2s;
-}
-
-
-.clinic-item:hover {
-    background:var(--green-soft);
-
-    color:var(--green-deep);
-}
-
 
 
 /* CONTACT */
 
 .contact {
+
+    padding:
+        75px 0;
+
     background:var(--green-soft);
 }
 
 
 .contact-box {
-    padding:48px 30px;
+
+    padding:
+        45px 30px;
 
     text-align:center;
 
     background:white;
 
-    border:1px solid #dce7de;
+    border:
+        1px solid #dce7de;
 
     border-radius:24px;
 }
 
 
 .contact-box h2 {
-    margin:0 0 10px;
+
+    margin:
+        0 0 10px;
 }
 
 
 .contact-box p {
+
+    margin:0;
+
     color:var(--sub);
 }
 
 
 .contact-buttons {
+
     display:flex;
 
     justify-content:center;
+
     flex-wrap:wrap;
 
     gap:10px;
@@ -744,15 +893,17 @@ section {
 }
 
 
-
 /* FOOTER */
 
 footer {
-    padding:48px 0;
+
+    padding:
+        48px 0;
 
     background:#f2f6f2;
 
-    border-top:1px solid var(--line);
+    border-top:
+        1px solid var(--line);
 
     color:#5b645e;
 
@@ -761,6 +912,7 @@ footer {
 
 
 .footer-logo {
+
     width:120px;
 
     margin-bottom:17px;
@@ -773,6 +925,7 @@ footer p {
 
 
 .footer-notice {
+
     max-width:790px;
 
     margin-top:23px;
@@ -783,10 +936,24 @@ footer p {
 }
 
 
-
 /* MOBILE */
 
 @media(max-width:800px) {
+
+    .container {
+
+        width:
+            min(
+                100% - 28px,
+                1120px
+            );
+    }
+
+
+    .nav {
+        min-height:66px;
+    }
+
 
     .nav-menu {
         display:none;
@@ -799,64 +966,78 @@ footer p {
 
 
     .brand img {
-        width:110px;
+        width:108px;
     }
 
 
     .hero {
-        padding:42px 0 55px;
+
+        padding:
+            35px 0 50px;
     }
 
 
     .hero-box {
-        padding:36px 24px;
+
+        padding:
+            36px 23px;
+
+        border-radius:21px;
     }
 
 
     .hero h1 {
-        font-size:39px;
+
+        font-size:36px;
 
         letter-spacing:-2px;
     }
 
 
-    .hero-lead {
-        font-size:15px;
+    .hero-description {
+        font-size:14px;
     }
 
 
-    section {
-        padding:62px 0;
+    .intro {
 
-        scroll-margin-top:76px;
+        padding:
+            58px 0 25px;
     }
 
 
-    .category-section {
-        padding:35px 0;
+    .categories {
+
+        padding:
+            25px 0 58px;
     }
 
 
+    .category-grid,
     .column-grid {
+
         grid-template-columns:1fr;
     }
 
 
-    .column-card {
-        min-height:270px;
+    .columns,
+    .clinic-guide,
+    .contact {
 
-        padding:26px 23px;
+        padding:
+            58px 0;
     }
 
 
-    .clinic-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+    .column-card {
+        padding:24px;
     }
 
 
     .guide-box {
-        padding:28px 23px;
+
+        padding:
+            31px 23px;
     }
 
 
@@ -876,14 +1057,12 @@ footer p {
 </head>
 
 
-
 <body>
 
 
 <header>
 
 <div class="container nav">
-
 
 <a href="index.html"
    class="brand"
@@ -897,15 +1076,19 @@ footer p {
 
 <nav class="nav-menu">
 
-<a href="index.html">
-홈
+<a href="#categories">
+진료분야
 </a>
 
 <a href="#columns">
 건강칼럼
 </a>
 
-<a href="#clinics">
+<a href="index.html#doctors">
+의료진
+</a>
+
+<a href="index.html#information">
 진료안내
 </a>
 
@@ -932,15 +1115,19 @@ footer p {
 <div class="mobile-menu"
      id="mobileMenu">
 
-<a href="index.html">
-솔솔한의원 홈
+<a href="#categories">
+진료분야
 </a>
 
 <a href="#columns">
 건강칼럼
 </a>
 
-<a href="#clinics">
+<a href="index.html#doctors">
+의료진
+</a>
+
+<a href="index.html#information">
 진료안내
 </a>
 
@@ -948,13 +1135,15 @@ footer p {
 예약·문의
 </a>
 
-</div>
+<a href="index.html">
+솔솔한의원 홈
+</a>
 
+</div>
 
 </div>
 
 </header>
-
 
 
 <main>
@@ -965,7 +1154,6 @@ footer p {
 <section class="hero">
 
 <div class="container">
-
 
 <div class="breadcrumb">
 
@@ -982,110 +1170,281 @@ footer p {
 
 <div class="hero-box">
 
-
 <div class="hero-kicker">
 SOLSOL HEALTH COLUMN
 </div>
 
-
 <h1>
-솔솔 건강칼럼
+진료실에서 자주 만나는<br>
+건강 이야기를 정리합니다.
 </h1>
 
+<p class="hero-description">
 
-<p class="hero-lead">
-
-진료실에서 자주 듣는 질문과
-일상생활에서 궁금해하시는 건강 이야기를 정리했습니다.
-
-교통사고 후의 불편, 목·어깨 통증,
-아이의 성장과 수면,
-피로와 한약 등 필요한 내용을
-하나씩 편하게 읽어보세요.
+통증이나 수면, 소화처럼 흔히 겪는 불편부터
+아이의 건강, 여성건강, 체질과 한약에 관한 이야기까지
+진료실에서 자주 듣는 질문을 중심으로 하나씩 정리합니다.
 
 </p>
 
-
-<div class="hero-note">
-
-건강칼럼은 일반적인 건강정보를 제공하기 위한 공간입니다.
-같은 증상이라도 원인과 현재 상태는 개인마다 다를 수 있으므로,
-구체적인 진단과 치료는 의료진의 진료를 통해 확인하시기 바랍니다.
-
 </div>
-
-
-</div>
-
 
 </div>
 
 </section>
 
 
+<!-- INTRO -->
 
-<!-- CATEGORY -->
-
-<div class="category-section">
+<section class="intro">
 
 <div class="container">
 
+<div class="intro-box">
 
-<div class="category-list"
-     aria-label="건강칼럼 분류">
+<div class="section-kicker">
+HEALTH INFORMATION
+</div>
+
+<h2>
+궁금한 분야부터 살펴보세요
+</h2>
+
+<p>
+솔솔한의원의 9개 주요 진료분야를 기준으로
+건강정보를 분류해두었습니다.
+각 분야의 자세한 진료 안내도 함께 확인하실 수 있습니다.
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 
-<button class="category-button active"
-        type="button"
-        data-filter="all">
+<!-- 9 CLINIC CATEGORIES -->
 
-전체
+<section id="categories"
+         class="categories">
 
-</button>
+<div class="container">
 
-
-<button class="category-button"
-        type="button"
-        data-filter="traffic">
-
-교통사고
-
-</button>
+<div class="category-grid">
 
 
-<button class="category-button"
-        type="button"
-        data-filter="pain">
+<a href="pain-clinic.html"
+   class="category-card">
 
+<div class="category-number">
+01
+</div>
+
+<h3>
 통증
+</h3>
 
-</button>
+<p>
+목·허리 통증, 디스크·협착 관련 불편,
+두통·어지럼, 각종 염좌에 관한 이야기
+</p>
+
+<div class="category-link">
+통증클리닉 →
+</div>
+
+</a>
 
 
-<button class="category-button"
-        type="button"
-        data-filter="child">
+<a href="traffic-accident.html"
+   class="category-card">
 
-소아·성장
+<div class="category-number">
+02
+</div>
 
-</button>
+<h3>
+자동차사고
+</h3>
+
+<p>
+교통사고 이후 나타날 수 있는
+통증과 여러 불편에 관한 이야기
+</p>
+
+<div class="category-link">
+자동차사고 후유증 →
+</div>
+
+</a>
 
 
-<button class="category-button"
-        type="button"
-        data-filter="fatigue">
+<a href="mind-clinic.html"
+   class="category-card">
 
-보약·피로
+<div class="category-number">
+03
+</div>
 
-</button>
+<h3>
+심신
+</h3>
+
+<p>
+불면, 불안, 공황 증상, 화병,
+우울감과 몸의 반응에 관한 이야기
+</p>
+
+<div class="category-link">
+심신클리닉 →
+</div>
+
+</a>
+
+
+<a href="digestive-clinic.html"
+   class="category-card">
+
+<div class="category-number">
+04
+</div>
+
+<h3>
+소화기
+</h3>
+
+<p>
+소화불량, 속쓰림, 복부팽만,
+매핵기와 과민성장증후군에 관한 이야기
+</p>
+
+<div class="category-link">
+소화기클리닉 →
+</div>
+
+</a>
+
+
+<a href="allergy-clinic.html"
+   class="category-card">
+
+<div class="category-number">
+05
+</div>
+
+<h3>
+알레르기
+</h3>
+
+<p>
+알레르기 비염, 콧물·재채기·코막힘,
+두드러기 등에 관한 이야기
+</p>
+
+<div class="category-link">
+알레르기클리닉 →
+</div>
+
+</a>
+
+
+<a href="constitution-clinic.html"
+   class="category-card">
+
+<div class="category-number">
+06
+</div>
+
+<h3>
+체질
+</h3>
+
+<p>
+사상체질과 소화·수면·땀·열감,
+음식 반응 등에 관한 이야기
+</p>
+
+<div class="category-link">
+체질클리닉 →
+</div>
+
+</a>
+
+
+<a href="pediatric-clinic.html"
+   class="category-card">
+
+<div class="category-number">
+07
+</div>
+
+<h3>
+소아
+</h3>
+
+<p>
+소아 성장, 식욕과 소화,
+수면, 감기·비염과 소아한약 이야기
+</p>
+
+<div class="category-link">
+소아클리닉 →
+</div>
+
+</a>
+
+
+<a href="women-clinic.html"
+   class="category-card">
+
+<div class="category-number">
+08
+</div>
+
+<h3>
+여성
+</h3>
+
+<p>
+산후 건강관리, 생리통,
+출산 후 불편과 여성건강 이야기
+</p>
+
+<div class="category-link">
+여성클리닉 →
+</div>
+
+</a>
+
+
+<a href="herbal-tonic-clinic.html"
+   class="category-card">
+
+<div class="category-number">
+09
+</div>
+
+<h3>
+보약
+</h3>
+
+<p>
+피로와 기력저하,
+한약·보약과 생활관리에 관한 이야기
+</p>
+
+<div class="category-link">
+보약클리닉 →
+</div>
+
+</a>
 
 
 </div>
 
 </div>
 
-</div>
-
+</section>
 
 
 <!-- COLUMNS -->
@@ -1095,391 +1454,317 @@ SOLSOL HEALTH COLUMN
 
 <div class="container">
 
-
 <div class="section-head">
 
-
 <div class="section-kicker">
-HEALTH INFORMATION
+LATEST COLUMNS
 </div>
-
 
 <h2>
-진료실에서 자주 듣는 건강 이야기
+솔솔한의원 건강칼럼
 </h2>
 
-
 <p>
-궁금한 주제를 선택해 살펴보세요.
-앞으로 진료실에서 자주 듣는 질문들을 중심으로
-건강칼럼을 하나씩 추가해 나갈 예정입니다.
+건강정보를 하나씩 추가해 나가겠습니다.
 </p>
 
-
 </div>
-
 
 
 <div class="column-grid">
 
 
-<!-- 01 -->
+<!-- COLUMN 01 -->
 
-<article class="column-card"
-         data-category="traffic">
+<a href="pain-clinic.html#column"
+   class="column-card">
 
 <div class="column-category">
-교통사고
+통증 · 목과 어깨
 </div>
 
 <h3>
-교통사고 당일은 괜찮았는데
-다음 날 더 아픈 이유는?
+목이 아플 때 베개 높이는
+어느 정도가 좋을까요?
 </h3>
 
 <p>
-사고 직후에는 큰 불편을 느끼지 않았는데
-시간이 지나면서 목이나 허리 등이
-뻐근하고 불편해지는 경우가 있습니다.
-사고 후 증상을 어떻게 살펴보면 좋을지 알아봅니다.
+높은 베개와 낮은 베개 중 무엇이 좋은지보다
+내 목이 편안한 자세를 찾는 것이 중요합니다.
 </p>
 
-<div class="column-link soon">
-칼럼 준비 중
+<div class="read-more">
+칼럼 읽기 →
 </div>
 
-<!--
-개별 칼럼 완성 후 위 div를 삭제하고 아래 링크를 사용하세요.
-
-<a class="column-link"
-   href="column-traffic-accident-next-day.html">
-자세히 읽기 →
 </a>
--->
-
-</article>
 
 
+<!-- COLUMN 02 -->
 
-<!-- 02 -->
-
-<article class="column-card"
-         data-category="traffic">
+<a href="traffic-accident.html#column"
+   class="column-card">
 
 <div class="column-category">
-교통사고
+자동차사고
 </div>
 
 <h3>
-교통사고 후 목과 어깨가
-뻐근할 때 살펴볼 점
+교통사고 직후에는 괜찮았는데
+나중에 아플 수도 있을까요?
 </h3>
 
 <p>
-충돌 이후 목과 어깨의 뻣뻣함이나
-움직일 때의 불편을 호소하는 경우가 있습니다.
-증상의 변화와 함께 살펴볼 부분을 정리합니다.
+사고 직후와 시간이 지난 뒤 느끼는 불편이
+다를 수 있는 이유와 살펴볼 부분을 정리합니다.
 </p>
 
-<div class="column-link soon">
-칼럼 준비 중
+<div class="read-more">
+칼럼 읽기 →
 </div>
 
-<!--
-<a class="column-link"
-   href="column-traffic-accident-neck-shoulder.html">
-자세히 읽기 →
 </a>
--->
-
-</article>
 
 
+<!-- COLUMN 03 -->
 
-<!-- 03 -->
-
-<article class="column-card"
-         data-category="pain">
+<a href="mind-clinic.html#column"
+   class="column-card">
 
 <div class="column-category">
-통증
+심신 · 수면
 </div>
 
 <h3>
-목·어깨가 자주 뻐근하다면
-생활 속에서 무엇을 살펴봐야 할까요?
+잠이 안 올 때,
+억지로 누워 있는 게 좋을까요?
 </h3>
 
 <p>
-오래 앉아 있는 시간,
-스마트폰과 컴퓨터 사용,
-수면과 평소 자세 등
-목·어깨의 불편과 함께 살펴볼
-생활 속 요소들을 알아봅니다.
+잠들지 못한 채 침대에서 오래 보내는 습관과
+수면 리듬에 대해 살펴봅니다.
 </p>
 
-<div class="column-link soon">
-칼럼 준비 중
+<div class="read-more">
+칼럼 읽기 →
 </div>
 
-<!--
-<a class="column-link"
-   href="column-neck-shoulder-lifestyle.html">
-자세히 읽기 →
 </a>
--->
-
-</article>
 
 
+<!-- COLUMN 04 -->
 
-<!-- 04 -->
-
-<article class="column-card"
-         data-category="child">
+<a href="digestive-clinic.html#column"
+   class="column-card">
 
 <div class="column-category">
-소아·성장
+소화기
 </div>
 
 <h3>
-아이 키는 유전일까요?
-성장에서 함께 살펴볼 것들
+검사에는 이상이 없는데
+왜 계속 소화가 불편할까요?
 </h3>
 
 <p>
-부모님의 키는 아이의 성장과 관련된
-중요한 요소 중 하나입니다.
-하지만 성장 과정에서는 영양, 수면,
-신체활동과 전반적인 건강 상태도 함께 살펴봅니다.
+검사에서 특별한 이상이 확인되지 않아도
+더부룩함이나 소화불량이 지속되는 경우가 있습니다.
 </p>
 
-<div class="column-link soon">
-칼럼 준비 중
+<div class="read-more">
+칼럼 읽기 →
 </div>
 
-<!--
-<a class="column-link"
-   href="column-child-growth-genetics.html">
-자세히 읽기 →
 </a>
--->
-
-</article>
 
 
+<!-- COLUMN 05 -->
 
-<!-- 05 -->
-
-<article class="column-card"
-         data-category="child">
+<a href="allergy-clinic.html#column"
+   class="column-card">
 
 <div class="column-category">
-소아·성장
+알레르기 · 비염
 </div>
 
 <h3>
-밤 10시 전에 꼭 자야 키가 클까요?
-성장기 아이의 수면 이야기
+아침마다 재채기와 콧물이
+심해지는 이유는 무엇일까요?
 </h3>
 
 <p>
-아이의 성장 때문에
-잠드는 시간을 걱정하는 부모님들이 많습니다.
-특정 시각 하나보다 수면시간과 수면의 질을
-어떻게 살펴볼지 이야기합니다.
+알레르기 비염에서 흔히 경험하는
+아침 증상과 생활환경을 함께 살펴봅니다.
 </p>
 
-<div class="column-link soon">
-칼럼 준비 중
+<div class="read-more">
+칼럼 읽기 →
 </div>
 
-<!--
-<a class="column-link"
-   href="column-child-growth-sleep.html">
-자세히 읽기 →
 </a>
--->
-
-</article>
 
 
+<!-- COLUMN 06 -->
 
-<!-- 06 -->
-
-<article class="column-card"
-         data-category="fatigue">
+<a href="constitution-clinic.html#column"
+   class="column-card">
 
 <div class="column-category">
-보약·피로
+사상체질
 </div>
 
 <h3>
-자도 자도 피곤하다면?
-오래가는 피로에서 살펴볼 것들
+인터넷 체질 테스트만으로
+내 체질을 알 수 있을까요?
 </h3>
 
 <p>
-충분히 잤는데도 개운하지 않거나
-예전보다 쉽게 지치는 느낌이 지속된다면
-수면, 과로, 스트레스, 식사와 건강 상태 등
-여러 요소를 함께 살펴볼 필요가 있습니다.
+몇 가지 특징이나 음식 반응만으로
+사상체질을 단정하기 어려운 이유를 살펴봅니다.
 </p>
 
-<div class="column-link soon">
-칼럼 준비 중
+<div class="read-more">
+칼럼 읽기 →
 </div>
 
-<!--
-<a class="column-link"
-   href="column-chronic-fatigue.html">
-자세히 읽기 →
 </a>
--->
 
-</article>
+
+<!-- COLUMN 07 -->
+
+<a href="pediatric-clinic.html#column"
+   class="column-card">
+
+<div class="column-category">
+소아 · 성장
+</div>
+
+<h3>
+밤 10시 전에 꼭 자야
+키가 잘 클까요?
+</h3>
+
+<p>
+특정 시각 하나보다 아이의 연령에 맞는
+수면시간과 수면의 질을 함께 살펴봅니다.
+</p>
+
+<div class="read-more">
+칼럼 읽기 →
+</div>
+
+</a>
+
+
+<!-- COLUMN 08 -->
+
+<a href="women-clinic.html#column"
+   class="column-card">
+
+<div class="column-category">
+여성 · 산후
+</div>
+
+<h3>
+출산 후 몸은
+얼마나 지나야 회복될까요?
+</h3>
+
+<p>
+출산 후 회복에는 개인차가 있으며
+수면, 수유, 통증과 전반적인 컨디션을 함께 살펴볼 필요가 있습니다.
+</p>
+
+<div class="read-more">
+칼럼 읽기 →
+</div>
+
+</a>
+
+
+<!-- COLUMN 09 -->
+
+<a href="herbal-tonic-clinic.html#column"
+   class="column-card">
+
+<div class="column-category">
+보약 · 피로
+</div>
+
+<h3>
+자도 자도 피곤하면
+보약을 먹어야 할까요?
+</h3>
+
+<p>
+지속되는 피로를 무조건 기력 부족으로 생각하기보다
+수면, 식사, 스트레스와 건강 상태를 함께 살펴봅니다.
+</p>
+
+<div class="read-more">
+칼럼 읽기 →
+</div>
+
+</a>
 
 
 </div>
 
+
+<div class="coming">
+
+<strong>
+건강칼럼은 계속 추가됩니다.
+</strong>
+
+<br><br>
+
+진료실에서 자주 듣는 질문과
+일상에서 궁금해하시는 건강정보를 중심으로
+각 분야의 칼럼을 하나씩 정리할 예정입니다.
+
+</div>
 
 </div>
 
 </section>
 
 
+<!-- CLINIC GUIDE -->
 
-<!-- GUIDE -->
-
-<section class="guide">
+<section class="clinic-guide">
 
 <div class="container">
-
 
 <div class="guide-box">
-
-
-<div class="section-kicker">
-HOW TO READ
-</div>
-
-
-<h2>
-건강정보는 내 몸을 이해하는 출발점입니다
-</h2>
-
-
-<p>
-인터넷에서 같은 증상을 검색하더라도
-그 원인과 경과가 모든 사람에게 동일한 것은 아닙니다.
-</p>
-
-
-<p>
-솔솔 건강칼럼에서는
-특정 증상만으로 질환을 단정하거나
-치료 결과를 미리 약속하기보다,
-진료실에서 자주 듣는 질문을 중심으로
-일반적인 건강정보를 이해하기 쉽게 정리하겠습니다.
-</p>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- CLINIC LINKS -->
-
-<section id="clinics"
-         class="clinic-links">
-
-<div class="container">
-
-
-<div class="section-head">
-
 
 <div class="section-kicker">
 SOLSOL CLINIC
 </div>
 
-
 <h2>
-관련 진료 안내도 살펴보세요
+건강정보와 실제 진료는 다를 수 있습니다
 </h2>
 
-
 <p>
-증상이나 관심 분야에 따라
-솔솔한의원의 각 클리닉 안내 페이지에서
-진료 내용을 확인하실 수 있습니다.
+같은 증상이라도 원인과 경과,
+현재의 건강 상태는 사람마다 다를 수 있습니다.
+홈페이지의 건강칼럼은 일반적인 정보를 제공하기 위한 것이며,
+개인의 진단이나 치료를 대신하지 않습니다.
 </p>
 
+<a href="index.html#treatments"
+   class="button soft">
+
+솔솔한의원 진료분야 보기 →
+
+</a>
 
 </div>
-
-
-<div class="clinic-grid">
-
-
-<a href="pain-clinic.html"
-   class="clinic-item">
-
-통증클리닉
-
-</a>
-
-
-<!--
-아래 파일명은 실제 홈페이지에서 사용하는 파일명과
-일치하는지 확인한 뒤 활성화해주세요.
--->
-
-
-<!--
-<a href="traffic-accident-clinic.html"
-   class="clinic-item">
-교통사고클리닉
-</a>
--->
-
-
-<a href="pediatric-clinic.html"
-   class="clinic-item">
-
-소아클리닉
-
-</a>
-
-
-<a href="herbal-tonic-clinic.html"
-   class="clinic-item">
-
-보약클리닉
-
-</a>
-
-
-<a href="index.html"
-   class="clinic-item">
-
-전체 진료안내
-
-</a>
-
-
-</div>
-
 
 </div>
 
 </section>
-
 
 
 <!-- CONTACT -->
@@ -1489,67 +1774,48 @@ SOLSOL CLINIC
 
 <div class="container">
 
-
 <div class="contact-box">
-
 
 <h2>
 진료 예약 및 문의
 </h2>
 
-
 <p>
-진료가 필요하신 경우
-네이버 예약 또는 전화로 문의하실 수 있습니다.
+궁금한 증상이나 진료에 대해 문의하실 수 있습니다.
 </p>
-
 
 <div class="contact-buttons">
 
-
 <a class="button"
    href="tel:0415343100">
-
 전화하기
-
 </a>
-
 
 <a class="button light"
    href="https://booking.naver.com/booking/13/bizes/250311"
    target="_blank"
    rel="noopener">
-
 네이버 예약
-
 </a>
-
 
 <a class="button light"
    href="http://pf.kakao.com/_xjTGtj"
    target="_blank"
    rel="noopener">
-
 카카오톡 상담
-
 </a>
-
 
 <a class="button light"
    href="https://naver.me/52RVqgJs"
    target="_blank"
    rel="noopener">
-
 네이버지도 길찾기
-
 </a>
-
 
 </div>
 
 
 <div style="margin-top:30px;">
-
 
 <a href="index.html"
    style="
@@ -1561,12 +1827,9 @@ SOLSOL CLINIC
 
 </a>
 
-
 </div>
 
-
 </div>
-
 
 </div>
 
@@ -1576,16 +1839,13 @@ SOLSOL CLINIC
 </main>
 
 
-
 <footer>
 
 <div class="container">
 
-
 <img src="logo.jpg"
      alt="솔솔한의원"
      class="footer-logo">
-
 
 <p>
 <strong>
@@ -1593,49 +1853,42 @@ SOLSOL CLINIC
 </strong>
 </p>
 
+<p>
+동문수학한 부부한의사가 함께 진료합니다.
+</p>
 
 <p>
 충청남도 아산시 배방읍 모산로 91, 1층
 </p>
 
-
 <p>
 041-534-3100
 </p>
-
 
 <p>
 평일 09:00 ~ 19:30 · 점심시간 13:00 ~ 14:00
 </p>
 
-
 <p>
 토요일 09:00 ~ 13:00 · 일요일 및 공휴일 휴진
 </p>
 
-
 <div class="footer-notice">
 
-본 페이지의 건강칼럼은 일반적인 건강정보를 제공하기 위한 것입니다.
-같은 증상이라도 원인과 경과는 개인에 따라 다를 수 있으며,
-페이지의 내용만으로 특정 질환을 진단하거나
-개별적인 치료 방법을 결정할 수 없습니다.
-구체적인 사항은 의료진의 진료를 통해 상담하시기 바랍니다.
+본 페이지의 건강정보는 일반적인 정보 제공을 위한 것이며
+개인의 진단이나 치료를 대신하지 않습니다.
+증상과 진료 내용은 개인의 상태에 따라 달라질 수 있으며,
+구체적인 진단과 치료는 진료 후 결정됩니다.
 
 </div>
 
-
 <p style="margin-top:24px;">
-
 © Solsol Korean Medicine Clinic. All rights reserved.
-
 </p>
-
 
 </div>
 
 </footer>
-
 
 
 <script>
@@ -1654,12 +1907,10 @@ menuButton.addEventListener(
         const isOpen =
             mobileMenu.classList.toggle("open");
 
-
         menuButton.setAttribute(
             "aria-expanded",
             isOpen ? "true" : "false"
         );
-
 
         menuButton.setAttribute(
             "aria-label",
@@ -1684,12 +1935,10 @@ mobileMenu
                         .classList
                         .remove("open");
 
-
                     menuButton.setAttribute(
                         "aria-expanded",
                         "false"
                     );
-
 
                     menuButton.setAttribute(
                         "aria-label",
@@ -1704,69 +1953,36 @@ mobileMenu
     );
 
 
+document.addEventListener(
+    "click",
+    function(event) {
 
-/* COLUMN CATEGORY FILTER */
+        if (
+            !mobileMenu.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
 
-const categoryButtons =
-    document.querySelectorAll(".category-button");
+            mobileMenu
+                .classList
+                .remove("open");
 
-const columnCards =
-    document.querySelectorAll(".column-card");
+            menuButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
 
+            menuButton.setAttribute(
+                "aria-label",
+                "메뉴 열기"
+            );
 
-categoryButtons.forEach(
-
-    function(button) {
-
-        button.addEventListener(
-            "click",
-            function() {
-
-                const filter =
-                    button.dataset.filter;
-
-
-                categoryButtons.forEach(
-                    function(item) {
-
-                        item.classList.remove("active");
-
-                    }
-                );
-
-
-                button.classList.add("active");
-
-
-                columnCards.forEach(
-                    function(card) {
-
-                        if (
-                            filter === "all" ||
-                            card.dataset.category === filter
-                        ) {
-
-                            card.style.display = "flex";
-
-                        } else {
-
-                            card.style.display = "none";
-
-                        }
-
-                    }
-                );
-
-            }
-        );
+        }
 
     }
-
 );
 
 </script>
 
 
 </body>
-
 </html>
