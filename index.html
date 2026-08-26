@@ -11,7 +11,7 @@
 <title>솔솔한의원 | 아산 배방 한의원 · 부부한의사 진료</title>
 
 <meta name="description"
-      content="아산 배방 솔솔한의원. 동문수학한 부부한의사가 함께 진료하며 한의학박사·한방신경정신과 전문의가 진료합니다. 통증, 자동차사고, 심신, 소화기, 소아, 여성건강 등 진료안내와 건강칼럼을 확인할 수 있습니다.">
+      content="아산 배방 솔솔한의원. 동문수학한 부부한의사가 함께 진료하며 한의학박사·한방신경정신과 전문의가 진료합니다.">
 
 <meta name="robots"
       content="index, follow">
@@ -50,7 +50,7 @@
       content="솔솔한의원 | 아산 배방 부부한의사">
 
 <meta property="og:description"
-      content="동문수학한 부부한의사가 함께 진료하는 아산 배방 솔솔한의원. 진료분야와 건강칼럼을 확인하실 수 있습니다.">
+      content="동문수학한 부부한의사가 함께 진료하는 아산 배방 솔솔한의원. 편안하게 이야기하고 차분하게 진료합니다.">
 
 <meta property="og:url"
       content="https://solsolclinic.github.io/">
@@ -90,16 +90,24 @@
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
   "@id": "https://solsolclinic.github.io/#clinic",
+
   "name": "솔솔한의원",
+
   "alternateName": "Solsol Korean Medicine Clinic",
+
   "url": "https://solsolclinic.github.io/",
+
   "logo": "https://solsolclinic.github.io/logo.jpg",
+
   "image": [
     "https://solsolclinic.github.io/clinic.jpg",
     "https://solsolclinic.github.io/logo.jpg"
   ],
+
   "description": "아산시 배방읍에 위치한 솔솔한의원입니다. 동문수학한 부부한의사 이승환 대표원장과 정보은 원장이 함께 진료합니다.",
+
   "telephone": "+82-41-534-3100",
+
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "배방읍 모산로 91, 1층",
@@ -107,7 +115,9 @@
     "addressRegion": "충청남도",
     "addressCountry": "KR"
   },
+
   "hasMap": "https://naver.me/52RVqgJs",
+
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -128,6 +138,7 @@
       "closes": "13:00"
     }
   ],
+
   "employee": [
     {
       "@type": "Person",
@@ -144,6 +155,7 @@
       "image": "https://solsolclinic.github.io/jung.jpg"
     }
   ],
+
   "sameAs": [
     "https://blog.naver.com/solsolclinic3100",
     "http://pf.kakao.com/_xjTGtj"
@@ -265,7 +277,7 @@ header {
 
     justify-content: space-between;
 
-    gap: 25px;
+    gap: 30px;
 
     position: relative;
 }
@@ -283,7 +295,7 @@ header {
 
     align-items: center;
 
-    gap: 20px;
+    gap: 23px;
 
     font-size: 14px;
 
@@ -1036,9 +1048,6 @@ section {
         1.8;
 }
 
-
-/* 의료진 상세정보 접기 */
-
 .doctor-card details {
 
     margin-top:
@@ -1047,8 +1056,7 @@ section {
     padding: 0;
 
     border:
-        1px solid
-        var(--line);
+        1px solid var(--line);
 
     border-radius:
         12px;
@@ -1247,194 +1255,13 @@ section {
 
 
 /* =========================================
-   HEALTH COLUMNS
-========================================= */
-
-.health {
-
-    background:
-        white;
-}
-
-.health-card {
-
-    padding:
-        43px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #f7faf7,
-            #eef6f0
-        );
-
-    border:
-        1px solid
-        #dce8df;
-
-    border-radius:
-        24px;
-}
-
-.health-intro {
-
-    max-width:
-        760px;
-
-    margin-bottom:
-        30px;
-}
-
-.health-card h2 {
-
-    margin:
-        0 0
-        11px;
-
-    font-size:
-        clamp(
-            29px,
-            4vw,
-            37px
-        );
-
-    line-height:
-        1.4;
-
-    letter-spacing:
-        -1.7px;
-}
-
-.health-card p {
-
-    margin: 0;
-
-    color:
-        var(--sub);
-}
-
-.featured-column {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        1fr auto;
-
-    gap:
-        30px;
-
-    align-items:
-        center;
-
-    margin-top:
-        27px;
-
-    padding:
-        26px;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        18px;
-
-    transition:
-        .2s;
-}
-
-.featured-column:hover {
-
-    transform:
-        translateY(-2px);
-
-    box-shadow:
-        var(--shadow);
-}
-
-.featured-label {
-
-    margin-bottom:
-        5px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        12px;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        .05em;
-}
-
-.featured-column h3 {
-
-    margin:
-        0 0
-        7px;
-
-    font-size:
-        21px;
-
-    line-height:
-        1.5;
-
-    letter-spacing:
-        -.6px;
-}
-
-.featured-column p {
-
-    margin:
-        0;
-
-    font-size:
-        14px;
-}
-
-.featured-arrow {
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        25px;
-
-    font-weight:
-        700;
-}
-
-.health-buttons {
-
-    display:
-        flex;
-
-    flex-wrap:
-        wrap;
-
-    gap:
-        9px;
-
-    margin-top:
-        25px;
-}
-
-
-/* =========================================
    INFORMATION
 ========================================= */
 
 .information {
 
     background:
-        var(--cream);
+        white;
 }
 
 .info-grid {
@@ -1455,7 +1282,7 @@ section {
         31px;
 
     background:
-        white;
+        var(--green-pale);
 
     border:
         1px solid
@@ -1526,6 +1353,105 @@ section {
     border-top:
         1px solid
         var(--line);
+}
+
+
+/* =========================================
+   HEALTH COLUMN
+========================================= */
+
+.health {
+
+    background:
+        var(--cream);
+}
+
+.health-card {
+
+    max-width:
+        900px;
+
+    margin:
+        auto;
+
+    padding:
+        45px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:
+        22px;
+
+    text-align:
+        center;
+}
+
+.health-card h2 {
+
+    margin:
+        0 0
+        11px;
+
+    font-size:
+        30px;
+
+    letter-spacing:
+        -1.5px;
+}
+
+.health-card p {
+
+    max-width:
+        720px;
+
+    margin:
+        0 auto
+        26px;
+
+    color:
+        var(--sub);
+}
+
+.health-buttons {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        10px;
+}
+
+.health-column-note {
+
+    margin-top:
+        24px;
+
+    padding-top:
+        22px;
+
+    border-top:
+        1px solid
+        var(--line);
+
+    color:
+        #818a83;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.75;
 }
 
 
@@ -1803,28 +1729,31 @@ footer p {
             23px;
     }
 
+    .info-row {
+
+        display:
+            block;
+    }
+
+    .info-label {
+
+        width:
+            auto;
+
+        margin-bottom:
+            3px;
+    }
+
     .health-card {
 
         padding:
-            30px 22px;
+            33px 22px;
     }
 
-    .featured-column {
+    .health-card h2 {
 
-        grid-template-columns:
-            1fr;
-
-        gap:
-            10px;
-
-        padding:
-            22px;
-    }
-
-    .featured-arrow {
-
-        display:
-            none;
+        font-size:
+            27px;
     }
 
     .health-buttons {
@@ -1841,22 +1770,6 @@ footer p {
         width:
             100%;
     }
-
-    .info-row {
-
-        display:
-            block;
-    }
-
-    .info-label {
-
-        width:
-            auto;
-
-        margin-bottom:
-            3px;
-    }
-
 }
 
 </style>
@@ -1956,7 +1869,6 @@ footer p {
 </header>
 
 
-
 <main id="top">
 
 
@@ -2035,7 +1947,6 @@ footer p {
 </div>
 
 </section>
-
 
 
 <!-- =========================================
@@ -2130,7 +2041,6 @@ OUR STORY
 </section>
 
 
-
 <!-- =========================================
      DOCTORS
 ========================================= -->
@@ -2139,6 +2049,7 @@ OUR STORY
          class="doctors">
 
 <div class="container">
+
 
 <div class="section-head">
 
@@ -2214,12 +2125,14 @@ DOCTORS
 </summary>
 
 <ul>
+
 <li>국립한의학전문대학원 졸업</li>
 <li>한의학박사(PhD)</li>
 <li>한방신경정신과 전문의</li>
 <li>전 부산대학교 한방병원 전공의</li>
 <li>전 부산대학교 한의학전문대학원 외래교수</li>
 <li>전 자생한의원 서면점 원장</li>
+
 </ul>
 
 </details>
@@ -2232,6 +2145,7 @@ DOCTORS
 </summary>
 
 <ul>
+
 <li>대한한의학회 회원</li>
 <li>대한한방신경정신과학회 회원</li>
 <li>대한한방신경정신과학회 전문의이사</li>
@@ -2242,6 +2156,7 @@ DOCTORS
 <li>M&amp;L 프로스킬 전문가과정 수료</li>
 <li>네이버 지식iN 위촉 상담한의사 역임</li>
 <li>SK브로드밴드 중부방송 「알기쉬운 건강상식」 출연</li>
+
 </ul>
 
 </details>
@@ -2264,82 +2179,71 @@ Journal of Oriental Neuropsychiatry.
 
 <li>
 전립선 비대증에 대한 뜸치료의 효과:
-체계적 문헌 고찰과 메타분석. 2018.
+체계적 문헌 고찰과 메타분석.
+2018.
 </li>
 
 <li>
 학생들의 정신건강을 위한 감정자유기법(EFT):
-체계적 문헌고찰. 2017.
+체계적 문헌고찰.
+2017.
 </li>
 
 <li>
 불면장애에 대한 혈부축어탕의
-체계적 문헌 고찰 및 메타분석 연구. 2017.
+체계적 문헌 고찰 및 메타분석 연구.
+2017.
 </li>
 
 <li>
-인터넷 중독에 대한 침 치료 연구동향. 2017.
+인터넷 중독에 대한 침 치료 연구동향.
+2017.
 </li>
 
 <li>
-침과 이완요법 병행치료에 대한 중의학 연구동향. 2017.
+침과 이완요법 병행치료에 대한 중의학 연구동향.
+2017.
 </li>
 
 <li>
 한방치료와 심리치료를 병행한
-공황장애 환자 치험 1례. 2017.
+공황장애 환자 치험 1례.
+2017.
 </li>
 
-<li>
-혼백에 대한 중의학 연구 동향. 2017.
-</li>
-
-<li>
-본태성 진전에 대한 중의학 연구동향. 2017.
-</li>
-
-<li>
-신체화 장애에 대한 중의학 연구동향. 2017.
-</li>
-
-<li>
-섭식장애의 치료에 대한 임상연구 동향. 2016.
-</li>
+<li>혼백에 대한 중의학 연구 동향. 2017.</li>
+<li>본태성 진전에 대한 중의학 연구동향. 2017.</li>
+<li>신체화 장애에 대한 중의학 연구동향. 2017.</li>
+<li>섭식장애의 치료에 대한 임상연구 동향. 2016.</li>
 
 <li>
 불안에 대한 운동요법 중 요가, 기공,
-태극권 연구 고찰. 2016.
+태극권 연구 고찰.
+2016.
 </li>
 
 <li>
 국내 한의학 학회지에 게재된
-질적 연구 보고 분석. 2016.
+질적 연구 보고 분석.
+2016.
 </li>
 
 <li>
-마음챙김 명상을 시행한 정충 환자 치험 1례. 2016.
+마음챙김 명상을 시행한 정충 환자 치험 1례.
+2016.
 </li>
 
-<li>
-공황장애 치료에 대한 중의학의 임상연구 동향. 2015.
-</li>
-
-<li>
-울증에 대한 고찰. 2015.
-</li>
+<li>공황장애 치료에 대한 중의학의 임상연구 동향. 2015.</li>
+<li>울증에 대한 고찰. 2015.</li>
 
 <li>
 점진적 근육이완법을 시행한
-화병환자 치험 1례. 2015.
+화병환자 치험 1례.
+2015.
 </li>
 
-<li>
-불안장애 치료에 관한 최근 임상연구 동향. 2012.
-</li>
-
-<li>
-꿈에 관한 문헌 연구. 2011.
-</li>
+<li>불안장애 치료에 관한 최근 임상연구 동향. 2012.</li>
+<li>꿈에 관한 문헌 연구. 2011.</li>
 
 </ul>
 
@@ -2348,22 +2252,24 @@ Journal of Oriental Neuropsychiatry.
 
 <li>
 우울증 한의임상진료지침.
-한국한의학연구원. 2016. 공저
+한국한의학연구원.
+2016. 공저
 </li>
 
 <li>
 불면장애 한의표준임상진료지침.
-한국한의약진흥원. 2021. 공저
+한국한의약진흥원.
+2021. 공저
 </li>
 
 </ul>
 
 </details>
 
+
 </div>
 
 </article>
-
 
 
 <!-- 정보은 원장 -->
@@ -2405,12 +2311,14 @@ Journal of Oriental Neuropsychiatry.
 </summary>
 
 <ul>
+
 <li>국립한의학전문대학원 졸업</li>
 <li>부산대학교 한의학석사</li>
 <li>전 하늘마음한의원 덕천점 원장</li>
 <li>전 하늘마음한의원 서면점 원장</li>
 <li>전 수석한의원 원장</li>
 <li>제주대학교 수의학과 졸업 (수의사)</li>
+
 </ul>
 
 </details>
@@ -2423,11 +2331,13 @@ Journal of Oriental Neuropsychiatry.
 </summary>
 
 <ul>
+
 <li>대한한의학회 회원</li>
 <li>대한한방피부과학회 회원</li>
 <li>대한한방알레르기 및 면역학회 회원</li>
 <li>네이버 지식iN 위촉 상담한의사 역임</li>
 <li>SK브로드밴드 중부방송 「알기쉬운 건강상식」 출연</li>
+
 </ul>
 
 </details>
@@ -2451,22 +2361,26 @@ Food and Chemical Toxicology.
 
 <li>
 학생들의 정신건강을 위한 감정자유기법(EFT):
-체계적 문헌고찰. 2017.
+체계적 문헌고찰.
+2017.
 </li>
 
 <li>
-인터넷 중독에 대한 침 치료 연구동향. 2017.
+인터넷 중독에 대한 침 치료 연구동향.
+2017.
 </li>
 
 <li>
 반복적인 전침 처치의 척수 교세포 활성 억제를 통한
 신경병증성 통증 억제 효과.
-Korean Journal of Acupuncture. 2013.
+Korean Journal of Acupuncture.
+2013.
 </li>
 
 </ul>
 
 </details>
+
 
 </div>
 
@@ -2480,7 +2394,6 @@ Korean Journal of Acupuncture. 2013.
 </section>
 
 
-
 <!-- =========================================
      TREATMENTS
 ========================================= -->
@@ -2489,6 +2402,7 @@ Korean Journal of Acupuncture. 2013.
          class="treatments">
 
 <div class="container">
+
 
 <div class="section-head">
 
@@ -2501,7 +2415,7 @@ CLINIC
 </h2>
 
 <p>
-각 진료분야의 상세 안내를 확인하실 수 있습니다.
+각 진료분야의 상세 내용을 확인하실 수 있습니다.
 </p>
 
 </div>
@@ -2509,8 +2423,6 @@ CLINIC
 
 <div class="treatment-grid">
 
-
-<!-- 01 통증 -->
 
 <a href="pain-clinic.html"
    class="treatment-link"
@@ -2539,8 +2451,6 @@ CLINIC
 
 </a>
 
-
-<!-- 02 자동차사고 -->
 
 <a href="traffic-accident.html"
    class="treatment-link"
@@ -2571,8 +2481,6 @@ CLINIC
 </a>
 
 
-<!-- 03 심신 -->
-
 <a href="mind-clinic.html"
    class="treatment-link"
    aria-label="심신클리닉 자세히 보기">
@@ -2600,8 +2508,6 @@ CLINIC
 
 </a>
 
-
-<!-- 04 소화 -->
 
 <a href="digestive-clinic.html"
    class="treatment-link"
@@ -2632,8 +2538,6 @@ CLINIC
 </a>
 
 
-<!-- 05 알레르기 -->
-
 <a href="allergy-clinic.html"
    class="treatment-link"
    aria-label="알레르기클리닉 자세히 보기">
@@ -2661,8 +2565,6 @@ CLINIC
 
 </a>
 
-
-<!-- 06 체질 -->
 
 <a href="constitution-clinic.html"
    class="treatment-link"
@@ -2693,8 +2595,6 @@ CLINIC
 </a>
 
 
-<!-- 07 소아 -->
-
 <a href="pediatric-clinic.html"
    class="treatment-link"
    aria-label="소아클리닉 자세히 보기">
@@ -2724,8 +2624,6 @@ CLINIC
 </a>
 
 
-<!-- 08 여성 -->
-
 <a href="women-clinic.html"
    class="treatment-link"
    aria-label="여성클리닉 자세히 보기">
@@ -2754,8 +2652,6 @@ CLINIC
 
 </a>
 
-
-<!-- 09 보약 -->
 
 <a href="herbal-tonic-clinic.html"
    class="treatment-link"
@@ -2793,97 +2689,6 @@ CLINIC
 </section>
 
 
-
-<!-- =========================================
-     HEALTH COLUMN
-========================================= -->
-
-<section id="health"
-         class="health">
-
-<div class="container">
-
-<div class="health-card">
-
-
-<div class="health-intro">
-
-<div class="section-kicker">
-HEALTH COLUMN
-</div>
-
-<h2>
-솔솔한의원 건강칼럼
-</h2>
-
-<p>
-통증, 자동차사고, 심신, 소화기, 알레르기,
-체질, 소아, 여성, 보약 등
-진료실에서 자주 듣는 질문과 건강정보를
-하나씩 정리하고 있습니다.
-</p>
-
-</div>
-
-
-<a href="pain-pillow-height.html"
-   class="featured-column"
-   aria-label="목이 아플 때 베개 높이는 어느 정도가 좋을까요 칼럼 읽기">
-
-<div>
-
-<div class="featured-label">
-최근 건강칼럼 · 통증
-</div>
-
-<h3>
-목이 아플 때 베개 높이는
-어느 정도가 좋을까요?
-</h3>
-
-<p>
-높은 베개와 낮은 베개 중 무엇이 좋은지보다
-수면 자세와 목의 상태를 함께 살펴보는 이유를 정리했습니다.
-</p>
-
-</div>
-
-<div class="featured-arrow">
-→
-</div>
-
-</a>
-
-
-<div class="health-buttons">
-
-<a class="button"
-   href="columns.html">
-
-건강칼럼 전체보기 →
-
-</a>
-
-<a class="button light"
-   href="https://blog.naver.com/solsolclinic3100"
-   target="_blank"
-   rel="noopener">
-
-네이버 블로그 →
-
-</a>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
 <!-- =========================================
      INFORMATION
 ========================================= -->
@@ -2892,6 +2697,7 @@ HEALTH COLUMN
          class="information">
 
 <div class="container">
+
 
 <div class="section-head">
 
@@ -2978,8 +2784,8 @@ INFORMATION
 
 </div>
 
-</div>
 
+</div>
 
 
 <div class="info-card">
@@ -3026,12 +2832,11 @@ INFORMATION
    href="https://naver.me/52RVqgJs"
    target="_blank"
    rel="noopener">
-
 네이버지도 길찾기 →
-
 </a>
 
 </div>
+
 
 </div>
 
@@ -3043,8 +2848,64 @@ INFORMATION
 </section>
 
 
-</main>
+<!-- =========================================
+     HEALTH COLUMN
+========================================= -->
 
+<section id="health"
+         class="health">
+
+<div class="container">
+
+<div class="health-card">
+
+<div class="section-kicker">
+HEALTH INFORMATION
+</div>
+
+<h2>
+솔솔한의원 건강칼럼
+</h2>
+
+<p>
+통증, 자동차사고 후 불편, 불면과 마음건강,
+소화기, 알레르기, 사상체질, 소아 성장,
+여성건강과 피로 등 진료실에서 자주 듣는 질문을
+솔솔한의원 건강칼럼에 정리하고 있습니다.
+</p>
+
+
+<div class="health-buttons">
+
+<a class="button soft"
+   href="columns.html">
+솔솔한의원 건강칼럼 보기 →
+</a>
+
+<a class="button light"
+   href="https://blog.naver.com/solsolclinic3100"
+   target="_blank"
+   rel="noopener">
+네이버 블로그 →
+</a>
+
+</div>
+
+
+<div class="health-column-note">
+홈페이지 건강칼럼의 내용은 일반적인 건강정보 제공을 위한 것이며,
+개인의 진단이나 치료를 대신하지 않습니다.
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
 
 
 <!-- =========================================
@@ -3059,6 +2920,7 @@ INFORMATION
 <img src="logo.jpg"
      alt="솔솔한의원"
      class="footer-logo">
+
 
 <p>
 <strong>
@@ -3075,13 +2937,10 @@ INFORMATION
 </p>
 
 <p>
-
 대표전화
-
 <a href="tel:0415343100">
 041-534-3100
 </a>
-
 </p>
 
 <p>
@@ -3095,9 +2954,9 @@ INFORMATION
 
 <div class="footer-notice">
 
-본 홈페이지와 건강칼럼의 내용은 일반적인 건강정보 제공을 위한 것이며
+본 홈페이지의 건강정보는 일반적인 정보 제공을 위한 것이며
 개인의 진단이나 치료를 대신하지 않습니다.
-증상의 원인과 필요한 진료는 개인의 상태에 따라 달라질 수 있습니다.
+증상과 진료 내용은 개인의 상태에 따라 달라질 수 있습니다.
 
 </div>
 
@@ -3110,7 +2969,6 @@ INFORMATION
 </div>
 
 </footer>
-
 
 
 <!-- =========================================
