@@ -30,9 +30,7 @@
       content="RReSG-kzHWym8EcIkMieVUCDnjPiA39rvatiNnC0_8g">
 
 
-<!-- =========================================
-     SNS
-========================================= -->
+<!-- SNS -->
 
 <meta property="og:locale"
       content="ko_KR">
@@ -77,9 +75,7 @@
       content="https://solsolclinic.github.io/clinic.jpg">
 
 
-<!-- =========================================
-     구조화 데이터
-========================================= -->
+<!-- 구조화 데이터 -->
 
 <script type="application/ld+json">
 {
@@ -131,6 +127,18 @@
         "Friday"
       ],
       "opens": "09:00",
+      "closes": "13:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "14:00",
       "closes": "19:30"
     },
     {
@@ -171,24 +179,13 @@
     --green-main: #6ca67b;
     --green-soft: #eef6f0;
     --green-pale: #f7faf7;
-
     --cream: #fbfaf6;
     --white: #ffffff;
-
     --text: #303530;
     --sub: #687169;
-
     --line: #e1e9e3;
-
-    --shadow:
-        0 14px 38px
-        rgba(55,85,62,.07);
+    --shadow: 0 14px 38px rgba(55,85,62,.07);
 }
-
-
-/* =========================================
-   BASIC
-========================================= */
 
 * {
     box-sizing: border-box;
@@ -200,24 +197,20 @@ html {
 
 body {
     margin: 0;
-
     font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Noto Sans KR",
         "Malgun Gothic",
         sans-serif;
-
     color: var(--text);
-
     background: var(--cream);
-
     line-height: 1.75;
-
     word-break: keep-all;
 }
 
-body.lightbox-open {
+body.lightbox-open,
+body.video-open {
     overflow: hidden;
 }
 
@@ -236,66 +229,41 @@ button {
 }
 
 .container {
-    width:
-        min(
-            1120px,
-            calc(100% - 40px)
-        );
-
+    width: min(1120px, calc(100% - 40px));
     margin: 0 auto;
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 header {
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
-
-    background:
-        rgba(255,255,255,.97);
-
-    border-bottom:
-        1px solid var(--line);
-
-    backdrop-filter:
-        blur(10px);
+    background: rgba(255,255,255,.97);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(10px);
 }
 
 .nav {
     min-height: 74px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 30px;
-
     position: relative;
 }
 
 .brand img {
     width: 140px;
-
     height: auto;
 }
 
 .nav-menu {
     display: flex;
-
     align-items: center;
-
-    gap: 21px;
-
+    gap: 18px;
     font-size: 14px;
-
     font-weight: 700;
 }
 
@@ -304,85 +272,44 @@ header {
 }
 
 .nav-menu a:hover {
-    color:
-        var(--green-deep);
+    color: var(--green-deep);
 }
 
 
-/* =========================================
-   MOBILE MENU
-========================================= */
+/* MOBILE MENU */
 
 .mobile-menu-button {
     display: none;
-
     width: 44px;
-
     height: 44px;
-
     padding: 0;
-
-    border:
-        1px solid var(--line);
-
-    border-radius:
-        12px;
-
-    background:
-        white;
-
-    cursor:
-        pointer;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    flex-direction:
-        column;
-
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     gap: 5px;
 }
 
 .mobile-menu-button span {
     width: 20px;
-
     height: 2px;
-
-    background:
-        var(--text);
-
-    border-radius:
-        2px;
+    background: var(--text);
+    border-radius: 2px;
 }
 
 .mobile-menu {
     display: none;
-
     position: absolute;
-
-    top:
-        calc(100% + 1px);
-
+    top: calc(100% + 1px);
     left: 0;
-
     right: 0;
-
-    background:
-        white;
-
-    padding:
-        8px 20px
-        15px;
-
-    border-bottom:
-        1px solid var(--line);
-
-    box-shadow:
-        0 14px 30px
-        rgba(45,70,50,.09);
+    background: white;
+    padding: 8px 20px 15px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 14px 30px rgba(45,70,50,.09);
 }
 
 .mobile-menu.open {
@@ -391,18 +318,10 @@ header {
 
 .mobile-menu a {
     display: block;
-
-    padding:
-        13px 8px;
-
-    border-bottom:
-        1px solid var(--line);
-
-    font-size:
-        15px;
-
-    font-weight:
-        700;
+    padding: 13px 8px;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .mobile-menu a:last-child {
@@ -410,90 +329,45 @@ header {
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
+/* BUTTON */
 
 .button {
     min-height: 48px;
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    padding:
-        0 21px;
-
-    border-radius:
-        999px;
-
-    background:
-        var(--green-deep);
-
-    color:
-        white;
-
-    border:
-        1px solid
-        var(--green-deep);
-
-    font-size:
-        14px;
-
-    font-weight:
-        700;
-
-    transition:
-        .2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 21px;
+    border-radius: 999px;
+    background: var(--green-deep);
+    color: white;
+    border: 1px solid var(--green-deep);
+    font-size: 14px;
+    font-weight: 700;
+    transition: .2s;
 }
 
 .button.light {
-    background:
-        white;
-
-    color:
-        var(--text);
-
-    border:
-        1px solid
-        var(--line);
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--line);
 }
 
 .button.soft {
-    background:
-        var(--green-soft);
-
-    color:
-        var(--green-deep);
-
-    border:
-        1px solid
-        #d8e7db;
+    background: var(--green-soft);
+    color: var(--green-deep);
+    border: 1px solid #d8e7db;
 }
 
 .button:hover {
-    transform:
-        translateY(-2px);
-
-    opacity:
-        .9;
+    transform: translateY(-2px);
+    opacity: .9;
 }
 
 
-/* =========================================
-   FIRST SCREEN
-========================================= */
+/* HERO */
 
 .hero {
-    padding:
-        48px 0
-        65px;
-
+    padding: 48px 0 65px;
     background:
         linear-gradient(
             135deg,
@@ -504,1652 +378,1114 @@ header {
 
 .hero-grid {
     display: grid;
-
-    grid-template-columns:
-        .95fr
-        1.05fr;
-
-    min-height:
-        545px;
-
-    background:
-        white;
-
-    border:
-        1px solid #e5ece7;
-
-    border-radius:
-        28px;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        var(--shadow);
+    grid-template-columns: .95fr 1.05fr;
+    min-height: 545px;
+    background: white;
+    border: 1px solid #e5ece7;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 .hero-copy {
-    padding:
-        52px;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    justify-content:
-        center;
+    padding: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-kicker {
-    color:
-        var(--green-deep);
-
-    font-size:
-        14px;
-
-    font-weight:
-        800;
-
-    margin-bottom:
-        11px;
+    color: var(--green-deep);
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 11px;
 }
 
 .couple-label {
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    width:
-        fit-content;
-
-    margin-bottom:
-        20px;
-
-    padding:
-        7px 13px;
-
-    border-radius:
-        999px;
-
-    background:
-        var(--green-soft);
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 20px;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: var(--green-soft);
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 .hero h1 {
-    margin:
-        0 0
-        21px;
-
-    font-size:
-        clamp(
-            38px,
-            5vw,
-            57px
-        );
-
-    line-height:
-        1.28;
-
-    letter-spacing:
-        -3px;
+    margin: 0 0 21px;
+    font-size: clamp(38px,5vw,57px);
+    line-height: 1.28;
+    letter-spacing: -3px;
 }
 
 .hero-expertise {
-    margin:
-        0 0
-        14px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        17px;
-
-    font-weight:
-        750;
-
-    line-height:
-        1.7;
+    margin: 0 0 14px;
+    color: var(--green-deep);
+    font-size: 17px;
+    font-weight: 750;
+    line-height: 1.7;
 }
 
 .hero-local {
-    margin:
-        0 0
-        11px;
-
-    color:
-        #4f5d53;
-
-    font-size:
-        14px;
-
-    font-weight:
-        700;
-
-    line-height:
-        1.75;
+    margin: 0 0 11px;
+    color: #4f5d53;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.75;
 }
 
 .hero-description {
     margin: 0;
-
-    color:
-        var(--sub);
-
-    font-size:
-        15px;
-
-    line-height:
-        1.85;
+    color: var(--sub);
+    font-size: 15px;
+    line-height: 1.85;
 }
 
 .hero-buttons {
     display: flex;
-
     gap: 9px;
-
     flex-wrap: wrap;
-
-    margin-top:
-        29px;
+    margin-top: 29px;
 }
 
 .hero-image {
-    min-height:
-        545px;
-
-    overflow:
-        hidden;
+    min-height: 545px;
+    overflow: hidden;
 }
 
 .hero-image img {
-    width:
-        100%;
-
-    height:
-        100%;
-
-    min-height:
-        545px;
-
-    object-fit:
-        cover;
-
-    object-position:
-        center;
+    width: 100%;
+    height: 100%;
+    min-height: 545px;
+    object-fit: cover;
+    object-position: center;
 }
 
 
-/* =========================================
-   COMMON
-========================================= */
+/* COMMON */
 
 section {
-    padding:
-        80px 0;
-
-    scroll-margin-top:
-        85px;
+    padding: 80px 0;
+    scroll-margin-top: 85px;
 }
 
 .section-head {
-    margin-bottom:
-        34px;
+    margin-bottom: 34px;
 }
 
 .section-kicker {
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        .08em;
-
-    margin-bottom:
-        6px;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    margin-bottom: 6px;
 }
 
 .section-head h2 {
-    margin:
-        0 0
-        9px;
-
-    font-size:
-        clamp(
-            29px,
-            4vw,
-            39px
-        );
-
-    line-height:
-        1.35;
-
-    letter-spacing:
-        -2px;
+    margin: 0 0 9px;
+    font-size: clamp(29px,4vw,39px);
+    line-height: 1.35;
+    letter-spacing: -2px;
 }
 
 .section-head p {
     margin: 0;
-
-    color:
-        var(--sub);
+    color: var(--sub);
 }
 
 
-/* =========================================
-   PHILOSOPHY
-========================================= */
+/* PHILOSOPHY */
 
 .philosophy {
-    background:
-        white;
+    background: white;
 }
 
 .philosophy-card {
-    display:
-        grid;
-
-    grid-template-columns:
-        .78fr
-        1.22fr;
-
-    gap:
-        45px;
-
-    align-items:
-        center;
-
-    padding:
-        48px;
-
+    display: grid;
+    grid-template-columns: .78fr 1.22fr;
+    gap: 45px;
+    align-items: center;
+    padding: 48px;
     background:
         linear-gradient(
             135deg,
             #f7faf7,
             #edf5ef
         );
-
-    border:
-        1px solid
-        #deeadf;
-
-    border-radius:
-        25px;
+    border: 1px solid #deeadf;
+    border-radius: 25px;
 }
 
 .philosophy-title h2 {
-    margin:
-        8px 0
-        17px;
-
-    font-size:
-        clamp(
-            30px,
-            4vw,
-            42px
-        );
-
-    line-height:
-        1.43;
-
-    letter-spacing:
-        -2px;
+    margin: 8px 0 17px;
+    font-size: clamp(30px,4vw,42px);
+    line-height: 1.43;
+    letter-spacing: -2px;
 }
 
 .story-title {
-    margin:
-        0 0
-        12px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        17px;
-
-    font-weight:
-        800;
+    margin: 0 0 12px;
+    color: var(--green-deep);
+    font-size: 17px;
+    font-weight: 800;
 }
 
 .philosophy-text p {
-    margin:
-        0 0
-        14px;
-
-    color:
-        #525b54;
-
-    font-size:
-        15px;
+    margin: 0 0 14px;
+    color: #525b54;
+    font-size: 15px;
 }
 
 .philosophy-sign {
-    margin-top:
-        23px !important;
-
-    color:
-        var(--text) !important;
-
-    font-weight:
-        700;
+    margin-top: 23px !important;
+    color: var(--text) !important;
+    font-weight: 700;
 }
 
 .philosophy-more {
-    margin-top:
-        21px;
+    margin-top: 21px;
 }
 
 
-/* =========================================
-   DOCTORS
-========================================= */
+/* DOCTORS */
 
 .doctors {
-    background:
-        var(--cream);
+    background: var(--cream);
 }
 
 .doctor-intro {
-    margin-bottom:
-        27px;
-
-    padding:
-        22px 26px;
-
-    border-radius:
-        17px;
-
-    background:
-        var(--green-soft);
-
-    color:
-        #536057;
-
-    border:
-        1px solid
-        #dce8df;
+    margin-bottom: 27px;
+    padding: 22px 26px;
+    border-radius: 17px;
+    background: var(--green-soft);
+    color: #536057;
+    border: 1px solid #dce8df;
 }
 
 .doctor-intro strong {
-    color:
-        var(--green-deep);
+    color: var(--green-deep);
 }
 
 .doctor-grid {
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap:
-        22px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 22px;
 }
 
 .doctor-card {
-    background:
-        white;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        22px;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        0 7px 22px
-        rgba(70,80,72,.03);
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 7px 22px rgba(70,80,72,.03);
 }
 
 .doctor-photo {
-    width:
-        100%;
-
-    height:
-        400px;
-
-    object-fit:
-        cover;
-
-    object-position:
-        top center;
-
-    background:
-        #eee;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top center;
+    background: #eee;
 }
 
 .doctor-body {
-    padding:
-        29px;
+    padding: 29px;
 }
 
 .doctor-body h3 {
     margin: 0;
-
-    font-size:
-        26px;
-
-    letter-spacing:
-        -1px;
+    font-size: 26px;
+    letter-spacing: -1px;
 }
 
 .doctor-badges {
-    display:
-        flex;
-
-    flex-wrap:
-        wrap;
-
-    gap:
-        7px;
-
-    margin:
-        11px 0
-        18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 11px 0 18px;
 }
 
 .badge {
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    padding:
-        6px 11px;
-
-    border-radius:
-        999px;
-
-    background:
-        var(--green-soft);
-
-    border:
-        1px solid
-        #d4e5d8;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 11px;
+    border-radius: 999px;
+    background: var(--green-soft);
+    border: 1px solid #d4e5d8;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 .doctor-summary {
-    margin:
-        0 0
-        19px;
-
-    color:
-        var(--sub);
-
-    font-size:
-        14px;
-
-    line-height:
-        1.8;
+    margin: 0 0 19px;
+    color: var(--sub);
+    font-size: 14px;
+    line-height: 1.8;
 }
 
 .doctor-card details {
-    margin-top:
-        9px;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        12px;
-
-    background:
-        #fafcf9;
-
-    overflow:
-        hidden;
+    margin-top: 9px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fafcf9;
+    overflow: hidden;
 }
 
 .doctor-card summary {
-    padding:
-        13px 15px;
-
-    cursor:
-        pointer;
-
-    color:
-        var(--green-deep);
-
-    font-weight:
-        700;
-
-    font-size:
-        14px;
-
-    list-style:
-        none;
+    padding: 13px 15px;
+    cursor: pointer;
+    color: var(--green-deep);
+    font-weight: 700;
+    font-size: 14px;
+    list-style: none;
 }
 
 .doctor-card summary::-webkit-details-marker {
-    display:
-        none;
+    display: none;
 }
 
 .doctor-card summary::after {
-    content:
-        "＋";
-
-    float:
-        right;
+    content: "＋";
+    float: right;
 }
 
 .doctor-card details[open] summary::after {
-    content:
-        "－";
+    content: "－";
 }
 
 .doctor-card details ul {
-    margin:
-        0;
-
-    padding:
-        0 34px
-        18px;
-
-    color:
-        #535a55;
-
-    font-size:
-        13.5px;
+    margin: 0;
+    padding: 0 34px 18px;
+    color: #535a55;
+    font-size: 13.5px;
 }
 
 .doctor-card details li {
-    margin:
-        5px 0;
+    margin: 5px 0;
 }
 
 
 /* =========================================
-   TREATMENTS
+   BROADCAST
 ========================================= */
 
+.broadcast {
+    background: white;
+}
+
+.broadcast-slider-wrap {
+    position: relative;
+    margin-top: 31px;
+}
+
+.broadcast-slider {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 3px 2px 15px;
+}
+
+.broadcast-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.broadcast-card {
+    flex: 0 0 calc((100% - 36px) / 3);
+    min-width: 0;
+    scroll-snap-align: start;
+    background: var(--green-pale);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.broadcast-thumb-button {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: #e9eee9;
+    cursor: pointer;
+}
+
+.broadcast-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.broadcast-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.94);
+    color: var(--green-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3px;
+    font-size: 22px;
+    box-shadow: 0 7px 25px rgba(0,0,0,.16);
+}
+
+.broadcast-body {
+    padding: 19px;
+}
+
+.broadcast-label {
+    color: var(--green-deep);
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+.broadcast-body h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+}
+
+.broadcast-doctor {
+    margin: 0 0 13px;
+    color: var(--sub);
+    font-size: 13px;
+}
+
+.broadcast-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.broadcast-video-button {
+    min-height: 38px;
+    padding: 0 13px;
+    border-radius: 999px;
+    background: var(--green-soft);
+    color: var(--green-deep);
+    border: 1px solid #d6e4d9;
+    cursor: pointer;
+    font-size: 12.5px;
+    font-weight: 800;
+}
+
+.broadcast-more {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.broadcast-slider-button {
+    position: absolute;
+    top: 90px;
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #dce6de;
+    border-radius: 50%;
+    background: rgba(255,255,255,.97);
+    color: var(--green-deep);
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 7px 20px rgba(55,85,62,.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.broadcast-prev {
+    left: -24px;
+}
+
+.broadcast-next {
+    right: -24px;
+}
+
+
+/* TREATMENTS */
+
 .treatments {
-    background:
-        var(--green-soft);
+    background: var(--green-soft);
 }
 
 .treatment-grid {
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:
-        14px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 14px;
 }
 
 .treatment-link {
-    display:
-        block;
-
-    height:
-        100%;
+    display: block;
+    height: 100%;
 }
 
 .treatment-card {
-    height:
-        100%;
-
-    padding:
-        26px;
-
-    background:
-        rgba(255,255,255,.96);
-
-    border:
-        1px solid
-        #dce7de;
-
-    border-radius:
-        18px;
-
-    min-height:
-        190px;
-
-    transition:
-        .2s;
+    height: 100%;
+    padding: 26px;
+    background: rgba(255,255,255,.96);
+    border: 1px solid #dce7de;
+    border-radius: 18px;
+    min-height: 190px;
+    transition: .2s;
 }
 
 .treatment-link:hover .treatment-card {
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        var(--shadow);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
 }
 
 .treatment-number {
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 .treatment-card h3 {
-    margin:
-        7px 0
-        9px;
-
-    font-size:
-        20px;
-
-    letter-spacing:
-        -.5px;
+    margin: 7px 0 9px;
+    font-size: 20px;
+    letter-spacing: -.5px;
 }
 
 .treatment-card p {
     margin: 0;
-
-    color:
-        var(--sub);
-
-    font-size:
-        14px;
+    color: var(--sub);
+    font-size: 14px;
 }
 
 .more-link {
-    margin-top:
-        15px;
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
+    margin-top: 15px;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 
-/* =========================================
-   PHOTO SLIDER
-========================================= */
+/* PHOTO SLIDER */
 
 .clinic-gallery {
-    background:
-        white;
+    background: white;
 }
 
 .gallery-intro {
-    max-width:
-        760px;
+    max-width: 760px;
 }
 
 .gallery-slider-wrap {
-    position:
-        relative;
-
-    margin-top:
-        31px;
+    position: relative;
+    margin-top: 31px;
 }
 
 .gallery-slider {
-    display:
-        flex;
-
-    gap:
-        18px;
-
-    overflow-x:
-        auto;
-
-    scroll-snap-type:
-        x mandatory;
-
-    scroll-behavior:
-        smooth;
-
-    scrollbar-width:
-        none;
-
-    padding:
-        3px 2px
-        15px;
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 3px 2px 15px;
 }
 
 .gallery-slider::-webkit-scrollbar {
-    display:
-        none;
+    display: none;
 }
 
 .slide-card {
-    flex:
-        0 0
-        calc((100% - 36px) / 3);
-
-    min-width:
-        0;
-
-    scroll-snap-align:
-        start;
-
-    background:
-        var(--green-pale);
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        20px;
-
-    overflow:
-        hidden;
-
-    cursor:
-        zoom-in;
-
-    transition:
-        transform .2s,
-        box-shadow .2s;
+    flex: 0 0 calc((100% - 36px) / 3);
+    min-width: 0;
+    scroll-snap-align: start;
+    background: var(--green-pale);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: zoom-in;
+    transition: transform .2s, box-shadow .2s;
 }
 
 .slide-card:hover {
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        var(--shadow);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
 }
 
 .slide-image {
-    width:
-        100%;
-
-    height:
-        250px;
-
-    object-fit:
-        cover;
-
-    background:
-        #f1f3f1;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: #f1f3f1;
 }
 
 .slide-caption {
-    padding:
-        17px 18px
-        19px;
+    padding: 17px 18px 19px;
 }
 
 .slide-caption strong {
-    display:
-        block;
-
-    margin-bottom:
-        4px;
-
-    font-size:
-        16px;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 16px;
 }
 
 .slide-caption span {
-    display:
-        block;
-
-    color:
-        var(--sub);
-
-    font-size:
-        13px;
-
-    line-height:
-        1.65;
+    display: block;
+    color: var(--sub);
+    font-size: 13px;
+    line-height: 1.65;
 }
 
 .gallery-hint {
-    margin-top:
-        7px;
-
-    color:
-        #919892;
-
-    text-align:
-        center;
-
-    font-size:
-        12px;
+    margin-top: 7px;
+    color: #919892;
+    text-align: center;
+    font-size: 12px;
 }
 
-
-/* SLIDER BUTTON */
-
 .slider-button {
-    position:
-        absolute;
-
-    top:
-        104px;
-
-    z-index:
-        20;
-
-    width:
-        48px;
-
-    height:
-        48px;
-
-    border:
-        1px solid
-        #dce6de;
-
-    border-radius:
-        50%;
-
-    background:
-        rgba(255,255,255,.97);
-
-    color:
-        var(--green-deep);
-
-    font-size:
-        30px;
-
-    line-height:
-        1;
-
-    cursor:
-        pointer;
-
-    box-shadow:
-        0 7px 20px
-        rgba(55,85,62,.12);
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    transition:
-        .2s;
+    position: absolute;
+    top: 104px;
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #dce6de;
+    border-radius: 50%;
+    background: rgba(255,255,255,.97);
+    color: var(--green-deep);
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 7px 20px rgba(55,85,62,.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
 }
 
 .slider-button:hover {
-    background:
-        var(--green-deep);
-
-    color:
-        white;
+    background: var(--green-deep);
+    color: white;
 }
 
 .slider-prev {
-    left:
-        -24px;
+    left: -24px;
 }
 
 .slider-next {
-    right:
-        -24px;
+    right: -24px;
 }
 
 
-/* =========================================
-   LIGHTBOX
-========================================= */
+/* PHOTO LIGHTBOX */
 
 .lightbox {
-    position:
-        fixed;
-
-    inset:
-        0;
-
-    z-index:
-        5000;
-
-    display:
-        none;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    padding:
-        30px 82px;
-
-    background:
-        rgba(20,28,22,.92);
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 82px;
+    background: rgba(20,28,22,.92);
 }
 
 .lightbox.open {
-    display:
-        flex;
+    display: flex;
 }
 
 .lightbox-content {
-    width:
-        min(1120px,100%);
-
-    height:
-        min(88vh,850px);
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
+    width: min(1120px,100%);
+    height: min(88vh,850px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .lightbox-image {
-    max-width:
-        100%;
-
-    max-height:
-        calc(88vh - 105px);
-
-    width:
-        auto;
-
-    height:
-        auto;
-
-    object-fit:
-        contain;
-
-    border-radius:
-        12px;
-
-    box-shadow:
-        0 18px 55px
-        rgba(0,0,0,.38);
+    max-width: 100%;
+    max-height: calc(88vh - 105px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 18px 55px rgba(0,0,0,.38);
 }
 
 .lightbox-caption {
-    margin-top:
-        15px;
-
-    color:
-        white;
-
-    text-align:
-        center;
+    margin-top: 15px;
+    color: white;
+    text-align: center;
 }
 
 .lightbox-caption strong {
-    display:
-        block;
-
-    margin-bottom:
-        2px;
-
-    font-size:
-        18px;
+    display: block;
+    margin-bottom: 2px;
+    font-size: 18px;
 }
 
 .lightbox-caption span {
-    color:
-        rgba(255,255,255,.75);
-
-    font-size:
-        13px;
+    color: rgba(255,255,255,.75);
+    font-size: 13px;
 }
 
 .lightbox-close {
-    position:
-        fixed;
-
-    top:
-        22px;
-
-    right:
-        26px;
-
-    z-index:
-        5100;
-
-    width:
-        48px;
-
-    height:
-        48px;
-
-    border:
-        0;
-
-    border-radius:
-        50%;
-
-    background:
-        rgba(255,255,255,.14);
-
-    color:
-        white;
-
-    font-size:
-        29px;
-
-    cursor:
-        pointer;
+    position: fixed;
+    top: 22px;
+    right: 26px;
+    z-index: 5100;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.14);
+    color: white;
+    font-size: 29px;
+    cursor: pointer;
 }
 
 .lightbox-nav {
-    position:
-        fixed;
-
-    top:
-        50%;
-
-    transform:
-        translateY(-50%);
-
-    z-index:
-        5100;
-
-    width:
-        54px;
-
-    height:
-        54px;
-
-    border:
-        0;
-
-    border-radius:
-        50%;
-
-    background:
-        rgba(255,255,255,.14);
-
-    color:
-        white;
-
-    font-size:
-        35px;
-
-    cursor:
-        pointer;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5100;
+    width: 54px;
+    height: 54px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.14);
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
 
 .lightbox-close:hover,
 .lightbox-nav:hover {
-    background:
-        rgba(255,255,255,.27);
+    background: rgba(255,255,255,.27);
 }
 
 .lightbox-prev {
-    left:
-        22px;
+    left: 22px;
 }
 
 .lightbox-next {
-    right:
-        22px;
+    right: 22px;
 }
 
 
-/* =========================================
-   HEALTH
-========================================= */
+/* VIDEO MODAL */
+
+.video-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 6000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 22px 35px;
+    background: rgba(18,25,20,.93);
+}
+
+.video-modal.open {
+    display: flex;
+}
+
+.video-modal-inner {
+    width: min(960px,100%);
+}
+
+.video-frame-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 22px 65px rgba(0,0,0,.38);
+}
+
+.video-frame-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-modal-title {
+    margin-top: 14px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.video-close {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.15);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* HEALTH */
 
 .health {
-    background:
-        var(--cream);
+    background: var(--cream);
 }
 
 .health-card {
-    max-width:
-        850px;
-
-    margin:
-        auto;
-
-    padding:
-        43px;
-
-    background:
-        white;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        22px;
-
-    text-align:
-        center;
+    max-width: 850px;
+    margin: auto;
+    padding: 43px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    text-align: center;
 }
 
 .health-card h2 {
-    margin:
-        0 0
-        10px;
-
-    font-size:
-        30px;
-
-    letter-spacing:
-        -1.5px;
+    margin: 0 0 10px;
+    font-size: 30px;
+    letter-spacing: -1.5px;
 }
 
 .health-card p {
-    margin:
-        0 0
-        24px;
-
-    color:
-        var(--sub);
+    margin: 0 0 24px;
+    color: var(--sub);
 }
 
 .health-buttons {
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    flex-wrap:
-        wrap;
-
-    gap:
-        9px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
 }
 
 
-/* =========================================
-   INFORMATION
-========================================= */
+/* INFORMATION */
 
 .information {
-    background:
-        white;
+    background: white;
 }
 
 .info-grid {
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap:
-        18px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
 }
 
 .info-card {
-    padding:
-        31px;
-
-    background:
-        var(--green-pale);
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius:
-        21px;
+    padding: 31px;
+    background: var(--green-pale);
+    border: 1px solid var(--line);
+    border-radius: 21px;
 }
 
 .info-card h3 {
-    margin:
-        0 0
-        18px;
-
-    font-size:
-        21px;
+    margin: 0 0 18px;
+    font-size: 21px;
 }
 
 .info-row {
-    display:
-        flex;
-
-    gap:
-        20px;
-
-    padding:
-        12px 0;
-
-    border-bottom:
-        1px solid
-        var(--line);
+    display: flex;
+    gap: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
 }
 
 .info-row:last-of-type {
-    border-bottom:
-        none;
+    border-bottom: none;
 }
 
 .info-label {
-    width:
-        95px;
-
-    flex:
-        0 0 auto;
-
-    font-weight:
-        700;
+    width: 95px;
+    flex: 0 0 auto;
+    font-weight: 700;
 }
 
 .info-text {
-    color:
-        var(--sub);
+    color: var(--sub);
 }
 
 .map-area {
-    margin-top:
-        22px;
-
-    padding-top:
-        21px;
-
-    border-top:
-        1px solid
-        var(--line);
+    margin-top: 22px;
+    padding-top: 21px;
+    border-top: 1px solid var(--line);
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER */
 
 footer {
-    padding:
-        44px 0;
-
-    background:
-        #f2f6f2;
-
-    border-top:
-        1px solid
-        var(--line);
-
-    color:
-        #58615a;
-
-    font-size:
-        13px;
+    padding: 44px 0;
+    background: #f2f6f2;
+    border-top: 1px solid var(--line);
+    color: #58615a;
+    font-size: 13px;
 }
 
 .footer-logo {
-    width:
-        120px;
-
-    margin-bottom:
-        16px;
+    width: 120px;
+    margin-bottom: 16px;
 }
 
 footer p {
-    margin:
-        5px 0;
+    margin: 5px 0;
 }
 
 .footer-notice {
-    max-width:
-        760px;
-
-    margin-top:
-        22px;
-
-    color:
-        #8a928c;
-
-    font-size:
-        12px;
+    max-width: 760px;
+    margin-top: 22px;
+    color: #8a928c;
+    font-size: 12px;
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
 @media (max-width:800px) {
 
     .container {
-        width:
-            min(
-                calc(100% - 28px),
-                1120px
-            );
+        width: min(calc(100% - 28px),1120px);
     }
 
     .nav {
-        min-height:
-            66px;
+        min-height: 66px;
     }
 
     .brand img {
-        width:
-            108px;
+        width: 108px;
     }
 
     .nav-menu {
-        display:
-            none;
+        display: none;
     }
 
     .mobile-menu-button {
-        display:
-            flex;
+        display: flex;
     }
 
     .hero {
-        padding:
-            24px 0
-            48px;
+        padding: 24px 0 48px;
     }
 
     .hero-grid {
-        grid-template-columns:
-            1fr;
-
-        min-height:
-            0;
-
-        border-radius:
-            21px;
+        grid-template-columns: 1fr;
+        min-height: 0;
+        border-radius: 21px;
     }
 
     .hero-copy {
-        padding:
-            36px 23px;
+        padding: 36px 23px;
     }
 
     .hero h1 {
-        font-size:
-            36px;
-
-        letter-spacing:
-            -2px;
+        font-size: 36px;
+        letter-spacing: -2px;
     }
 
     .couple-label {
-        font-size:
-            12px;
+        font-size: 12px;
     }
 
     .hero-expertise {
-        font-size:
-            15px;
+        font-size: 15px;
     }
 
     .hero-local {
-        font-size:
-            13.5px;
+        font-size: 13.5px;
     }
 
     .hero-description {
-        font-size:
-            14px;
+        font-size: 14px;
     }
 
     .hero-buttons {
-        display:
-            grid;
-
-        grid-template-columns:
-            1fr;
-
-        width:
-            100%;
-
-        margin-top:
-            25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 25px;
     }
 
     .hero-buttons .button {
-        width:
-            100%;
+        width: 100%;
     }
 
     .hero-image,
     .hero-image img {
-        height:
-            260px;
-
-        min-height:
-            260px;
+        height: 260px;
+        min-height: 260px;
     }
 
     section {
-        padding:
-            58px 0;
-
-        scroll-margin-top:
-            72px;
+        padding: 58px 0;
+        scroll-margin-top: 72px;
     }
 
     .section-head {
-        margin-bottom:
-            27px;
+        margin-bottom: 27px;
     }
 
     .philosophy-card {
-        grid-template-columns:
-            1fr;
-
-        gap:
-            24px;
-
-        padding:
-            31px 23px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 31px 23px;
     }
 
     .philosophy-text p {
-        font-size:
-            14px;
+        font-size: 14px;
     }
 
     .doctor-grid,
     .treatment-grid,
     .info-grid {
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
     }
 
     .doctor-intro {
-        padding:
-            19px 21px;
-
-        font-size:
-            14px;
+        padding: 19px 21px;
+        font-size: 14px;
     }
 
     .doctor-photo {
-        height:
-            310px;
+        height: 310px;
     }
 
     .doctor-body {
-        padding:
-            23px;
+        padding: 23px;
     }
 
     .doctor-body h3 {
-        font-size:
-            23px;
+        font-size: 23px;
     }
 
     .doctor-card details ul {
-        padding:
-            0 29px
-            17px;
+        padding: 0 29px 17px;
+        font-size: 13px;
+    }
 
-        font-size:
-            13px;
+    .broadcast-card {
+        flex: 0 0 82%;
+    }
+
+    .broadcast-slider-button {
+        width: 42px;
+        height: 42px;
+        top: 72px;
+        font-size: 26px;
+    }
+
+    .broadcast-prev {
+        left: -8px;
+    }
+
+    .broadcast-next {
+        right: -8px;
     }
 
     .treatment-card {
-        min-height:
-            auto;
-
-        padding:
-            23px;
+        min-height: auto;
+        padding: 23px;
     }
 
     .slide-card {
-        flex:
-            0 0
-            82%;
+        flex: 0 0 82%;
     }
 
     .slide-image {
-        height:
-            230px;
+        height: 230px;
     }
 
     .slider-button {
-        width:
-            42px;
-
-        height:
-            42px;
-
-        top:
-            95px;
-
-        font-size:
-            26px;
+        width: 42px;
+        height: 42px;
+        top: 95px;
+        font-size: 26px;
     }
 
     .slider-prev {
-        left:
-            -8px;
+        left: -8px;
     }
 
     .slider-next {
-        right:
-            -8px;
+        right: -8px;
     }
 
     .health-card {
-        padding:
-            33px 22px;
+        padding: 33px 22px;
     }
 
     .health-card h2 {
-        font-size:
-            27px;
+        font-size: 27px;
     }
 
     .health-buttons {
-        display:
-            grid;
-
-        grid-template-columns:
-            1fr;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .health-buttons .button {
-        width:
-            100%;
+        width: 100%;
     }
 
     .info-row {
-        display:
-            block;
+        display: block;
     }
 
     .info-label {
-        width:
-            auto;
-
-        margin-bottom:
-            3px;
+        width: auto;
+        margin-bottom: 3px;
     }
 
     .lightbox {
-        padding:
-            65px 14px
-            30px;
+        padding: 65px 14px 30px;
     }
 
     .lightbox-image {
-        max-height:
-            calc(80vh - 100px);
-
-        border-radius:
-            8px;
+        max-height: calc(80vh - 100px);
+        border-radius: 8px;
     }
 
     .lightbox-close {
-        top:
-            13px;
-
-        right:
-            13px;
-
-        width:
-            44px;
-
-        height:
-            44px;
+        top: 13px;
+        right: 13px;
+        width: 44px;
+        height: 44px;
     }
 
     .lightbox-nav {
-        width:
-            44px;
-
-        height:
-            44px;
-
-        font-size:
-            28px;
-
-        background:
-            rgba(0,0,0,.38);
+        width: 44px;
+        height: 44px;
+        font-size: 28px;
+        background: rgba(0,0,0,.38);
     }
 
     .lightbox-prev {
-        left:
-            7px;
+        left: 7px;
     }
 
     .lightbox-next {
-        right:
-            7px;
+        right: 7px;
+    }
+
+    .video-modal {
+        padding: 65px 12px 30px;
+    }
+
+    .video-close {
+        top: 12px;
+        right: 12px;
+        width: 44px;
+        height: 44px;
     }
 }
 
@@ -2160,10 +1496,6 @@ footer p {
 
 <body>
 
-
-<!-- =========================================
-     HEADER
-========================================= -->
 
 <header>
 
@@ -2188,6 +1520,10 @@ footer p {
 
 <a href="#doctors">
 의료진
+</a>
+
+<a href="#broadcast">
+방송 건강상식
 </a>
 
 <a href="#treatments">
@@ -2233,6 +1569,10 @@ footer p {
 의료진
 </a>
 
+<a href="#broadcast">
+방송 건강상식
+</a>
+
 <a href="#treatments">
 진료분야
 </a>
@@ -2259,16 +1599,13 @@ footer p {
 <main id="top">
 
 
-<!-- =========================================
-     첫 화면
-========================================= -->
+<!-- 첫 화면 -->
 
 <section class="hero">
 
 <div class="container">
 
 <div class="hero-grid">
-
 
 <div class="hero-copy">
 
@@ -2299,7 +1636,6 @@ footer p {
 현재의 상태에 맞는 진료 방향을 상담합니다.
 </p>
 
-
 <div class="hero-buttons">
 
 <a class="button"
@@ -2318,7 +1654,7 @@ footer p {
    href="http://pf.kakao.com/_xjTGtj"
    target="_blank"
    rel="noopener">
-카카오톡 상담
+카카오톡 문의
 </a>
 
 </div>
@@ -2333,7 +1669,6 @@ footer p {
 
 </div>
 
-
 </div>
 
 </div>
@@ -2341,9 +1676,7 @@ footer p {
 </section>
 
 
-<!-- =========================================
-     진료철학
-========================================= -->
+<!-- 진료철학 -->
 
 <section id="philosophy"
          class="philosophy">
@@ -2351,7 +1684,6 @@ footer p {
 <div class="container">
 
 <div class="philosophy-card">
-
 
 <div class="philosophy-title">
 
@@ -2432,9 +1764,7 @@ OUR STORY
 </section>
 
 
-<!-- =========================================
-     의료진
-========================================= -->
+<!-- 의료진 -->
 
 <section id="doctors"
          class="doctors">
@@ -2476,8 +1806,6 @@ DOCTORS
 <div class="doctor-grid">
 
 
-<!-- 이승환 대표원장 -->
-
 <article class="doctor-card">
 
 <img src="lee.jpg"
@@ -2508,7 +1836,6 @@ DOCTORS
 전 부산대학교 한방병원 전공의
 </p>
 
-
 <details>
 
 <summary>
@@ -2525,7 +1852,6 @@ DOCTORS
 </ul>
 
 </details>
-
 
 <details>
 
@@ -2547,7 +1873,6 @@ DOCTORS
 </ul>
 
 </details>
-
 
 <details>
 
@@ -2580,75 +1905,26 @@ Journal of Oriental Neuropsychiatry.
 </li>
 
 <li>인터넷 중독에 대한 침 치료 연구동향. 2017.</li>
-
-<li>
-침과 이완요법 병행치료에 대한 중의학 연구동향. 2017.
-</li>
-
-<li>
-한방치료와 심리치료를 병행한
-공황장애 환자 치험 1례. 2017.
-</li>
-
+<li>침과 이완요법 병행치료에 대한 중의학 연구동향. 2017.</li>
+<li>한방치료와 심리치료를 병행한 공황장애 환자 치험 1례. 2017.</li>
 <li>혼백에 대한 중의학 연구 동향. 2017.</li>
-
 <li>본태성 진전에 대한 중의학 연구동향. 2017.</li>
-
 <li>신체화 장애에 대한 중의학 연구동향. 2017.</li>
-
 <li>섭식장애의 치료에 대한 임상연구 동향. 2016.</li>
-
-<li>
-불안에 대한 운동요법 중 요가, 기공,
-태극권 연구 고찰. 2016.
-</li>
-
-<li>
-국내 한의학 학회지에 게재된
-질적 연구 보고 분석. 2016.
-</li>
-
-<li>
-마음챙김 명상을 시행한 정충 환자 치험 1례. 2016.
-</li>
-
-<li>
-공황장애 치료에 대한 중의학의 임상연구 동향. 2015.
-</li>
-
-<li>
-울증에 대한 고찰. 2015.
-</li>
-
-<li>
-점진적 근육이완법을 시행한
-화병환자 치험 1례. 2015.
-</li>
-
-<li>
-불안장애 치료에 관한 최근 임상연구 동향. 2012.
-</li>
-
-<li>
-꿈에 관한 문헌 연구. 2011.
-</li>
+<li>불안에 대한 운동요법 중 요가, 기공, 태극권 연구 고찰. 2016.</li>
+<li>국내 한의학 학회지에 게재된 질적 연구 보고 분석. 2016.</li>
+<li>마음챙김 명상을 시행한 정충 환자 치험 1례. 2016.</li>
+<li>공황장애 치료에 대한 중의학의 임상연구 동향. 2015.</li>
+<li>울증에 대한 고찰. 2015.</li>
+<li>점진적 근육이완법을 시행한 화병환자 치험 1례. 2015.</li>
+<li>불안장애 치료에 관한 최근 임상연구 동향. 2012.</li>
+<li>꿈에 관한 문헌 연구. 2011.</li>
 
 </ul>
 
 <ul>
-
-<li>
-우울증 한의임상진료지침.
-한국한의학연구원.
-2016. 공저
-</li>
-
-<li>
-불면장애 한의표준임상진료지침.
-한국한의약진흥원.
-2021. 공저
-</li>
-
+<li>우울증 한의임상진료지침. 한국한의학연구원. 2016. 공저</li>
+<li>불면장애 한의표준임상진료지침. 한국한의약진흥원. 2021. 공저</li>
 </ul>
 
 </details>
@@ -2657,8 +1933,6 @@ Journal of Oriental Neuropsychiatry.
 
 </article>
 
-
-<!-- 정보은 원장 -->
 
 <article class="doctor-card">
 
@@ -2690,7 +1964,6 @@ Journal of Oriental Neuropsychiatry.
 부산대학교 한의학석사
 </p>
 
-
 <details>
 
 <summary>
@@ -2708,7 +1981,6 @@ Journal of Oriental Neuropsychiatry.
 
 </details>
 
-
 <details>
 
 <summary>
@@ -2724,7 +1996,6 @@ Journal of Oriental Neuropsychiatry.
 </ul>
 
 </details>
-
 
 <details>
 
@@ -2774,8 +2045,424 @@ Korean Journal of Acupuncture.
 
 
 <!-- =========================================
-     진료분야
+     방송 건강상식
 ========================================= -->
+
+<section id="broadcast"
+         class="broadcast">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="section-kicker">
+BTV · HEALTH INFORMATION
+</div>
+
+<h2>
+방송으로 만나는 건강상식
+</h2>
+
+<p>
+BTV 중부방송 「알기쉬운 건강상식」에서
+솔솔한의원 의료진이 다양한 건강 주제에 대해 설명했습니다.
+관심 있는 영상을 선택해 확인하실 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="broadcast-slider-wrap">
+
+<button class="broadcast-slider-button broadcast-prev"
+        id="broadcastPrev"
+        type="button"
+        aria-label="이전 방송">
+‹
+</button>
+
+
+<div class="broadcast-slider"
+     id="broadcastSlider">
+
+
+<!-- 긴장성두통 -->
+
+<article class="broadcast-card">
+
+<button class="broadcast-thumb-button"
+        type="button"
+        data-video-id="bcmQ96TRa2E"
+        data-video-title="긴장성두통">
+
+<img src="https://img.youtube.com/vi/bcmQ96TRa2E/hqdefault.jpg"
+     alt="긴장성두통 건강상식 방송 영상"
+     class="broadcast-thumb"
+     loading="lazy">
+
+<span class="broadcast-play">
+▶
+</span>
+
+</button>
+
+<div class="broadcast-body">
+
+<div class="broadcast-label">
+BTV 중부방송
+</div>
+
+<h3>
+긴장성두통
+</h3>
+
+<p class="broadcast-doctor">
+이승환 대표원장
+</p>
+
+<div class="broadcast-actions">
+
+<button class="broadcast-video-button"
+        data-video-id="bcmQ96TRa2E"
+        data-video-title="긴장성두통">
+영상 보기
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- 안면마비 -->
+
+<article class="broadcast-card">
+
+<button class="broadcast-thumb-button"
+        type="button"
+        data-video-id="jU29oPPndJw"
+        data-video-title="안면마비">
+
+<img src="https://img.youtube.com/vi/jU29oPPndJw/hqdefault.jpg"
+     alt="안면마비 건강상식 방송 영상"
+     class="broadcast-thumb"
+     loading="lazy">
+
+<span class="broadcast-play">
+▶
+</span>
+
+</button>
+
+<div class="broadcast-body">
+
+<div class="broadcast-label">
+BTV 중부방송
+</div>
+
+<h3>
+안면마비
+</h3>
+
+<p class="broadcast-doctor">
+이승환 대표원장
+</p>
+
+<div class="broadcast-actions">
+
+<button class="broadcast-video-button"
+        data-video-id="jU29oPPndJw"
+        data-video-title="안면마비">
+영상 보기
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- 허리디스크 -->
+
+<article class="broadcast-card">
+
+<button class="broadcast-thumb-button"
+        type="button"
+        data-video-id="AMeDzt470KM"
+        data-video-title="허리디스크">
+
+<img src="https://img.youtube.com/vi/AMeDzt470KM/hqdefault.jpg"
+     alt="허리디스크 건강상식 방송 영상"
+     class="broadcast-thumb"
+     loading="lazy">
+
+<span class="broadcast-play">
+▶
+</span>
+
+</button>
+
+<div class="broadcast-body">
+
+<div class="broadcast-label">
+BTV 중부방송
+</div>
+
+<h3>
+허리디스크
+</h3>
+
+<p class="broadcast-doctor">
+이승환 대표원장
+</p>
+
+<div class="broadcast-actions">
+
+<button class="broadcast-video-button"
+        data-video-id="AMeDzt470KM"
+        data-video-title="허리디스크">
+영상 보기
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- 소화불량 -->
+
+<article class="broadcast-card">
+
+<button class="broadcast-thumb-button"
+        type="button"
+        data-video-id="p7p9EfDCQ58"
+        data-video-title="소화불량">
+
+<img src="https://img.youtube.com/vi/p7p9EfDCQ58/hqdefault.jpg"
+     alt="소화불량 건강상식 방송 영상"
+     class="broadcast-thumb"
+     loading="lazy">
+
+<span class="broadcast-play">
+▶
+</span>
+
+</button>
+
+<div class="broadcast-body">
+
+<div class="broadcast-label">
+BTV 중부방송
+</div>
+
+<h3>
+소화불량
+</h3>
+
+<p class="broadcast-doctor">
+이승환 대표원장
+</p>
+
+<div class="broadcast-actions">
+
+<button class="broadcast-video-button"
+        data-video-id="p7p9EfDCQ58"
+        data-video-title="소화불량">
+영상 보기
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- 산후조리 -->
+
+<article class="broadcast-card">
+
+<button class="broadcast-thumb-button"
+        type="button"
+        data-video-id="WhvfrW1JL8w"
+        data-video-title="산후조리 1편">
+
+<img src="https://img.youtube.com/vi/WhvfrW1JL8w/hqdefault.jpg"
+     alt="산후조리 건강상식 방송 영상"
+     class="broadcast-thumb"
+     loading="lazy">
+
+<span class="broadcast-play">
+▶
+</span>
+
+</button>
+
+<div class="broadcast-body">
+
+<div class="broadcast-label">
+BTV 중부방송 · 2부작
+</div>
+
+<h3>
+산후조리
+</h3>
+
+<p class="broadcast-doctor">
+정보은 원장
+</p>
+
+<div class="broadcast-actions">
+
+<button class="broadcast-video-button"
+        data-video-id="WhvfrW1JL8w"
+        data-video-title="산후조리 1편">
+1편 보기
+</button>
+
+<button class="broadcast-video-button"
+        data-video-id="wvFGYTLCq1E"
+        data-video-title="산후조리 2편">
+2편 보기
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- 공황장애 -->
+
+<article class="broadcast-card">
+
+<button class="broadcast-thumb-button"
+        type="button"
+        data-video-id="g30b5uBbxDM"
+        data-video-title="공황장애">
+
+<img src="https://img.youtube.com/vi/g30b5uBbxDM/hqdefault.jpg"
+     alt="공황장애 건강상식 방송 영상"
+     class="broadcast-thumb"
+     loading="lazy">
+
+<span class="broadcast-play">
+▶
+</span>
+
+</button>
+
+<div class="broadcast-body">
+
+<div class="broadcast-label">
+BTV 중부방송
+</div>
+
+<h3>
+공황장애
+</h3>
+
+<p class="broadcast-doctor">
+이승환 대표원장
+</p>
+
+<div class="broadcast-actions">
+
+<button class="broadcast-video-button"
+        data-video-id="g30b5uBbxDM"
+        data-video-title="공황장애">
+영상 보기
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- 만성피로 -->
+
+<article class="broadcast-card">
+
+<button class="broadcast-thumb-button"
+        type="button"
+        data-video-id="vX-VsqSilLk"
+        data-video-title="만성피로증후군">
+
+<img src="https://img.youtube.com/vi/vX-VsqSilLk/hqdefault.jpg"
+     alt="만성피로증후군 건강상식 방송 영상"
+     class="broadcast-thumb"
+     loading="lazy">
+
+<span class="broadcast-play">
+▶
+</span>
+
+</button>
+
+<div class="broadcast-body">
+
+<div class="broadcast-label">
+BTV 중부방송
+</div>
+
+<h3>
+만성피로증후군
+</h3>
+
+<p class="broadcast-doctor">
+이승환 대표원장
+</p>
+
+<div class="broadcast-actions">
+
+<button class="broadcast-video-button"
+        data-video-id="vX-VsqSilLk"
+        data-video-title="만성피로증후군">
+영상 보기
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+
+<button class="broadcast-slider-button broadcast-next"
+        id="broadcastNext"
+        type="button"
+        aria-label="다음 방송">
+›
+</button>
+
+</div>
+
+
+<div class="broadcast-more">
+
+<a href="broadcast.html"
+   class="button soft">
+방송 건강상식 전체보기 →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- 진료분야 -->
 
 <section id="treatments"
          class="treatments">
@@ -2801,254 +2488,118 @@ CLINIC
 
 <div class="treatment-grid">
 
-
-<a href="pain-clinic.html"
-   class="treatment-link">
-
+<a href="pain-clinic.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-01
-</div>
-
-<h3>
-통증 클리닉
-</h3>
-
+<div class="treatment-number">01</div>
+<h3>통증 클리닉</h3>
 <p>
 목·허리 통증, 디스크·협착 관련 불편,
 두통·어지럼, 각종 염좌 등을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
 
-
-<a href="traffic-accident.html"
-   class="treatment-link">
-
+<a href="traffic-accident.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-02
-</div>
-
-<h3>
-자동차사고 후유증
-</h3>
-
+<div class="treatment-number">02</div>
+<h3>자동차사고 후유증</h3>
 <p>
 교통사고 이후 나타날 수 있는 목·허리 통증뿐 아니라
 두통, 어지럼, 수면 변화와 긴장 등 다양한 불편을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
 
-
-<a href="mind-clinic.html"
-   class="treatment-link">
-
+<a href="mind-clinic.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-03
-</div>
-
-<h3>
-심신 클리닉
-</h3>
-
+<div class="treatment-number">03</div>
+<h3>심신 클리닉</h3>
 <p>
 불면, 불안, 공황 증상, 화병, 우울감과
 함께 나타날 수 있는 여러 신체 증상을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
 
-
-<a href="digestive-clinic.html"
-   class="treatment-link">
-
+<a href="digestive-clinic.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-04
-</div>
-
-<h3>
-소화기 클리닉
-</h3>
-
+<div class="treatment-number">04</div>
+<h3>소화기 클리닉</h3>
 <p>
 기능성 소화불량, 식후 더부룩함,
 속쓰림, 복부팽만, 매핵기,
 과민성장증후군 등 소화기 불편을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
 
-
-<a href="allergy-clinic.html"
-   class="treatment-link">
-
+<a href="allergy-clinic.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-05
-</div>
-
-<h3>
-알레르기 클리닉
-</h3>
-
+<div class="treatment-number">05</div>
+<h3>알레르기 클리닉</h3>
 <p>
 알레르기 비염, 반복되는 콧물·재채기·코막힘,
 감기 등 호흡기 증상을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
 
-
-<a href="constitution-clinic.html"
-   class="treatment-link">
-
+<a href="constitution-clinic.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-06
-</div>
-
-<h3>
-체질 클리닉
-</h3>
-
+<div class="treatment-number">06</div>
+<h3>체질 클리닉</h3>
 <p>
 사상체질의 관점에서 체질 가능성과
 소화·수면·땀·열감,
 음식 반응 등을 함께 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
 
-
-<a href="pediatric-clinic.html"
-   class="treatment-link">
-
+<a href="pediatric-clinic.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-07
-</div>
-
-<h3>
-소아 클리닉
-</h3>
-
+<div class="treatment-number">07</div>
+<h3>소아 클리닉</h3>
 <p>
 소아 성장, 식욕부진, 소화불량,
 잦은 감기·비염, 수면 등
 아이의 건강 상태를 함께 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
 
-
-<a href="women-clinic.html"
-   class="treatment-link">
-
+<a href="women-clinic.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-08
-</div>
-
-<h3>
-여성 클리닉
-</h3>
-
+<div class="treatment-number">08</div>
+<h3>여성 클리닉</h3>
 <p>
 산후보약, 출산 후 허리·골반 불편,
 모유수유 중 한약 상담,
 생리통 등 여성 건강을 살펴봅니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
 
-
-<a href="herbal-tonic-clinic.html"
-   class="treatment-link">
-
+<a href="herbal-tonic-clinic.html" class="treatment-link">
 <article class="treatment-card">
-
-<div class="treatment-number">
-09
-</div>
-
-<h3>
-보약 클리닉
-</h3>
-
+<div class="treatment-number">09</div>
+<h3>보약 클리닉</h3>
 <p>
 만성피로, 기력저하, 식욕과 수면,
 스트레스 등 현재 상태를 확인해
 한약·보약 처방을 상담합니다.
 </p>
-
-<div class="more-link">
-자세히 보기 →
-</div>
-
+<div class="more-link">자세히 보기 →</div>
 </article>
-
 </a>
-
 
 </div>
 
@@ -3057,15 +2608,12 @@ CLINIC
 </section>
 
 
-<!-- =========================================
-     사진 슬라이드
-========================================= -->
+<!-- 사진 슬라이드 -->
 
 <section id="clinic-gallery"
          class="clinic-gallery">
 
 <div class="container">
-
 
 <div class="section-head gallery-intro">
 
@@ -3087,7 +2635,6 @@ SOL SOL CLINIC
 
 <div class="gallery-slider-wrap">
 
-
 <button class="slider-button slider-prev"
         id="galleryPrev"
         type="button"
@@ -3098,9 +2645,6 @@ SOL SOL CLINIC
 
 <div class="gallery-slider"
      id="gallerySlider">
-
-
-<!-- 1 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -3115,21 +2659,12 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-
-<strong>
-솔솔한의원
-</strong>
-
-<span>
-아산시 배방읍 모산로 91, 1층 · 배방역 인근
-</span>
-
+<strong>솔솔한의원</strong>
+<span>아산시 배방읍 모산로 91, 1층 · 배방역 인근</span>
 </div>
 
 </article>
 
-
-<!-- 2 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -3144,21 +2679,12 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-
-<strong>
-상태를 함께 살펴봅니다
-</strong>
-
-<span>
-현재의 불편과 생활 속 변화를 함께 확인하며 상담합니다.
-</span>
-
+<strong>상태를 함께 살펴봅니다</strong>
+<span>현재의 불편과 생활 속 변화를 함께 확인하며 상담합니다.</span>
 </div>
 
 </article>
 
-
-<!-- 3 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -3173,21 +2699,12 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-
-<strong>
-추나 진료
-</strong>
-
-<span>
-근골격계 상태와 움직임을 살펴보고 필요한 진료 방향을 상담합니다.
-</span>
-
+<strong>추나 진료</strong>
+<span>근골격계 상태와 움직임을 살펴보고 필요한 진료 방향을 상담합니다.</span>
 </div>
 
 </article>
 
-
-<!-- 4 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -3202,21 +2719,12 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-
-<strong>
-한약 상담
-</strong>
-
-<span>
-현재의 상태를 확인하며 한약 처방에 대해 상담합니다.
-</span>
-
+<strong>한약 상담</strong>
+<span>현재의 상태를 확인하며 한약 처방에 대해 상담합니다.</span>
 </div>
 
 </article>
 
-
-<!-- 5 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -3231,21 +2739,12 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-
-<strong>
-한의학적 진료
-</strong>
-
-<span>
-환자의 이야기를 듣고 여러 상태를 함께 살펴봅니다.
-</span>
-
+<strong>한의학적 진료</strong>
+<span>환자의 이야기를 듣고 여러 상태를 함께 살펴봅니다.</span>
 </div>
 
 </article>
 
-
-<!-- 6 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -3260,21 +2759,12 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-
-<strong>
-한약과 한약재
-</strong>
-
-<span>
-한약 처방이 필요한 경우 현재 상태를 살펴본 뒤 상담합니다.
-</span>
-
+<strong>한약과 한약재</strong>
+<span>한약 처방이 필요한 경우 현재 상태를 살펴본 뒤 상담합니다.</span>
 </div>
 
 </article>
 
-
-<!-- 7 약침 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -3289,21 +2779,12 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-
-<strong>
-침 · 약침 진료
-</strong>
-
-<span>
-증상과 상태를 살펴보고 필요한 진료 방법을 상담합니다.
-</span>
-
+<strong>침 · 약침 진료</strong>
+<span>증상과 상태를 살펴보고 필요한 진료 방법을 상담합니다.</span>
 </div>
 
 </article>
 
-
-<!-- 8 자기장치료기 -->
 
 <article class="slide-card"
          tabindex="0"
@@ -3318,19 +2799,11 @@ SOL SOL CLINIC
      loading="lazy">
 
 <div class="slide-caption">
-
-<strong>
-자기장치료기
-</strong>
-
-<span>
-진료 시 환자의 상태에 따라 활용할 수 있는 치료 장비입니다.
-</span>
-
+<strong>자기장치료기</strong>
+<span>진료 시 환자의 상태에 따라 활용할 수 있는 치료 장비입니다.</span>
 </div>
 
 </article>
-
 
 </div>
 
@@ -3342,7 +2815,6 @@ SOL SOL CLINIC
 ›
 </button>
 
-
 </div>
 
 
@@ -3350,15 +2822,12 @@ SOL SOL CLINIC
 좌우로 넘겨보세요 · 사진을 클릭하면 크게 볼 수 있습니다.
 </div>
 
-
 </div>
 
 </section>
 
 
-<!-- =========================================
-     건강칼럼
-========================================= -->
+<!-- 건강칼럼 -->
 
 <section id="health"
          class="health">
@@ -3380,7 +2849,6 @@ HEALTH INFORMATION
 소화기, 알레르기, 체질, 소아, 여성건강 등
 진료실에서 자주 접하는 건강 이야기를 정리합니다.
 </p>
-
 
 <div class="health-buttons">
 
@@ -3405,10 +2873,7 @@ HEALTH INFORMATION
 </section>
 
 
-<!-- =========================================
-     진료안내 / 오시는 길
-     최하단 배치
-========================================= -->
+<!-- 진료안내 -->
 
 <section id="information"
          class="information">
@@ -3435,79 +2900,49 @@ INFORMATION
 
 <div class="info-grid">
 
-
 <div class="info-card">
 
 <h3>
 진료시간
 </h3>
 
-
 <div class="info-row">
-
-<div class="info-label">
-평일
-</div>
-
+<div class="info-label">평일</div>
 <div class="info-text">
 09:00 ~ 19:30<br>
 점심시간 13:00 ~ 14:00
 </div>
-
 </div>
-
 
 <div class="info-row">
-
-<div class="info-label">
-토요일
-</div>
-
+<div class="info-label">토요일</div>
 <div class="info-text">
 09:00 ~ 13:00<br>
 점심시간 없음
 </div>
-
 </div>
-
 
 <div class="info-row">
-
-<div class="info-label">
-휴진
-</div>
-
+<div class="info-label">휴진</div>
 <div class="info-text">
 일요일 및 공휴일
 </div>
-
 </div>
-
 
 <div class="info-row">
-
-<div class="info-label">
-전화
-</div>
-
+<div class="info-label">전화</div>
 <div class="info-text">
-
 <a href="tel:0415343100">
 041-534-3100
 </a>
-
 </div>
-
 </div>
-
 
 <div class="map-area">
-
 <a class="button"
    href="tel:0415343100">
 전화하기
 </a>
-
 </div>
 
 </div>
@@ -3519,65 +2954,41 @@ INFORMATION
 오시는 길
 </h3>
 
-
 <div class="info-row">
-
-<div class="info-label">
-주소
-</div>
-
+<div class="info-label">주소</div>
 <div class="info-text">
 충청남도 아산시 배방읍<br>
 모산로 91, 1층
 </div>
-
 </div>
-
 
 <div class="info-row">
-
-<div class="info-label">
-위치
-</div>
-
+<div class="info-label">위치</div>
 <div class="info-text">
 아산시 배방읍 · 배방역 인근<br>
 배방·탕정과 천안아산 인근에서 찾아오실 수 있습니다.
 </div>
-
 </div>
-
 
 <div class="info-row">
-
-<div class="info-label">
-전화
-</div>
-
+<div class="info-label">전화</div>
 <div class="info-text">
-
 <a href="tel:0415343100">
 041-534-3100
 </a>
-
 </div>
-
 </div>
-
 
 <div class="map-area">
-
 <a class="button soft"
    href="https://naver.me/52RVqgJs"
    target="_blank"
    rel="noopener">
 네이버지도 길찾기 →
 </a>
-
 </div>
 
 </div>
-
 
 </div>
 
@@ -3585,20 +2996,16 @@ INFORMATION
 
 </section>
 
-
 </main>
 
 
-<!-- =========================================
-     사진 확대
-========================================= -->
+<!-- 사진 확대 -->
 
 <div class="lightbox"
      id="lightbox"
      role="dialog"
      aria-modal="true"
      aria-label="솔솔한의원 사진 크게 보기">
-
 
 <button class="lightbox-close"
         id="lightboxClose"
@@ -3607,14 +3014,12 @@ INFORMATION
 ×
 </button>
 
-
 <button class="lightbox-nav lightbox-prev"
         id="lightboxPrev"
         type="button"
         aria-label="이전 사진">
 ‹
 </button>
-
 
 <div class="lightbox-content">
 
@@ -3625,16 +3030,13 @@ INFORMATION
 
 <div class="lightbox-caption">
 
-<strong id="lightboxTitle">
-</strong>
+<strong id="lightboxTitle"></strong>
 
-<span id="lightboxDescription">
-</span>
+<span id="lightboxDescription"></span>
 
 </div>
 
 </div>
-
 
 <button class="lightbox-nav lightbox-next"
         id="lightboxNext"
@@ -3643,13 +3045,45 @@ INFORMATION
 ›
 </button>
 
-
 </div>
 
 
-<!-- =========================================
-     FOOTER
-========================================= -->
+<!-- 영상 확대 -->
+
+<div class="video-modal"
+     id="videoModal"
+     role="dialog"
+     aria-modal="true"
+     aria-label="방송 건강상식 영상 재생">
+
+<button class="video-close"
+        id="videoClose"
+        type="button"
+        aria-label="영상 닫기">
+×
+</button>
+
+<div class="video-modal-inner">
+
+<div class="video-frame-wrap">
+
+<iframe id="videoFrame"
+        src=""
+        title="방송 건강상식 영상"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="video-modal-title"
+     id="videoModalTitle">
+</div>
+
+</div>
+
+</div>
+
 
 <footer>
 
@@ -3688,7 +3122,6 @@ INFORMATION
 토요일 09:00 ~ 13:00 · 일요일 및 공휴일 휴진
 </p>
 
-
 <div class="footer-notice">
 
 본 홈페이지의 건강정보는 일반적인 정보 제공을 위한 것이며
@@ -3696,7 +3129,6 @@ INFORMATION
 증상과 진료 내용은 개인의 상태에 따라 달라질 수 있습니다.
 
 </div>
-
 
 <p style="margin-top:23px;">
 © Solsol Korean Medicine Clinic. All rights reserved.
@@ -3709,16 +3141,13 @@ INFORMATION
 
 <script>
 
-/* =========================================
-   MOBILE MENU
-========================================= */
+/* MOBILE MENU */
 
 const menuButton =
     document.getElementById("mobileMenuButton");
 
 const mobileMenu =
     document.getElementById("mobileMenu");
-
 
 menuButton.addEventListener(
     "click",
@@ -3739,7 +3168,6 @@ menuButton.addEventListener(
 
     }
 );
-
 
 mobileMenu
     .querySelectorAll("a")
@@ -3770,13 +3198,13 @@ mobileMenu
         }
     );
 
-
 document.addEventListener(
     "click",
     function(event) {
 
         if (
-            !mobileMenu.contains(event.target) &&
+            !mobileMenu.contains(event.target)
+            &&
             !menuButton.contains(event.target)
         ) {
 
@@ -3800,9 +3228,214 @@ document.addEventListener(
 );
 
 
-/* =========================================
-   PHOTO SLIDER
-========================================= */
+/* BROADCAST SLIDER */
+
+const broadcastSlider =
+    document.getElementById("broadcastSlider");
+
+const broadcastPrev =
+    document.getElementById("broadcastPrev");
+
+const broadcastNext =
+    document.getElementById("broadcastNext");
+
+function getBroadcastDistance() {
+
+    const firstCard =
+        broadcastSlider.querySelector(
+            ".broadcast-card"
+        );
+
+    if (!firstCard) {
+        return 300;
+    }
+
+    const style =
+        window.getComputedStyle(
+            broadcastSlider
+        );
+
+    const gap =
+        parseFloat(style.gap)
+        || 18;
+
+    return (
+        firstCard
+            .getBoundingClientRect()
+            .width
+        +
+        gap
+    );
+
+}
+
+function getBroadcastMaxScroll() {
+
+    return (
+        broadcastSlider.scrollWidth
+        -
+        broadcastSlider.clientWidth
+    );
+
+}
+
+broadcastNext.addEventListener(
+    "click",
+    function() {
+
+        const maxScroll =
+            getBroadcastMaxScroll();
+
+        const nearEnd =
+            broadcastSlider.scrollLeft
+            >=
+            maxScroll - 10;
+
+        if (nearEnd) {
+
+            broadcastSlider.scrollTo({
+                left: 0,
+                behavior: "smooth"
+            });
+
+        } else {
+
+            broadcastSlider.scrollBy({
+                left: getBroadcastDistance(),
+                behavior: "smooth"
+            });
+
+        }
+
+    }
+);
+
+broadcastPrev.addEventListener(
+    "click",
+    function() {
+
+        const maxScroll =
+            getBroadcastMaxScroll();
+
+        const nearStart =
+            broadcastSlider.scrollLeft
+            <=
+            10;
+
+        if (nearStart) {
+
+            broadcastSlider.scrollTo({
+                left: maxScroll,
+                behavior: "smooth"
+            });
+
+        } else {
+
+            broadcastSlider.scrollBy({
+                left: -getBroadcastDistance(),
+                behavior: "smooth"
+            });
+
+        }
+
+    }
+);
+
+
+/* VIDEO MODAL */
+
+const videoModal =
+    document.getElementById("videoModal");
+
+const videoFrame =
+    document.getElementById("videoFrame");
+
+const videoModalTitle =
+    document.getElementById("videoModalTitle");
+
+const videoClose =
+    document.getElementById("videoClose");
+
+function openVideo(videoId, videoTitle) {
+
+    videoFrame.src =
+        "https://www.youtube.com/embed/"
+        +
+        videoId
+        +
+        "?autoplay=1&rel=0";
+
+    videoModalTitle.textContent =
+        videoTitle;
+
+    videoModal
+        .classList
+        .add("open");
+
+    document.body
+        .classList
+        .add("video-open");
+
+}
+
+function closeVideo() {
+
+    videoModal
+        .classList
+        .remove("open");
+
+    document.body
+        .classList
+        .remove("video-open");
+
+    videoFrame.src = "";
+
+    videoModalTitle.textContent = "";
+
+}
+
+document
+    .querySelectorAll("[data-video-id]")
+    .forEach(
+        function(button) {
+
+            button.addEventListener(
+                "click",
+                function() {
+
+                    openVideo(
+                        button.dataset.videoId,
+                        button.dataset.videoTitle
+                    );
+
+                }
+            );
+
+        }
+    );
+
+videoClose.addEventListener(
+    "click",
+    closeVideo
+);
+
+videoModal.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            event.target === videoModal
+        ) {
+
+            closeVideo();
+
+        }
+
+    }
+);
+
+
+/* PHOTO SLIDER */
 
 const gallerySlider =
     document.getElementById("gallerySlider");
@@ -3812,7 +3445,6 @@ const galleryPrev =
 
 const galleryNext =
     document.getElementById("galleryNext");
-
 
 function getSlideDistance() {
 
@@ -3824,22 +3456,21 @@ function getSlideDistance() {
     }
 
     const sliderStyle =
-        window.getComputedStyle(
-            gallerySlider
-        );
+        window.getComputedStyle(gallerySlider);
 
     const gap =
-        parseFloat(
-            sliderStyle.gap
-        ) || 18;
+        parseFloat(sliderStyle.gap)
+        || 18;
 
     return (
-        firstCard.getBoundingClientRect().width
+        firstCard
+            .getBoundingClientRect()
+            .width
         +
         gap
     );
-}
 
+}
 
 function getMaxScroll() {
 
@@ -3848,10 +3479,8 @@ function getMaxScroll() {
         -
         gallerySlider.clientWidth
     );
+
 }
-
-
-/* 오른쪽 이동 + 끝에서 처음으로 */
 
 galleryNext.addEventListener(
     "click",
@@ -3859,9 +3488,6 @@ galleryNext.addEventListener(
 
         const maxScroll =
             getMaxScroll();
-
-        const distance =
-            getSlideDistance();
 
         const nearEnd =
             gallerySlider.scrollLeft
@@ -3878,7 +3504,7 @@ galleryNext.addEventListener(
         } else {
 
             gallerySlider.scrollBy({
-                left: distance,
+                left: getSlideDistance(),
                 behavior: "smooth"
             });
 
@@ -3887,18 +3513,12 @@ galleryNext.addEventListener(
     }
 );
 
-
-/* 왼쪽 이동 + 처음에서 마지막으로 */
-
 galleryPrev.addEventListener(
     "click",
     function() {
 
         const maxScroll =
             getMaxScroll();
-
-        const distance =
-            getSlideDistance();
 
         const nearStart =
             gallerySlider.scrollLeft
@@ -3915,7 +3535,7 @@ galleryPrev.addEventListener(
         } else {
 
             gallerySlider.scrollBy({
-                left: -distance,
+                left: -getSlideDistance(),
                 behavior: "smooth"
             });
 
@@ -3925,9 +3545,7 @@ galleryPrev.addEventListener(
 );
 
 
-/* =========================================
-   LIGHTBOX
-========================================= */
+/* PHOTO LIGHTBOX */
 
 const galleryCards =
     Array.from(
@@ -3936,76 +3554,46 @@ const galleryCards =
         )
     );
 
-
 const lightbox =
-    document.getElementById(
-        "lightbox"
-    );
+    document.getElementById("lightbox");
 
 const lightboxImage =
-    document.getElementById(
-        "lightboxImage"
-    );
+    document.getElementById("lightboxImage");
 
 const lightboxTitle =
-    document.getElementById(
-        "lightboxTitle"
-    );
+    document.getElementById("lightboxTitle");
 
 const lightboxDescription =
-    document.getElementById(
-        "lightboxDescription"
-    );
+    document.getElementById("lightboxDescription");
 
 const lightboxClose =
-    document.getElementById(
-        "lightboxClose"
-    );
+    document.getElementById("lightboxClose");
 
 const lightboxPrev =
-    document.getElementById(
-        "lightboxPrev"
-    );
+    document.getElementById("lightboxPrev");
 
 const lightboxNext =
-    document.getElementById(
-        "lightboxNext"
-    );
-
+    document.getElementById("lightboxNext");
 
 let currentImageIndex = 0;
 
-
 function showLightboxImage(index) {
 
-    if (
-        index < 0
-    ) {
-
+    if (index < 0) {
         index =
             galleryCards.length - 1;
-
     }
-
 
     if (
         index >= galleryCards.length
     ) {
-
         index = 0;
-
     }
 
-
-    currentImageIndex =
-        index;
-
+    currentImageIndex = index;
 
     const card =
-        galleryCards[
-            currentImageIndex
-        ];
-
+        galleryCards[currentImageIndex];
 
     const image =
         card.dataset.image;
@@ -4015,7 +3603,6 @@ function showLightboxImage(index) {
 
     const description =
         card.dataset.description || "";
-
 
     lightboxImage.src =
         image;
@@ -4031,12 +3618,9 @@ function showLightboxImage(index) {
 
 }
 
-
 function openLightbox(index) {
 
-    showLightboxImage(
-        index
-    );
+    showLightboxImage(index);
 
     lightbox
         .classList
@@ -4047,7 +3631,6 @@ function openLightbox(index) {
         .add("lightbox-open");
 
 }
-
 
 function closeLightbox() {
 
@@ -4061,7 +3644,6 @@ function closeLightbox() {
 
 }
 
-
 function previousLightboxImage() {
 
     showLightboxImage(
@@ -4069,7 +3651,6 @@ function previousLightboxImage() {
     );
 
 }
-
 
 function nextLightboxImage() {
 
@@ -4079,9 +3660,6 @@ function nextLightboxImage() {
 
 }
 
-
-/* 카드 클릭 */
-
 galleryCards.forEach(
     function(card,index) {
 
@@ -4089,13 +3667,10 @@ galleryCards.forEach(
             "click",
             function() {
 
-                openLightbox(
-                    index
-                );
+                openLightbox(index);
 
             }
         );
-
 
         card.addEventListener(
             "keydown",
@@ -4109,9 +3684,7 @@ galleryCards.forEach(
 
                     event.preventDefault();
 
-                    openLightbox(
-                        index
-                    );
+                    openLightbox(index);
 
                 }
 
@@ -4120,9 +3693,6 @@ galleryCards.forEach(
 
     }
 );
-
-
-/* 확대창 버튼 */
 
 lightboxClose.addEventListener(
     "click",
@@ -4138,9 +3708,6 @@ lightboxNext.addEventListener(
     "click",
     nextLightboxImage
 );
-
-
-/* 배경 누르면 닫기 */
 
 lightbox.addEventListener(
     "click",
@@ -4158,11 +3725,28 @@ lightbox.addEventListener(
 );
 
 
-/* 키보드 */
+/* KEYBOARD */
 
 document.addEventListener(
     "keydown",
     function(event) {
+
+        if (
+            videoModal
+                .classList
+                .contains("open")
+        ) {
+
+            if (
+                event.key === "Escape"
+            ) {
+
+                closeVideo();
+
+            }
+
+            return;
+        }
 
         if (
             !lightbox
@@ -4174,7 +3758,6 @@ document.addEventListener(
 
         }
 
-
         if (
             event.key === "Escape"
         ) {
@@ -4183,7 +3766,6 @@ document.addEventListener(
 
         }
 
-
         if (
             event.key === "ArrowLeft"
         ) {
@@ -4191,7 +3773,6 @@ document.addEventListener(
             previousLightboxImage();
 
         }
-
 
         if (
             event.key === "ArrowRight"
@@ -4205,14 +3786,10 @@ document.addEventListener(
 );
 
 
-/* 모바일 확대창 스와이프 */
+/* MOBILE PHOTO SWIPE */
 
-let touchStartX =
-    0;
-
-let touchEndX =
-    0;
-
+let touchStartX = 0;
+let touchEndX = 0;
 
 lightbox.addEventListener(
     "touchstart",
@@ -4229,7 +3806,6 @@ lightbox.addEventListener(
     }
 );
 
-
 lightbox.addEventListener(
     "touchend",
     function(event) {
@@ -4239,12 +3815,10 @@ lightbox.addEventListener(
                 .changedTouches[0]
                 .screenX;
 
-
         const difference =
             touchStartX
             -
             touchEndX;
-
 
         if (
             Math.abs(difference)
@@ -4255,7 +3829,6 @@ lightbox.addEventListener(
             return;
 
         }
-
 
         if (
             difference > 0
